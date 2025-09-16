@@ -11,7 +11,7 @@ if str(ROOT) not in sys.path:
 import matplotlib.pyplot as plt
 import numpy as np
 
-from sgelabs.analysis import compute_fevd, compute_irfs
+from sgelabs.analysis import compute_fevd, compute_fevd_ts, compute_irfs
 from sgelabs.io import parse_mod_file
 from sgelabs.ir import linearize
 from sgelabs.solve import solve_gensys
@@ -85,25 +85,28 @@ def _save_irf_plots(
         plt.close(fig)
 
 
-def _save_fevd_plots(
-    fevd: np.ndarray,
+def _save_fevd_plots_timeseries(
+    fevd_ts: np.ndarray,
     state_names: list[str],
     shock_names: list[str],
     indices: list[int],
     out_dir: Path,
 ) -> None:
-    x = np.arange(len(shock_names))
+    H = fevd_ts.shape[0]
+    time = np.arange(1, H + 1)
     out_dir.mkdir(parents=True, exist_ok=True)
     for idx in indices:
         state = state_names[idx]
         fig, ax = plt.subplots(figsize=(6.0, 4.0))
-        ax.bar(x, fevd[idx])
+        for j, shock in enumerate(shock_names):
+            ax.plot(time, fevd_ts[:, idx, j], label=shock)
         ax.set_title(state)
+        ax.set_xlabel("Horizon")
+        ax.set_ylabel("FEVD share")
         ax.set_ylim(0.0, 1.0)
-        ax.set_ylabel("Share")
+        ax.set_xlim(1, H)
         if shock_names:
-            ax.set_xticks(x, shock_names, rotation=45, ha="right", fontsize="small")
-        ax.set_xlabel("Shock")
+            ax.legend(loc="upper right", fontsize="small")
         fig.tight_layout()
         fig.savefig(out_dir / f"{_safe_name(state)}.png", dpi=300, bbox_inches="tight")
         plt.close(fig)
@@ -127,6 +130,7 @@ def main(argv: list[str] | None = None) -> None:
     )
     sigma = shock_std ** 2
     fevd = compute_fevd(solution.g, solution.impact, sigma, args.horizon)
+    fevd_ts = compute_fevd_ts(solution.g, solution.impact, sigma, args.horizon)
 
     state_names = solution.state_names
     filtered_names, indices = _filter_states(state_names, keep_all=args.include_lags)
@@ -137,7 +141,7 @@ def main(argv: list[str] | None = None) -> None:
     fevd_dir = model_dir / "fevds"
 
     _save_irf_plots(irfs, state_names, solution.shock_names, indices, irf_dir)
-    _save_fevd_plots(fevd, state_names, solution.shock_names, indices, fevd_dir)
+    _save_fevd_plots_timeseries(fevd_ts, state_names, solution.shock_names, indices, fevd_dir)
 
     np.savez(
         model_dir / "diagnostics.npz",
@@ -146,6 +150,7 @@ def main(argv: list[str] | None = None) -> None:
         impact=solution.impact,
         irfs=irfs,
         fevd=fevd,
+        fevd_ts=fevd_ts,
         state_names=np.array(state_names, dtype=object),
         shock_names=np.array(solution.shock_names, dtype=object),
         horizon=args.horizon,
@@ -153,7 +158,7 @@ def main(argv: list[str] | None = None) -> None:
     )
 
     print(f"Saved IRFs to {irf_dir}")
-    print(f"Saved FEVDs to {fevd_dir}")
+    print(f"Saved FEVD time series to {fevd_dir}")
     print(f"Saved diagnostics npz to {model_dir / 'diagnostics.npz'}")
     if not args.include_lags:
         print("(Lagged companion states omitted; use --include-lags to plot them.)")

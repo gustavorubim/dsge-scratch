@@ -9,10 +9,6 @@ def compute_irfs(
     impact: NDArray[np.floating],
     horizon: int = 40,
 ) -> NDArray[np.floating]:
-    """Compute impulse responses up to the provided horizon.
-
-    Returns an array with shape (horizon + 1, n, k).
-    """
     g = np.asarray(g, dtype=float)
     impact = np.asarray(impact, dtype=float)
     n, k = impact.shape
@@ -31,7 +27,6 @@ def compute_fevd(
     sigma_e: NDArray[np.floating],
     horizon: int = 40,
 ) -> NDArray[np.floating]:
-    """Compute forecast error variance decomposition."""
     g = np.asarray(g, dtype=float)
     impact = np.asarray(impact, dtype=float)
     sigma_e = np.asarray(sigma_e, dtype=float)
@@ -52,12 +47,43 @@ def compute_fevd(
     return shares
 
 
+def compute_fevd_ts(
+    g: NDArray[np.floating],
+    impact: NDArray[np.floating],
+    sigma_e: NDArray[np.floating],
+    horizon: int = 40,
+) -> NDArray[np.floating]:
+    """FEVD time series by horizon.
+
+    Returns an array of shape (horizon, n, k), where each t index contains the
+    cumulative FEVD shares up to horizon t (1-based horizons).
+    """
+    g = np.asarray(g, dtype=float)
+    impact = np.asarray(impact, dtype=float)
+    sigma_e = np.asarray(sigma_e, dtype=float)
+    n, k = impact.shape
+    if sigma_e.shape == (k,):
+        shock_std = np.sqrt(sigma_e)
+    else:
+        shock_std = np.sqrt(np.diag(sigma_e))
+
+    irfs = compute_irfs(g, impact, horizon - 1)  # (horizon, n, k)
+    scaled = irfs * shock_std[np.newaxis, np.newaxis, :]  # scale shocks
+    sq = scaled ** 2
+    cum = np.cumsum(sq, axis=0)  # (horizon, n, k)
+    total = np.sum(cum, axis=2)  # (horizon, n)
+
+    shares = np.zeros_like(cum)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        shares = np.divide(cum, total[:, :, None], out=np.zeros_like(cum), where=total[:, :, None] != 0.0)
+    return shares
+
+
 def historical_decomp(
     g: NDArray[np.floating],
     impact: NDArray[np.floating],
     shocks: NDArray[np.floating],
 ) -> NDArray[np.floating]:
-    """Compute historical decomposition by structural shock."""
     g = np.asarray(g, dtype=float)
     impact = np.asarray(impact, dtype=float)
     shocks = np.asarray(shocks, dtype=float)
@@ -73,4 +99,4 @@ def historical_decomp(
     return contributions
 
 
-__all__ = ["compute_irfs", "compute_fevd", "historical_decomp"]
+__all__ = ["compute_irfs", "compute_fevd", "compute_fevd_ts", "historical_decomp"]

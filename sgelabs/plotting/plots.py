@@ -55,6 +55,35 @@ def plot_fevd(
     return fig
 
 
+def plot_fevd_timeseries(
+    fevd_ts: NDArray[np.floating],
+    state_names: Sequence[str],
+    shock_names: Sequence[str],
+    figsize: tuple[float, float] = (12.0, 8.0),
+) -> plt.Figure:
+    """Grid plot of FEVD shares as a function of horizon.
+
+    fevd_ts: (H, n, k) cumulative shares up to each horizon.
+    """
+    H, n, k = fevd_ts.shape
+    cols = 3
+    rows = int(np.ceil(n / cols))
+    fig, axes = plt.subplots(rows, cols, figsize=figsize, squeeze=False)
+    time = np.arange(1, H + 1)
+    for idx, name in enumerate(state_names):
+        ax = axes[idx // cols, idx % cols]
+        for j, shock in enumerate(shock_names):
+            ax.plot(time, fevd_ts[:, idx, j], label=shock)
+        ax.set_title(name)
+        ax.set_ylim(0.0, 1.0)
+        ax.set_xlim(1, H)
+    for idx in range(n, rows * cols):
+        axes[idx // cols, idx % cols].axis("off")
+    axes[0, 0].legend(loc="upper right", fontsize="small")
+    fig.tight_layout()
+    return fig
+
+
 def plot_historical(
     contributions: NDArray[np.floating],
     state_names: Sequence[str],
@@ -79,4 +108,4 @@ def plot_historical(
     return fig
 
 
-__all__ = ["plot_irfs", "plot_fevd", "plot_historical"]
+__all__ = ["plot_irfs", "plot_fevd", "plot_fevd_timeseries", "plot_historical"]
