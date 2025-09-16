@@ -31,6 +31,11 @@ def _build_argparser() -> argparse.ArgumentParser:
         default=40,
         help="Number of periods for IRFs/FEVD (default: 40)",
     )
+    parser.add_argument(
+        "--include-lags",
+        action="store_true",
+        help="Plot companion lag states as well as contemporaneous variables",
+    )
     return parser
 
 
@@ -38,15 +43,34 @@ def _safe_name(name: str) -> str:
     return "".join(ch if ch.isalnum() or ch in {"-", "_"} else "_" for ch in name)
 
 
+def _filter_states(
+    state_names: list[str],
+    keep_all: bool,
+) -> tuple[list[str], list[int]]:
+    if keep_all:
+        indices = list(range(len(state_names)))
+        return state_names, indices
+    filtered: list[str] = []
+    indices: list[int] = []
+    for idx, name in enumerate(state_names):
+        if "_lag" in name:
+            continue
+        filtered.append(name)
+        indices.append(idx)
+    return filtered, indices
+
+
 def _save_irf_plots(
     irfs: np.ndarray,
     state_names: list[str],
     shock_names: list[str],
+    indices: list[int],
     out_dir: Path,
 ) -> None:
     time = np.arange(irfs.shape[0])
     out_dir.mkdir(parents=True, exist_ok=True)
-    for idx, state in enumerate(state_names):
+    for idx in indices:
+        state = state_names[idx]
         fig, ax = plt.subplots(figsize=(6.0, 4.0))
         for j, shock in enumerate(shock_names):
             ax.plot(time, irfs[:, idx, j], label=shock)
@@ -65,11 +89,13 @@ def _save_fevd_plots(
     fevd: np.ndarray,
     state_names: list[str],
     shock_names: list[str],
+    indices: list[int],
     out_dir: Path,
 ) -> None:
     x = np.arange(len(shock_names))
     out_dir.mkdir(parents=True, exist_ok=True)
-    for idx, state in enumerate(state_names):
+    for idx in indices:
+        state = state_names[idx]
         fig, ax = plt.subplots(figsize=(6.0, 4.0))
         ax.bar(x, fevd[idx])
         ax.set_title(state)
@@ -102,13 +128,16 @@ def main(argv: list[str] | None = None) -> None:
     sigma = shock_std ** 2
     fevd = compute_fevd(solution.g, solution.impact, sigma, args.horizon)
 
+    state_names = solution.state_names
+    filtered_names, indices = _filter_states(state_names, keep_all=args.include_lags)
+
     model_name = _safe_name(args.mod.stem)
     model_dir = output_dir / model_name
     irf_dir = model_dir / "irfs"
     fevd_dir = model_dir / "fevds"
 
-    _save_irf_plots(irfs, solution.state_names, solution.shock_names, irf_dir)
-    _save_fevd_plots(fevd, solution.state_names, solution.shock_names, fevd_dir)
+    _save_irf_plots(irfs, state_names, solution.shock_names, indices, irf_dir)
+    _save_fevd_plots(fevd, state_names, solution.shock_names, indices, fevd_dir)
 
     np.savez(
         model_dir / "diagnostics.npz",
@@ -117,7 +146,7 @@ def main(argv: list[str] | None = None) -> None:
         impact=solution.impact,
         irfs=irfs,
         fevd=fevd,
-        state_names=np.array(solution.state_names, dtype=object),
+        state_names=np.array(state_names, dtype=object),
         shock_names=np.array(solution.shock_names, dtype=object),
         horizon=args.horizon,
         eu=np.array(solution.eu, dtype=int),
@@ -126,6 +155,8 @@ def main(argv: list[str] | None = None) -> None:
     print(f"Saved IRFs to {irf_dir}")
     print(f"Saved FEVDs to {fevd_dir}")
     print(f"Saved diagnostics npz to {model_dir / 'diagnostics.npz'}")
+    if not args.include_lags:
+        print("(Lagged companion states omitted; use --include-lags to plot them.)")
 
 
 if __name__ == "__main__":

@@ -47,6 +47,7 @@ python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod 
 ### Optional arguments
 
 - `--horizon N` (default `40`): number of periods for IRF/FEVD computations.
+- `--include-lags`: include companion lag states in plots (default skips them)
 
 Examples:
 
@@ -67,6 +68,7 @@ For each run the script writes:
 - `<output_dir>/<model_name>/diagnostics.npz`: NumPy archive containing transition matrices, IRFs, FEVD, state/shock names, Blanchard-Kahn flags, and the horizon used
 
 File names are sanitized to keep only alphanumeric characters, dashes, and underscores.
+By default, lagged companion states are omitted; pass \\--include-lags\\ if you need the stacked state vector plots.
 
 You can inspect the diagnostics bundle, e.g.:
 
