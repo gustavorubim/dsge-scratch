@@ -1,0 +1,118 @@
+# sge-labs Plotting Utilities
+
+This repository implements a from-scratch DSGE toolkit with a lightweight script for generating impulse response (IRF) and forecast error variance decomposition (FEVD) plots directly from Dynare-style `.mod` files.
+
+## Requirements
+
+- Python 3.11+
+- Dependencies listed in `pyproject.toml`
+- The repo root must be on `PYTHONPATH` (the bundled script takes care of this automatically).
+
+Install dependencies in a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -e .[dev]
+```
+
+Run the unit tests to ensure everything is wired correctly:
+
+```bash
+pytest -q
+```
+
+## Script: `scripts/generate_plots.py`
+
+This helper reads a Dynare `.mod` file, parses and solves the model with `sgelabs`, and writes IRF/FEVD PNGs plus a diagnostics NPZ bundle to an output folder.
+
+Basic usage:
+
+```bash
+python scripts/generate_plots.py <model.mod> <output_dir>
+```
+
+Example (RBC toy model):
+
+```bash
+python scripts/generate_plots.py examples/rbc_basic/rbc.mod output/rbc
+```
+
+Example (Smets–Wouters 2007 replication):
+
+```bash
+python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output/us_sw07
+```
+
+### Optional arguments
+
+- `--horizon N` (default `40`): number of periods for IRF/FEVD computations.
+
+Examples:
+
+```bash
+# Short horizon, place results under output/short_rbc
+python scripts/generate_plots.py examples/rbc_basic/rbc.mod output/short_rbc --horizon 12
+
+# Long horizon analysis for SW07
+python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output/us_sw07_long --horizon 80
+```
+
+### Output
+
+For each run the script writes:
+
+- `<output_dir>/irfs.png`: grid of IRFs by state and shock
+- `<output_dir>/fevd.png`: per-variable FEVD bar charts
+- `<output_dir>/diagnostics.npz`: NumPy archive containing transition matrices, IRFs, FEVD, state/shock names, Blanchard–Kahn flags, and the horizon used
+
+You can inspect the diagnostics bundle, e.g.:
+
+```python
+import numpy as np
+payload = np.load("output/rbc/diagnostics.npz", allow_pickle=True)
+print(payload["state_names"])
+print(payload["irfs"].shape)
+```
+
+### Batch generation tips
+
+The script is self-contained; to process multiple models you can loop over files:
+
+```bash
+for mod in examples/*/*.mod; do
+  python scripts/generate_plots.py "$mod" "output/$(basename "${mod%.mod}")"
+done
+```
+
+On Windows PowerShell:
+
+```powershell
+Get-ChildItem examples -Filter *.mod -Recurse | ForEach-Object {
+    $dest = Join-Path output $_.BaseName
+    python scripts/generate_plots.py $_.FullName $dest --horizon 60
+}
+```
+
+## CLI (`sgelabs` entrypoint)
+
+The package also exposes a CLI for advanced workflows:
+
+```bash
+sgelabs load --mod model.mod --output model.ir.json
+sgelabs solve --mod model.mod --output model_solution.npz
+sgelabs irf --solution model_solution.npz --horizon 40 --output model.irf.npz
+sgelabs fevd --solution model_solution.npz --horizon 40 --output model.fevd.npy
+```
+
+Refer to `sgelabs/__main__.py` for the full command set.
+
+## Troubleshooting
+
+- Ensure `matplotlib` can access a backend (the default `Agg` works headlessly).
+- If you see `ModuleNotFoundError: sgelabs`, confirm you run the script from the repo root or install the package with `pip install -e .`.
+- Large models may require additional horizons or numerical tolerance adjustments; the solver reports Blanchard–Kahn flags in the diagnostics bundle.
+
+## License
+
+See `LICENSE` (if provided) for terms and conditions.

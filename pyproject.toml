@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgelabs"
+version = "0.1.0"
+description = "From-scratch DSGE toolkit"
+authors = [{name = "SGE Labs"}]
+readme = "spec.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.25",
+    "scipy>=1.11",
+    "sympy>=1.12",
+    "numba>=0.58",
+    "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.4",
+    "mypy>=1.5"
+]
+
+[project.scripts]
+sgelabs = "sgelabs.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sgelabs*", "examples"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
