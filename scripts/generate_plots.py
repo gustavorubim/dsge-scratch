@@ -14,7 +14,6 @@ import numpy as np
 from sgelabs.analysis import compute_fevd, compute_irfs
 from sgelabs.io import parse_mod_file
 from sgelabs.ir import linearize
-from sgelabs.plotting import plot_fevd, plot_irfs
 from sgelabs.solve import solve_gensys
 
 
@@ -33,6 +32,55 @@ def _build_argparser() -> argparse.ArgumentParser:
         help="Number of periods for IRFs/FEVD (default: 40)",
     )
     return parser
+
+
+def _safe_name(name: str) -> str:
+    return "".join(ch if ch.isalnum() or ch in {"-", "_"} else "_" for ch in name)
+
+
+def _save_irf_plots(
+    irfs: np.ndarray,
+    state_names: list[str],
+    shock_names: list[str],
+    out_dir: Path,
+) -> None:
+    time = np.arange(irfs.shape[0])
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for idx, state in enumerate(state_names):
+        fig, ax = plt.subplots(figsize=(6.0, 4.0))
+        for j, shock in enumerate(shock_names):
+            ax.plot(time, irfs[:, idx, j], label=shock)
+        ax.set_title(state)
+        ax.set_xlabel("Horizon")
+        ax.set_ylabel("Response")
+        ax.axhline(0.0, color="black", linewidth=0.6, alpha=0.6)
+        if shock_names:
+            ax.legend(loc="upper right", fontsize="small")
+        fig.tight_layout()
+        fig.savefig(out_dir / f"{_safe_name(state)}.png", dpi=300, bbox_inches="tight")
+        plt.close(fig)
+
+
+def _save_fevd_plots(
+    fevd: np.ndarray,
+    state_names: list[str],
+    shock_names: list[str],
+    out_dir: Path,
+) -> None:
+    x = np.arange(len(shock_names))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for idx, state in enumerate(state_names):
+        fig, ax = plt.subplots(figsize=(6.0, 4.0))
+        ax.bar(x, fevd[idx])
+        ax.set_title(state)
+        ax.set_ylim(0.0, 1.0)
+        ax.set_ylabel("Share")
+        if shock_names:
+            ax.set_xticks(x, shock_names, rotation=45, ha="right", fontsize="small")
+        ax.set_xlabel("Shock")
+        fig.tight_layout()
+        fig.savefig(out_dir / f"{_safe_name(state)}.png", dpi=300, bbox_inches="tight")
+        plt.close(fig)
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -54,18 +102,16 @@ def main(argv: list[str] | None = None) -> None:
     sigma = shock_std ** 2
     fevd = compute_fevd(solution.g, solution.impact, sigma, args.horizon)
 
-    irf_fig = plot_irfs(irfs, solution.state_names, solution.shock_names)
-    irf_path = output_dir / "irfs.png"
-    irf_fig.savefig(irf_path, dpi=300, bbox_inches="tight")
-    plt.close(irf_fig)
+    model_name = _safe_name(args.mod.stem)
+    model_dir = output_dir / model_name
+    irf_dir = model_dir / "irfs"
+    fevd_dir = model_dir / "fevds"
 
-    fevd_fig = plot_fevd(fevd, solution.state_names, solution.shock_names)
-    fevd_path = output_dir / "fevd.png"
-    fevd_fig.savefig(fevd_path, dpi=300, bbox_inches="tight")
-    plt.close(fevd_fig)
+    _save_irf_plots(irfs, solution.state_names, solution.shock_names, irf_dir)
+    _save_fevd_plots(fevd, solution.state_names, solution.shock_names, fevd_dir)
 
     np.savez(
-        output_dir / "diagnostics.npz",
+        model_dir / "diagnostics.npz",
         G=solution.g,
         C=solution.c,
         impact=solution.impact,
@@ -77,9 +123,9 @@ def main(argv: list[str] | None = None) -> None:
         eu=np.array(solution.eu, dtype=int),
     )
 
-    print(f"Saved IRF plot to {irf_path}")
-    print(f"Saved FEVD plot to {fevd_path}")
-    print(f"Saved diagnostics npz to {output_dir / 'diagnostics.npz'}")
+    print(f"Saved IRFs to {irf_dir}")
+    print(f"Saved FEVDs to {fevd_dir}")
+    print(f"Saved diagnostics npz to {model_dir / 'diagnostics.npz'}")
 
 
 if __name__ == "__main__":

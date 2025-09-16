@@ -35,13 +35,13 @@ python scripts/generate_plots.py <model.mod> <output_dir>
 Example (RBC toy model):
 
 ```bash
-python scripts/generate_plots.py examples/rbc_basic/rbc.mod output/rbc
+python scripts/generate_plots.py examples/rbc_basic/rbc.mod output
 ```
 
 Example (Smets–Wouters 2007 replication):
 
 ```bash
-python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output/us_sw07
+python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output
 ```
 
 ### Optional arguments
@@ -51,20 +51,22 @@ python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod 
 Examples:
 
 ```bash
-# Short horizon, place results under output/short_rbc
-python scripts/generate_plots.py examples/rbc_basic/rbc.mod output/short_rbc --horizon 12
+# Short horizon, results saved under output_short/rbc/...
+python scripts/generate_plots.py examples/rbc_basic/rbc.mod output_short --horizon 12
 
-# Long horizon analysis for SW07
-python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output/us_sw07_long --horizon 80
-```
+# Long horizon analysis for SW07 (output_long/US_SW07_rep/...)
+python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output_long --horizon 80
+python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod output --horizon 80
 
 ### Output
 
 For each run the script writes:
 
-- `<output_dir>/irfs.png`: grid of IRFs by state and shock
-- `<output_dir>/fevd.png`: per-variable FEVD bar charts
-- `<output_dir>/diagnostics.npz`: NumPy archive containing transition matrices, IRFs, FEVD, state/shock names, Blanchard–Kahn flags, and the horizon used
+- `<output_dir>/<model_name>/irfs/<variable>.png`: IRF for each endogenous variable (one figure with all shock responses)
+- `<output_dir>/<model_name>/fevds/<variable>.png`: FEVD bar chart per endogenous variable
+- `<output_dir>/<model_name>/diagnostics.npz`: NumPy archive containing transition matrices, IRFs, FEVD, state/shock names, Blanchard-Kahn flags, and the horizon used
+
+File names are sanitized to keep only alphanumeric characters, dashes, and underscores.
 
 You can inspect the diagnostics bundle, e.g.:
 
@@ -81,7 +83,7 @@ The script is self-contained; to process multiple models you can loop over files
 
 ```bash
 for mod in examples/*/*.mod; do
-  python scripts/generate_plots.py "$mod" "output/$(basename "${mod%.mod}")"
+  python scripts/generate_plots.py "$mod" output --horizon 40
 done
 ```
 
@@ -89,7 +91,7 @@ On Windows PowerShell:
 
 ```powershell
 Get-ChildItem examples -Filter *.mod -Recurse | ForEach-Object {
-    $dest = Join-Path output $_.BaseName
+    python scripts/generate_plots.py $_.FullName output --horizon 60
     python scripts/generate_plots.py $_.FullName $dest --horizon 60
 }
 ```
