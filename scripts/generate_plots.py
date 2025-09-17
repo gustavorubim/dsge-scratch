@@ -74,18 +74,23 @@ def _save_irf_plots(
     for idx in indices:
         state = state_names[idx]
         state_label = format_state_display(state)
-        fig, ax = plt.subplots(figsize=(6.0, 4.0))
+        state_dir = out_dir / _safe_name(state_label)
+        state_dir.mkdir(parents=True, exist_ok=True)
         for j, shock in enumerate(shock_names):
-            ax.plot(time, irfs[:, idx, j], label=shock_labels[j])
-        ax.set_title(state_label)
-        ax.set_xlabel("Horizon")
-        ax.set_ylabel("Response")
-        ax.axhline(0.0, color="black", linewidth=0.6, alpha=0.6)
-        if shock_names:
-            ax.legend(loc="upper right", fontsize="small")
-        fig.tight_layout()
-        fig.savefig(out_dir / f"{_safe_name(state_label)}.png", dpi=300, bbox_inches="tight")
-        plt.close(fig)
+            shock_label = shock_labels[j]
+            fig, ax = plt.subplots(figsize=(6.0, 4.0))
+            ax.plot(time, irfs[:, idx, j], label=shock_label)
+            ax.set_title(f"{state_label} - {shock_label}")
+            ax.set_xlabel("Horizon")
+            ax.set_ylabel("Response")
+            ax.axhline(0.0, color="black", linewidth=0.6, alpha=0.6)
+            fig.tight_layout()
+            fig.savefig(
+                state_dir / f"{_safe_name(shock_label)}.png",
+                dpi=300,
+                bbox_inches="tight",
+            )
+            plt.close(fig)
 
 
 def _save_fevd_plots_timeseries(

@@ -63,7 +63,7 @@ python scripts/generate_plots.py model_base/US_SW07/US_SW07_rep/US_SW07_rep.mod 
 
 For each run the script writes:
 
-- `<output_dir>/<model_name>/irfs/<variable>.png`: IRF for each endogenous variable (one figure with all shock responses)
+- `<output_dir>/<model_name>/irfs/<variable>/<shock>.png`: IRF for each shock/variable pair (one figure per response)
 - `<output_dir>/<model_name>/fevds/<variable>.png`: FEVD bar chart per endogenous variable
 - `<output_dir>/<model_name>/diagnostics.npz`: NumPy archive containing transition matrices, IRFs, FEVD, state/shock names, Blanchard-Kahn flags, and the horizon used
 
