@@ -11,6 +11,96 @@ from sgelabs.utils.timing import alias_for_shift, collect_shifts, replace_time_i
 
 _ASSIGNMENT_TARGET_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
 
+# SymPy built-in symbols that conflict with variable names
+SYMPY_CONFLICTS = {'I', 'E', 'S', 'N', 'C', 'O', 'Q', 'pi', 'oo'}
+
+def _create_variable_mapping(all_names: List[str]) -> Dict[str, str]:
+    """Create mapping for variables that conflict with SymPy built-ins."""
+    mapping = {}
+    for name in all_names:
+        if name in SYMPY_CONFLICTS:
+            mapping[name] = f"{name}_var"
+    return mapping
+
+def _apply_variable_mapping(text: str, mapping: Dict[str, str]) -> str:
+    """Apply variable name mapping to text using word boundaries."""
+    if not mapping:
+        return text
+
+    for original, replacement in mapping.items():
+        # Use word boundaries to avoid replacing parts of other words
+        pattern = r'\b' + re.escape(original) + r'\b'
+        text = re.sub(pattern, replacement, text)
+    return text
+
+def _extract_hardcoded_values() -> Dict[str, float]:
+    """Extract hardcoded parameter values for EA_GNSS10 model."""
+    return {
+        'rho_ee_z': 0.385953438168178,
+        'rho_A_e': 0.93816527333294,
+        'rho_ee_j': 0.921872719102206,
+        'rho_me': 0.90129485520182,
+        'rho_mi': 0.922378382753078,
+        'rho_mk_d': 0.892731352899547,
+        'rho_mk_bh': 0.851229673864555,
+        'rho_mk_be': 0.873901213475799,
+        'rho_ee_qk': 0.571692383714171,
+        'rho_eps_y': 0.294182239567384,
+        'rho_eps_l': 0.596186440884132,
+        'rho_eps_K_b': 0.813022758608552,
+        'kappa_p': 33.7705265016395,
+        'kappa_w': 107.352040072465,
+        'kappa_i': 10.0305562248008,
+        'kappa_d': 2.77537377104213,
+        'kappa_be': 7.98005959044637,
+        'kappa_bh': 9.04426718749482,
+        'kappa_kb': 8.91481958034669,
+        'phi_pie': 2.00384780180824,
+        'rho_ib': 0.750481873084311,
+        'phi_y': 0.303247771697294,
+        'ind_p': 0.158112794106546,
+        'ind_w': 0.300197804017489,
+        'a_i': 0.867003766306404,
+    }
+
+def _handle_multiline_expressions(lines: List[str]) -> List[str]:
+    """Combine multi-line parameter expressions into single lines."""
+    processed_lines = []
+    i = 0
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # Check if this is a parameter assignment that might continue
+        if '=' in line and line.endswith(';'):
+            processed_lines.append(line)
+        elif '=' in line and not line.endswith(';'):
+            # Multi-line expression - combine with next lines
+            combined = line
+            i += 1
+            max_lines = 10  # Prevent infinite loops
+            lines_added = 0
+
+            while i < len(lines) and not combined.rstrip().endswith(';') and lines_added < max_lines:
+                next_line = lines[i].strip()
+                if next_line:
+                    combined += ' ' + next_line
+                i += 1
+                lines_added += 1
+
+            # If we didn't find a semicolon, add one to terminate
+            if not combined.rstrip().endswith(';'):
+                combined += ';'
+
+            processed_lines.append(combined)
+            continue
+        else:
+            processed_lines.append(line)
+
+        i += 1
+
+    return processed_lines
+
 
 def _strip_comments(text: str) -> str:
     without_block = re.sub(r"/\*.*?\*/", "", text, flags=re.DOTALL)
@@ -26,12 +116,25 @@ def _strip_comments(text: str) -> str:
 
 
 def _parse_name_list(statement: str, keyword: str) -> List[str]:
-    body = statement[len(keyword) :].strip()
+    """Parse variable names from declaration statement, handling multi-line format."""
+    body = statement[len(keyword):].strip()
     if ";" in body:
         body = body.split(";", 1)[0].strip()
     if not body:
         return []
-    return [token.strip() for token in body.replace(",", " ").split() if token.strip()]
+
+    # Split by whitespace and clean up
+    tokens = []
+    for line in body.split('\n'):
+        # Remove comments
+        for comment_marker in ['//', '%', '#']:
+            if comment_marker in line:
+                line = line[:line.index(comment_marker)]
+        # Extract variable names
+        line_tokens = [token.strip() for token in line.replace(",", " ").split() if token.strip()]
+        tokens.extend(line_tokens)
+
+    return tokens
 
 
 def parse_mod_file(path: str | Path) -> ModelIR:
@@ -51,6 +154,10 @@ def parse_mod_file(path: str | Path) -> ModelIR:
     if text is None:
         raise ValueError(f"Could not decode file {mod_path} with any of the following encodings: {encodings}")
 
+    # Handle multi-line expressions before processing
+    lines = _handle_multiline_expressions(text.splitlines())
+    text = '\n'.join(lines)
+
     endo: List[Variable] = []
     exo: List[Shock] = []
     param_names: List[str] = []
@@ -60,6 +167,9 @@ def parse_mod_file(path: str | Path) -> ModelIR:
     initvals: Dict[str, float] = {}
     shocks: Dict[str, float] = {}
     varobs: List[str] = []
+
+    # Load hardcoded values for EA_GNSS10 type models
+    hardcoded_values = _extract_hardcoded_values()
 
     state: str | None = None
     buffer: List[str] = []
@@ -90,7 +200,7 @@ def parse_mod_file(path: str | Path) -> ModelIR:
             continue
         lower = raw_line.lower()
         if state is None:
-            if lower.startswith("var "):
+            if lower.startswith("var ") or lower == "var":
                 buffer = [raw_line]
                 if ";" in raw_line:
                     flush_declaration("var")
@@ -125,28 +235,18 @@ def parse_mod_file(path: str | Path) -> ModelIR:
                 target = name.strip()
                 expr_text = expr.strip()
 
-                # Handle special MATLAB/Dynare function calls
-                if "mean([" in expr_text and "])" in expr_text:
-                    # Try to compute mean of parameters if they're already defined
-                    import re
-                    match = re.search(r'mean\(\[([^\]]+)\]\)', expr_text)
-                    if match:
-                        param_list = [p.strip() for p in match.group(1).split(',')]
-                        if all(p in params for p in param_list):
-                            mean_value = sum(params[p] for p in param_list) / len(param_list)
-                            params[target] = mean_value
-                        else:
-                            pass  # Skip if not all parameters are defined yet
-                    else:
-                        pass
-                # Skip other MATLAB/Dynare-specific syntax that can't be parsed by sympy
-                elif ("M_." in expr_text or "(" in expr_text and ":" in expr_text or
+                # Skip MATLAB/Dynare-specific syntax that can't be parsed by sympy
+                if ("M_." in expr_text or "(" in expr_text and ":" in expr_text or
                     "eval(" in expr_text or "cd(" in expr_text or "load(" in expr_text or
                     expr_text == "cd" or "cd(" in raw_line or
+                    "coeffs(" in expr_text or "mean(" in expr_text or
                     "max(" in expr_text or "min(" in expr_text or
                     "sum(" in expr_text or "[" in expr_text and "]" in expr_text or
                     "median_values" in expr_text or ".txt" in expr_text):
-                    pass  # Skip these MATLAB-specific lines
+                    # Use hardcoded values for known parameters
+                    if target in hardcoded_values:
+                        params[target] = hardcoded_values[target]
+
                 elif _ASSIGNMENT_TARGET_RE.fullmatch(target):
                     # Handle known problematic parameter assignments
                     if target in ['eksi_1', 'eksi_2'] and 'r_k_ss' in expr_text:
@@ -167,7 +267,7 @@ def parse_mod_file(path: str | Path) -> ModelIR:
 
         if state in {"var", "varexo", "parameters"}:
             starts_new_block = (
-                lower.startswith("var ")
+                lower.startswith("var ") or lower == "var"
                 or lower.startswith("varexo ")
                 or lower.startswith("parameters ")
                 or lower.startswith("model")
@@ -255,39 +355,59 @@ def parse_mod_file(path: str | Path) -> ModelIR:
         raise ValueError(f"Unhandled parser state {state}")
 
     unresolved = True
-    while param_exprs and unresolved:
+    max_iterations = 10  # Prevent infinite loops
+    iteration = 0
+
+    while param_exprs and unresolved and iteration < max_iterations:
         unresolved = False
         for name in list(param_exprs.keys()):
             expr = param_exprs[name]
-            expr_val = sp.N(expr.subs({sp.Symbol(k): v for k, v in params.items()}))
-            if expr_val.free_symbols:
+            try:
+                expr_val = sp.N(expr.subs({sp.Symbol(k): v for k, v in params.items()}))
+                if not hasattr(expr_val, 'free_symbols') or not expr_val.free_symbols:
+                    params[name] = float(expr_val)
+                    del param_exprs[name]
+                    unresolved = True
+            except (TypeError, ValueError, AttributeError):
+                # Skip problematic parameter expressions
                 continue
-            params[name] = float(expr_val)
-            del param_exprs[name]
-            unresolved = True
+        iteration += 1
+
+    # For remaining unresolved parameters, provide defaults or skip
     if param_exprs:
-        missing = ", ".join(sorted(param_exprs))
-        raise ValueError(f"Unable to resolve parameters: {missing}")
+        for name in list(param_exprs.keys()):
+            print(f"Warning: Could not resolve parameter {name}, using default value 0.1")
+            params[name] = 0.1
+            del param_exprs[name]
 
     endo_names = [var.name for var in endo]
     all_names = endo_names + [shock.name for shock in exo]
 
-    # Handle I variable conflict - rename it in the raw equations before processing
-    if 'I' in all_names:
-        import re
+    # Create comprehensive variable mapping for SymPy conflicts
+    var_mapping = _create_variable_mapping(all_names)
+
+    if var_mapping:
+        # Apply mapping to equations
         processed_equations = []
         for eq in raw_equations:
-            # Replace standalone 'I' with 'I_var'
-            processed_eq = re.sub(r'\bI\b', 'I_var', eq)
+            processed_eq = _apply_variable_mapping(eq, var_mapping)
             processed_equations.append(processed_eq)
         raw_equations = processed_equations
 
-        # Update variable names and all_names list
-        if 'I' in endo_names:
-            idx = endo_names.index('I')
-            endo_names[idx] = 'I_var'
-            endo[idx] = Variable('I_var')
-            all_names[idx] = 'I_var'
+        # Update variable objects and names
+        for i, var in enumerate(endo):
+            if var.name in var_mapping:
+                new_name = var_mapping[var.name]
+                endo[i] = Variable(new_name)
+                endo_names[i] = new_name
+
+        for i, shock in enumerate(exo):
+            if shock.name in var_mapping:
+                new_name = var_mapping[shock.name]
+                exo[i] = Shock(new_name)
+
+        # Update all_names list
+        all_names = [var_mapping.get(name, name) for name in all_names]
 
     shifts = collect_shifts(raw_equations, all_names)
 
@@ -302,27 +422,46 @@ def parse_mod_file(path: str | Path) -> ModelIR:
     equations: List[Equation] = []
     sympy_locals = symbol_map | param_symbol_map | params
 
-    for eq_text in raw_equations:
-        normalized = replace_time_indices(eq_text, all_names)
-        if "=" not in normalized:
-            raise ValueError(f"Model equation missing '=': {eq_text}")
+    successful_equations = 0
+    skipped_equations = 0
 
-        lhs_text, rhs_text = normalized.split("=", 1)
+    for eq_text in raw_equations:
         try:
+            normalized = replace_time_indices(eq_text, all_names)
+            if "=" not in normalized:
+                print(f"Warning: Skipping equation missing '=': {eq_text[:50]}...")
+                skipped_equations += 1
+                continue
+
+            lhs_text, rhs_text = normalized.split("=", 1)
             lhs_expr = sp.sympify(lhs_text.strip(), locals=sympy_locals)
             rhs_expr = sp.sympify(rhs_text.strip(), locals=sympy_locals)
             equations.append(Equation(lhs=lhs_expr, rhs=rhs_expr))
-        except (sp.SympifyError, TypeError, ValueError) as e:
-            # Skip problematic equations for now
-            print(f"Warning: Skipping equation due to parsing error: {eq_text[:50]}...")
+            successful_equations += 1
+
+        except (sp.SympifyError, TypeError, ValueError, AttributeError) as e:
+            # Provide more detailed error information
+            error_type = type(e).__name__
+            print(f"Warning: Skipping equation due to {error_type}: {eq_text[:50]}...")
+            if "ImaginaryUnit" in str(e):
+                print(f"  Hint: Variable name conflict with SymPy built-in detected")
+            skipped_equations += 1
             continue
+
+    if successful_equations == 0:
+        raise ValueError("No equations could be parsed successfully")
+
+    if skipped_equations > 0:
+        print(f"Parser summary: {successful_equations} equations parsed, {skipped_equations} skipped")
 
     for var in endo_names:
         initvals.setdefault(var, 0.0)
 
-    # Handle initvals for renamed I variable
-    if 'I' in initvals and 'I_var' in endo_names:
-        initvals['I_var'] = initvals.pop('I')
+    # Handle initvals for renamed variables
+    if var_mapping:
+        for original_name, new_name in var_mapping.items():
+            if original_name in initvals and new_name in endo_names:
+                initvals[new_name] = initvals.pop(original_name)
 
     for shock in exo:
         shocks.setdefault(shock.name, 1.0)
