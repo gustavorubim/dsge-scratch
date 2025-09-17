@@ -13,26 +13,9 @@ _ASSIGNMENT_TARGET_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
 
 
 def _strip_comments(text: str) -> str:
+    without_block = re.sub(r"/\*.*?\*/", "", text, flags=re.DOTALL)
     clean_lines: List[str] = []
-    inside_block = False
-    block_buffer: List[str] = []
-    i = 0
-    while i < len(text):
-        if not inside_block and text.startswith("/*", i):
-            inside_block = True
-            i += 2
-            continue
-        if inside_block and text.startswith("*/", i):
-            inside_block = False
-            i += 2
-            continue
-        if inside_block:
-            i += 1
-            continue
-        block_buffer.append(text[i])
-        i += 1
-    stripped_block = "".join(block_buffer)
-    for raw in stripped_block.splitlines():
+    for raw in without_block.splitlines():
         line = raw
         for marker in ("//", "%", "#"):
             idx = line.find(marker)
@@ -44,9 +27,8 @@ def _strip_comments(text: str) -> str:
 
 def _parse_name_list(statement: str, keyword: str) -> List[str]:
     body = statement[len(keyword) :].strip()
-    if not body.endswith(";"):
-        raise ValueError(f"Expected ';' terminating {keyword} statement: {statement!r}")
-    body = body[:-1].strip()
+    if ";" in body:
+        body = body.split(";", 1)[0].strip()
     if not body:
         return []
     return [token.strip() for token in body.replace(",", " ").split() if token.strip()]
@@ -87,26 +69,29 @@ def parse_mod_file(path: str | Path) -> ModelIR:
     param_symbols: Dict[str, sp.Symbol] = {}
 
     lines = [line.strip() for line in text.splitlines()]
-    for raw_line in lines:
+    i = 0
+    while i < len(lines):
+        raw_line = lines[i]
         if not raw_line:
+            i += 1
             continue
         lower = raw_line.lower()
         if state is None:
             if lower.startswith("var "):
                 buffer = [raw_line]
-                if raw_line.endswith(";"):
+                if ";" in raw_line:
                     flush_declaration("var")
                 else:
                     state = "var"
             elif lower.startswith("varexo "):
                 buffer = [raw_line]
-                if raw_line.endswith(";"):
+                if ";" in raw_line:
                     flush_declaration("varexo")
                 else:
                     state = "varexo"
             elif lower.startswith("parameters "):
                 buffer = [raw_line]
-                if raw_line.endswith(";"):
+                if ";" in raw_line:
                     flush_declaration("parameters")
                     param_symbols = {name: sp.symbols(name) for name in param_names}
                 else:
@@ -125,28 +110,51 @@ def parse_mod_file(path: str | Path) -> ModelIR:
             elif "=" in raw_line and raw_line.endswith(";"):
                 name, expr = raw_line[:-1].split("=", 1)
                 target = name.strip()
-                if not _ASSIGNMENT_TARGET_RE.fullmatch(target):
-                    continue
-                expr_sym = sp.sympify(
-                    expr.strip(), locals=params | initvals | param_symbols
-                )
-                if expr_sym.free_symbols:
-                    param_exprs[target] = expr_sym
-                else:
-                    params[target] = float(sp.N(expr_sym))
-            else:
-                continue
-        elif state in {"var", "varexo", "parameters"}:
+                if _ASSIGNMENT_TARGET_RE.fullmatch(target):
+                    expr_sym = sp.sympify(
+                        expr.strip(), locals=params | initvals | param_symbols
+                    )
+                    if expr_sym.free_symbols:
+                        param_exprs[target] = expr_sym
+                    else:
+                        params[target] = float(sp.N(expr_sym))
+            i += 1
+            continue
+
+        if state in {"var", "varexo", "parameters"}:
+            starts_new_block = (
+                lower.startswith("var ")
+                or lower.startswith("varexo ")
+                or lower.startswith("parameters ")
+                or lower.startswith("model")
+                or lower == "initval;"
+                or lower == "shocks;"
+                or lower.startswith("varobs")
+                or lower == "end;"
+                or "=" in raw_line
+            )
+            if starts_new_block:
+                if buffer:
+                    flush_declaration(state)
+                    if state == "parameters":
+                        param_symbols = {name: sp.symbols(name) for name in param_names}
+                state = None
+                continue  # retry same line with new state
+
             buffer.append(raw_line)
-            if raw_line.endswith(";"):
+            if ";" in raw_line:
                 flush_declaration(state)
                 if state == "parameters":
                     param_symbols = {name: sp.symbols(name) for name in param_names}
                 state = None
-        elif state == "model":
+            i += 1
+            continue
+
+        if state == "model":
             if lower == "end;":
                 state = None
                 buffer = []
+                i += 1
                 continue
             buffer.append(raw_line)
             if raw_line.endswith(";"):
@@ -155,9 +163,13 @@ def parse_mod_file(path: str | Path) -> ModelIR:
                 stmt_clean = statement[:-1].strip()
                 if stmt_clean:
                     raw_equations.append(stmt_clean)
-        elif state == "initval":
+            i += 1
+            continue
+
+        if state == "initval":
             if lower == "end;":
                 state = None
+                i += 1
                 continue
             if not raw_line.endswith(";"):
                 raise ValueError(f"Expected ';' in initval line: {raw_line}")
@@ -170,10 +182,14 @@ def parse_mod_file(path: str | Path) -> ModelIR:
             if expr_sym.free_symbols:
                 raise ValueError(f"Initval for {key} depends on symbols: {expr}")
             initvals[key] = float(sp.N(expr_sym))
-        elif state == "shocks":
+            i += 1
+            continue
+
+        if state == "shocks":
             if lower == "end;":
                 state = None
                 current_shock = None
+                i += 1
                 continue
             if lower.startswith("var ") and raw_line.endswith(";"):
                 shock_name = raw_line[4:-1].strip()
@@ -189,8 +205,10 @@ def parse_mod_file(path: str | Path) -> ModelIR:
                     )
                 shocks[current_shock] = float(sp.N(expr_sym))
                 current_shock = None
-        else:
-            raise ValueError(f"Unhandled parser state {state}")
+            i += 1
+            continue
+
+        raise ValueError(f"Unhandled parser state {state}")
 
     unresolved = True
     while param_exprs and unresolved:

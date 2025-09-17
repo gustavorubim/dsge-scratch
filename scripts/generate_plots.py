@@ -14,6 +14,7 @@ import numpy as np
 from sgelabs.analysis import compute_fevd, compute_fevd_ts, compute_irfs
 from sgelabs.io import parse_mod_file
 from sgelabs.ir import linearize
+from sgelabs.plotting.labels import format_shock_display, format_state_display
 from sgelabs.solve import solve_gensys
 
 
@@ -69,19 +70,21 @@ def _save_irf_plots(
 ) -> None:
     time = np.arange(irfs.shape[0])
     out_dir.mkdir(parents=True, exist_ok=True)
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
     for idx in indices:
         state = state_names[idx]
+        state_label = format_state_display(state)
         fig, ax = plt.subplots(figsize=(6.0, 4.0))
         for j, shock in enumerate(shock_names):
-            ax.plot(time, irfs[:, idx, j], label=shock)
-        ax.set_title(state)
+            ax.plot(time, irfs[:, idx, j], label=shock_labels[j])
+        ax.set_title(state_label)
         ax.set_xlabel("Horizon")
         ax.set_ylabel("Response")
         ax.axhline(0.0, color="black", linewidth=0.6, alpha=0.6)
         if shock_names:
             ax.legend(loc="upper right", fontsize="small")
         fig.tight_layout()
-        fig.savefig(out_dir / f"{_safe_name(state)}.png", dpi=300, bbox_inches="tight")
+        fig.savefig(out_dir / f"{_safe_name(state_label)}.png", dpi=300, bbox_inches="tight")
         plt.close(fig)
 
 
@@ -95,12 +98,14 @@ def _save_fevd_plots_timeseries(
     H = fevd_ts.shape[0]
     time = np.arange(1, H + 1)
     out_dir.mkdir(parents=True, exist_ok=True)
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
     for idx in indices:
         state = state_names[idx]
+        state_label = format_state_display(state)
         fig, ax = plt.subplots(figsize=(6.0, 4.0))
         for j, shock in enumerate(shock_names):
-            ax.plot(time, fevd_ts[:, idx, j], label=shock)
-        ax.set_title(state)
+            ax.plot(time, fevd_ts[:, idx, j], label=shock_labels[j])
+        ax.set_title(state_label)
         ax.set_xlabel("Horizon")
         ax.set_ylabel("FEVD share")
         ax.set_ylim(0.0, 1.0)
@@ -108,7 +113,7 @@ def _save_fevd_plots_timeseries(
         if shock_names:
             ax.legend(loc="upper right", fontsize="small")
         fig.tight_layout()
-        fig.savefig(out_dir / f"{_safe_name(state)}.png", dpi=300, bbox_inches="tight")
+        fig.savefig(out_dir / f"{_safe_name(state_label)}.png", dpi=300, bbox_inches="tight")
         plt.close(fig)
 
 

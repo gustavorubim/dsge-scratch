@@ -18,3 +18,43 @@ def test_parse_smets_wouters() -> None:
     assert len(model.endo) > 30
     assert 'cgamma' in model.params
     assert 'ea' in model.shocks
+
+
+def test_parse_multiline_declarations_without_semicolon(tmp_path) -> None:
+    mod_text = """
+var y
+    c
+    k
+
+varexo e;
+
+parameters beta
+    alpha
+
+beta = 0.99;
+alpha = 0.36;
+
+model(linear);
+    y = beta*y(-1) + e;
+end;
+
+initval;
+    y = 0;
+end;
+
+shocks;
+    var e;
+    stderr 0.1;
+end;
+
+varobs y;
+"""
+    mod_path = tmp_path / "no_semicolon.mod"
+    mod_path.write_text(mod_text.strip(), encoding="utf-8")
+
+    model = parse_mod_file(mod_path)
+
+    assert [v.name for v in model.endo] == ['y', 'c', 'k']
+    assert [s.name for s in model.exo] == ['e']
+    assert model.params['beta'] == 0.99
+    assert model.params['alpha'] == 0.36

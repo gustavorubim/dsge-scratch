@@ -30,6 +30,20 @@ def solve_gensys(linearized: LinearizedModel, div: float | None = None) -> Gensy
     pi = matrices["pi"]
 
     n = gam0.shape[0]
+    if n == 0:
+        k = psi.shape[1] if psi.ndim == 2 else len(linearized.shock_names)
+        impact = np.zeros((0, k), dtype=float)
+        c_sol = np.zeros((0, 1), dtype=float)
+        return GensysResult(
+            g=np.zeros((0, 0), dtype=float),
+            c=c_sol,
+            impact=impact,
+            eu=(1, 1),
+            eigenvalues=np.zeros(0, dtype=complex),
+            state_names=list(linearized.state_names),
+            shock_names=list(linearized.shock_names),
+        )
+
     if div is None:
         div = 1.0 + 1e-8
 

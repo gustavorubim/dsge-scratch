@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.typing import NDArray
 
+from sgelabs.plotting.labels import format_shock_display, format_state_display
+
 
 def plot_irfs(
     irfs: NDArray[np.floating],
@@ -19,11 +21,14 @@ def plot_irfs(
     rows = int(np.ceil(n / cols))
     fig, axes = plt.subplots(rows, cols, figsize=figsize, squeeze=False)
     time = np.arange(horizon + 1)
-    for idx, name in enumerate(state_names):
+    state_labels = [format_state_display(name) for name in state_names]
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
+
+    for idx, label in enumerate(state_labels):
         ax = axes[idx // cols, idx % cols]
         for j, shock in enumerate(shock_names):
-            ax.plot(time, irfs[:, idx, j], label=shock)
-        ax.set_title(name)
+            ax.plot(time, irfs[:, idx, j], label=shock_labels[j])
+        ax.set_title(label)
         ax.axhline(0.0, color="black", linewidth=0.5, alpha=0.5)
     for idx in range(n, rows * cols):
         axes[idx // cols, idx % cols].axis("off")
@@ -43,12 +48,14 @@ def plot_fevd(
     rows = int(np.ceil(n / cols))
     fig, axes = plt.subplots(rows, cols, figsize=figsize, squeeze=False)
     x = np.arange(len(shock_names))
-    for idx, name in enumerate(state_names):
+    state_labels = [format_state_display(name) for name in state_names]
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
+    for idx, label in enumerate(state_labels):
         ax = axes[idx // cols, idx % cols]
         ax.bar(x, fevd[idx], color=plt.cm.tab20c(range(len(shock_names))))
-        ax.set_xticks(x, shock_names, rotation=45, ha="right", fontsize="small")
+        ax.set_xticks(x, shock_labels, rotation=45, ha="right", fontsize="small")
         ax.set_ylim(0.0, 1.0)
-        ax.set_title(name)
+        ax.set_title(label)
     for idx in range(n, rows * cols):
         axes[idx // cols, idx % cols].axis("off")
     fig.tight_layout()
@@ -70,11 +77,13 @@ def plot_fevd_timeseries(
     rows = int(np.ceil(n / cols))
     fig, axes = plt.subplots(rows, cols, figsize=figsize, squeeze=False)
     time = np.arange(1, H + 1)
-    for idx, name in enumerate(state_names):
+    state_labels = [format_state_display(name) for name in state_names]
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
+    for idx, label in enumerate(state_labels):
         ax = axes[idx // cols, idx % cols]
         for j, shock in enumerate(shock_names):
-            ax.plot(time, fevd_ts[:, idx, j], label=shock)
-        ax.set_title(name)
+            ax.plot(time, fevd_ts[:, idx, j], label=shock_labels[j])
+        ax.set_title(label)
         ax.set_ylim(0.0, 1.0)
         ax.set_xlim(1, H)
     for idx in range(n, rows * cols):
@@ -96,11 +105,13 @@ def plot_historical(
     rows = int(np.ceil(n / cols))
     fig, axes = plt.subplots(rows, cols, figsize=figsize, squeeze=False)
     time = np.arange(T) if time_index is None else np.asarray(list(time_index))
-    for idx, name in enumerate(state_names):
+    state_labels = [format_state_display(name) for name in state_names]
+    shock_labels = [format_shock_display(shock) for shock in shock_names]
+    for idx, label in enumerate(state_labels):
         ax = axes[idx // cols, idx % cols]
         series = contributions[:, :, idx]
-        ax.stackplot(time, series, labels=shock_names)
-        ax.set_title(name)
+        ax.stackplot(time, series, labels=shock_labels)
+        ax.set_title(label)
     for idx in range(n, rows * cols):
         axes[idx // cols, idx % cols].axis("off")
     axes[0, 0].legend(loc="upper right", fontsize="small")
