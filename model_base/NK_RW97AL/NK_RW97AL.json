@@ -1,0 +1,140 @@
+{
+  "$schema": "model",
+  "name": "NK_RW97AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rotemberg & Woodford (1997) AL",
+    "paper_title": "An optimization-based econometric framework for the evaluation of monetary policy",
+    "journal": "NBER Macroeconomics Annual 12, pp. 297-346",
+    "replicants_name": "V. Audzei and S. Schmidt",
+    "pub_date": "1997",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Rotemberg, Julio",
+      "Woodford, Michael"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "pi",
+      "x",
+      "g",
+      "ynat",
+      "inflationq"
+    ],
+    "states_short": [
+      "g",
+      "interest"
+    ],
+    "states_long": [
+      "g",
+      "inflationq",
+      "inflationql",
+      "inflationql2",
+      "interest"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "u_",
+      "text": "Price markup shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "g_",
+      "text": "g_"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "rnat",
+      "text": "rnat"
+    },
+    {
+      "name": "u",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ynat",
+      "text": "ynat"
+    }
+  ]
+}

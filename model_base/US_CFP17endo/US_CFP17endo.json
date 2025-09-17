@@ -1,0 +1,435 @@
+{
+  "$schema": "model",
+  "name": "US_CFP17endo",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Carlstrom et al. (2017) I",
+    "paper_title": "Targeting long rates in a model with segmented markets",
+    "journal": "American Economic Journal: Macroeconomics 9 (1), 205-42",
+    "replicants_name": "Alina Tänzer",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "Calibrated for endogenous level of long-term debt",
+    "category": "Estimated US model",
+    "authors": [
+      "Carlstrom, Charles T.",
+      "Fuerst, Timothy S.",
+      "Paustian, Matthias"
+    ]
+  },
+  "msr": [
+    "0.77",
+    "0",
+    "0",
+    "0",
+    "0.3266",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.1127/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "eps_b2",
+      "text": "eps_b2"
+    },
+    {
+      "name": "eps_i",
+      "text": "eps_i"
+    },
+    {
+      "name": "eps_mk",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eps_mkw",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "eps_mp",
+      "text": "eps_mp"
+    },
+    {
+      "name": "eps_psi",
+      "text": "eps_psi"
+    },
+    {
+      "name": "eps_rn",
+      "text": "eps_rn"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "ann_pin",
+      "text": "ann_pin"
+    },
+    {
+      "name": "ann_r1",
+      "text": "ann_r1"
+    },
+    {
+      "name": "ann_r2",
+      "text": "ann_r2"
+    },
+    {
+      "name": "assets",
+      "text": "assets"
+    },
+    {
+      "name": "b2",
+      "text": "b2"
+    },
+    {
+      "name": "b2f",
+      "text": "b2f"
+    },
+    {
+      "name": "bb2",
+      "text": "bb2"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "ff",
+      "text": "ff"
+    },
+    {
+      "name": "ffr",
+      "text": "ffr"
+    },
+    {
+      "name": "g_bonds",
+      "text": "g_bonds"
+    },
+    {
+      "name": "gi",
+      "text": "gi"
+    },
+    {
+      "name": "gy",
+      "text": "gy"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_growth",
+      "text": "i_growth"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "labor_dist",
+      "text": "labor_dist"
+    },
+    {
+      "name": "lev",
+      "text": "lev"
+    },
+    {
+      "name": "levf",
+      "text": "levf"
+    },
+    {
+      "name": "Lf",
+      "text": "Lf"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mf",
+      "text": "mf"
+    },
+    {
+      "name": "mk",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "mkw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "mp",
+      "text": "mp"
+    },
+    {
+      "name": "mrs",
+      "text": "mrs"
+    },
+    {
+      "name": "muc",
+      "text": "muc"
+    },
+    {
+      "name": "mucf",
+      "text": "mucf"
+    },
+    {
+      "name": "muinv",
+      "text": "muinv"
+    },
+    {
+      "name": "nw",
+      "text": "nw"
+    },
+    {
+      "name": "nwf",
+      "text": "nwf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "PCE_inf",
+      "text": "PCE_inf"
+    },
+    {
+      "name": "pin",
+      "text": "pin"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinw",
+      "text": "pinw"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "pkf",
+      "text": "pkf"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "qi",
+      "text": "qi"
+    },
+    {
+      "name": "qif",
+      "text": "qif"
+    },
+    {
+      "name": "qnat",
+      "text": "qnat"
+    },
+    {
+      "name": "qnatf",
+      "text": "qnatf"
+    },
+    {
+      "name": "r_lend",
+      "text": "r_lend"
+    },
+    {
+      "name": "r1",
+      "text": "r1"
+    },
+    {
+      "name": "r10",
+      "text": "r10"
+    },
+    {
+      "name": "r10_nat",
+      "text": "r10_nat"
+    },
+    {
+      "name": "r10_natf",
+      "text": "r10_natf"
+    },
+    {
+      "name": "r10f",
+      "text": "r10f"
+    },
+    {
+      "name": "r10obs",
+      "text": "r10obs"
+    },
+    {
+      "name": "r10s",
+      "text": "r10s"
+    },
+    {
+      "name": "r1f",
+      "text": "r1f"
+    },
+    {
+      "name": "r2",
+      "text": "r2"
+    },
+    {
+      "name": "r2f",
+      "text": "r2f"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rn",
+      "text": "rn"
+    },
+    {
+      "name": "spread",
+      "text": "spread"
+    },
+    {
+      "name": "term_prem",
+      "text": "term_prem"
+    },
+    {
+      "name": "term_premf",
+      "text": "term_premf"
+    },
+    {
+      "name": "u_psi",
+      "text": "u_psi"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_growth",
+      "text": "y_growth"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    }
+  ]
+}

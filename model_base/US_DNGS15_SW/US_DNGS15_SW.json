@@ -1,0 +1,291 @@
+{
+  "$schema": "model",
+  "name": "US_DNGS15_SW",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Del Negro et al. (2015) I",
+    "paper_title": "Inflation in the Great Recession and New Keynesian Models",
+    "journal": "American Economic Journal: Macroeconomics 7 (1), 168-96",
+    "replicants_name": null,
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "Calibrated without financial frictions",
+    "category": "Estimated US model",
+    "authors": [
+      "Del Negro, Marco",
+      "Giannoni, Marc P.",
+      "Schorfheide, Frank"
+    ]
+  },
+  "msr": [
+    "0.8305",
+    "0",
+    "0",
+    "0",
+    "(1-0.8305)*2.0477",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.8305)*0.0873 + 0.2360)",
+    "-4*0.2360",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "psi_b",
+      "text": "psi_b"
+    },
+    {
+      "name": "psi_laf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "psi_law",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "psi_mu",
+      "text": "psi_mu"
+    },
+    {
+      "name": "psi_sigw",
+      "text": "psi_sigw"
+    },
+    {
+      "name": "psi_z",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "$\\bar{k}$",
+      "text": "$\\bar{k}$"
+    },
+    {
+      "name": "$\\pi$",
+      "text": "$\\pi$"
+    },
+    {
+      "name": "$\\tilde{R}^k$",
+      "text": "$\\tilde{R}^k$"
+    },
+    {
+      "name": "$q^k$",
+      "text": "$q^k$"
+    },
+    {
+      "name": "$r^k$",
+      "text": "$r^k$"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_f",
+      "text": "c_f"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_f",
+      "text": "i_f"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "k_f",
+      "text": "k_f"
+    },
+    {
+      "name": "kbar",
+      "text": "Capital"
+    },
+    {
+      "name": "kbar_f",
+      "text": "kbar_f"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "L_f",
+      "text": "L_f"
+    },
+    {
+      "name": "laf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "law",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "psi_g",
+      "text": "psi_g"
+    },
+    {
+      "name": "qk",
+      "text": "qk"
+    },
+    {
+      "name": "qk_f",
+      "text": "qk_f"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "r_f",
+      "text": "r_f"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rk_f",
+      "text": "rk_f"
+    },
+    {
+      "name": "Rktil",
+      "text": "Rktil"
+    },
+    {
+      "name": "sigw",
+      "text": "sigw"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "u_f",
+      "text": "u_f"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_f",
+      "text": "w_f"
+    },
+    {
+      "name": "wh",
+      "text": "wh"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_f",
+      "text": "y_f"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "ztil",
+      "text": "ztil"
+    }
+  ]
+}

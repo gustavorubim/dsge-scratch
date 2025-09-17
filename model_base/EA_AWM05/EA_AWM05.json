@@ -1,0 +1,883 @@
+{
+  "$schema": "model",
+  "name": "EA_AWM05",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "ECB's area-wide model",
+    "paper_title": "Optimal monetary policy rules for the euro area: An analysis using the area wide model",
+    "journal": "Journal of Common Market Studies 43(3), pp. 507-537",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "Linearized as in Dieppe et al. (2005)",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Dieppe, Alistair",
+      "Kuester, Keith",
+      "McAdam, Peter"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "innoeitd",
+      "text": "innoeitd"
+    },
+    {
+      "name": "innoeitr",
+      "text": "innoeitr"
+    },
+    {
+      "name": "innoelnn",
+      "text": "innoelnn"
+    },
+    {
+      "name": "innoelsr",
+      "text": "innoelsr"
+    },
+    {
+      "name": "innoeltn",
+      "text": "innoeltn"
+    },
+    {
+      "name": "innoemtd",
+      "text": "innoemtd"
+    },
+    {
+      "name": "innoemtr",
+      "text": "innoemtr"
+    },
+    {
+      "name": "innoepcd",
+      "text": "innoepcd"
+    },
+    {
+      "name": "innoepcr",
+      "text": "innoepcr"
+    },
+    {
+      "name": "innoewrn",
+      "text": "innoewrn"
+    },
+    {
+      "name": "innoextd",
+      "text": "innoextd"
+    },
+    {
+      "name": "innoextr",
+      "text": "innoextr"
+    },
+    {
+      "name": "innoeyfd",
+      "text": "innoeyfd"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "can",
+      "text": "can"
+    },
+    {
+      "name": "compr",
+      "text": "compr"
+    },
+    {
+      "name": "fdd",
+      "text": "fdd"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "gcr",
+      "text": "gcr"
+    },
+    {
+      "name": "gdn",
+      "text": "gdn"
+    },
+    {
+      "name": "gln",
+      "text": "gln"
+    },
+    {
+      "name": "gln_yen",
+      "text": "gln_yen"
+    },
+    {
+      "name": "gsn",
+      "text": "gsn"
+    },
+    {
+      "name": "gyn",
+      "text": "gyn"
+    },
+    {
+      "name": "ign",
+      "text": "ign"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inn",
+      "text": "inn"
+    },
+    {
+      "name": "innoextdend",
+      "text": "innoextdend"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "itd",
+      "text": "itd"
+    },
+    {
+      "name": "itn",
+      "text": "itn"
+    },
+    {
+      "name": "itr",
+      "text": "Investment"
+    },
+    {
+      "name": "ksr",
+      "text": "Capital"
+    },
+    {
+      "name": "lagcompr1",
+      "text": "lagcompr1"
+    },
+    {
+      "name": "lagcompr2",
+      "text": "lagcompr2"
+    },
+    {
+      "name": "laggcr1",
+      "text": "laggcr1"
+    },
+    {
+      "name": "laggln_yen1",
+      "text": "laggln_yen1"
+    },
+    {
+      "name": "laggln_yen2",
+      "text": "laggln_yen2"
+    },
+    {
+      "name": "laggln_yen3",
+      "text": "laggln_yen3"
+    },
+    {
+      "name": "lagitd1",
+      "text": "lagitd1"
+    },
+    {
+      "name": "lagitd2",
+      "text": "lagitd2"
+    },
+    {
+      "name": "lagitd3",
+      "text": "lagitd3"
+    },
+    {
+      "name": "lagitd4",
+      "text": "lagitd4"
+    },
+    {
+      "name": "lagitd5",
+      "text": "lagitd5"
+    },
+    {
+      "name": "lagitd6",
+      "text": "lagitd6"
+    },
+    {
+      "name": "lagitd7",
+      "text": "lagitd7"
+    },
+    {
+      "name": "lagitr1",
+      "text": "lagitr1"
+    },
+    {
+      "name": "lagitr2",
+      "text": "lagitr2"
+    },
+    {
+      "name": "lagksr1",
+      "text": "lagksr1"
+    },
+    {
+      "name": "lagksr2",
+      "text": "lagksr2"
+    },
+    {
+      "name": "laglprod1",
+      "text": "laglprod1"
+    },
+    {
+      "name": "laglprod2",
+      "text": "laglprod2"
+    },
+    {
+      "name": "laglprod3",
+      "text": "laglprod3"
+    },
+    {
+      "name": "laglprod4",
+      "text": "laglprod4"
+    },
+    {
+      "name": "laglprod5",
+      "text": "laglprod5"
+    },
+    {
+      "name": "laglsr1",
+      "text": "laglsr1"
+    },
+    {
+      "name": "lagltn1",
+      "text": "lagltn1"
+    },
+    {
+      "name": "lagltn10",
+      "text": "lagltn10"
+    },
+    {
+      "name": "lagltn11",
+      "text": "lagltn11"
+    },
+    {
+      "name": "lagltn12",
+      "text": "lagltn12"
+    },
+    {
+      "name": "lagltn13",
+      "text": "lagltn13"
+    },
+    {
+      "name": "lagltn14",
+      "text": "lagltn14"
+    },
+    {
+      "name": "lagltn15",
+      "text": "lagltn15"
+    },
+    {
+      "name": "lagltn16",
+      "text": "lagltn16"
+    },
+    {
+      "name": "lagltn17",
+      "text": "lagltn17"
+    },
+    {
+      "name": "lagltn18",
+      "text": "lagltn18"
+    },
+    {
+      "name": "lagltn19",
+      "text": "lagltn19"
+    },
+    {
+      "name": "lagltn2",
+      "text": "lagltn2"
+    },
+    {
+      "name": "lagltn20",
+      "text": "lagltn20"
+    },
+    {
+      "name": "lagltn21",
+      "text": "lagltn21"
+    },
+    {
+      "name": "lagltn22",
+      "text": "lagltn22"
+    },
+    {
+      "name": "lagltn23",
+      "text": "lagltn23"
+    },
+    {
+      "name": "lagltn24",
+      "text": "lagltn24"
+    },
+    {
+      "name": "lagltn25",
+      "text": "lagltn25"
+    },
+    {
+      "name": "lagltn26",
+      "text": "lagltn26"
+    },
+    {
+      "name": "lagltn27",
+      "text": "lagltn27"
+    },
+    {
+      "name": "lagltn28",
+      "text": "lagltn28"
+    },
+    {
+      "name": "lagltn29",
+      "text": "lagltn29"
+    },
+    {
+      "name": "lagltn3",
+      "text": "lagltn3"
+    },
+    {
+      "name": "lagltn30",
+      "text": "lagltn30"
+    },
+    {
+      "name": "lagltn31",
+      "text": "lagltn31"
+    },
+    {
+      "name": "lagltn32",
+      "text": "lagltn32"
+    },
+    {
+      "name": "lagltn33",
+      "text": "lagltn33"
+    },
+    {
+      "name": "lagltn34",
+      "text": "lagltn34"
+    },
+    {
+      "name": "lagltn35",
+      "text": "lagltn35"
+    },
+    {
+      "name": "lagltn36",
+      "text": "lagltn36"
+    },
+    {
+      "name": "lagltn37",
+      "text": "lagltn37"
+    },
+    {
+      "name": "lagltn38",
+      "text": "lagltn38"
+    },
+    {
+      "name": "lagltn39",
+      "text": "lagltn39"
+    },
+    {
+      "name": "lagltn4",
+      "text": "lagltn4"
+    },
+    {
+      "name": "lagltn40",
+      "text": "lagltn40"
+    },
+    {
+      "name": "lagltn41",
+      "text": "lagltn41"
+    },
+    {
+      "name": "lagltn42",
+      "text": "lagltn42"
+    },
+    {
+      "name": "lagltn43",
+      "text": "lagltn43"
+    },
+    {
+      "name": "lagltn44",
+      "text": "lagltn44"
+    },
+    {
+      "name": "lagltn45",
+      "text": "lagltn45"
+    },
+    {
+      "name": "lagltn46",
+      "text": "lagltn46"
+    },
+    {
+      "name": "lagltn47",
+      "text": "lagltn47"
+    },
+    {
+      "name": "lagltn5",
+      "text": "lagltn5"
+    },
+    {
+      "name": "lagltn6",
+      "text": "lagltn6"
+    },
+    {
+      "name": "lagltn7",
+      "text": "lagltn7"
+    },
+    {
+      "name": "lagltn8",
+      "text": "lagltn8"
+    },
+    {
+      "name": "lagltn9",
+      "text": "lagltn9"
+    },
+    {
+      "name": "lagmtd1",
+      "text": "lagmtd1"
+    },
+    {
+      "name": "lagmtd2",
+      "text": "lagmtd2"
+    },
+    {
+      "name": "lagmtd3",
+      "text": "lagmtd3"
+    },
+    {
+      "name": "lagmtd4",
+      "text": "lagmtd4"
+    },
+    {
+      "name": "lagmtd5",
+      "text": "lagmtd5"
+    },
+    {
+      "name": "lagmtd6",
+      "text": "lagmtd6"
+    },
+    {
+      "name": "lagnfa1",
+      "text": "lagnfa1"
+    },
+    {
+      "name": "lagpcd1",
+      "text": "lagpcd1"
+    },
+    {
+      "name": "lagpcd2",
+      "text": "lagpcd2"
+    },
+    {
+      "name": "lagpcd3",
+      "text": "lagpcd3"
+    },
+    {
+      "name": "lagpcd4",
+      "text": "lagpcd4"
+    },
+    {
+      "name": "lagpcd5",
+      "text": "lagpcd5"
+    },
+    {
+      "name": "lagpieen1",
+      "text": "lagpieen1"
+    },
+    {
+      "name": "lagpieen2",
+      "text": "lagpieen2"
+    },
+    {
+      "name": "lagpipcd1",
+      "text": "lagpipcd1"
+    },
+    {
+      "name": "lagpipcd2",
+      "text": "lagpipcd2"
+    },
+    {
+      "name": "lagpipcd3",
+      "text": "lagpipcd3"
+    },
+    {
+      "name": "lagpipcd4",
+      "text": "lagpipcd4"
+    },
+    {
+      "name": "lagpixtd1",
+      "text": "lagpixtd1"
+    },
+    {
+      "name": "lagpixtd2",
+      "text": "lagpixtd2"
+    },
+    {
+      "name": "lagpiyer1",
+      "text": "lagpiyer1"
+    },
+    {
+      "name": "lagpiyer2",
+      "text": "lagpiyer2"
+    },
+    {
+      "name": "lagpiyet1",
+      "text": "lagpiyet1"
+    },
+    {
+      "name": "lagpiyfd1",
+      "text": "lagpiyfd1"
+    },
+    {
+      "name": "lagpiyfd2",
+      "text": "lagpiyfd2"
+    },
+    {
+      "name": "lagpiywdx1",
+      "text": "lagpiywdx1"
+    },
+    {
+      "name": "lagpiywdx2",
+      "text": "lagpiywdx2"
+    },
+    {
+      "name": "lagstn1",
+      "text": "lagstn1"
+    },
+    {
+      "name": "lagult1",
+      "text": "lagult1"
+    },
+    {
+      "name": "lagult2",
+      "text": "lagult2"
+    },
+    {
+      "name": "lagult3",
+      "text": "lagult3"
+    },
+    {
+      "name": "lagwrn1",
+      "text": "lagwrn1"
+    },
+    {
+      "name": "lagwrn2",
+      "text": "lagwrn2"
+    },
+    {
+      "name": "lagwrn3",
+      "text": "lagwrn3"
+    },
+    {
+      "name": "lagwrn4",
+      "text": "lagwrn4"
+    },
+    {
+      "name": "lagwrn5",
+      "text": "lagwrn5"
+    },
+    {
+      "name": "lagxtr1",
+      "text": "lagxtr1"
+    },
+    {
+      "name": "lagxtr2",
+      "text": "lagxtr2"
+    },
+    {
+      "name": "lagxtr3",
+      "text": "lagxtr3"
+    },
+    {
+      "name": "lagxtr4",
+      "text": "lagxtr4"
+    },
+    {
+      "name": "lagxtr5",
+      "text": "lagxtr5"
+    },
+    {
+      "name": "lagxtr6",
+      "text": "lagxtr6"
+    },
+    {
+      "name": "lagxtr7",
+      "text": "lagxtr7"
+    },
+    {
+      "name": "lagywd1",
+      "text": "lagywd1"
+    },
+    {
+      "name": "lagywd2",
+      "text": "lagywd2"
+    },
+    {
+      "name": "lagywd3",
+      "text": "lagywd3"
+    },
+    {
+      "name": "lagywr1",
+      "text": "lagywr1"
+    },
+    {
+      "name": "lagywr2",
+      "text": "lagywr2"
+    },
+    {
+      "name": "lagywrx1",
+      "text": "lagywrx1"
+    },
+    {
+      "name": "lagywrx2",
+      "text": "lagywrx2"
+    },
+    {
+      "name": "lagywrx3",
+      "text": "lagywrx3"
+    },
+    {
+      "name": "lagywrx4",
+      "text": "lagywrx4"
+    },
+    {
+      "name": "lagywrx5",
+      "text": "lagywrx5"
+    },
+    {
+      "name": "lagywrx6",
+      "text": "lagywrx6"
+    },
+    {
+      "name": "lagywrx7",
+      "text": "lagywrx7"
+    },
+    {
+      "name": "lnn",
+      "text": "lnn"
+    },
+    {
+      "name": "lprod",
+      "text": "lprod"
+    },
+    {
+      "name": "lsr",
+      "text": "lsr"
+    },
+    {
+      "name": "ltn",
+      "text": "ltn"
+    },
+    {
+      "name": "mtd",
+      "text": "mtd"
+    },
+    {
+      "name": "mtn",
+      "text": "mtn"
+    },
+    {
+      "name": "mtr",
+      "text": "mtr"
+    },
+    {
+      "name": "nfa",
+      "text": "nfa"
+    },
+    {
+      "name": "nfn",
+      "text": "nfn"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pcd",
+      "text": "pcd"
+    },
+    {
+      "name": "pcn",
+      "text": "pcn"
+    },
+    {
+      "name": "pcr",
+      "text": "Consumption"
+    },
+    {
+      "name": "picompr",
+      "text": "picompr"
+    },
+    {
+      "name": "pieen",
+      "text": "pieen"
+    },
+    {
+      "name": "pimtd",
+      "text": "pimtd"
+    },
+    {
+      "name": "pipcd",
+      "text": "pipcd"
+    },
+    {
+      "name": "pipyr",
+      "text": "pipyr"
+    },
+    {
+      "name": "pixtd",
+      "text": "pixtd"
+    },
+    {
+      "name": "piyer",
+      "text": "piyer"
+    },
+    {
+      "name": "piyet",
+      "text": "piyet"
+    },
+    {
+      "name": "piyfd",
+      "text": "piyfd"
+    },
+    {
+      "name": "piywdx",
+      "text": "piywdx"
+    },
+    {
+      "name": "pyn",
+      "text": "pyn"
+    },
+    {
+      "name": "pyr",
+      "text": "pyr"
+    },
+    {
+      "name": "scr",
+      "text": "scr"
+    },
+    {
+      "name": "stn",
+      "text": "stn"
+    },
+    {
+      "name": "strq",
+      "text": "strq"
+    },
+    {
+      "name": "tbn",
+      "text": "tbn"
+    },
+    {
+      "name": "tbr",
+      "text": "tbr"
+    },
+    {
+      "name": "tdn",
+      "text": "tdn"
+    },
+    {
+      "name": "tdn_yen",
+      "text": "tdn_yen"
+    },
+    {
+      "name": "trn",
+      "text": "trn"
+    },
+    {
+      "name": "ulc",
+      "text": "ulc"
+    },
+    {
+      "name": "ult",
+      "text": "ult"
+    },
+    {
+      "name": "urx",
+      "text": "urx"
+    },
+    {
+      "name": "win",
+      "text": "win"
+    },
+    {
+      "name": "wln",
+      "text": "wln"
+    },
+    {
+      "name": "wrn",
+      "text": "wrn"
+    },
+    {
+      "name": "xtd",
+      "text": "xtd"
+    },
+    {
+      "name": "xtn",
+      "text": "xtn"
+    },
+    {
+      "name": "xtr",
+      "text": "xtr"
+    },
+    {
+      "name": "yer",
+      "text": "yer"
+    },
+    {
+      "name": "yet",
+      "text": "yet"
+    },
+    {
+      "name": "yett",
+      "text": "yett"
+    },
+    {
+      "name": "ywd",
+      "text": "ywd"
+    },
+    {
+      "name": "ywdx",
+      "text": "ywdx"
+    },
+    {
+      "name": "ywr",
+      "text": "ywr"
+    },
+    {
+      "name": "ywrx",
+      "text": "ywrx"
+    }
+  ]
+}

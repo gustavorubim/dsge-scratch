@@ -1,0 +1,877 @@
+{
+  "$schema": "model",
+  "name": "EA_PV15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Poutineau & Vermandel (2015)",
+    "paper_title": "Cross-border banking flows spillovers in the eurozone: Evidence from an estimated DSGE model",
+    "journal": "Journal of Economic Dynamics and Control 51, 378-403",
+    "replicants_name": "Lazar Milivojevic",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Poutineau, Jean-Christophe",
+      "Vermandel, Gauthier"
+    ]
+  },
+  "msr": [
+    "0.84",
+    "0",
+    "0",
+    "0",
+    "(1-0.84)*1.85",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.84)*0.15*4",
+    "-(1-0.84)*0.15*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "e_a_f",
+      "text": "e_a_f"
+    },
+    {
+      "name": "e_a_h",
+      "text": "e_a_h"
+    },
+    {
+      "name": "e_beta",
+      "text": "e_beta"
+    },
+    {
+      "name": "e_beta_f",
+      "text": "e_beta_f"
+    },
+    {
+      "name": "e_beta_h",
+      "text": "e_beta_h"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "e_g_f",
+      "text": "e_g_f"
+    },
+    {
+      "name": "e_g_h",
+      "text": "e_g_h"
+    },
+    {
+      "name": "e_ib",
+      "text": "e_ib"
+    },
+    {
+      "name": "e_ib_f",
+      "text": "e_ib_f"
+    },
+    {
+      "name": "e_ib_h",
+      "text": "e_ib_h"
+    },
+    {
+      "name": "e_n",
+      "text": "e_n"
+    },
+    {
+      "name": "e_n_f",
+      "text": "e_n_f"
+    },
+    {
+      "name": "e_n_h",
+      "text": "e_n_h"
+    },
+    {
+      "name": "e_q",
+      "text": "e_q"
+    },
+    {
+      "name": "e_q_f",
+      "text": "e_q_f"
+    },
+    {
+      "name": "e_q_h",
+      "text": "e_q_h"
+    },
+    {
+      "name": "e_r",
+      "text": "e_r"
+    },
+    {
+      "name": "e_rL",
+      "text": "e_rL"
+    },
+    {
+      "name": "e_rL_f",
+      "text": "e_rL_f"
+    },
+    {
+      "name": "e_rL_h",
+      "text": "e_rL_h"
+    },
+    {
+      "name": "e_w",
+      "text": "e_w"
+    },
+    {
+      "name": "e_w_f",
+      "text": "e_w_f"
+    },
+    {
+      "name": "e_w_h",
+      "text": "e_w_h"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a_f",
+      "text": "a_f"
+    },
+    {
+      "name": "a_h",
+      "text": "a_h"
+    },
+    {
+      "name": "b_h",
+      "text": "b_h"
+    },
+    {
+      "name": "b_hfp",
+      "text": "b_hfp"
+    },
+    {
+      "name": "beta_shock_f",
+      "text": "beta_shock_f"
+    },
+    {
+      "name": "beta_shock_h",
+      "text": "beta_shock_h"
+    },
+    {
+      "name": "bk_f",
+      "text": "bk_f"
+    },
+    {
+      "name": "bk_ffp",
+      "text": "bk_ffp"
+    },
+    {
+      "name": "bk_h",
+      "text": "bk_h"
+    },
+    {
+      "name": "bk_hfp",
+      "text": "bk_hfp"
+    },
+    {
+      "name": "c_ea",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_eafp",
+      "text": "c_eafp"
+    },
+    {
+      "name": "c_f",
+      "text": "c_f"
+    },
+    {
+      "name": "c_ffp",
+      "text": "c_ffp"
+    },
+    {
+      "name": "c_h",
+      "text": "c_h"
+    },
+    {
+      "name": "c_hfp",
+      "text": "c_hfp"
+    },
+    {
+      "name": "CA",
+      "text": "CA"
+    },
+    {
+      "name": "CAfp",
+      "text": "CAfp"
+    },
+    {
+      "name": "g_f",
+      "text": "g_f"
+    },
+    {
+      "name": "g_h",
+      "text": "g_h"
+    },
+    {
+      "name": "h_f",
+      "text": "h_f"
+    },
+    {
+      "name": "h_ffp",
+      "text": "h_ffp"
+    },
+    {
+      "name": "h_h",
+      "text": "h_h"
+    },
+    {
+      "name": "h_hfp",
+      "text": "h_hfp"
+    },
+    {
+      "name": "i_ea",
+      "text": "Investment"
+    },
+    {
+      "name": "i_eafp",
+      "text": "i_eafp"
+    },
+    {
+      "name": "i_f",
+      "text": "i_f"
+    },
+    {
+      "name": "i_ffp",
+      "text": "i_ffp"
+    },
+    {
+      "name": "i_h",
+      "text": "i_h"
+    },
+    {
+      "name": "i_hfp",
+      "text": "i_hfp"
+    },
+    {
+      "name": "IB_ea",
+      "text": "IB_ea"
+    },
+    {
+      "name": "IB_eafp",
+      "text": "IB_eafp"
+    },
+    {
+      "name": "ib_shock_f",
+      "text": "ib_shock_f"
+    },
+    {
+      "name": "ib_shock_h",
+      "text": "ib_shock_h"
+    },
+    {
+      "name": "IBd_f",
+      "text": "IBd_f"
+    },
+    {
+      "name": "IBd_ffp",
+      "text": "IBd_ffp"
+    },
+    {
+      "name": "IBd_h",
+      "text": "IBd_h"
+    },
+    {
+      "name": "IBd_hfp",
+      "text": "IBd_hfp"
+    },
+    {
+      "name": "ibn_f",
+      "text": "ibn_f"
+    },
+    {
+      "name": "ibn_ffp",
+      "text": "ibn_ffp"
+    },
+    {
+      "name": "ibn_h",
+      "text": "ibn_h"
+    },
+    {
+      "name": "ibn_hfp",
+      "text": "ibn_hfp"
+    },
+    {
+      "name": "IBs_f",
+      "text": "IBs_f"
+    },
+    {
+      "name": "IBs_ffp",
+      "text": "IBs_ffp"
+    },
+    {
+      "name": "IBs_h",
+      "text": "IBs_h"
+    },
+    {
+      "name": "IBs_hfp",
+      "text": "IBs_hfp"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k_f",
+      "text": "k_f"
+    },
+    {
+      "name": "k_ffp",
+      "text": "k_ffp"
+    },
+    {
+      "name": "k_h",
+      "text": "k_h"
+    },
+    {
+      "name": "k_hfp",
+      "text": "k_hfp"
+    },
+    {
+      "name": "ku_f",
+      "text": "ku_f"
+    },
+    {
+      "name": "ku_ffp",
+      "text": "ku_ffp"
+    },
+    {
+      "name": "ku_h",
+      "text": "ku_h"
+    },
+    {
+      "name": "ku_hfp",
+      "text": "ku_hfp"
+    },
+    {
+      "name": "ld_f",
+      "text": "ld_f"
+    },
+    {
+      "name": "ld_ffp",
+      "text": "ld_ffp"
+    },
+    {
+      "name": "ld_h",
+      "text": "ld_h"
+    },
+    {
+      "name": "ld_hfp",
+      "text": "ld_hfp"
+    },
+    {
+      "name": "ls_ea",
+      "text": "ls_ea"
+    },
+    {
+      "name": "ls_eafp",
+      "text": "ls_eafp"
+    },
+    {
+      "name": "ls_f",
+      "text": "ls_f"
+    },
+    {
+      "name": "ls_ffp",
+      "text": "ls_ffp"
+    },
+    {
+      "name": "ls_h",
+      "text": "ls_h"
+    },
+    {
+      "name": "ls_hfp",
+      "text": "ls_hfp"
+    },
+    {
+      "name": "mc_f",
+      "text": "mc_f"
+    },
+    {
+      "name": "mc_ffp",
+      "text": "mc_ffp"
+    },
+    {
+      "name": "mc_h",
+      "text": "mc_h"
+    },
+    {
+      "name": "mc_hfp",
+      "text": "mc_hfp"
+    },
+    {
+      "name": "mcL_f",
+      "text": "mcL_f"
+    },
+    {
+      "name": "mcL_ffp",
+      "text": "mcL_ffp"
+    },
+    {
+      "name": "mcL_h",
+      "text": "mcL_h"
+    },
+    {
+      "name": "mcL_hfp",
+      "text": "mcL_hfp"
+    },
+    {
+      "name": "n_E_f",
+      "text": "n_E_f"
+    },
+    {
+      "name": "n_E_ffp",
+      "text": "n_E_ffp"
+    },
+    {
+      "name": "n_E_h",
+      "text": "n_E_h"
+    },
+    {
+      "name": "n_E_hfp",
+      "text": "n_E_hfp"
+    },
+    {
+      "name": "n_shock_f",
+      "text": "n_shock_f"
+    },
+    {
+      "name": "n_shock_h",
+      "text": "n_shock_h"
+    },
+    {
+      "name": "nk_f",
+      "text": "nk_f"
+    },
+    {
+      "name": "nk_ffp",
+      "text": "nk_ffp"
+    },
+    {
+      "name": "nk_h",
+      "text": "nk_h"
+    },
+    {
+      "name": "nk_hfp",
+      "text": "nk_hfp"
+    },
+    {
+      "name": "omega_f",
+      "text": "omega_f"
+    },
+    {
+      "name": "omega_ffp",
+      "text": "omega_ffp"
+    },
+    {
+      "name": "omega_h",
+      "text": "omega_h"
+    },
+    {
+      "name": "omega_hfp",
+      "text": "omega_hfp"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p_Ffp",
+      "text": "p_Ffp"
+    },
+    {
+      "name": "p_Hfp",
+      "text": "p_Hfp"
+    },
+    {
+      "name": "p_IB_f",
+      "text": "p_IB_f"
+    },
+    {
+      "name": "p_IB_ffp",
+      "text": "p_IB_ffp"
+    },
+    {
+      "name": "p_IB_h",
+      "text": "p_IB_h"
+    },
+    {
+      "name": "p_IB_hfp",
+      "text": "p_IB_hfp"
+    },
+    {
+      "name": "pi_ea",
+      "text": "pi_ea"
+    },
+    {
+      "name": "pi_eafp",
+      "text": "pi_eafp"
+    },
+    {
+      "name": "pi_f",
+      "text": "pi_f"
+    },
+    {
+      "name": "pi_ffp",
+      "text": "pi_ffp"
+    },
+    {
+      "name": "pi_h",
+      "text": "pi_h"
+    },
+    {
+      "name": "pi_hfp",
+      "text": "pi_hfp"
+    },
+    {
+      "name": "pic_f",
+      "text": "pic_f"
+    },
+    {
+      "name": "pic_ffp",
+      "text": "pic_ffp"
+    },
+    {
+      "name": "pic_h",
+      "text": "pic_h"
+    },
+    {
+      "name": "pic_hfp",
+      "text": "pic_hfp"
+    },
+    {
+      "name": "pl_f",
+      "text": "pl_f"
+    },
+    {
+      "name": "pl_ffp",
+      "text": "pl_ffp"
+    },
+    {
+      "name": "pl_h",
+      "text": "pl_h"
+    },
+    {
+      "name": "pl_hfp",
+      "text": "pl_hfp"
+    },
+    {
+      "name": "q_f",
+      "text": "q_f"
+    },
+    {
+      "name": "q_ffp",
+      "text": "q_ffp"
+    },
+    {
+      "name": "q_h",
+      "text": "q_h"
+    },
+    {
+      "name": "q_hfp",
+      "text": "q_hfp"
+    },
+    {
+      "name": "q_shock_f",
+      "text": "q_shock_f"
+    },
+    {
+      "name": "q_shock_h",
+      "text": "q_shock_h"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_IB_f",
+      "text": "r_IB_f"
+    },
+    {
+      "name": "r_IB_ffp",
+      "text": "r_IB_ffp"
+    },
+    {
+      "name": "r_IB_h",
+      "text": "r_IB_h"
+    },
+    {
+      "name": "r_IB_hfp",
+      "text": "r_IB_hfp"
+    },
+    {
+      "name": "r_K_f",
+      "text": "r_K_f"
+    },
+    {
+      "name": "r_K_ffp",
+      "text": "r_K_ffp"
+    },
+    {
+      "name": "r_K_h",
+      "text": "r_K_h"
+    },
+    {
+      "name": "r_K_hfp",
+      "text": "r_K_hfp"
+    },
+    {
+      "name": "r_L_f",
+      "text": "r_L_f"
+    },
+    {
+      "name": "r_L_ffp",
+      "text": "r_L_ffp"
+    },
+    {
+      "name": "r_L_h",
+      "text": "r_L_h"
+    },
+    {
+      "name": "r_L_hfp",
+      "text": "r_L_hfp"
+    },
+    {
+      "name": "r_shock",
+      "text": "r_shock"
+    },
+    {
+      "name": "rL_shock_f",
+      "text": "rL_shock_f"
+    },
+    {
+      "name": "rL_shock_h",
+      "text": "rL_shock_h"
+    },
+    {
+      "name": "rr_f",
+      "text": "rr_f"
+    },
+    {
+      "name": "rr_ffp",
+      "text": "rr_ffp"
+    },
+    {
+      "name": "rr_h",
+      "text": "rr_h"
+    },
+    {
+      "name": "rr_hfp",
+      "text": "rr_hfp"
+    },
+    {
+      "name": "s_B_f",
+      "text": "s_B_f"
+    },
+    {
+      "name": "s_B_ffp",
+      "text": "s_B_ffp"
+    },
+    {
+      "name": "s_B_h",
+      "text": "s_B_h"
+    },
+    {
+      "name": "s_B_hfp",
+      "text": "s_B_hfp"
+    },
+    {
+      "name": "s_f",
+      "text": "s_f"
+    },
+    {
+      "name": "s_ffp",
+      "text": "s_ffp"
+    },
+    {
+      "name": "s_h",
+      "text": "s_h"
+    },
+    {
+      "name": "s_hfp",
+      "text": "s_hfp"
+    },
+    {
+      "name": "ToT",
+      "text": "ToT"
+    },
+    {
+      "name": "ToTfp",
+      "text": "ToTfp"
+    },
+    {
+      "name": "u_f",
+      "text": "u_f"
+    },
+    {
+      "name": "u_ffp",
+      "text": "u_ffp"
+    },
+    {
+      "name": "u_h",
+      "text": "u_h"
+    },
+    {
+      "name": "u_hfp",
+      "text": "u_hfp"
+    },
+    {
+      "name": "v_E_f",
+      "text": "v_E_f"
+    },
+    {
+      "name": "v_E_ffp",
+      "text": "v_E_ffp"
+    },
+    {
+      "name": "v_E_h",
+      "text": "v_E_h"
+    },
+    {
+      "name": "v_E_hfp",
+      "text": "v_E_hfp"
+    },
+    {
+      "name": "w_f",
+      "text": "w_f"
+    },
+    {
+      "name": "w_ffp",
+      "text": "w_ffp"
+    },
+    {
+      "name": "w_h",
+      "text": "w_h"
+    },
+    {
+      "name": "w_hfp",
+      "text": "w_hfp"
+    },
+    {
+      "name": "w_shock_f",
+      "text": "w_shock_f"
+    },
+    {
+      "name": "w_shock_h",
+      "text": "w_shock_h"
+    },
+    {
+      "name": "wh_f",
+      "text": "wh_f"
+    },
+    {
+      "name": "wh_ffp",
+      "text": "wh_ffp"
+    },
+    {
+      "name": "wh_h",
+      "text": "wh_h"
+    },
+    {
+      "name": "wh_hfp",
+      "text": "wh_hfp"
+    },
+    {
+      "name": "y_ea",
+      "text": "y_ea"
+    },
+    {
+      "name": "y_eafp",
+      "text": "y_eafp"
+    },
+    {
+      "name": "y_f",
+      "text": "y_f"
+    },
+    {
+      "name": "y_ffp",
+      "text": "y_ffp"
+    },
+    {
+      "name": "y_h",
+      "text": "y_h"
+    },
+    {
+      "name": "y_hfp",
+      "text": "y_hfp"
+    },
+    {
+      "name": "z_f",
+      "text": "z_f"
+    },
+    {
+      "name": "z_ffp",
+      "text": "z_ffp"
+    },
+    {
+      "name": "z_h",
+      "text": "z_h"
+    },
+    {
+      "name": "z_hfp",
+      "text": "z_hfp"
+    }
+  ]
+}

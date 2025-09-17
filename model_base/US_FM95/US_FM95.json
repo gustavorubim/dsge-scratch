@@ -1,0 +1,100 @@
+{
+  "$schema": "model",
+  "name": "US_FM95",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Fuhrer & Moore (1995a)",
+    "paper_title": "Inflation persistence",
+    "journal": "The Quarterly Journal of Economics 110(1), pp. 127-159",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1995",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Fuhrer, Jeff",
+      "Moore, George "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilon_p",
+      "text": "epsilon_p"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "epsilon_y"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "rho",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "ypsilon",
+      "text": "ypsilon"
+    },
+    {
+      "name": "ytilde",
+      "text": "ytilde"
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "$schema": "model",
+  "name": "US_CMR10fa",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Christiano et al. (2010) II\r",
+    "paper_title": "Financial factors in economic fluctuations - small version with financial accelerator",
+    "journal": "Working Paper Series 1192",
+    "replicants_name": "Fabio Verona",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "Small version with financial accelerator",
+    "category": "Estimated US model",
+    "authors": [
+      "Christiano, Lawrence J.",
+      "Motto, Roberto",
+      "Rostagno, Massimo"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_epsilU",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_gammaU",
+      "text": "e_gammaU"
+    },
+    {
+      "name": "e_gU",
+      "text": "e_gU"
+    },
+    {
+      "name": "e_lambdafU",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "e_muupU",
+      "text": "e_muupU"
+    },
+    {
+      "name": "e_muzstarU",
+      "text": "e_muzstarU"
+    },
+    {
+      "name": "e_pitargetU",
+      "text": "e_pitargetU"
+    },
+    {
+      "name": "e_sigmaU",
+      "text": "e_sigmaU"
+    },
+    {
+      "name": "e_tauoU",
+      "text": "e_tauoU"
+    },
+    {
+      "name": "e_zetaiU",
+      "text": "e_zetaiU"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "btotflexU",
+      "text": "btotflexU"
+    },
+    {
+      "name": "btotU",
+      "text": "btotU"
+    },
+    {
+      "name": "cflexU",
+      "text": "cflexU"
+    },
+    {
+      "name": "cU",
+      "text": "Consumption"
+    },
+    {
+      "name": "epsilU",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "FpXflexU",
+      "text": "FpXflexU"
+    },
+    {
+      "name": "FpXU",
+      "text": "FpXU"
+    },
+    {
+      "name": "FwXflexU",
+      "text": "FwXflexU"
+    },
+    {
+      "name": "FwXU",
+      "text": "FwXU"
+    },
+    {
+      "name": "gammaU",
+      "text": "gammaU"
+    },
+    {
+      "name": "gU",
+      "text": "gU"
+    },
+    {
+      "name": "hflexU",
+      "text": "hflexU"
+    },
+    {
+      "name": "hU",
+      "text": "Hours worked"
+    },
+    {
+      "name": "iflexU",
+      "text": "iflexU"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "iU",
+      "text": "iU"
+    },
+    {
+      "name": "kbarflexU",
+      "text": "kbarflexU"
+    },
+    {
+      "name": "kbarU",
+      "text": "kbarU"
+    },
+    {
+      "name": "lambdafU",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambdazflexU",
+      "text": "lambdazflexU"
+    },
+    {
+      "name": "lambdazU",
+      "text": "lambdazU"
+    },
+    {
+      "name": "muupU",
+      "text": "muupU"
+    },
+    {
+      "name": "muzstarU",
+      "text": "muzstarU"
+    },
+    {
+      "name": "nflexU",
+      "text": "nflexU"
+    },
+    {
+      "name": "nU",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "omegabarflexU",
+      "text": "omegabarflexU"
+    },
+    {
+      "name": "omegabarU",
+      "text": "omegabarU"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "piflexU",
+      "text": "piflexU"
+    },
+    {
+      "name": "pitargetU",
+      "text": "pitargetU"
+    },
+    {
+      "name": "piU",
+      "text": "piU"
+    },
+    {
+      "name": "pstarU",
+      "text": "pstarU"
+    },
+    {
+      "name": "qflexU",
+      "text": "qflexU"
+    },
+    {
+      "name": "qU",
+      "text": "qU"
+    },
+    {
+      "name": "ReXflexU",
+      "text": "ReXflexU"
+    },
+    {
+      "name": "ReXU",
+      "text": "ReXU"
+    },
+    {
+      "name": "rkflexU",
+      "text": "rkflexU"
+    },
+    {
+      "name": "rkU",
+      "text": "rkU"
+    },
+    {
+      "name": "RkXflexU",
+      "text": "RkXflexU"
+    },
+    {
+      "name": "RkXU",
+      "text": "RkXU"
+    },
+    {
+      "name": "sflexU",
+      "text": "sflexU"
+    },
+    {
+      "name": "sigmaU",
+      "text": "sigmaU"
+    },
+    {
+      "name": "sU",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "tauoU",
+      "text": "tauoU"
+    },
+    {
+      "name": "uflexU",
+      "text": "uflexU"
+    },
+    {
+      "name": "uU",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "wflexU",
+      "text": "wflexU"
+    },
+    {
+      "name": "wstarU",
+      "text": "wstarU"
+    },
+    {
+      "name": "wU",
+      "text": "Real wage"
+    },
+    {
+      "name": "YflexU",
+      "text": "YflexU"
+    },
+    {
+      "name": "YU",
+      "text": "YU"
+    },
+    {
+      "name": "zetacU",
+      "text": "zetacU"
+    },
+    {
+      "name": "zetaiU",
+      "text": "zetaiU"
+    }
+  ]
+}

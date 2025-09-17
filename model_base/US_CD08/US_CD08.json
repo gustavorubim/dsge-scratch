@@ -1,0 +1,215 @@
+{
+  "$schema": "model",
+  "name": "US_CD08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Christensen & Dib (2008)",
+    "paper_title": "The financial accelerator in an estimated New Keynesian model",
+    "journal": "Review of Economic Dynamics 11(1), pp. 155-178",
+    "replicants_name": "Jens Kruk",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Chistensen, Ian",
+      "Dib, Ali"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "u_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "u_b",
+      "text": "u_b"
+    },
+    {
+      "name": "u_e",
+      "text": "Preference shock"
+    },
+    {
+      "name": "u_x",
+      "text": "u_x"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_f",
+      "text": "c_f"
+    },
+    {
+      "name": "cost",
+      "text": "cost"
+    },
+    {
+      "name": "e",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "f_f",
+      "text": "f_f"
+    },
+    {
+      "name": "h",
+      "text": "Labour"
+    },
+    {
+      "name": "h_f",
+      "text": "h_f"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_f",
+      "text": "i_f"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "k_f",
+      "text": "k_f"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambda_f",
+      "text": "lambda_f"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "m_f",
+      "text": "m_f"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "n",
+      "text": "n"
+    },
+    {
+      "name": "n_f",
+      "text": "n_f"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "Capital returns"
+    },
+    {
+      "name": "q_f",
+      "text": "q_f"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_f",
+      "text": "r_f"
+    },
+    {
+      "name": "rp",
+      "text": "rp"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_f",
+      "text": "w_f"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_f",
+      "text": "y_f"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "z_f",
+      "text": "z_f"
+    }
+  ]
+}

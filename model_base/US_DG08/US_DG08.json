@@ -1,0 +1,253 @@
+{
+  "$schema": "model",
+  "name": "US_DG08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "De Graeve (2008)",
+    "paper_title": "The external finance premium and the macroeconomy: US post-WWII evidence.",
+    "journal": "Journal of Economic Dynamics and Control 32(11), pp. 3415-3440",
+    "replicants_name": "Melanie Krause",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "De Graeve, Ferre"
+    ]
+  },
+  "msr": [
+    "0.8977",
+    "0",
+    "0",
+    "0",
+    "(1-0.8977)*1.4933+0.0801",
+    "-0.0801",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.8977)*0.0882+0.2749)",
+    "-4*0.2749",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsinno_A",
+      "text": "Technology shock"
+    },
+    {
+      "name": "epsinno_B",
+      "text": "epsinno_B"
+    },
+    {
+      "name": "epsinno_I",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "epsinno_L",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "eta_p",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eta_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "Cf",
+      "text": "Cf"
+    },
+    {
+      "name": "eps_A",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "eps_B",
+      "text": "eps_B"
+    },
+    {
+      "name": "eps_G",
+      "text": "eps_G"
+    },
+    {
+      "name": "eps_I",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "eps_L",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "epsinno_G",
+      "text": "epsinno_G"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "Lf",
+      "text": "Lf"
+    },
+    {
+      "name": "N",
+      "text": "N"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "Prem",
+      "text": "Prem"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Qf",
+      "text": "Qf"
+    },
+    {
+      "name": "R",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "Rauxil",
+      "text": "Rauxil"
+    },
+    {
+      "name": "ren",
+      "text": "ren"
+    },
+    {
+      "name": "renf",
+      "text": "renf"
+    },
+    {
+      "name": "Rf",
+      "text": "Rf"
+    },
+    {
+      "name": "Rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "Rkforward",
+      "text": "Rkforward"
+    },
+    {
+      "name": "Rn",
+      "text": "Rn"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    }
+  ]
+}

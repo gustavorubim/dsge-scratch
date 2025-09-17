@@ -1,0 +1,109 @@
+{
+  "$schema": "model",
+  "name": "NK_RW06AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ravenna & Walsh (2006) AL",
+    "paper_title": "Optimal monetary policy with the cost channel",
+    "journal": "Journal of Monetary Economics 53(2), pp. 199-216",
+    "replicants_name": "M. Kuncl and M. Jancokova",
+    "pub_date": "2006",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Ravenna, Frederico",
+      "Walsh, Carl "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "pi",
+      "inflationq",
+      "x"
+    ],
+    "states_long": [
+      "interest",
+      "inflationq",
+      "inflationql",
+      "inflationql2"
+    ],
+    "states_short": [
+      "interest",
+      "outputgap"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "u",
+      "text": "Demand shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "$schema": "model",
+  "name": "US_YR13AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rychalovska (2016)",
+    "paper_title": "The implications of financial frictions and imperfect knowledge in the estimated dsge model of the U.S. economy",
+    "journal": "Journal of Economic Dynamics and Control 73, pp. 259-282",
+    "replicants_name": "S. Slobodyan",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Rychalovska, Yuliya"
+    ]
+  },
+  "msr": [
+    "0.9209",
+    "0",
+    "0",
+    "0",
+    "(1-0.9209)*1.6692",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.9209)*0.1372+0.1004) ",
+    "-0.1004",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "c",
+      "pinf",
+      "inflationq",
+      "w",
+      "lab",
+      "inve",
+      "rk",
+      "pk"
+    ],
+    "states_short": [
+      "c",
+      "ec",
+      "inve",
+      "kp",
+      "inflationq",
+      "nw",
+      "w",
+      "a",
+      "b",
+      "g",
+      "qs",
+      "spinf",
+      "epinfma",
+      "sw",
+      "ewma"
+    ],
+    "states_long": [
+      "c",
+      "ec",
+      "inve",
+      "kp",
+      "inflationqls",
+      "nw",
+      "w",
+      "a",
+      "b",
+      "inflationq",
+      "g",
+      "qs",
+      "spinf",
+      "epinfma",
+      "sw",
+      "ewma"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eb",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "epinf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eqs",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "ew",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "ec",
+      "text": "ec"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "epinfma",
+      "text": "epinfma"
+    },
+    {
+      "name": "er",
+      "text": "er"
+    },
+    {
+      "name": "ewma",
+      "text": "ewma"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inve",
+      "text": "Investment"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "lab",
+      "text": "Labour"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "newv_long",
+      "text": "newv_long"
+    },
+    {
+      "name": "newv_short",
+      "text": "newv_short"
+    },
+    {
+      "name": "nw",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "prem",
+      "text": "prem"
+    },
+    {
+      "name": "qs",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rr",
+      "text": "rr"
+    },
+    {
+      "name": "spinf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "sw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "zcap",
+      "text": "Capital utilization rate"
+    }
+  ]
+}

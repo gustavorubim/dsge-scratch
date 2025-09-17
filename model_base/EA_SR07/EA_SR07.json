@@ -1,0 +1,537 @@
+{
+  "$schema": "model",
+  "name": "EA_SR07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Sveriges Riksbank euro area (2007)",
+    "paper_title": "Bayesian estimation of an open economy DSGE model with incomplete pass-through",
+    "journal": "Journal of International Economics 72, pp. 481-511",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "Model of Adolfson et al. (2007)",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Adolfson, Malin",
+      "Laseen, Stefan",
+      "Linde, Jesper",
+      "Villani, Mattias"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilon_epsilon",
+      "text": "epsilon_epsilon"
+    },
+    {
+      "name": "epsilon_lambdad",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "epsilon_lambdamc",
+      "text": "epsilon_lambdamc"
+    },
+    {
+      "name": "epsilon_lambdami",
+      "text": "epsilon_lambdami"
+    },
+    {
+      "name": "epsilon_lambdax",
+      "text": "epsilon_lambdax"
+    },
+    {
+      "name": "epsilon_muz",
+      "text": "epsilon_muz"
+    },
+    {
+      "name": "epsilon_phitilde",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "epsilon_pibar",
+      "text": "epsilon_pibar"
+    },
+    {
+      "name": "epsilon_pistar",
+      "text": "epsilon_pistar"
+    },
+    {
+      "name": "epsilon_Rstar",
+      "text": "epsilon_Rstar"
+    },
+    {
+      "name": "epsilon_tauc",
+      "text": "epsilon_tauc"
+    },
+    {
+      "name": "epsilon_tauk",
+      "text": "epsilon_tauk"
+    },
+    {
+      "name": "epsilon_tauw",
+      "text": "epsilon_tauw"
+    },
+    {
+      "name": "epsilon_tauy",
+      "text": "epsilon_tauy"
+    },
+    {
+      "name": "epsilon_Upsilon",
+      "text": "epsilon_Upsilon"
+    },
+    {
+      "name": "epsilon_ystar",
+      "text": "epsilon_ystar"
+    },
+    {
+      "name": "epsilon_zetac",
+      "text": "Preference Shock"
+    },
+    {
+      "name": "epsilon_zetah",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "epsilon_ztildestar",
+      "text": "epsilon_ztildestar"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "af",
+      "text": "af"
+    },
+    {
+      "name": "c_hat",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_hatf",
+      "text": "c_hatf"
+    },
+    {
+      "name": "dS",
+      "text": "dS"
+    },
+    {
+      "name": "dSf",
+      "text": "dSf"
+    },
+    {
+      "name": "E",
+      "text": "E"
+    },
+    {
+      "name": "epsilon",
+      "text": "epsilon"
+    },
+    {
+      "name": "epsilon_rhog",
+      "text": "epsilon_rhog"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g_hat",
+      "text": "g_hat"
+    },
+    {
+      "name": "gamma_cdhat",
+      "text": "gamma_cdhat"
+    },
+    {
+      "name": "gamma_cdhatf",
+      "text": "gamma_cdhatf"
+    },
+    {
+      "name": "gamma_fhat",
+      "text": "gamma_fhat"
+    },
+    {
+      "name": "gamma_fhatf",
+      "text": "gamma_fhatf"
+    },
+    {
+      "name": "gamma_idhat",
+      "text": "gamma_idhat"
+    },
+    {
+      "name": "gamma_idhatf",
+      "text": "gamma_idhatf"
+    },
+    {
+      "name": "gamma_mcdhat",
+      "text": "gamma_mcdhat"
+    },
+    {
+      "name": "gamma_mcdhatf",
+      "text": "gamma_mcdhatf"
+    },
+    {
+      "name": "gamma_midhat",
+      "text": "gamma_midhat"
+    },
+    {
+      "name": "gamma_midhatf",
+      "text": "gamma_midhatf"
+    },
+    {
+      "name": "gamma_xstar",
+      "text": "gamma_xstar"
+    },
+    {
+      "name": "gamma_xstarf",
+      "text": "gamma_xstarf"
+    },
+    {
+      "name": "H_hat",
+      "text": "Labour"
+    },
+    {
+      "name": "H_hatf",
+      "text": "H_hatf"
+    },
+    {
+      "name": "i_hat",
+      "text": "Investment"
+    },
+    {
+      "name": "i_hatf",
+      "text": "i_hatf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k_barhat",
+      "text": "Capital"
+    },
+    {
+      "name": "k_barhatf",
+      "text": "k_barhatf"
+    },
+    {
+      "name": "k_hat",
+      "text": "k_hat"
+    },
+    {
+      "name": "k_hatf",
+      "text": "k_hatf"
+    },
+    {
+      "name": "lambda_dhat",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambda_dhatf",
+      "text": "lambda_dhatf"
+    },
+    {
+      "name": "lambda_mchat",
+      "text": "lambda_mchat"
+    },
+    {
+      "name": "lambda_mchatf",
+      "text": "lambda_mchatf"
+    },
+    {
+      "name": "lambda_mihat",
+      "text": "lambda_mihat"
+    },
+    {
+      "name": "lambda_mihatf",
+      "text": "lambda_mihatf"
+    },
+    {
+      "name": "lambda_x",
+      "text": "lambda_x"
+    },
+    {
+      "name": "lambda_xf",
+      "text": "lambda_xf"
+    },
+    {
+      "name": "m_barhat",
+      "text": "m_barhat"
+    },
+    {
+      "name": "m_barhatf",
+      "text": "m_barhatf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mc_mc",
+      "text": "mc_mc"
+    },
+    {
+      "name": "mc_mcf",
+      "text": "mc_mcf"
+    },
+    {
+      "name": "mc_mi",
+      "text": "mc_mi"
+    },
+    {
+      "name": "mc_mif",
+      "text": "mc_mif"
+    },
+    {
+      "name": "mc_x",
+      "text": "mc_x"
+    },
+    {
+      "name": "mc_xf",
+      "text": "mc_xf"
+    },
+    {
+      "name": "mcf",
+      "text": "mcf"
+    },
+    {
+      "name": "mu_hat",
+      "text": "mu_hat"
+    },
+    {
+      "name": "mu_hatf",
+      "text": "mu_hatf"
+    },
+    {
+      "name": "mu_zhat",
+      "text": "mu_zhat"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "P_k",
+      "text": "P_k"
+    },
+    {
+      "name": "P_kf",
+      "text": "P_kf"
+    },
+    {
+      "name": "phi_tilde",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "pi_bar",
+      "text": "pi_bar"
+    },
+    {
+      "name": "pi_c",
+      "text": "pi_c"
+    },
+    {
+      "name": "pi_cf",
+      "text": "pi_cf"
+    },
+    {
+      "name": "pi_hat",
+      "text": "pi_hat"
+    },
+    {
+      "name": "pi_hatf",
+      "text": "pi_hatf"
+    },
+    {
+      "name": "pi_mc",
+      "text": "pi_mc"
+    },
+    {
+      "name": "pi_mcf",
+      "text": "pi_mcf"
+    },
+    {
+      "name": "pi_mi",
+      "text": "pi_mi"
+    },
+    {
+      "name": "pi_mif",
+      "text": "pi_mif"
+    },
+    {
+      "name": "pi_x",
+      "text": "pi_x"
+    },
+    {
+      "name": "pi_xf",
+      "text": "pi_xf"
+    },
+    {
+      "name": "pistar_hat",
+      "text": "pistar_hat"
+    },
+    {
+      "name": "pistar_hatf",
+      "text": "pistar_hatf"
+    },
+    {
+      "name": "psi_zhat",
+      "text": "psi_zhat"
+    },
+    {
+      "name": "psi_zhatf",
+      "text": "psi_zhatf"
+    },
+    {
+      "name": "q_hat",
+      "text": "q_hat"
+    },
+    {
+      "name": "q_hatf",
+      "text": "q_hatf"
+    },
+    {
+      "name": "R_fhat",
+      "text": "R_fhat"
+    },
+    {
+      "name": "R_fhatf",
+      "text": "R_fhatf"
+    },
+    {
+      "name": "R_hat",
+      "text": "R_hat"
+    },
+    {
+      "name": "R_hatf",
+      "text": "R_hatf"
+    },
+    {
+      "name": "rk_hat",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rk_hatf",
+      "text": "rk_hatf"
+    },
+    {
+      "name": "Rstar_hat",
+      "text": "Rstar_hat"
+    },
+    {
+      "name": "Rstar_hatf",
+      "text": "Rstar_hatf"
+    },
+    {
+      "name": "tauc_hat",
+      "text": "tauc_hat"
+    },
+    {
+      "name": "tauk_hat",
+      "text": "tauk_hat"
+    },
+    {
+      "name": "tauw_hat",
+      "text": "tauw_hat"
+    },
+    {
+      "name": "tauy_hat",
+      "text": "tauy_hat"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "Upsilon",
+      "text": "Upsilon"
+    },
+    {
+      "name": "w_barhat",
+      "text": "w_barhat"
+    },
+    {
+      "name": "w_barhatf",
+      "text": "w_barhatf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "y_hat",
+      "text": "y_hat"
+    },
+    {
+      "name": "y_hatf",
+      "text": "y_hatf"
+    },
+    {
+      "name": "ystar_hat",
+      "text": "ystar_hat"
+    },
+    {
+      "name": "ystar_hatf",
+      "text": "ystar_hatf"
+    },
+    {
+      "name": "z_tildestar",
+      "text": "z_tildestar"
+    },
+    {
+      "name": "zeta_c",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "zeta_h",
+      "text": "Labour supply shock process"
+    }
+  ]
+}

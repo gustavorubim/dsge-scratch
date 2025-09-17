@@ -1,0 +1,345 @@
+{
+  "$schema": "model",
+  "name": "NK_KM16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Krause & Moyen (2016)",
+    "paper_title": "Public Debt and Changing Inflation Targets",
+    "journal": "American Economic Journal: Macroeconomics, 8(4): 142-76",
+    "replicants_name": "Ioanna Pigkou",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Krause, Michael U.",
+      "Moyen, Stéphane"
+    ]
+  },
+  "msr": [
+    "0.75",
+    "0",
+    "0",
+    "0",
+    "1.5*0.25",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5*0.25",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsi_D",
+      "text": "epsi_D"
+    },
+    {
+      "name": "eta_PIESTAR",
+      "text": "eta_PIESTAR"
+    },
+    {
+      "name": "eta_r",
+      "text": "eta_r"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_obs",
+      "text": "c_obs"
+    },
+    {
+      "name": "cn",
+      "text": "cn"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "D_obs",
+      "text": "D_obs"
+    },
+    {
+      "name": "Dbs",
+      "text": "Dbs"
+    },
+    {
+      "name": "Disp",
+      "text": "Disp"
+    },
+    {
+      "name": "Dn",
+      "text": "Dn"
+    },
+    {
+      "name": "Dn_obs",
+      "text": "Dn_obs"
+    },
+    {
+      "name": "Dnew",
+      "text": "Dnew"
+    },
+    {
+      "name": "Dnew_obs",
+      "text": "Dnew_obs"
+    },
+    {
+      "name": "Dnewn",
+      "text": "Dnewn"
+    },
+    {
+      "name": "epsi_R",
+      "text": "epsi_R"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "G_",
+      "text": "G_"
+    },
+    {
+      "name": "h",
+      "text": "Labour"
+    },
+    {
+      "name": "h_obs",
+      "text": "h_obs"
+    },
+    {
+      "name": "hn",
+      "text": "hn"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "i_D",
+      "text": "i_D"
+    },
+    {
+      "name": "i_Dn",
+      "text": "i_Dn"
+    },
+    {
+      "name": "i_Dnew",
+      "text": "i_Dnew"
+    },
+    {
+      "name": "i_Dnew_obs",
+      "text": "i_Dnew_obs"
+    },
+    {
+      "name": "i_Dnewn",
+      "text": "i_Dnewn"
+    },
+    {
+      "name": "i_obs",
+      "text": "i_obs"
+    },
+    {
+      "name": "in",
+      "text": "in"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lamda",
+      "text": "lamda"
+    },
+    {
+      "name": "lamdan",
+      "text": "lamdan"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "m_obs",
+      "text": "m_obs"
+    },
+    {
+      "name": "MC",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mn",
+      "text": "mn"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "mu_obs",
+      "text": "mu_obs"
+    },
+    {
+      "name": "mun",
+      "text": "mun"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_obs",
+      "text": "pi_obs"
+    },
+    {
+      "name": "PIESTAR",
+      "text": "PIESTAR"
+    },
+    {
+      "name": "PIESTARn",
+      "text": "PIESTARn"
+    },
+    {
+      "name": "pin",
+      "text": "pin"
+    },
+    {
+      "name": "pistar",
+      "text": "pistar"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Rn",
+      "text": "Rn"
+    },
+    {
+      "name": "Rrate",
+      "text": "Rrate"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "tau_obs",
+      "text": "tau_obs"
+    },
+    {
+      "name": "taun",
+      "text": "taun"
+    },
+    {
+      "name": "taun_obs",
+      "text": "taun_obs"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_obs",
+      "text": "w_obs"
+    },
+    {
+      "name": "wn",
+      "text": "wn"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_obs",
+      "text": "y_obs"
+    },
+    {
+      "name": "yn",
+      "text": "yn"
+    },
+    {
+      "name": "yn_obs",
+      "text": "yn_obs"
+    },
+    {
+      "name": "Z1",
+      "text": "Z1"
+    },
+    {
+      "name": "Z2",
+      "text": "Z2"
+    }
+  ]
+}

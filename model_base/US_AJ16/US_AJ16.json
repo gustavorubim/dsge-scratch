@@ -1,0 +1,485 @@
+{
+  "$schema": "model",
+  "name": "US_AJ16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ajello (2016)",
+    "paper_title": "Financial intermediation, investment dynamics, and business cycle fluctuations",
+    "journal": "American Economic Review 106 (8), 2256-2303",
+    "replicants_name": "Maximilian Mayer",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Ajello, Andrea"
+    ]
+  },
+  "msr": [
+    "0.828",
+    "0",
+    "0",
+    "0",
+    "(1-0.828)/4*(1+0.46)",
+    "(1-0.828)/4*(1+0.46)",
+    "(1-0.828)/4*(1+0.46)",
+    "(1-0.828)/4*(1+0.46)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.828)/400*0.156",
+    "0",
+    "0",
+    "0",
+    "-(1-0.828)/400*0.156",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_beta",
+      "text": "eps_beta"
+    },
+    {
+      "name": "eps_meas",
+      "text": "eps_meas"
+    },
+    {
+      "name": "eps_meas_sp",
+      "text": "eps_meas_sp"
+    },
+    {
+      "name": "eps_p",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eps_tau",
+      "text": "eps_tau"
+    },
+    {
+      "name": "eps_tau_trans",
+      "text": "eps_tau_trans"
+    },
+    {
+      "name": "eps_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "eps_z",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A_eff",
+      "text": "A_eff"
+    },
+    {
+      "name": "AI",
+      "text": "AI"
+    },
+    {
+      "name": "AIK",
+      "text": "AIK"
+    },
+    {
+      "name": "AIS",
+      "text": "AIS"
+    },
+    {
+      "name": "Ak_over_P",
+      "text": "Ak_over_P"
+    },
+    {
+      "name": "B_t",
+      "text": "B_t"
+    },
+    {
+      "name": "beta_t",
+      "text": "beta_t"
+    },
+    {
+      "name": "BoY_t",
+      "text": "BoY_t"
+    },
+    {
+      "name": "CASH_t",
+      "text": "CASH_t"
+    },
+    {
+      "name": "chat",
+      "text": "Consumption"
+    },
+    {
+      "name": "chi_k",
+      "text": "chi_k"
+    },
+    {
+      "name": "chi_s",
+      "text": "chi_s"
+    },
+    {
+      "name": "chi_spk",
+      "text": "chi_spk"
+    },
+    {
+      "name": "chi_w",
+      "text": "chi_w"
+    },
+    {
+      "name": "ctau_q_t",
+      "text": "ctau_q_t"
+    },
+    {
+      "name": "d_chat",
+      "text": "d_chat"
+    },
+    {
+      "name": "d_FGS_num",
+      "text": "d_FGS_num"
+    },
+    {
+      "name": "d_GDP",
+      "text": "d_GDP"
+    },
+    {
+      "name": "d_GDPm1",
+      "text": "d_GDPm1"
+    },
+    {
+      "name": "d_GDPm2",
+      "text": "d_GDPm2"
+    },
+    {
+      "name": "d_GDPm3",
+      "text": "d_GDPm3"
+    },
+    {
+      "name": "d_Ihat",
+      "text": "d_Ihat"
+    },
+    {
+      "name": "D_t",
+      "text": "D_t"
+    },
+    {
+      "name": "Delta_N",
+      "text": "Delta_N"
+    },
+    {
+      "name": "dlnwhat",
+      "text": "dlnwhat"
+    },
+    {
+      "name": "e_p",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "e_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "eps_g",
+      "text": "eps_g"
+    },
+    {
+      "name": "eta_beta",
+      "text": "eta_beta"
+    },
+    {
+      "name": "etau_q_t",
+      "text": "etau_q_t"
+    },
+    {
+      "name": "FGS",
+      "text": "FGS"
+    },
+    {
+      "name": "FGS_num",
+      "text": "FGS_num"
+    },
+    {
+      "name": "FGS_obs",
+      "text": "FGS_obs"
+    },
+    {
+      "name": "FGSgap_t",
+      "text": "FGSgap_t"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g_t",
+      "text": "g_t"
+    },
+    {
+      "name": "GDP_t",
+      "text": "GDP_t"
+    },
+    {
+      "name": "GS_t",
+      "text": "GS_t"
+    },
+    {
+      "name": "i_ob_t",
+      "text": "i_ob_t"
+    },
+    {
+      "name": "i_t",
+      "text": "i_t"
+    },
+    {
+      "name": "Ihat",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "invQ_til_As",
+      "text": "invQ_til_As"
+    },
+    {
+      "name": "iota_k",
+      "text": "iota_k"
+    },
+    {
+      "name": "iota_s",
+      "text": "iota_s"
+    },
+    {
+      "name": "iota_t",
+      "text": "iota_t"
+    },
+    {
+      "name": "Kbar",
+      "text": "Capital"
+    },
+    {
+      "name": "l",
+      "text": "Hours worked"
+    },
+    {
+      "name": "l_ob_t",
+      "text": "l_ob_t"
+    },
+    {
+      "name": "lambda_p_t",
+      "text": "lambda_p_t"
+    },
+    {
+      "name": "lambda_t",
+      "text": "lambda_t"
+    },
+    {
+      "name": "lambda_w_t",
+      "text": "lambda_w_t"
+    },
+    {
+      "name": "LIQS_t",
+      "text": "LIQS_t"
+    },
+    {
+      "name": "mchat",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "N_t",
+      "text": "N_t"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi_t",
+      "text": "phi_t"
+    },
+    {
+      "name": "pi_ob_t",
+      "text": "pi_ob_t"
+    },
+    {
+      "name": "pi_t",
+      "text": "pi_t"
+    },
+    {
+      "name": "pi_tm1",
+      "text": "pi_tm1"
+    },
+    {
+      "name": "pi_tm2",
+      "text": "pi_tm2"
+    },
+    {
+      "name": "pi_tm3",
+      "text": "pi_tm3"
+    },
+    {
+      "name": "pistar",
+      "text": "pistar"
+    },
+    {
+      "name": "Q_t_A",
+      "text": "Q_t_A"
+    },
+    {
+      "name": "Q_t_B",
+      "text": "Q_t_B"
+    },
+    {
+      "name": "QK",
+      "text": "QK"
+    },
+    {
+      "name": "QtilK_iota_t",
+      "text": "QtilK_iota_t"
+    },
+    {
+      "name": "QtilS_iota_t",
+      "text": "QtilS_iota_t"
+    },
+    {
+      "name": "r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rK",
+      "text": "Capital returns"
+    },
+    {
+      "name": "S",
+      "text": "S"
+    },
+    {
+      "name": "sdf",
+      "text": "sdf"
+    },
+    {
+      "name": "sdfr",
+      "text": "sdfr"
+    },
+    {
+      "name": "sg",
+      "text": "sg"
+    },
+    {
+      "name": "SMG",
+      "text": "SMG"
+    },
+    {
+      "name": "SMG_bar",
+      "text": "SMG_bar"
+    },
+    {
+      "name": "SMGm1",
+      "text": "SMGm1"
+    },
+    {
+      "name": "SMGm2",
+      "text": "SMGm2"
+    },
+    {
+      "name": "SMGm3",
+      "text": "SMGm3"
+    },
+    {
+      "name": "Spread_ob_t",
+      "text": "Spread_ob_t"
+    },
+    {
+      "name": "Spread_t",
+      "text": "Spread_t"
+    },
+    {
+      "name": "Spreadgap_t",
+      "text": "Spreadgap_t"
+    },
+    {
+      "name": "Sprime",
+      "text": "Sprime"
+    },
+    {
+      "name": "T_t",
+      "text": "T_t"
+    },
+    {
+      "name": "tau_q_t",
+      "text": "tau_q_t"
+    },
+    {
+      "name": "ToY_t",
+      "text": "ToY_t"
+    },
+    {
+      "name": "what_t",
+      "text": "Real wage"
+    },
+    {
+      "name": "ygap_t",
+      "text": "ygap_t"
+    },
+    {
+      "name": "yhat",
+      "text": "yhat"
+    },
+    {
+      "name": "z_t",
+      "text": "z_t"
+    }
+  ]
+}

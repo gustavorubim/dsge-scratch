@@ -1,0 +1,201 @@
+{
+  "$schema": "model",
+  "name": "NK_GM07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Goodfriend & McCallum (2007)",
+    "paper_title": "Banking and interest rates in monetary policy analysis: A quantitative exploration",
+    "journal": "Journal of Monetary Economics 54 (5), 1480-1507",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Goodfriend, Marvin",
+      "McCallum, Bennett"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "2.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_a1",
+      "text": "eps_a1"
+    },
+    {
+      "name": "eps_a2",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eps_a3",
+      "text": "eps_a3"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a1",
+      "text": "a1"
+    },
+    {
+      "name": "a2",
+      "text": "Technology shock proces"
+    },
+    {
+      "name": "a3",
+      "text": "a3"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "CEFP",
+      "text": "CEFP"
+    },
+    {
+      "name": "dp",
+      "text": "dp"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "h",
+      "text": "Money balances"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "n",
+      "text": "n"
+    },
+    {
+      "name": "omega",
+      "text": "omega"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "rB",
+      "text": "rB"
+    },
+    {
+      "name": "rIB",
+      "text": "rIB"
+    },
+    {
+      "name": "rL",
+      "text": "rL"
+    },
+    {
+      "name": "rT",
+      "text": "rT"
+    },
+    {
+      "name": "UEFP",
+      "text": "Risk premium"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "xi",
+      "text": "xi"
+    }
+  ]
+}

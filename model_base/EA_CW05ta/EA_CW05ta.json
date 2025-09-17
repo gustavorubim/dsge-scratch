@@ -1,0 +1,162 @@
+{
+  "$schema": "model",
+  "name": "EA_CW05ta",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Coenen & Wieland (2005) I",
+    "paper_title": "A small estimated euro area model with rational expectations and nominal rigidities",
+    "journal": "European Economic Review 49(5), pp. 1081-1104",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "Calibrated for Taylor-staggered contracts",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Coenen, Günther",
+      "Wieland, Volker"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_cw",
+      "text": "e_cw"
+    },
+    {
+      "name": "e_d",
+      "text": "e_d"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cwp",
+      "text": "cwp"
+    },
+    {
+      "name": "dis",
+      "text": "dis"
+    },
+    {
+      "name": "il",
+      "text": "il"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "is",
+      "text": "is"
+    },
+    {
+      "name": "lagcwp1",
+      "text": "lagcwp1"
+    },
+    {
+      "name": "lagcwp2",
+      "text": "lagcwp2"
+    },
+    {
+      "name": "lagis1",
+      "text": "lagis1"
+    },
+    {
+      "name": "lagpi11",
+      "text": "lagpi11"
+    },
+    {
+      "name": "lagpi12",
+      "text": "lagpi12"
+    },
+    {
+      "name": "lagq1",
+      "text": "lagq1"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi1",
+      "text": "pi1"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "rl",
+      "text": "rl"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "$schema": "model",
+  "name": "NK_ST13",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Stracca (2013)",
+    "paper_title": "Inside money in general equilibrium: Does it matter for monetary policy?",
+    "journal": "Macroeconomic Dynamics 17 (3), 563-590",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Stracca, Livio"
+    ]
+  },
+  "msr": [
+    "0.75",
+    "0",
+    "0",
+    "0",
+    "0.25*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilon_theta",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "j",
+      "text": "j"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A",
+      "text": "A"
+    },
+    {
+      "name": "alpha",
+      "text": "alpha"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "b_fe",
+      "text": "b_fe"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_fe",
+      "text": "c_fe"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "d_fe",
+      "text": "d_fe"
+    },
+    {
+      "name": "delta_k",
+      "text": "delta_k"
+    },
+    {
+      "name": "delta_k_fe",
+      "text": "delta_k_fe"
+    },
+    {
+      "name": "EFP",
+      "text": "EFP"
+    },
+    {
+      "name": "EFP_fe",
+      "text": "EFP_fe"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "f_fe",
+      "text": "f_fe"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_fe",
+      "text": "i_fe"
+    },
+    {
+      "name": "IMP",
+      "text": "IMP"
+    },
+    {
+      "name": "IMP_fe",
+      "text": "IMP_fe"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "k_fe",
+      "text": "k_fe"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "l_fe",
+      "text": "l_fe"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambda_fe",
+      "text": "lambda_fe"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "m_fe",
+      "text": "m_fe"
+    },
+    {
+      "name": "n",
+      "text": "Hours worked"
+    },
+    {
+      "name": "n_fe",
+      "text": "n_fe"
+    },
+    {
+      "name": "omega",
+      "text": "omega"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "psi_fe",
+      "text": "psi_fe"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_fe",
+      "text": "R_fe"
+    },
+    {
+      "name": "Rd",
+      "text": "Rd"
+    },
+    {
+      "name": "Rd_fe",
+      "text": "Rd_fe"
+    },
+    {
+      "name": "Rl",
+      "text": "Rl"
+    },
+    {
+      "name": "Rl_fe",
+      "text": "Rl_fe"
+    },
+    {
+      "name": "rmc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "rmc_fe",
+      "text": "rmc_fe"
+    },
+    {
+      "name": "theta",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_fe",
+      "text": "w_fe"
+    },
+    {
+      "name": "xi",
+      "text": "xi"
+    },
+    {
+      "name": "xi_fe",
+      "text": "xi_fe"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_fe",
+      "text": "y_fe"
+    },
+    {
+      "name": "yk",
+      "text": "yk"
+    },
+    {
+      "name": "yk_fe",
+      "text": "yk_fe"
+    },
+    {
+      "name": "yn",
+      "text": "yn"
+    },
+    {
+      "name": "yn_fe",
+      "text": "yn_fe"
+    }
+  ]
+}

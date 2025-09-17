@@ -1,0 +1,237 @@
+{
+  "$schema": "model",
+  "name": "NK_ET14",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ellison & Tischbirek (2014)",
+    "paper_title": "Unconventional government debt purchases as a supplement to conventional monetary policy",
+    "journal": "Journal of Economic Dynamics and Control 43, pp. 199-217",
+    "replicants_name": "Elisabeth Falck and Philipp Lieberknecht",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Ellison, Martin",
+      "Tischbirek, Andreas"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.01",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*0.3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "Technology shock"
+    },
+    {
+      "name": "epsC",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epsksi",
+      "text": "epsksi"
+    },
+    {
+      "name": "epsL",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "epsthet",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "ChiC",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "ChiL",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "epsG",
+      "text": "epsG"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "Gf",
+      "text": "Gf"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "iQ",
+      "text": "iQ"
+    },
+    {
+      "name": "K",
+      "text": "K"
+    },
+    {
+      "name": "ksi",
+      "text": "ksi"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "PB",
+      "text": "PB"
+    },
+    {
+      "name": "Pi",
+      "text": "Pi"
+    },
+    {
+      "name": "PQ",
+      "text": "PQ"
+    },
+    {
+      "name": "Ps",
+      "text": "Ps"
+    },
+    {
+      "name": "Pss",
+      "text": "Pss"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qbar",
+      "text": "qbar"
+    },
+    {
+      "name": "qCB",
+      "text": "qCB"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "theta",
+      "text": "theta"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    }
+  ]
+}

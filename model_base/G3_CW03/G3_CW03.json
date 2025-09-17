@@ -1,0 +1,238 @@
+{
+  "$schema": "model",
+  "name": "G3_CW03",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Coenen & Wieland (2002)",
+    "paper_title": "Inflation dynamics and international linkages: A model of the United States, the Euro Area and Japan",
+    "journal": "ECB Working Paper Series 181",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2003",
+    "keywords": [],
+    "description": "Model of USA, Euro Area and Japan",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Coenen, Günther",
+      "Wieland, Volker"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.50/4",
+    "1.50/4",
+    "1.50/4",
+    "1.50/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.50",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_cw_eu",
+      "text": "e_cw_eu"
+    },
+    {
+      "name": "e_cw_ja",
+      "text": "e_cw_ja"
+    },
+    {
+      "name": "e_cw_us",
+      "text": "e_cw_us"
+    },
+    {
+      "name": "e_d_eu",
+      "text": "e_d_eu"
+    },
+    {
+      "name": "e_d_ja",
+      "text": "e_d_ja"
+    },
+    {
+      "name": "e_d_us",
+      "text": "e_d_us"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cwp_eu",
+      "text": "cwp_eu"
+    },
+    {
+      "name": "cwp_ja",
+      "text": "cwp_ja"
+    },
+    {
+      "name": "cwp_us",
+      "text": "cwp_us"
+    },
+    {
+      "name": "il_eu",
+      "text": "il_eu"
+    },
+    {
+      "name": "il_ja",
+      "text": "il_ja"
+    },
+    {
+      "name": "il_us",
+      "text": "il_us"
+    },
+    {
+      "name": "index_us",
+      "text": "index_us"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "is_eu",
+      "text": "is_eu"
+    },
+    {
+      "name": "is_ja",
+      "text": "is_ja"
+    },
+    {
+      "name": "is_us",
+      "text": "is_us"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi1_eu",
+      "text": "pi1_eu"
+    },
+    {
+      "name": "pi1_ja",
+      "text": "pi1_ja"
+    },
+    {
+      "name": "pi1_us",
+      "text": "pi1_us"
+    },
+    {
+      "name": "pi4_eu",
+      "text": "pi4_eu"
+    },
+    {
+      "name": "pi4_ja",
+      "text": "pi4_ja"
+    },
+    {
+      "name": "pi4_us",
+      "text": "pi4_us"
+    },
+    {
+      "name": "q_eu",
+      "text": "q_eu"
+    },
+    {
+      "name": "q_ja",
+      "text": "q_ja"
+    },
+    {
+      "name": "q_us",
+      "text": "q_us"
+    },
+    {
+      "name": "reer_eu",
+      "text": "reer_eu"
+    },
+    {
+      "name": "reer_ja",
+      "text": "reer_ja"
+    },
+    {
+      "name": "reer_us",
+      "text": "reer_us"
+    },
+    {
+      "name": "rer_euja",
+      "text": "rer_euja"
+    },
+    {
+      "name": "rer_euus",
+      "text": "rer_euus"
+    },
+    {
+      "name": "rer_jaus",
+      "text": "rer_jaus"
+    },
+    {
+      "name": "rl_eu",
+      "text": "rl_eu"
+    },
+    {
+      "name": "rl_ja",
+      "text": "rl_ja"
+    },
+    {
+      "name": "rl_us",
+      "text": "rl_us"
+    }
+  ]
+}

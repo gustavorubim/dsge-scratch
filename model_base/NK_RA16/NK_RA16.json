@@ -1,0 +1,395 @@
+{
+  "$schema": "model",
+  "name": "NK_RA16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rannenberg (2016)",
+    "paper_title": "Bank leverage cycles and the external finance premium",
+    "journal": "Journal of Money, Credit and Banking 48 (8), 1569-1612",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Rannenberg, Ansgar"
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0.3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.025",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "C",
+      "text": "C"
+    },
+    {
+      "name": "C_fe",
+      "text": "C_fe"
+    },
+    {
+      "name": "Cb",
+      "text": "Cb"
+    },
+    {
+      "name": "Cb_fe",
+      "text": "Cb_fe"
+    },
+    {
+      "name": "Ce",
+      "text": "Ce"
+    },
+    {
+      "name": "Ce_fe",
+      "text": "Ce_fe"
+    },
+    {
+      "name": "Cp",
+      "text": "Consumption"
+    },
+    {
+      "name": "Cp_fe",
+      "text": "Cp_fe"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "GDP",
+      "text": "GDP"
+    },
+    {
+      "name": "GDP_fe",
+      "text": "GDP_fe"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "I_fe",
+      "text": "I_fe"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "K_fe",
+      "text": "K_fe"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "L",
+      "text": "L"
+    },
+    {
+      "name": "l_fe",
+      "text": "l_fe"
+    },
+    {
+      "name": "L_fe",
+      "text": "L_fe"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "Lambda_fe",
+      "text": "Lambda_fe"
+    },
+    {
+      "name": "Le",
+      "text": "Le"
+    },
+    {
+      "name": "Le_fe",
+      "text": "Le_fe"
+    },
+    {
+      "name": "Lr",
+      "text": "Lr"
+    },
+    {
+      "name": "Lr_fe",
+      "text": "Lr_fe"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mc_fe",
+      "text": "mc_fe"
+    },
+    {
+      "name": "N",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "N_fe",
+      "text": "N_fe"
+    },
+    {
+      "name": "Nb",
+      "text": "Nb"
+    },
+    {
+      "name": "Nb_fe",
+      "text": "Nb_fe"
+    },
+    {
+      "name": "omega_bar_prime",
+      "text": "omega_bar_prime"
+    },
+    {
+      "name": "omega_bar_prime_fe",
+      "text": "omega_bar_prime_fe"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi_b",
+      "text": "phi_b"
+    },
+    {
+      "name": "phi_b_fe",
+      "text": "phi_b_fe"
+    },
+    {
+      "name": "phi_e",
+      "text": "phi_e"
+    },
+    {
+      "name": "phi_e_fe",
+      "text": "phi_e_fe"
+    },
+    {
+      "name": "Pi",
+      "text": "Pi"
+    },
+    {
+      "name": "Pi_fe",
+      "text": "Pi_fe"
+    },
+    {
+      "name": "Pi4",
+      "text": "Pi4"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Q_fe",
+      "text": "Q_fe"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_fe",
+      "text": "R_fe"
+    },
+    {
+      "name": "R4",
+      "text": "R4"
+    },
+    {
+      "name": "Rb",
+      "text": "Rb"
+    },
+    {
+      "name": "Rb_fe",
+      "text": "Rb_fe"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "Rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rk_fe",
+      "text": "rk_fe"
+    },
+    {
+      "name": "Rk_fe",
+      "text": "Rk_fe"
+    },
+    {
+      "name": "Rl",
+      "text": "Rl"
+    },
+    {
+      "name": "Rl_fe",
+      "text": "Rl_fe"
+    },
+    {
+      "name": "spread_RbR",
+      "text": "spread_RbR"
+    },
+    {
+      "name": "spread_RkR",
+      "text": "spread_RkR"
+    },
+    {
+      "name": "spread_RkRb",
+      "text": "spread_RkRb"
+    },
+    {
+      "name": "spread_RlR",
+      "text": "spread_RlR"
+    },
+    {
+      "name": "U",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "U_fe",
+      "text": "U_fe"
+    },
+    {
+      "name": "V",
+      "text": "V"
+    },
+    {
+      "name": "V_fe",
+      "text": "V_fe"
+    },
+    {
+      "name": "varrho",
+      "text": "varrho"
+    },
+    {
+      "name": "varrho_fe",
+      "text": "varrho_fe"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_fe",
+      "text": "w_fe"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Y_fe",
+      "text": "Y_fe"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "z_fe",
+      "text": "z_fe"
+    }
+  ]
+}

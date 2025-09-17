@@ -1,0 +1,334 @@
+{
+  "$schema": "model",
+  "name": "US_SW07AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Slobodyan & Wouters (2012)",
+    "paper_title": "Learning in an estimated medium-scale DSGE model",
+    "journal": "Journal of Economic Dynamics and Control 36 (1), pp. 26-46",
+    "replicants_name": "S. Slobodyan",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Slobodyan, Sergey",
+      "Wouters, Rafael"
+    ]
+  },
+  "msr": [
+    "0.8103",
+    "0",
+    "0",
+    "0",
+    "(1-0.8103)*2.0443",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.8103)*0.0882+0.2247)*4",
+    "-0.2247*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "lab",
+      "labf",
+      "pinf",
+      "inflationq",
+      "pk",
+      "pkf",
+      "rk",
+      "rkf",
+      "w"
+    ],
+    "states_long": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "kp",
+      "kpf",
+      "inflationq",
+      "inflationqls",
+      "w",
+      "a",
+      "b",
+      "epinfma",
+      "ewma",
+      "g",
+      "qs",
+      "spinf",
+      "sw",
+      "interest"
+    ],
+    "states_short": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "kp",
+      "kpf",
+      "inflationq",
+      "w",
+      "a",
+      "b",
+      "epinfma",
+      "ewma",
+      "g",
+      "qs",
+      "spinf",
+      "sw",
+      "interest"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eb",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eqs",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "ew",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "epinfma",
+      "text": "epinfma"
+    },
+    {
+      "name": "ewma",
+      "text": "ewma"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inve",
+      "text": "Investment"
+    },
+    {
+      "name": "invef",
+      "text": "invef"
+    },
+    {
+      "name": "k",
+      "text": "Capital "
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "lab",
+      "text": "Labour"
+    },
+    {
+      "name": "labf",
+      "text": "labf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "ms",
+      "text": "ms"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "pkf",
+      "text": "pkf"
+    },
+    {
+      "name": "qs",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "spinf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "sw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "zcap",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "zcapf",
+      "text": "zcapf"
+    }
+  ]
+}

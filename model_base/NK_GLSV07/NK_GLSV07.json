@@ -1,0 +1,166 @@
+{
+  "$schema": "model",
+  "name": "NK_GLSV07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Galí et al. (2007)",
+    "paper_title": "Understanding the effects of government spending on consumption",
+    "journal": "Journal of the European Economic Association 5 (1), 227-270",
+    "replicants_name": "Lazar Milivojevic",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gali, Jordí",
+      "López-Salido, J. David",
+      "Vallés, Javier"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "bf",
+      "text": "bf"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

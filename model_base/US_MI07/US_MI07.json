@@ -1,0 +1,129 @@
+{
+  "$schema": "model",
+  "name": "US_MI07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Milani (2007)",
+    "paper_title": "Expectations, learning and macroeconomic persistence",
+    "journal": "Journal of Monetary Economics 54 (7), pp. 2065-2082",
+    "replicants_name": "P. Kuang and D. Stijepic",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Milani, Fabio"
+    ]
+  },
+  "msr": [
+    "0.914",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*1.484",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*0.801",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "v_r",
+      "text": "v_r"
+    },
+    {
+      "name": "v_u",
+      "text": "Price markup shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_tilde",
+      "text": "pi_tilde"
+    },
+    {
+      "name": "r_n",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "u",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "x_tilde",
+      "text": "x_tilde"
+    }
+  ]
+}

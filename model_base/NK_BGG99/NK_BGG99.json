@@ -1,0 +1,222 @@
+{
+  "$schema": "model",
+  "name": "NK_BGG99",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Bernanke et al. (1999)",
+    "paper_title": "The financial accelerator in a quantitative business",
+    "journal": "Taylor, J. B., Woodford, M. (Eds.), Handbook of Macroeconomics Volume 1, pp. 1341-1393",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Bernanke, Ben",
+      "Gertler, Mark",
+      "Gilchrist, Simon"
+    ]
+  },
+  "msr": [
+    "0.9",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.11",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock "
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "aH",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c_eH",
+      "text": "c_eH"
+    },
+    {
+      "name": "cH",
+      "text": "Consumption"
+    },
+    {
+      "name": "cHf",
+      "text": "cHf"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "e_piH",
+      "text": "e_piH"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "gH",
+      "text": "gH"
+    },
+    {
+      "name": "hH",
+      "text": "Labour"
+    },
+    {
+      "name": "hHf",
+      "text": "hHf"
+    },
+    {
+      "name": "iH",
+      "text": "Investment"
+    },
+    {
+      "name": "iHf",
+      "text": "iHf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "kH",
+      "text": "Capital"
+    },
+    {
+      "name": "kHf",
+      "text": "kHf"
+    },
+    {
+      "name": "nH",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "nHf",
+      "text": "nHf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi_t1H",
+      "text": "pi_t1H"
+    },
+    {
+      "name": "piH",
+      "text": "piH"
+    },
+    {
+      "name": "premiumH",
+      "text": "premiumH"
+    },
+    {
+      "name": "qH",
+      "text": "qH"
+    },
+    {
+      "name": "qHf",
+      "text": "qHf"
+    },
+    {
+      "name": "r_kH",
+      "text": "Capital returns"
+    },
+    {
+      "name": "r_kHf",
+      "text": "r_kHf"
+    },
+    {
+      "name": "r_nH",
+      "text": "r_nH"
+    },
+    {
+      "name": "rH",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rHf",
+      "text": "rHf"
+    },
+    {
+      "name": "xH",
+      "text": "Markup"
+    },
+    {
+      "name": "yH",
+      "text": "yH"
+    },
+    {
+      "name": "yHf",
+      "text": "yHf"
+    }
+  ]
+}

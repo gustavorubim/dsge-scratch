@@ -1,0 +1,218 @@
+{
+  "$schema": "model",
+  "name": "NK_CK08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Christoffel & Kuester (2008)",
+    "paper_title": "Resuscitating the wage channel in models with unemployment",
+    "journal": "Journal of Monetary Economics 55(5), pp. 865-887",
+    "replicants_name": "K. Kuester",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Christoffel, Kai",
+      "Kuester, Keith"
+    ]
+  },
+  "msr": [
+    "0.85",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5*(1-0.85)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "inno_ebt",
+      "text": "Preference shock"
+    },
+    {
+      "name": "inno_zt",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ct",
+      "text": "Consumption"
+    },
+    {
+      "name": "deltaFt",
+      "text": "deltaFt"
+    },
+    {
+      "name": "Deltastart",
+      "text": "Deltastart"
+    },
+    {
+      "name": "deltaWt",
+      "text": "deltaWt"
+    },
+    {
+      "name": "ebt",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "emoneyt",
+      "text": "emoneyt"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g_",
+      "text": "g_"
+    },
+    {
+      "name": "gt",
+      "text": "gt"
+    },
+    {
+      "name": "ht",
+      "text": "Labour"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "Jstart",
+      "text": "Jstart"
+    },
+    {
+      "name": "lambdat",
+      "text": "lambdat"
+    },
+    {
+      "name": "mct",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mt",
+      "text": "mt"
+    },
+    {
+      "name": "nt",
+      "text": "nt"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "Piannt",
+      "text": "Piannt"
+    },
+    {
+      "name": "Pit",
+      "text": "Pit"
+    },
+    {
+      "name": "qt",
+      "text": "qt"
+    },
+    {
+      "name": "Rt",
+      "text": "Rt"
+    },
+    {
+      "name": "st",
+      "text": "st"
+    },
+    {
+      "name": "ut",
+      "text": "ut"
+    },
+    {
+      "name": "vt",
+      "text": "vt"
+    },
+    {
+      "name": "wstart",
+      "text": "wstart"
+    },
+    {
+      "name": "wt",
+      "text": "Real wage"
+    },
+    {
+      "name": "xLt",
+      "text": "xLt"
+    },
+    {
+      "name": "yt",
+      "text": "yt"
+    },
+    {
+      "name": "zt",
+      "text": "Technology shock process"
+    }
+  ]
+}

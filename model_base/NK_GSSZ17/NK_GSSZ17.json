@@ -1,0 +1,288 @@
+{
+  "$schema": "model",
+  "name": "NK_GSSZ17",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gilchrist et al. (2017)",
+    "paper_title": "Inflation Dynamics during the Financial Crisis",
+    "journal": "American Economic Review, 107(3): 785-823",
+    "replicants_name": "Phillip Lieberknecht",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gilchrist, Simon",
+      "Schoenle, Raphael",
+      "Sim, Jae",
+      "Zakrajsek, Egon"
+    ]
+  },
+  "msr": [
+    "0.75",
+    "0",
+    "0",
+    "0",
+    "2*0.25",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eA",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eD",
+      "text": "Demand shock"
+    },
+    {
+      "name": "eF",
+      "text": "eF"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "abar",
+      "text": "abar"
+    },
+    {
+      "name": "abar_f",
+      "text": "abar_f"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_f",
+      "text": "c_f"
+    },
+    {
+      "name": "D",
+      "text": "Demand shock process"
+    },
+    {
+      "name": "dt",
+      "text": "dt"
+    },
+    {
+      "name": "dt_f",
+      "text": "dt_f"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "h",
+      "text": "Labour"
+    },
+    {
+      "name": "h_f",
+      "text": "h_f"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambda_f",
+      "text": "lambda_f"
+    },
+    {
+      "name": "lw",
+      "text": "lw"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "m_f",
+      "text": "m_f"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "mu_f",
+      "text": "mu_f"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "pii",
+      "text": "pii"
+    },
+    {
+      "name": "pii_f",
+      "text": "pii_f"
+    },
+    {
+      "name": "pii_w",
+      "text": "pii_w"
+    },
+    {
+      "name": "pii_w_f",
+      "text": "pii_w_f"
+    },
+    {
+      "name": "pS",
+      "text": "pS"
+    },
+    {
+      "name": "pS_f",
+      "text": "pS_f"
+    },
+    {
+      "name": "pt",
+      "text": "pt"
+    },
+    {
+      "name": "pt_f",
+      "text": "pt_f"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_f",
+      "text": "R_f"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "s_f",
+      "text": "s_f"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "v_f",
+      "text": "v_f"
+    },
+    {
+      "name": "varrho",
+      "text": "varrho"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "w_f",
+      "text": "w_f"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "x_f",
+      "text": "x_f"
+    },
+    {
+      "name": "xi",
+      "text": "xi"
+    },
+    {
+      "name": "xi_f",
+      "text": "xi_f"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_f",
+      "text": "y_f"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "z_f",
+      "text": "z_f"
+    }
+  ]
+}

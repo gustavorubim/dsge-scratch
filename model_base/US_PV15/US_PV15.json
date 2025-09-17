@@ -1,0 +1,597 @@
+{
+  "$schema": "model",
+  "name": "US_PV15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Poutineau & Vermandel (2015)",
+    "paper_title": "Financial frictions and the extensive margin of activity",
+    "journal": "Research in Economics, 69(4), 525-554",
+    "replicants_name": "Lazar Milovojevic",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Poutineau, Jean-Christophe",
+      "Vermandel, Gauthier"
+    ]
+  },
+  "msr": [
+    "0.874082619958901",
+    "0",
+    "0",
+    "0",
+    "(1-0.874082619958901)*1.442040888486226",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.874082619958901)*(0.107573728902499+0.086084005670054)",
+    "(1-0.874082619958901)*(-0.086084005670054)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_b",
+      "text": "Preference shock"
+    },
+    {
+      "name": "e_e",
+      "text": "e_e"
+    },
+    {
+      "name": "e_i",
+      "text": "e_i"
+    },
+    {
+      "name": "e_l",
+      "text": "e_l"
+    },
+    {
+      "name": "e_m",
+      "text": "e_m"
+    },
+    {
+      "name": "e_n",
+      "text": "Net worth shock"
+    },
+    {
+      "name": "e_p",
+      "text": "Price marksup shock"
+    },
+    {
+      "name": "e_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_obs",
+      "text": "c_obs"
+    },
+    {
+      "name": "cn",
+      "text": "cn"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "de",
+      "text": "de"
+    },
+    {
+      "name": "den",
+      "text": "den"
+    },
+    {
+      "name": "dn",
+      "text": "dn"
+    },
+    {
+      "name": "eta",
+      "text": "eta"
+    },
+    {
+      "name": "etan",
+      "text": "etan"
+    },
+    {
+      "name": "h",
+      "text": "Hours worked"
+    },
+    {
+      "name": "h_obs",
+      "text": "h_obs"
+    },
+    {
+      "name": "hc",
+      "text": "hc"
+    },
+    {
+      "name": "hcn",
+      "text": "hcn"
+    },
+    {
+      "name": "he",
+      "text": "he"
+    },
+    {
+      "name": "hen",
+      "text": "hen"
+    },
+    {
+      "name": "hn",
+      "text": "hn"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_obs",
+      "text": "i_obs"
+    },
+    {
+      "name": "in",
+      "text": "in"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kn",
+      "text": "kn"
+    },
+    {
+      "name": "ku",
+      "text": "ku"
+    },
+    {
+      "name": "kun",
+      "text": "kun"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "l_obs",
+      "text": "l_obs"
+    },
+    {
+      "name": "ln_c",
+      "text": "ln_c"
+    },
+    {
+      "name": "ln_i",
+      "text": "ln_i"
+    },
+    {
+      "name": "ln_l",
+      "text": "ln_l"
+    },
+    {
+      "name": "ln_n",
+      "text": "ln_n"
+    },
+    {
+      "name": "ln_ne",
+      "text": "ln_ne"
+    },
+    {
+      "name": "ln_p",
+      "text": "ln_p"
+    },
+    {
+      "name": "ln_pi",
+      "text": "ln_pi"
+    },
+    {
+      "name": "ln_r",
+      "text": "ln_r"
+    },
+    {
+      "name": "ln_rL",
+      "text": "ln_rL"
+    },
+    {
+      "name": "ln_v",
+      "text": "ln_v"
+    },
+    {
+      "name": "ln_y",
+      "text": "ln_y"
+    },
+    {
+      "name": "ln_yd",
+      "text": "ln_yd"
+    },
+    {
+      "name": "ln_yn",
+      "text": "ln_yn"
+    },
+    {
+      "name": "lnn",
+      "text": "lnn"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcL",
+      "text": "mcL"
+    },
+    {
+      "name": "mcLn",
+      "text": "mcLn"
+    },
+    {
+      "name": "mcn",
+      "text": "mcn"
+    },
+    {
+      "name": "mk",
+      "text": "mk"
+    },
+    {
+      "name": "mut_L",
+      "text": "mut_L"
+    },
+    {
+      "name": "mut_Ln",
+      "text": "mut_Ln"
+    },
+    {
+      "name": "mut_p",
+      "text": "mut_p"
+    },
+    {
+      "name": "mut_w",
+      "text": "mut_w"
+    },
+    {
+      "name": "mut_wn",
+      "text": "mut_wn"
+    },
+    {
+      "name": "n",
+      "text": "n"
+    },
+    {
+      "name": "ne",
+      "text": "ne"
+    },
+    {
+      "name": "ne_obs",
+      "text": "ne_obs"
+    },
+    {
+      "name": "nen",
+      "text": "nen"
+    },
+    {
+      "name": "nn",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "nnn",
+      "text": "nnn"
+    },
+    {
+      "name": "nnnn",
+      "text": "nnnn"
+    },
+    {
+      "name": "omega",
+      "text": "omega"
+    },
+    {
+      "name": "omegan",
+      "text": "omegan"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "Phiu",
+      "text": "Phiu"
+    },
+    {
+      "name": "Phiun",
+      "text": "Phiun"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_obs",
+      "text": "pi_obs"
+    },
+    {
+      "name": "pi_w",
+      "text": "pi_w"
+    },
+    {
+      "name": "pi_wn",
+      "text": "pi_wn"
+    },
+    {
+      "name": "pic",
+      "text": "pic"
+    },
+    {
+      "name": "pn",
+      "text": "pn"
+    },
+    {
+      "name": "Psi",
+      "text": "Psi"
+    },
+    {
+      "name": "q",
+      "text": "Tobin's q"
+    },
+    {
+      "name": "qn",
+      "text": "qn"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_obs",
+      "text": "r_obs"
+    },
+    {
+      "name": "rK",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rKn",
+      "text": "rKn"
+    },
+    {
+      "name": "rL",
+      "text": "rL"
+    },
+    {
+      "name": "rL_obs",
+      "text": "rL_obs"
+    },
+    {
+      "name": "rLn",
+      "text": "rLn"
+    },
+    {
+      "name": "rr",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rrn",
+      "text": "rrn"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "s_a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "s_b",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "s_e",
+      "text": "s_e"
+    },
+    {
+      "name": "s_g",
+      "text": "s_g"
+    },
+    {
+      "name": "s_i",
+      "text": "s_i"
+    },
+    {
+      "name": "s_l",
+      "text": "s_l"
+    },
+    {
+      "name": "s_n",
+      "text": "Net worth shock process"
+    },
+    {
+      "name": "s_p",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "s_r",
+      "text": "s_r"
+    },
+    {
+      "name": "s_w",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "sn",
+      "text": "sn"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uc",
+      "text": "uc"
+    },
+    {
+      "name": "ucn",
+      "text": "ucn"
+    },
+    {
+      "name": "uh",
+      "text": "uh"
+    },
+    {
+      "name": "uhn",
+      "text": "uhn"
+    },
+    {
+      "name": "un",
+      "text": "un"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "vn",
+      "text": "vn"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_inf",
+      "text": "w_inf"
+    },
+    {
+      "name": "w_infn",
+      "text": "w_infn"
+    },
+    {
+      "name": "w_obs",
+      "text": "w_obs"
+    },
+    {
+      "name": "w_sup",
+      "text": "w_sup"
+    },
+    {
+      "name": "w_supn",
+      "text": "w_supn"
+    },
+    {
+      "name": "wh",
+      "text": "wh"
+    },
+    {
+      "name": "whn",
+      "text": "whn"
+    },
+    {
+      "name": "wn",
+      "text": "wn"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_obs",
+      "text": "y_obs"
+    },
+    {
+      "name": "yd",
+      "text": "yd"
+    },
+    {
+      "name": "ydn",
+      "text": "ydn"
+    },
+    {
+      "name": "yn",
+      "text": "yn"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zn",
+      "text": "zn"
+    }
+  ]
+}

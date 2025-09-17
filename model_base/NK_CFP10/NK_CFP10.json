@@ -1,0 +1,226 @@
+{
+  "$schema": "model",
+  "name": "NK_CFP10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Carlstrom et al. (2010)",
+    "paper_title": "Optimal monetary policy in a model with agency costs",
+    "journal": "Journal of Money, Credit and Banking 42 (s1), 37-70",
+    "replicants_name": "Philipp Lieberknecht",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Carlstrom, Charles T.",
+      "Fuerst, Timothy S.",
+      "Paustian, Matthias"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eta_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eta_n",
+      "text": "Net worth shock"
+    },
+    {
+      "name": "eta_pi",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "df",
+      "text": "df"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "ef",
+      "text": "ef"
+    },
+    {
+      "name": "eps_pi",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "Lf",
+      "text": "Lf"
+    },
+    {
+      "name": "n",
+      "text": "Net worth shock process"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "phif",
+      "text": "phif"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "Capital returns"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "Rf",
+      "text": "Rf"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yeff",
+      "text": "yeff"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "yg",
+      "text": "yg"
+    },
+    {
+      "name": "ygf",
+      "text": "ygf"
+    },
+    {
+      "name": "z",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    }
+  ]
+}

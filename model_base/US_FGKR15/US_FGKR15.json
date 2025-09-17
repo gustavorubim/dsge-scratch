@@ -1,0 +1,364 @@
+{
+  "$schema": "model",
+  "name": "US_FGKR15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Fernández-Villaverde et al. (2015) (a)",
+    "paper_title": "Fiscal volatility shocks and economic activity",
+    "journal": "American Economic Review 105(11), pp. 3352-3384",
+    "replicants_name": "Irina Popova and Uliana Sulakshina",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Fernández-Villaverde, Jesús",
+      "Guerrón-Quintana, Pablo",
+      "Kuester, Keith",
+      "Rubio-Ramírez, Juan"
+    ]
+  },
+  "msr": [
+    "0.7",
+    "0",
+    "0",
+    "0",
+    "1.35*(1-0.7) ",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.25*(1-0.7)*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ekt",
+      "text": "ekt"
+    },
+    {
+      "name": "ewt",
+      "text": "ewt"
+    },
+    {
+      "name": "ezt",
+      "text": "ezt"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "uct",
+      "text": "uct"
+    },
+    {
+      "name": "ugt",
+      "text": "ugt"
+    },
+    {
+      "name": "ukt",
+      "text": "ukt"
+    },
+    {
+      "name": "uwt",
+      "text": "uwt"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "bdt",
+      "text": "bdt"
+    },
+    {
+      "name": "bdtF",
+      "text": "bdtF"
+    },
+    {
+      "name": "ct",
+      "text": "Consumption"
+    },
+    {
+      "name": "ctF",
+      "text": "ctF"
+    },
+    {
+      "name": "dt",
+      "text": "dt"
+    },
+    {
+      "name": "egt",
+      "text": "egt"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "gct",
+      "text": "gct"
+    },
+    {
+      "name": "gctF",
+      "text": "gctF"
+    },
+    {
+      "name": "git",
+      "text": "git"
+    },
+    {
+      "name": "gitF",
+      "text": "gitF"
+    },
+    {
+      "name": "gt",
+      "text": "gt"
+    },
+    {
+      "name": "gtF",
+      "text": "gtF"
+    },
+    {
+      "name": "gwt",
+      "text": "gwt"
+    },
+    {
+      "name": "gwtF",
+      "text": "gwtF"
+    },
+    {
+      "name": "gyt",
+      "text": "gyt"
+    },
+    {
+      "name": "gytF",
+      "text": "gytF"
+    },
+    {
+      "name": "gzt",
+      "text": "gzt"
+    },
+    {
+      "name": "ht",
+      "text": "Labour"
+    },
+    {
+      "name": "htF",
+      "text": "htF"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflt",
+      "text": "inflt"
+    },
+    {
+      "name": "infltF",
+      "text": "infltF"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "invt",
+      "text": "Investment"
+    },
+    {
+      "name": "invtF",
+      "text": "invtF"
+    },
+    {
+      "name": "kbt",
+      "text": "kbt"
+    },
+    {
+      "name": "kbtF",
+      "text": "kbtF"
+    },
+    {
+      "name": "kt",
+      "text": "Capital"
+    },
+    {
+      "name": "ktF",
+      "text": "ktF"
+    },
+    {
+      "name": "lamt",
+      "text": "lamt"
+    },
+    {
+      "name": "lamtF",
+      "text": "lamtF"
+    },
+    {
+      "name": "mct",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mctF",
+      "text": "mctF"
+    },
+    {
+      "name": "miubt",
+      "text": "miubt"
+    },
+    {
+      "name": "miubtF",
+      "text": "miubtF"
+    },
+    {
+      "name": "miut",
+      "text": "miut"
+    },
+    {
+      "name": "miutF",
+      "text": "miutF"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "proft",
+      "text": "proft"
+    },
+    {
+      "name": "proftF",
+      "text": "proftF"
+    },
+    {
+      "name": "rkt",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rktF",
+      "text": "rktF"
+    },
+    {
+      "name": "Rt",
+      "text": "Rt"
+    },
+    {
+      "name": "RtF",
+      "text": "RtF"
+    },
+    {
+      "name": "sigct",
+      "text": "sigct"
+    },
+    {
+      "name": "siggt",
+      "text": "siggt"
+    },
+    {
+      "name": "sigkt",
+      "text": "sigkt"
+    },
+    {
+      "name": "sigwt",
+      "text": "sigwt"
+    },
+    {
+      "name": "tauct",
+      "text": "tauct"
+    },
+    {
+      "name": "tauctF",
+      "text": "tauctF"
+    },
+    {
+      "name": "taukt",
+      "text": "taukt"
+    },
+    {
+      "name": "tauktF",
+      "text": "tauktF"
+    },
+    {
+      "name": "tauwt",
+      "text": "tauwt"
+    },
+    {
+      "name": "tauwtF",
+      "text": "tauwtF"
+    },
+    {
+      "name": "utilt",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "utiltF",
+      "text": "utiltF"
+    },
+    {
+      "name": "wt",
+      "text": "Real wage"
+    },
+    {
+      "name": "wtF",
+      "text": "wtF"
+    },
+    {
+      "name": "yt",
+      "text": "yt"
+    },
+    {
+      "name": "ytF",
+      "text": "ytF"
+    }
+  ]
+}

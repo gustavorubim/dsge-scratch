@@ -1,0 +1,169 @@
+{
+  "$schema": "model",
+  "name": "US_PM08fl",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "IMF projection model US II",
+    "paper_title": "A small quarterly projection model of the US economy",
+    "journal": "IMF Working Paper 08/278",
+    "replicants_name": "Elena Afanasyeva",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Carabenciov et al. (2008)(calibrated for financial linkages)",
+    "category": "Estimated US model",
+    "authors": [
+      "Carabenciov, Ioan",
+      "Ermolaev, Igor",
+      "Freedman, Charles",
+      "Juillard, Michel",
+      "Kamenik, Ondrej"
+    ]
+  },
+  "msr": [
+    "0.7762",
+    "0",
+    "0",
+    "0",
+    "(1-0.7762)*(1+1.2993)/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.7762)*(1+1.2993)/4",
+    "(1-0.7762)*(1+1.2993)/4",
+    "(1-0.7762)*(1+1.2993)/4",
+    "0",
+    "(1-0.7762)*0.2102",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "RES_BLT_US",
+      "text": "RES_BLT_US"
+    },
+    {
+      "name": "RES_PIE_US",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "RES_RR_US_BAR",
+      "text": "RES_RR_US_BAR"
+    },
+    {
+      "name": "RES_UNR_US_GAP",
+      "text": "RES_UNR_US_GAP"
+    },
+    {
+      "name": "RES_Y_US",
+      "text": "Demand shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "E",
+      "text": "E"
+    },
+    {
+      "name": "E1_PIE_USh",
+      "text": "E1_PIE_USh"
+    },
+    {
+      "name": "E1_Y_USh",
+      "text": "E1_Y_USh"
+    },
+    {
+      "name": "E2",
+      "text": "E2"
+    },
+    {
+      "name": "E4_PIE_US4h",
+      "text": "E4_PIE_US4h"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "PIE_US4h",
+      "text": "PIE_US4h"
+    },
+    {
+      "name": "PIE_USh",
+      "text": "PIE_USh"
+    },
+    {
+      "name": "RR_US_BARh",
+      "text": "RR_US_BARh"
+    },
+    {
+      "name": "RR_USh",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "RS_USh",
+      "text": "RS_USh"
+    },
+    {
+      "name": "UNR_US_GAP",
+      "text": "UNR_US_GAP"
+    },
+    {
+      "name": "Y_US",
+      "text": "Y_US"
+    }
+  ]
+}

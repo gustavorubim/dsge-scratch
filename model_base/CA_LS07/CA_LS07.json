@@ -1,0 +1,119 @@
+{
+  "$schema": "model",
+  "name": "CA_LS07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Lubik & Schorfheide (2007)",
+    "paper_title": "Do central banks respond to exchange rate movements? A structural investigation",
+    "journal": "Journal of Monetary Economics 54(4), pp. 1069-1087",
+    "replicants_name": "M.Jancokova",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Lubik, Thomas",
+      "Schorfheide, Frank"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epspi_star",
+      "text": "epspi_star"
+    },
+    {
+      "name": "epsq",
+      "text": "epsq"
+    },
+    {
+      "name": "epsy_star",
+      "text": "epsy_star"
+    },
+    {
+      "name": "epsz",
+      "text": "epsz"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "deltae",
+      "text": "deltae"
+    },
+    {
+      "name": "deltaq",
+      "text": "deltaq"
+    },
+    {
+      "name": "deltay_star",
+      "text": "deltay_star"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_star",
+      "text": "pi_star"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_bar",
+      "text": "y_bar"
+    },
+    {
+      "name": "y_star",
+      "text": "y_star"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    }
+  ]
+}

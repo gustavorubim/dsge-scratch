@@ -1,0 +1,250 @@
+{
+  "$schema": "model",
+  "name": "US_FU19",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Chiara Fratto and Harald Uhlig (2019)",
+    "paper_title": "Accounting for Post Crisis Inflation: A Retro Analysis",
+    "journal": "Review of Economic Dynamics",
+    "replicants_name": "",
+    "pub_date": "",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Chiara Fratto",
+      "Harald Uhlig"
+    ]
+  },
+  "msr": [
+    "0.88",
+    "0",
+    "0",
+    "0",
+    "(1-0.88)*1.68",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.88)*0.11)+0.15",
+    "-0.15",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eb2",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "emu",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "ep",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "ew",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "eZ",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b2",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_flex",
+      "text": "c_flex"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_flex",
+      "text": "i_flex"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "k_bar",
+      "text": "Capital"
+    },
+    {
+      "name": "k_bar_flex",
+      "text": "k_bar_flex"
+    },
+    {
+      "name": "k_flex",
+      "text": "k_flex"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "L_flex",
+      "text": "L_flex"
+    },
+    {
+      "name": "lambda_p",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambda_w",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mu",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Q_flex",
+      "text": "Q_flex"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_flex",
+      "text": "R_flex"
+    },
+    {
+      "name": "r_k",
+      "text": "Capital returns"
+    },
+    {
+      "name": "r_k_flex",
+      "text": "r_k_flex"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "u_flex",
+      "text": "u_flex"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_flex",
+      "text": "w_flex"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_flex",
+      "text": "y_flex"
+    },
+    {
+      "name": "Z",
+      "text": "Technology shock process"
+    }
+  ]
+}

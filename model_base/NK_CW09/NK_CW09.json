@@ -1,0 +1,341 @@
+{
+  "$schema": "model",
+  "name": "NK_CW09",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Curdia & Woodford (2009)",
+    "paper_title": "Credit frictions and optimal monetary policy",
+    "journal": "BIS Working Paper No 278",
+    "replicants_name": "A.Hüser and M.Kontny",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Curdia, Vasco",
+      "Woodford, Michael"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    ".25",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_b_g",
+      "text": "e_b_g"
+    },
+    {
+      "name": "e_C_bar_b",
+      "text": "e_C_bar_b"
+    },
+    {
+      "name": "e_C_bar_s",
+      "text": "e_C_bar_s"
+    },
+    {
+      "name": "e_chi_tilde",
+      "text": "e_chi_tilde"
+    },
+    {
+      "name": "e_H_bar",
+      "text": "e_H_bar"
+    },
+    {
+      "name": "e_mu_w",
+      "text": "e_mu_w"
+    },
+    {
+      "name": "e_tau",
+      "text": "e_tau"
+    },
+    {
+      "name": "e_Xi_tilde",
+      "text": "e_Xi_tilde"
+    },
+    {
+      "name": "e_Z",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "B",
+      "text": "B"
+    },
+    {
+      "name": "b_g",
+      "text": "b_g"
+    },
+    {
+      "name": "b_g_hat",
+      "text": "b_g_hat"
+    },
+    {
+      "name": "b_hat",
+      "text": "b_hat"
+    },
+    {
+      "name": "C_bar_b",
+      "text": "C_bar_b"
+    },
+    {
+      "name": "C_bar_b_hat",
+      "text": "C_bar_b_hat"
+    },
+    {
+      "name": "C_bar_s",
+      "text": "C_bar_s"
+    },
+    {
+      "name": "C_bar_s_hat",
+      "text": "C_bar_s_hat"
+    },
+    {
+      "name": "chi_tilde",
+      "text": "chi_tilde"
+    },
+    {
+      "name": "chi_tilde_hat",
+      "text": "chi_tilde_hat"
+    },
+    {
+      "name": "Delta",
+      "text": "Delta"
+    },
+    {
+      "name": "Delta_hat",
+      "text": "Delta_hat"
+    },
+    {
+      "name": "e_G",
+      "text": "e_G"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "F_hat",
+      "text": "F_hat"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "G_hat",
+      "text": "G_hat"
+    },
+    {
+      "name": "H_bar",
+      "text": "Labour"
+    },
+    {
+      "name": "H_bar_hat",
+      "text": "H_bar_hat"
+    },
+    {
+      "name": "i_b_hat",
+      "text": "i_b_hat"
+    },
+    {
+      "name": "i_d",
+      "text": "i_d"
+    },
+    {
+      "name": "i_d_hat",
+      "text": "i_d_hat"
+    },
+    {
+      "name": "i_d_hat_a",
+      "text": "i_d_hat_a"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "K",
+      "text": "K"
+    },
+    {
+      "name": "K_hat",
+      "text": "K_hat"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "lambda_b",
+      "text": "lambda_b"
+    },
+    {
+      "name": "lambda_b_hat",
+      "text": "lambda_b_hat"
+    },
+    {
+      "name": "Lambda_hat",
+      "text": "Lambda_hat"
+    },
+    {
+      "name": "lambda_s",
+      "text": "lambda_s"
+    },
+    {
+      "name": "lambda_s_hat",
+      "text": "lambda_s_hat"
+    },
+    {
+      "name": "lambda_tilde",
+      "text": "lambda_tilde"
+    },
+    {
+      "name": "lambda_tilde_hat",
+      "text": "lambda_tilde_hat"
+    },
+    {
+      "name": "mu_w",
+      "text": "mu_w"
+    },
+    {
+      "name": "mu_w_hat",
+      "text": "mu_w_hat"
+    },
+    {
+      "name": "omega",
+      "text": "omega"
+    },
+    {
+      "name": "omega_hat",
+      "text": "omega_hat"
+    },
+    {
+      "name": "omega_hat_a",
+      "text": "omega_hat_a"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "Pi",
+      "text": "Pi"
+    },
+    {
+      "name": "Pi_hat",
+      "text": "Pi_hat"
+    },
+    {
+      "name": "Pi_hat_a",
+      "text": "Pi_hat_a"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "tau_hat",
+      "text": "tau_hat"
+    },
+    {
+      "name": "Xi_tilde_hat",
+      "text": "Xi_tilde_hat"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Y_hat",
+      "text": "Y_hat"
+    },
+    {
+      "name": "Y_n_hat",
+      "text": "Y_n_hat"
+    },
+    {
+      "name": "Z",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "Z_hat",
+      "text": "Z_hat"
+    }
+  ]
+}

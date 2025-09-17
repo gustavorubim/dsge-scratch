@@ -1,0 +1,309 @@
+{
+  "$schema": "model",
+  "name": "US_CMR14noFA",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Christiano et al. (2014) I",
+    "paper_title": "Risk shocks",
+    "journal": "American Economic Review 104 (1), pp. 27-65",
+    "replicants_name": "M. Kuete",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "Version without financial frictions. NOTE: Solving this models requires the Statistics Toolbox for MATLAB or the statistics and io package for Octave.",
+    "category": "Estimated US model",
+    "authors": [
+      "Christiano, Lawrence J.",
+      "Motto, Roberto",
+      "Rostagno, Massimo"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_epsil",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_lambdaf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "e_muup",
+      "text": "e_muup"
+    },
+    {
+      "name": "e_muzstar",
+      "text": "e_muzstar"
+    },
+    {
+      "name": "e_pitarget",
+      "text": "e_pitarget"
+    },
+    {
+      "name": "e_zetac",
+      "text": "e_zetac"
+    },
+    {
+      "name": "e_zetai",
+      "text": "e_zetai"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "consumption_obs",
+      "text": "consumption_obs"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "epsil",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "Fp",
+      "text": "Fp"
+    },
+    {
+      "name": "Fpf",
+      "text": "Fpf"
+    },
+    {
+      "name": "Fw",
+      "text": "Fw"
+    },
+    {
+      "name": "Fwf",
+      "text": "Fwf"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gdp_obs",
+      "text": "gdp_obs"
+    },
+    {
+      "name": "h",
+      "text": "Hours worked"
+    },
+    {
+      "name": "hf",
+      "text": "hf"
+    },
+    {
+      "name": "hours_obs",
+      "text": "hours_obs"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_f",
+      "text": "i_f"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflation_obs",
+      "text": "inflation_obs"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "investment_obs",
+      "text": "investment_obs"
+    },
+    {
+      "name": "kbar",
+      "text": "Capital"
+    },
+    {
+      "name": "kbarf",
+      "text": "kbarf"
+    },
+    {
+      "name": "lambdaf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambdaz",
+      "text": "lambdaz"
+    },
+    {
+      "name": "lambdazf",
+      "text": "lambdazf"
+    },
+    {
+      "name": "muup",
+      "text": "muup"
+    },
+    {
+      "name": "muzstar",
+      "text": "muzstar"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "phif",
+      "text": "phif"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pinvest_obs",
+      "text": "pinvest_obs"
+    },
+    {
+      "name": "pitarget",
+      "text": "pitarget"
+    },
+    {
+      "name": "pstar",
+      "text": "pstar"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "Re",
+      "text": "Re"
+    },
+    {
+      "name": "Re_obs",
+      "text": "Re_obs"
+    },
+    {
+      "name": "RealRe_obs",
+      "text": "RealRe_obs"
+    },
+    {
+      "name": "Ref",
+      "text": "Ref"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "Rk",
+      "text": "Rk"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "Rkf",
+      "text": "Rkf"
+    },
+    {
+      "name": "s",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "sf",
+      "text": "sf"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "wage_obs",
+      "text": "wage_obs"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "wtilde",
+      "text": "wtilde"
+    },
+    {
+      "name": "wtildef",
+      "text": "wtildef"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "zetac",
+      "text": "zetac"
+    },
+    {
+      "name": "zetai",
+      "text": "zetai"
+    }
+  ]
+}

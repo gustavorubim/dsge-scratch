@@ -1,0 +1,271 @@
+{
+  "$schema": "model",
+  "name": "NK_KRS12",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kannan et al. (2012)",
+    "paper_title": "Monetary and macroprudential policy rules in a model with house price booms",
+    "journal": "The B.E. Journal of Macroeconomics 12 (1), pp. 16",
+    "replicants_name": "Original code provided (Jiajin Huang and Qianchao Qu edited)",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Kannan, Prakash",
+      "Rabanal, Pau",
+      "Scott, Alasdair M."
+    ]
+  },
+  "msr": [
+    "0.7",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.3*(1-0.7)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    ".125*(1-0.7)*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_A",
+      "text": "eps_A"
+    },
+    {
+      "name": "eps_D",
+      "text": "eps_D"
+    },
+    {
+      "name": "eps_v",
+      "text": "eps_v"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "aC",
+      "text": "aC"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "bB",
+      "text": "bB"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "cB",
+      "text": "cB"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "dB",
+      "text": "dB"
+    },
+    {
+      "name": "deltabB",
+      "text": "deltabB"
+    },
+    {
+      "name": "deltac",
+      "text": "deltac"
+    },
+    {
+      "name": "deltacB",
+      "text": "deltacB"
+    },
+    {
+      "name": "deltap",
+      "text": "deltap"
+    },
+    {
+      "name": "deltapC",
+      "text": "deltapC"
+    },
+    {
+      "name": "deltapD",
+      "text": "deltapD"
+    },
+    {
+      "name": "dstar",
+      "text": "dstar"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "iB",
+      "text": "iB"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lC",
+      "text": "lC"
+    },
+    {
+      "name": "lCB",
+      "text": "lCB"
+    },
+    {
+      "name": "lCtot",
+      "text": "lCtot"
+    },
+    {
+      "name": "lD",
+      "text": "lD"
+    },
+    {
+      "name": "lDB",
+      "text": "lDB"
+    },
+    {
+      "name": "lDtot",
+      "text": "lDtot"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "muB",
+      "text": "muB"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pC",
+      "text": "pC"
+    },
+    {
+      "name": "pD",
+      "text": "pD"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rL",
+      "text": "rL"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "wC",
+      "text": "wC"
+    },
+    {
+      "name": "wD",
+      "text": "wD"
+    },
+    {
+      "name": "xiD",
+      "text": "xiD"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yC",
+      "text": "yC"
+    },
+    {
+      "name": "yCstar",
+      "text": "yCstar"
+    },
+    {
+      "name": "yD",
+      "text": "yD"
+    },
+    {
+      "name": "yDstar",
+      "text": "yDstar"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "$schema": "model",
+  "name": "NK_IR04AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ireland (2004) AL",
+    "paper_title": "Money's role in the monetary business cycle",
+    "journal": "Journal of Money, Credit and Banking 36(6), pp. 969-983",
+    "replicants_name": "Original code provided (S. Schmidt edited)",
+    "pub_date": "2004",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Ireland, Peter N."
+    ]
+  },
+  "msr": [
+    "0.5481",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5680",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "y",
+      "m",
+      "e",
+      "a",
+      "inflationq",
+      "pi"
+    ],
+    "states_long": [
+      "a",
+      "z",
+      "inflationq",
+      "inflationql",
+      "inflationql2"
+    ],
+    "states_short": [
+      "a",
+      "z",
+      "interest"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "epsa_",
+      "text": "epsa_"
+    },
+    {
+      "name": "epse_",
+      "text": "epse_"
+    },
+    {
+      "name": "epsz_",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "z",
+      "text": "Price markup shock process"
+    }
+  ]
+}

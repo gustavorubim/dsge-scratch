@@ -1,0 +1,417 @@
+{
+  "$schema": "model",
+  "name": "NK_FLMF18",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Filardo et al. (2018)",
+    "paper_title": "Monetary policy spillovers, global commoditiy prices and cooperation",
+    "journal": "BIS Working Paper No 696",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2018",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Filardo, Andrew",
+      "Lombardi, Marco",
+      "Montoro, Carlos",
+      "Ferrari, Massimo"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "EA",
+      "text": "Technology shock"
+    },
+    {
+      "name": "EERR",
+      "text": "EERR"
+    },
+    {
+      "name": "EG",
+      "text": "Preference shock"
+    },
+    {
+      "name": "EOMEGA",
+      "text": "EOMEGA"
+    },
+    {
+      "name": "EZ",
+      "text": "EZ"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "A_CB",
+      "text": "A_CB"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "CY",
+      "text": "CY"
+    },
+    {
+      "name": "DD",
+      "text": "DD"
+    },
+    {
+      "name": "DELTA",
+      "text": "DELTA"
+    },
+    {
+      "name": "EGG",
+      "text": "EGG"
+    },
+    {
+      "name": "EPI",
+      "text": "EPI"
+    },
+    {
+      "name": "EPIC",
+      "text": "EPIC"
+    },
+    {
+      "name": "ERE",
+      "text": "ERE"
+    },
+    {
+      "name": "ERN",
+      "text": "ERN"
+    },
+    {
+      "name": "ERR",
+      "text": "ERR"
+    },
+    {
+      "name": "ERR_CB",
+      "text": "ERR_CB"
+    },
+    {
+      "name": "ERR_CBS",
+      "text": "ERR_CBS"
+    },
+    {
+      "name": "ETA",
+      "text": "ETA"
+    },
+    {
+      "name": "ETA_CB",
+      "text": "ETA_CB"
+    },
+    {
+      "name": "EY",
+      "text": "EY"
+    },
+    {
+      "name": "EYG",
+      "text": "EYG"
+    },
+    {
+      "name": "EYNG",
+      "text": "EYNG"
+    },
+    {
+      "name": "G",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "G_CB",
+      "text": "G_CB"
+    },
+    {
+      "name": "GG",
+      "text": "GG"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "MC",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "NA",
+      "text": "NA"
+    },
+    {
+      "name": "NC",
+      "text": "NC"
+    },
+    {
+      "name": "NCY",
+      "text": "NCY"
+    },
+    {
+      "name": "NETA",
+      "text": "NETA"
+    },
+    {
+      "name": "NGG",
+      "text": "NGG"
+    },
+    {
+      "name": "NL",
+      "text": "NL"
+    },
+    {
+      "name": "NMC",
+      "text": "NMC"
+    },
+    {
+      "name": "NN",
+      "text": "NN"
+    },
+    {
+      "name": "NO",
+      "text": "NO"
+    },
+    {
+      "name": "NOC",
+      "text": "NOC"
+    },
+    {
+      "name": "NOMEGA",
+      "text": "NOMEGA"
+    },
+    {
+      "name": "NOY",
+      "text": "NOY"
+    },
+    {
+      "name": "NPI",
+      "text": "NPI"
+    },
+    {
+      "name": "NPIY",
+      "text": "NPIY"
+    },
+    {
+      "name": "NQ",
+      "text": "NQ"
+    },
+    {
+      "name": "NR",
+      "text": "NR"
+    },
+    {
+      "name": "NRe",
+      "text": "NRe"
+    },
+    {
+      "name": "NRfe",
+      "text": "NRfe"
+    },
+    {
+      "name": "NRn",
+      "text": "NRn"
+    },
+    {
+      "name": "NTY",
+      "text": "NTY"
+    },
+    {
+      "name": "NWP",
+      "text": "NWP"
+    },
+    {
+      "name": "NX",
+      "text": "NX"
+    },
+    {
+      "name": "NY",
+      "text": "NY"
+    },
+    {
+      "name": "NY_aux",
+      "text": "NY_aux"
+    },
+    {
+      "name": "NYe",
+      "text": "NYe"
+    },
+    {
+      "name": "NYfe",
+      "text": "NYfe"
+    },
+    {
+      "name": "NYn",
+      "text": "NYn"
+    },
+    {
+      "name": "NZ",
+      "text": "NZ"
+    },
+    {
+      "name": "O",
+      "text": "O"
+    },
+    {
+      "name": "OC",
+      "text": "OC"
+    },
+    {
+      "name": "OMEGA",
+      "text": "OMEGA"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "OY",
+      "text": "OY"
+    },
+    {
+      "name": "PI",
+      "text": "PI"
+    },
+    {
+      "name": "PIY",
+      "text": "PIY"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R1",
+      "text": "R1"
+    },
+    {
+      "name": "R2",
+      "text": "R2"
+    },
+    {
+      "name": "Re",
+      "text": "Re"
+    },
+    {
+      "name": "Rfe",
+      "text": "Rfe"
+    },
+    {
+      "name": "Rfe_CB",
+      "text": "Rfe_CB"
+    },
+    {
+      "name": "Rn",
+      "text": "Rn"
+    },
+    {
+      "name": "TY",
+      "text": "TY"
+    },
+    {
+      "name": "UTIL",
+      "text": "UTIL"
+    },
+    {
+      "name": "WELF",
+      "text": "WELF"
+    },
+    {
+      "name": "WP",
+      "text": "Real wage"
+    },
+    {
+      "name": "X",
+      "text": "X"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Y_aux",
+      "text": "Y_aux"
+    },
+    {
+      "name": "Y_gap",
+      "text": "Y_gap"
+    },
+    {
+      "name": "Y_gap_CB",
+      "text": "Y_gap_CB"
+    },
+    {
+      "name": "Ye",
+      "text": "Ye"
+    },
+    {
+      "name": "Yfe",
+      "text": "Yfe"
+    },
+    {
+      "name": "Yfe_CB",
+      "text": "Yfe_CB"
+    },
+    {
+      "name": "Yn",
+      "text": "Yn"
+    },
+    {
+      "name": "Yn_gap",
+      "text": "Yn_gap"
+    },
+    {
+      "name": "Z",
+      "text": "Z"
+    },
+    {
+      "name": "Z_CB",
+      "text": "Z_CB"
+    }
+  ]
+}

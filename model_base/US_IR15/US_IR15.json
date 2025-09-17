@@ -1,0 +1,210 @@
+{
+  "$schema": "model",
+  "name": "US_IR15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "LWW",
+      "SW",
+      "OW08"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ireland (2015)",
+    "paper_title": "Monetary policy, bond risk premia, and the economy",
+    "journal": "Journal of Monetary Economics 76, 124-140",
+    "replicants_name": "M. Kuete",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Ireland, Peter N."
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilon_pi",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "epsilon_tau",
+      "text": "epsilon_tau"
+    },
+    {
+      "name": "epsilon_v",
+      "text": "epsilon_v"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "epsilon_y"
+    },
+    {
+      "name": "eta_16",
+      "text": "eta_16"
+    },
+    {
+      "name": "eta_4",
+      "text": "eta_4"
+    },
+    {
+      "name": "eta_8",
+      "text": "eta_8"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "epsilon_r",
+      "text": "epsilon_r"
+    },
+    {
+      "name": "g_pi",
+      "text": "g_pi"
+    },
+    {
+      "name": "g_pi_a",
+      "text": "g_pi_a"
+    },
+    {
+      "name": "g_r",
+      "text": "g_r"
+    },
+    {
+      "name": "g_y",
+      "text": "g_y"
+    },
+    {
+      "name": "g_y_obs",
+      "text": "g_y_obs"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "P_y_12",
+      "text": "P_y_12"
+    },
+    {
+      "name": "P_y_12_a",
+      "text": "P_y_12_a"
+    },
+    {
+      "name": "P_y_16",
+      "text": "P_y_16"
+    },
+    {
+      "name": "P_y_16_a",
+      "text": "P_y_16_a"
+    },
+    {
+      "name": "P_y_20",
+      "text": "P_y_20"
+    },
+    {
+      "name": "P_y_20_a",
+      "text": "P_y_20_a"
+    },
+    {
+      "name": "P_y_4",
+      "text": "P_y_4"
+    },
+    {
+      "name": "P_y_4_a",
+      "text": "P_y_4_a"
+    },
+    {
+      "name": "P_y_8",
+      "text": "P_y_8"
+    },
+    {
+      "name": "P_y_8_a",
+      "text": "P_y_8_a"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_a",
+      "text": "r_a"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "y_12",
+      "text": "y_12"
+    },
+    {
+      "name": "y_12_a",
+      "text": "y_12_a"
+    },
+    {
+      "name": "y_16",
+      "text": "y_16"
+    },
+    {
+      "name": "y_16_a",
+      "text": "y_16_a"
+    },
+    {
+      "name": "y_20",
+      "text": "y_20"
+    },
+    {
+      "name": "y_20_a",
+      "text": "y_20_a"
+    },
+    {
+      "name": "y_4",
+      "text": "y_4"
+    },
+    {
+      "name": "y_4_a",
+      "text": "y_4_a"
+    },
+    {
+      "name": "y_8",
+      "text": "y_8"
+    },
+    {
+      "name": "y_8_a",
+      "text": "y_8_a"
+    }
+  ]
+}

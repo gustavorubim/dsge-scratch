@@ -1,0 +1,1159 @@
+{
+  "$schema": "model",
+  "name": "G2_SIGMA08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "The Federal Reserve's SIGMA model (2008)",
+    "paper_title": "Trade adjustment and the composition of trade",
+    "journal": "Journal of Economic Dynamics and Control 32(8), pp. 2622-2650",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "From Erceg et al. (2008)",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Erceg, Christopher",
+      "Guerrieri, Luca",
+      "Gust, Christopher J."
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "((1-0.8)*0.6/(1-0.8))/4",
+    "((1-0.8)*0.6/(1-0.8))/4",
+    "((1-0.8)*0.6/(1-0.8))/4",
+    "((1-0.8)*0.6/(1-0.8))/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.28/(1-0.8)*0.25*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-0.28/(1-0.8)*0.25*4",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "erratp",
+      "text": "erratp"
+    },
+    {
+      "name": "erratpf",
+      "text": "erratpf"
+    },
+    {
+      "name": "erratt",
+      "text": "erratt"
+    },
+    {
+      "name": "errattf",
+      "text": "errattf"
+    },
+    {
+      "name": "errbetashk",
+      "text": "errbetashk"
+    },
+    {
+      "name": "errbetashkf",
+      "text": "errbetashkf"
+    },
+    {
+      "name": "errconshkp",
+      "text": "errconshkp"
+    },
+    {
+      "name": "errconshkpf",
+      "text": "errconshkpf"
+    },
+    {
+      "name": "errconshkt",
+      "text": "errconshkt"
+    },
+    {
+      "name": "errconshktf",
+      "text": "errconshktf"
+    },
+    {
+      "name": "errgcxp",
+      "text": "errgcxp"
+    },
+    {
+      "name": "errgcxpf",
+      "text": "errgcxpf"
+    },
+    {
+      "name": "errgcxtf",
+      "text": "errgcxtf"
+    },
+    {
+      "name": "errimpshk",
+      "text": "errimpshk"
+    },
+    {
+      "name": "errimpshkf",
+      "text": "errimpshkf"
+    },
+    {
+      "name": "errpitarp",
+      "text": "errpitarp"
+    },
+    {
+      "name": "errpitarpf",
+      "text": "errpitarpf"
+    },
+    {
+      "name": "errpitart",
+      "text": "errpitart"
+    },
+    {
+      "name": "errpitartf",
+      "text": "errpitartf"
+    },
+    {
+      "name": "errriskpp",
+      "text": "errriskpp"
+    },
+    {
+      "name": "errriskpt",
+      "text": "errriskpt"
+    },
+    {
+      "name": "errtaxkp",
+      "text": "errtaxkp"
+    },
+    {
+      "name": "errtaxkpf",
+      "text": "errtaxkpf"
+    },
+    {
+      "name": "errtaxkt",
+      "text": "errtaxkt"
+    },
+    {
+      "name": "errtaxktf",
+      "text": "errtaxktf"
+    },
+    {
+      "name": "errtaxlshk",
+      "text": "errtaxlshk"
+    },
+    {
+      "name": "errtaxlshkpf",
+      "text": "errtaxlshkpf"
+    },
+    {
+      "name": "errtaxlshktf",
+      "text": "errtaxlshktf"
+    },
+    {
+      "name": "errtranshkp",
+      "text": "errtranshkp"
+    },
+    {
+      "name": "errtranshkpf",
+      "text": "errtranshkpf"
+    },
+    {
+      "name": "errtranshkt",
+      "text": "errtranshkt"
+    },
+    {
+      "name": "errtranshktf",
+      "text": "errtranshktf"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "at",
+      "text": "at"
+    },
+    {
+      "name": "atf",
+      "text": "atf"
+    },
+    {
+      "name": "betashk",
+      "text": "betashk"
+    },
+    {
+      "name": "betashkf",
+      "text": "betashkf"
+    },
+    {
+      "name": "cc",
+      "text": "cc"
+    },
+    {
+      "name": "cc2gdp",
+      "text": "cc2gdp"
+    },
+    {
+      "name": "cc2gdpf",
+      "text": "cc2gdpf"
+    },
+    {
+      "name": "ccd",
+      "text": "ccd"
+    },
+    {
+      "name": "ccdf",
+      "text": "ccdf"
+    },
+    {
+      "name": "ccf",
+      "text": "ccf"
+    },
+    {
+      "name": "cckey",
+      "text": "cckey"
+    },
+    {
+      "name": "cckeyf",
+      "text": "cckeyf"
+    },
+    {
+      "name": "ccopt",
+      "text": "ccopt"
+    },
+    {
+      "name": "ccoptf",
+      "text": "ccoptf"
+    },
+    {
+      "name": "conshk",
+      "text": "conshk"
+    },
+    {
+      "name": "conshkf",
+      "text": "conshkf"
+    },
+    {
+      "name": "conshkp",
+      "text": "conshkp"
+    },
+    {
+      "name": "conshkpf",
+      "text": "conshkpf"
+    },
+    {
+      "name": "conshkt",
+      "text": "conshkt"
+    },
+    {
+      "name": "conshktf",
+      "text": "conshktf"
+    },
+    {
+      "name": "debtg",
+      "text": "debtg"
+    },
+    {
+      "name": "debtgf",
+      "text": "debtgf"
+    },
+    {
+      "name": "dgdp",
+      "text": "dgdp"
+    },
+    {
+      "name": "dgdpf",
+      "text": "dgdpf"
+    },
+    {
+      "name": "dgdpl1",
+      "text": "dgdpl1"
+    },
+    {
+      "name": "dgdpl1f",
+      "text": "dgdpl1f"
+    },
+    {
+      "name": "dgdpl2",
+      "text": "dgdpl2"
+    },
+    {
+      "name": "dgdpl2f",
+      "text": "dgdpl2f"
+    },
+    {
+      "name": "dgdpl3",
+      "text": "dgdpl3"
+    },
+    {
+      "name": "dgdpl3f",
+      "text": "dgdpl3f"
+    },
+    {
+      "name": "dgdpyoy",
+      "text": "dgdpyoy"
+    },
+    {
+      "name": "dgdpyoyf",
+      "text": "dgdpyoyf"
+    },
+    {
+      "name": "dpc",
+      "text": "dpc"
+    },
+    {
+      "name": "dpcf",
+      "text": "dpcf"
+    },
+    {
+      "name": "dpcl1",
+      "text": "dpcl1"
+    },
+    {
+      "name": "dpcl1f",
+      "text": "dpcl1f"
+    },
+    {
+      "name": "dpcl2",
+      "text": "dpcl2"
+    },
+    {
+      "name": "dpcl2f",
+      "text": "dpcl2f"
+    },
+    {
+      "name": "dpcl3",
+      "text": "dpcl3"
+    },
+    {
+      "name": "dpcl3f",
+      "text": "dpcl3f"
+    },
+    {
+      "name": "dpcyoy",
+      "text": "dpcyoy"
+    },
+    {
+      "name": "dpcyoyf",
+      "text": "dpcyoyf"
+    },
+    {
+      "name": "dpm",
+      "text": "dpm"
+    },
+    {
+      "name": "dpmf",
+      "text": "dpmf"
+    },
+    {
+      "name": "dpq",
+      "text": "dpq"
+    },
+    {
+      "name": "dpqf",
+      "text": "dpqf"
+    },
+    {
+      "name": "dpql1",
+      "text": "dpql1"
+    },
+    {
+      "name": "dpql1f",
+      "text": "dpql1f"
+    },
+    {
+      "name": "dpql2",
+      "text": "dpql2"
+    },
+    {
+      "name": "dpql2f",
+      "text": "dpql2f"
+    },
+    {
+      "name": "dpql3",
+      "text": "dpql3"
+    },
+    {
+      "name": "dpql3f",
+      "text": "dpql3f"
+    },
+    {
+      "name": "dpqyoy",
+      "text": "dpqyoy"
+    },
+    {
+      "name": "dpqyoya4",
+      "text": "dpqyoya4"
+    },
+    {
+      "name": "dpqyoya4l1",
+      "text": "dpqyoya4l1"
+    },
+    {
+      "name": "dpqyoya4l2",
+      "text": "dpqyoya4l2"
+    },
+    {
+      "name": "dpqyoya4l3",
+      "text": "dpqyoya4l3"
+    },
+    {
+      "name": "dpqyoya4l4",
+      "text": "dpqyoya4l4"
+    },
+    {
+      "name": "dpqyoyf",
+      "text": "dpqyoyf"
+    },
+    {
+      "name": "dw",
+      "text": "dw"
+    },
+    {
+      "name": "dwf",
+      "text": "dwf"
+    },
+    {
+      "name": "er",
+      "text": "er"
+    },
+    {
+      "name": "errgcxt",
+      "text": "errgcxt"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "gat",
+      "text": "gat"
+    },
+    {
+      "name": "gatf1",
+      "text": "gatf1"
+    },
+    {
+      "name": "gatf2",
+      "text": "gatf2"
+    },
+    {
+      "name": "gatf3",
+      "text": "gatf3"
+    },
+    {
+      "name": "gatf4",
+      "text": "gatf4"
+    },
+    {
+      "name": "gatp",
+      "text": "gatp"
+    },
+    {
+      "name": "gatpf",
+      "text": "gatpf"
+    },
+    {
+      "name": "gatt",
+      "text": "gatt"
+    },
+    {
+      "name": "gattf",
+      "text": "gattf"
+    },
+    {
+      "name": "gcx",
+      "text": "gcx"
+    },
+    {
+      "name": "gcxf",
+      "text": "gcxf"
+    },
+    {
+      "name": "gcxp",
+      "text": "gcxp"
+    },
+    {
+      "name": "gcxpf",
+      "text": "gcxpf"
+    },
+    {
+      "name": "gcxt",
+      "text": "gcxt"
+    },
+    {
+      "name": "gcxtf",
+      "text": "gcxtf"
+    },
+    {
+      "name": "gdp",
+      "text": "gdp"
+    },
+    {
+      "name": "gdpf",
+      "text": "gdpf"
+    },
+    {
+      "name": "gdpgap",
+      "text": "gdpgap"
+    },
+    {
+      "name": "gdpgapa4",
+      "text": "gdpgapa4"
+    },
+    {
+      "name": "gdpgapa4l1",
+      "text": "gdpgapa4l1"
+    },
+    {
+      "name": "gdpgapa4l2",
+      "text": "gdpgapa4l2"
+    },
+    {
+      "name": "gdpgapa4l3",
+      "text": "gdpgapa4l3"
+    },
+    {
+      "name": "gdpgapa4l4",
+      "text": "gdpgapa4l4"
+    },
+    {
+      "name": "gdpgapf",
+      "text": "gdpgapf"
+    },
+    {
+      "name": "gdppot",
+      "text": "gdppot"
+    },
+    {
+      "name": "gdppotf",
+      "text": "gdppotf"
+    },
+    {
+      "name": "glprod",
+      "text": "glprod"
+    },
+    {
+      "name": "gtech",
+      "text": "gtech"
+    },
+    {
+      "name": "gtechf",
+      "text": "gtechf"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "if2gdp",
+      "text": "if2gdp"
+    },
+    {
+      "name": "if2gdpf",
+      "text": "if2gdpf"
+    },
+    {
+      "name": "ifd",
+      "text": "ifd"
+    },
+    {
+      "name": "ifdf",
+      "text": "ifdf"
+    },
+    {
+      "name": "iff",
+      "text": "iff"
+    },
+    {
+      "name": "impshk",
+      "text": "impshk"
+    },
+    {
+      "name": "impshkf",
+      "text": "impshkf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "kp1",
+      "text": "kp1"
+    },
+    {
+      "name": "kp1f",
+      "text": "kp1f"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "lamc",
+      "text": "lamc"
+    },
+    {
+      "name": "lamcf",
+      "text": "lamcf"
+    },
+    {
+      "name": "le",
+      "text": "le"
+    },
+    {
+      "name": "lef",
+      "text": "lef"
+    },
+    {
+      "name": "mcq",
+      "text": "mcq"
+    },
+    {
+      "name": "mcqf",
+      "text": "mcqf"
+    },
+    {
+      "name": "mgsni",
+      "text": "mgsni"
+    },
+    {
+      "name": "mgsnic",
+      "text": "mgsnic"
+    },
+    {
+      "name": "mgsnicf",
+      "text": "mgsnicf"
+    },
+    {
+      "name": "mgsnif",
+      "text": "mgsnif"
+    },
+    {
+      "name": "mgsnii",
+      "text": "mgsnii"
+    },
+    {
+      "name": "mgsniif",
+      "text": "mgsniif"
+    },
+    {
+      "name": "mpl",
+      "text": "mpl"
+    },
+    {
+      "name": "mplf",
+      "text": "mplf"
+    },
+    {
+      "name": "mrs",
+      "text": "mrs"
+    },
+    {
+      "name": "mrsf",
+      "text": "mrsf"
+    },
+    {
+      "name": "nfa",
+      "text": "nfa"
+    },
+    {
+      "name": "nshrcy",
+      "text": "nshrcy"
+    },
+    {
+      "name": "nshrgdefy",
+      "text": "nshrgdefy"
+    },
+    {
+      "name": "nshrgy",
+      "text": "nshrgy"
+    },
+    {
+      "name": "nshriy",
+      "text": "nshriy"
+    },
+    {
+      "name": "nshrmy",
+      "text": "nshrmy"
+    },
+    {
+      "name": "nshrxy",
+      "text": "nshrxy"
+    },
+    {
+      "name": "ntby",
+      "text": "ntby"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pc",
+      "text": "pc"
+    },
+    {
+      "name": "pcf",
+      "text": "pcf"
+    },
+    {
+      "name": "pitar",
+      "text": "pitar"
+    },
+    {
+      "name": "pitarf",
+      "text": "pitarf"
+    },
+    {
+      "name": "pitarp",
+      "text": "pitarp"
+    },
+    {
+      "name": "pitarpf",
+      "text": "pitarpf"
+    },
+    {
+      "name": "pitart",
+      "text": "pitart"
+    },
+    {
+      "name": "pitartf",
+      "text": "pitartf"
+    },
+    {
+      "name": "pitartl1",
+      "text": "pitartl1"
+    },
+    {
+      "name": "pitartl2",
+      "text": "pitartl2"
+    },
+    {
+      "name": "pitartl3",
+      "text": "pitartl3"
+    },
+    {
+      "name": "pitartl4",
+      "text": "pitartl4"
+    },
+    {
+      "name": "pm",
+      "text": "pm"
+    },
+    {
+      "name": "pmf",
+      "text": "pmf"
+    },
+    {
+      "name": "pq",
+      "text": "pq"
+    },
+    {
+      "name": "pqf",
+      "text": "pqf"
+    },
+    {
+      "name": "prabs",
+      "text": "prabs"
+    },
+    {
+      "name": "prabsdt",
+      "text": "prabsdt"
+    },
+    {
+      "name": "prabsdtf",
+      "text": "prabsdtf"
+    },
+    {
+      "name": "prabsf",
+      "text": "prabsf"
+    },
+    {
+      "name": "px",
+      "text": "px"
+    },
+    {
+      "name": "pxf",
+      "text": "pxf"
+    },
+    {
+      "name": "r3real",
+      "text": "r3real"
+    },
+    {
+      "name": "rentks",
+      "text": "rentks"
+    },
+    {
+      "name": "rentksf",
+      "text": "rentksf"
+    },
+    {
+      "name": "rerpc",
+      "text": "rerpc"
+    },
+    {
+      "name": "rerpq",
+      "text": "rerpq"
+    },
+    {
+      "name": "riskp",
+      "text": "riskp"
+    },
+    {
+      "name": "riskpp",
+      "text": "riskpp"
+    },
+    {
+      "name": "riskpt",
+      "text": "riskpt"
+    },
+    {
+      "name": "rmc",
+      "text": "rmc"
+    },
+    {
+      "name": "rmcf",
+      "text": "rmcf"
+    },
+    {
+      "name": "rmi",
+      "text": "rmi"
+    },
+    {
+      "name": "rmif",
+      "text": "rmif"
+    },
+    {
+      "name": "ronereal",
+      "text": "ronereal"
+    },
+    {
+      "name": "rpcpq",
+      "text": "rpcpq"
+    },
+    {
+      "name": "rpcpqf",
+      "text": "rpcpqf"
+    },
+    {
+      "name": "rpipq",
+      "text": "rpipq"
+    },
+    {
+      "name": "rpipqf",
+      "text": "rpipqf"
+    },
+    {
+      "name": "rpmpq",
+      "text": "rpmpq"
+    },
+    {
+      "name": "rpmpqf",
+      "text": "rpmpqf"
+    },
+    {
+      "name": "rpmpx",
+      "text": "rpmpx"
+    },
+    {
+      "name": "rpmpxf",
+      "text": "rpmpxf"
+    },
+    {
+      "name": "rpxpq",
+      "text": "rpxpq"
+    },
+    {
+      "name": "rpxpqf",
+      "text": "rpxpqf"
+    },
+    {
+      "name": "rratek",
+      "text": "rratek"
+    },
+    {
+      "name": "rs",
+      "text": "rs"
+    },
+    {
+      "name": "rs1",
+      "text": "rs1"
+    },
+    {
+      "name": "rs1f",
+      "text": "rs1f"
+    },
+    {
+      "name": "rs1f1",
+      "text": "rs1f1"
+    },
+    {
+      "name": "rs1f10",
+      "text": "rs1f10"
+    },
+    {
+      "name": "rs1f11",
+      "text": "rs1f11"
+    },
+    {
+      "name": "rs1f12",
+      "text": "rs1f12"
+    },
+    {
+      "name": "rs1f13",
+      "text": "rs1f13"
+    },
+    {
+      "name": "rs1f14",
+      "text": "rs1f14"
+    },
+    {
+      "name": "rs1f15",
+      "text": "rs1f15"
+    },
+    {
+      "name": "rs1f16",
+      "text": "rs1f16"
+    },
+    {
+      "name": "rs1f17",
+      "text": "rs1f17"
+    },
+    {
+      "name": "rs1f18",
+      "text": "rs1f18"
+    },
+    {
+      "name": "rs1f19",
+      "text": "rs1f19"
+    },
+    {
+      "name": "rs1f2",
+      "text": "rs1f2"
+    },
+    {
+      "name": "rs1f3",
+      "text": "rs1f3"
+    },
+    {
+      "name": "rs1f4",
+      "text": "rs1f4"
+    },
+    {
+      "name": "rs1f5",
+      "text": "rs1f5"
+    },
+    {
+      "name": "rs1f6",
+      "text": "rs1f6"
+    },
+    {
+      "name": "rs1f7",
+      "text": "rs1f7"
+    },
+    {
+      "name": "rs1f8",
+      "text": "rs1f8"
+    },
+    {
+      "name": "rs1f9",
+      "text": "rs1f9"
+    },
+    {
+      "name": "rsf",
+      "text": "rsf"
+    },
+    {
+      "name": "sp2gdp",
+      "text": "sp2gdp"
+    },
+    {
+      "name": "taxk",
+      "text": "taxk"
+    },
+    {
+      "name": "taxkf",
+      "text": "taxkf"
+    },
+    {
+      "name": "taxkp",
+      "text": "taxkp"
+    },
+    {
+      "name": "taxkpf",
+      "text": "taxkpf"
+    },
+    {
+      "name": "taxkpfl1",
+      "text": "taxkpfl1"
+    },
+    {
+      "name": "taxkpfl2",
+      "text": "taxkpfl2"
+    },
+    {
+      "name": "taxkpl1",
+      "text": "taxkpl1"
+    },
+    {
+      "name": "taxkpl2",
+      "text": "taxkpl2"
+    },
+    {
+      "name": "taxkt",
+      "text": "taxkt"
+    },
+    {
+      "name": "taxktf",
+      "text": "taxktf"
+    },
+    {
+      "name": "taxl",
+      "text": "taxl"
+    },
+    {
+      "name": "taxlf",
+      "text": "taxlf"
+    },
+    {
+      "name": "taxlshk",
+      "text": "taxlshk"
+    },
+    {
+      "name": "taxlshkf",
+      "text": "taxlshkf"
+    },
+    {
+      "name": "taxlshkpf",
+      "text": "taxlshkpf"
+    },
+    {
+      "name": "taxlshktf",
+      "text": "taxlshktf"
+    },
+    {
+      "name": "tobq",
+      "text": "tobq"
+    },
+    {
+      "name": "tobqf",
+      "text": "tobqf"
+    },
+    {
+      "name": "transhk",
+      "text": "transhk"
+    },
+    {
+      "name": "transhkf",
+      "text": "transhkf"
+    },
+    {
+      "name": "transhkp",
+      "text": "transhkp"
+    },
+    {
+      "name": "transhkpf",
+      "text": "transhkpf"
+    },
+    {
+      "name": "transhkt",
+      "text": "transhkt"
+    },
+    {
+      "name": "transhktf",
+      "text": "transhktf"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "wmarkup",
+      "text": "wmarkup"
+    },
+    {
+      "name": "wmarkupf",
+      "text": "wmarkupf"
+    },
+    {
+      "name": "zetac",
+      "text": "zetac"
+    },
+    {
+      "name": "zetacf",
+      "text": "zetacf"
+    },
+    {
+      "name": "zetap",
+      "text": "zetap"
+    },
+    {
+      "name": "zetapf",
+      "text": "zetapf"
+    }
+  ]
+}

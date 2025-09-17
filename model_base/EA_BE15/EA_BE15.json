@@ -1,0 +1,172 @@
+{
+  "$schema": "model",
+  "name": "EA_BE15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Benchimol (2015)",
+    "paper_title": "Money in the Production Function: A New Keynesian DSGE Perspective",
+    "journal": "Southern Economic Journal 2015, 82(1), 152-184",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Benchimol, Jonathan"
+    ]
+  },
+  "msr": [
+    "0.6005",
+    "0",
+    "0",
+    "0",
+    "3.4258*(1-0.6005)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.4118*(1-0.6005)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ua",
+      "text": "Technology shock"
+    },
+    {
+      "name": "ui",
+      "text": "ui"
+    },
+    {
+      "name": "un",
+      "text": "un"
+    },
+    {
+      "name": "up",
+      "text": "up"
+    },
+    {
+      "name": "uu",
+      "text": "Preference shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ea",
+      "text": "Technology shock Process"
+    },
+    {
+      "name": "ei",
+      "text": "ei"
+    },
+    {
+      "name": "en",
+      "text": "en"
+    },
+    {
+      "name": "ep",
+      "text": "ep"
+    },
+    {
+      "name": "eu",
+      "text": "Preference shock Process"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "ir",
+      "text": "ir"
+    },
+    {
+      "name": "mn",
+      "text": "mn"
+    },
+    {
+      "name": "mnf",
+      "text": "mnf"
+    },
+    {
+      "name": "mp",
+      "text": "mp"
+    },
+    {
+      "name": "mpf",
+      "text": "mpf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "vel",
+      "text": "vel"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

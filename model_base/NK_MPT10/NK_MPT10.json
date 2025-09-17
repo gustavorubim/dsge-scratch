@@ -1,0 +1,366 @@
+{
+  "$schema": "model",
+  "name": "NK_MPT10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Monacelli et al. (2010)",
+    "paper_title": "Unemployment fiscal multipliers",
+    "journal": "Journal of Monetary Economics 57 (5), 531-553",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Monacelli, Tommaso",
+      "Perotti, Roberto",
+      "Trigari, Antonella"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.125*4",
+    "-0.125*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "a_fe",
+      "text": "a_fe"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_fe",
+      "text": "c_fe"
+    },
+    {
+      "name": "Dis",
+      "text": "Dis"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "F_fe",
+      "text": "F_fe"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "H",
+      "text": "H"
+    },
+    {
+      "name": "H_fe",
+      "text": "H_fe"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_fe",
+      "text": "i_fe"
+    },
+    {
+      "name": "i_nom",
+      "text": "i_nom"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflstar",
+      "text": "inflstar"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "k_fe",
+      "text": "k_fe"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "lambda_fe",
+      "text": "lambda_fe"
+    },
+    {
+      "name": "Lambda_fe",
+      "text": "Lambda_fe"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "m_fe",
+      "text": "m_fe"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mc_fe",
+      "text": "mc_fe"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "n_fe",
+      "text": "n_fe"
+    },
+    {
+      "name": "omega",
+      "text": "omega"
+    },
+    {
+      "name": "omega_fe",
+      "text": "omega_fe"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "P_F",
+      "text": "P_F"
+    },
+    {
+      "name": "p_fe",
+      "text": "p_fe"
+    },
+    {
+      "name": "P_Z",
+      "text": "P_Z"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "phi_fe",
+      "text": "phi_fe"
+    },
+    {
+      "name": "phi_i",
+      "text": "phi_i"
+    },
+    {
+      "name": "phi_i_fe",
+      "text": "phi_i_fe"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "q_fe",
+      "text": "q_fe"
+    },
+    {
+      "name": "r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "r_fe",
+      "text": "r_fe"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rk_fe",
+      "text": "rk_fe"
+    },
+    {
+      "name": "S",
+      "text": "S"
+    },
+    {
+      "name": "S_fe",
+      "text": "S_fe"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "theta",
+      "text": "theta"
+    },
+    {
+      "name": "theta_fe",
+      "text": "theta_fe"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "u_fe",
+      "text": "u_fe"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "v_fe",
+      "text": "v_fe"
+    },
+    {
+      "name": "varphi",
+      "text": "varphi"
+    },
+    {
+      "name": "varphi_fe",
+      "text": "varphi_fe"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_bar",
+      "text": "w_bar"
+    },
+    {
+      "name": "w_bar_fe",
+      "text": "w_bar_fe"
+    },
+    {
+      "name": "w_fe",
+      "text": "w_fe"
+    },
+    {
+      "name": "w_und",
+      "text": "w_und"
+    },
+    {
+      "name": "w_und_fe",
+      "text": "w_und_fe"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "y_fe",
+      "text": "y_fe"
+    },
+    {
+      "name": "Y_fe",
+      "text": "Y_fe"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "$schema": "model",
+  "name": "US_IR11",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ireland (2011)",
+    "paper_title": "A New Keynesian perspective on the Great Recession",
+    "journal": "Journal of Money, Credit and Banking 43(1), pp. 31-54",
+    "replicants_name": "Jinhyuk Yoo",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Ireland, Peter N."
+    ]
+  },
+  "msr": [
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.4153",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*0.1270",
+    "-4*0.1270",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epse",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "epsz",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "e",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    }
+  ]
+}

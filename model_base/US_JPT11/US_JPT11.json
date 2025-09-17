@@ -1,0 +1,318 @@
+{
+  "$schema": "model",
+  "name": "US_JPT11",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Justiniano et al. (2011)",
+    "paper_title": "Investment shocks and the relative price of investment",
+    "journal": "Review of Economic Dynamics 14, pp. 102-121",
+    "replicants_name": "Hayk Kamalyan and Jorge Quintana",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Justiniano, Alejandro",
+      "Primiceri, Giorgio E.",
+      "Tambalotti, Andrea"
+    ]
+  },
+  "msr": [
+    "0.86",
+    "0",
+    "0",
+    "0",
+    "0.2363",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.8698",
+    "-0.844",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "bs",
+      "text": "Preference shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "lambdaps",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "lambdaws",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "mius",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "Rs",
+      "text": "Rs"
+    },
+    {
+      "name": "upsilons",
+      "text": "upsilons"
+    },
+    {
+      "name": "zs",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ARMAlambdap",
+      "text": "ARMAlambdap"
+    },
+    {
+      "name": "ARMAlambdaw",
+      "text": "ARMAlambdaw"
+    },
+    {
+      "name": "b",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cstar",
+      "text": "cstar"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gdp",
+      "text": "gdp"
+    },
+    {
+      "name": "gdpstar",
+      "text": "gdpstar"
+    },
+    {
+      "name": "gs",
+      "text": "gs"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "istar",
+      "text": "istar"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kbar",
+      "text": "kbar"
+    },
+    {
+      "name": "kbarstar",
+      "text": "kbarstar"
+    },
+    {
+      "name": "kstar",
+      "text": "kstar"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambdap",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambdastar",
+      "text": "lambdastar"
+    },
+    {
+      "name": "lambdaw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "Lstar",
+      "text": "Lstar"
+    },
+    {
+      "name": "miu",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "mp",
+      "text": "mp"
+    },
+    {
+      "name": "mpk",
+      "text": "mpk"
+    },
+    {
+      "name": "mpkstar",
+      "text": "mpkstar"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qstar",
+      "text": "qstar"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Rd",
+      "text": "Rd"
+    },
+    {
+      "name": "Rdstar",
+      "text": "Rdstar"
+    },
+    {
+      "name": "Rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "Rkstar",
+      "text": "Rkstar"
+    },
+    {
+      "name": "Rstar",
+      "text": "Rstar"
+    },
+    {
+      "name": "s",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "sstar",
+      "text": "sstar"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "upsilon",
+      "text": "upsilon"
+    },
+    {
+      "name": "ustar",
+      "text": "ustar"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wgap",
+      "text": "wgap"
+    },
+    {
+      "name": "wgapstar",
+      "text": "wgapstar"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    }
+  ]
+}

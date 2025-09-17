@@ -1,0 +1,413 @@
+{
+  "$schema": "model",
+  "name": "NK_KW16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kirchner & van Wijnbergen (2016)",
+    "paper_title": "Fiscal deficits, financial fragility, and the effectiveness of government policies",
+    "journal": "Journal of Monetary Economics 80, 51-68",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Kirchner, Markus",
+      "van Wijnbergen, Sweder "
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0.3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*0.025",
+    "-4*0.025",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_ksi",
+      "text": "e_ksi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "B",
+      "text": "B"
+    },
+    {
+      "name": "B_fe",
+      "text": "B_fe"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "C_fe",
+      "text": "C_fe"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "D_fe",
+      "text": "D_fe"
+    },
+    {
+      "name": "Dis",
+      "text": "Dis"
+    },
+    {
+      "name": "Dis_fe",
+      "text": "Dis_fe"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "ERb",
+      "text": "ERb"
+    },
+    {
+      "name": "ERb_fe",
+      "text": "ERb_fe"
+    },
+    {
+      "name": "ERk",
+      "text": "ERk"
+    },
+    {
+      "name": "ERk_fe",
+      "text": "ERk_fe"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "F_fe",
+      "text": "F_fe"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "Gy",
+      "text": "Gy"
+    },
+    {
+      "name": "Gy_fe",
+      "text": "Gy_fe"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "i_fe",
+      "text": "i_fe"
+    },
+    {
+      "name": "I_fe",
+      "text": "I_fe"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "infl_fe",
+      "text": "infl_fe"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflstar",
+      "text": "inflstar"
+    },
+    {
+      "name": "inflstar_fe",
+      "text": "inflstar_fe"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "K_fe",
+      "text": "K_fe"
+    },
+    {
+      "name": "ksi",
+      "text": "ksi"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "L_fe",
+      "text": "L_fe"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "Lambda_fe",
+      "text": "Lambda_fe"
+    },
+    {
+      "name": "N",
+      "text": "N"
+    },
+    {
+      "name": "N_fe",
+      "text": "N_fe"
+    },
+    {
+      "name": "nu_b",
+      "text": "nu_b"
+    },
+    {
+      "name": "nu_b_fe",
+      "text": "nu_b_fe"
+    },
+    {
+      "name": "nu_k",
+      "text": "nu_k"
+    },
+    {
+      "name": "nu_k_fe",
+      "text": "nu_k_fe"
+    },
+    {
+      "name": "nu_n",
+      "text": "nu_n"
+    },
+    {
+      "name": "nu_n_fe",
+      "text": "nu_n_fe"
+    },
+    {
+      "name": "Om",
+      "text": "Om"
+    },
+    {
+      "name": "Om_fe",
+      "text": "Om_fe"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "Phi",
+      "text": "Phi"
+    },
+    {
+      "name": "Phi_fe",
+      "text": "Phi_fe"
+    },
+    {
+      "name": "Pm",
+      "text": "Pm"
+    },
+    {
+      "name": "Pm_fe",
+      "text": "Pm_fe"
+    },
+    {
+      "name": "portf_B",
+      "text": "portf_B"
+    },
+    {
+      "name": "portf_B_fe",
+      "text": "portf_B_fe"
+    },
+    {
+      "name": "prem",
+      "text": "prem"
+    },
+    {
+      "name": "prem2",
+      "text": "prem2"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Q_fe",
+      "text": "Q_fe"
+    },
+    {
+      "name": "Rb",
+      "text": "Rb"
+    },
+    {
+      "name": "Rb_fe",
+      "text": "Rb_fe"
+    },
+    {
+      "name": "Rd",
+      "text": "Rd"
+    },
+    {
+      "name": "Rd_fe",
+      "text": "Rd_fe"
+    },
+    {
+      "name": "Rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "Rk_fe",
+      "text": "Rk_fe"
+    },
+    {
+      "name": "Rp",
+      "text": "Rp"
+    },
+    {
+      "name": "Rp_fe",
+      "text": "Rp_fe"
+    },
+    {
+      "name": "T",
+      "text": "T"
+    },
+    {
+      "name": "T_fe",
+      "text": "T_fe"
+    },
+    {
+      "name": "U_c",
+      "text": "U_c"
+    },
+    {
+      "name": "U_c_fe",
+      "text": "U_c_fe"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_fe",
+      "text": "w_fe"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Y_fe",
+      "text": "Y_fe"
+    },
+    {
+      "name": "Ym",
+      "text": "Ym"
+    },
+    {
+      "name": "Ym_fe",
+      "text": "Ym_fe"
+    },
+    {
+      "name": "Z",
+      "text": "Z"
+    },
+    {
+      "name": "Z_fe",
+      "text": "Z_fe"
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "$schema": "model",
+  "name": "NK_GK13",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gertler & Karadi (2013)",
+    "paper_title": "Qe 1 vs. 2 vs. 3. . . : A framework for analyzing large-scale asset purchases as a monetary policy tool",
+    "journal": "International Journal of Central Banking 9(1), pp. 5-53",
+    "replicants_name": "Sören Karau and Arne Vogler",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gertler, Mark",
+      "Karadi, Peter "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_Gamma",
+      "text": "e_Gamma"
+    },
+    {
+      "name": "e_ksi",
+      "text": "e_ksi"
+    },
+    {
+      "name": "e_Ne",
+      "text": "Net worth shock"
+    },
+    {
+      "name": "e_psi",
+      "text": "e_psi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "af",
+      "text": "af"
+    },
+    {
+      "name": "Bb",
+      "text": "Bb"
+    },
+    {
+      "name": "Bbf",
+      "text": "Bbf"
+    },
+    {
+      "name": "Bh",
+      "text": "Bh"
+    },
+    {
+      "name": "Bhf",
+      "text": "Bhf"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "Cf",
+      "text": "Cf"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "Dep",
+      "text": "Dep"
+    },
+    {
+      "name": "Depf",
+      "text": "Depf"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "Gamma",
+      "text": "Gamma"
+    },
+    {
+      "name": "Gammaf",
+      "text": "Gammaf"
+    },
+    {
+      "name": "gf",
+      "text": "gf"
+    },
+    {
+      "name": "Gf",
+      "text": "Gf"
+    },
+    {
+      "name": "H",
+      "text": "H"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "ib",
+      "text": "ib"
+    },
+    {
+      "name": "ibf",
+      "text": "ibf"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "iir",
+      "text": "iir"
+    },
+    {
+      "name": "iirf",
+      "text": "iirf"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflstar",
+      "text": "inflstar"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "ir",
+      "text": "ir"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "Kb",
+      "text": "Kb"
+    },
+    {
+      "name": "Kbf",
+      "text": "Kbf"
+    },
+    {
+      "name": "Kbook",
+      "text": "Kbook"
+    },
+    {
+      "name": "Kbookf",
+      "text": "Kbookf"
+    },
+    {
+      "name": "Keff",
+      "text": "Keff"
+    },
+    {
+      "name": "Kefff",
+      "text": "Kefff"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "Kh",
+      "text": "Kh"
+    },
+    {
+      "name": "Khf",
+      "text": "Khf"
+    },
+    {
+      "name": "ksi",
+      "text": "ksi"
+    },
+    {
+      "name": "ksif",
+      "text": "ksif"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "Lambdaf",
+      "text": "Lambdaf"
+    },
+    {
+      "name": "Lf",
+      "text": "Lf"
+    },
+    {
+      "name": "mu_b",
+      "text": "mu_b"
+    },
+    {
+      "name": "mu_bf",
+      "text": "mu_bf"
+    },
+    {
+      "name": "mu_s",
+      "text": "mu_s"
+    },
+    {
+      "name": "mu_sf",
+      "text": "mu_sf"
+    },
+    {
+      "name": "N",
+      "text": "N"
+    },
+    {
+      "name": "Nbook",
+      "text": "Nbook"
+    },
+    {
+      "name": "Nbookf",
+      "text": "Nbookf"
+    },
+    {
+      "name": "Ne",
+      "text": "Ne"
+    },
+    {
+      "name": "Nef",
+      "text": "Nef"
+    },
+    {
+      "name": "Nf",
+      "text": "Nf"
+    },
+    {
+      "name": "Nn",
+      "text": "Nn"
+    },
+    {
+      "name": "Nnf",
+      "text": "Nnf"
+    },
+    {
+      "name": "nu",
+      "text": "nu"
+    },
+    {
+      "name": "nuf",
+      "text": "nuf"
+    },
+    {
+      "name": "Omega",
+      "text": "Omega"
+    },
+    {
+      "name": "Omegaf",
+      "text": "Omegaf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "phibook",
+      "text": "phibook"
+    },
+    {
+      "name": "phibookf",
+      "text": "phibookf"
+    },
+    {
+      "name": "phif",
+      "text": "phif"
+    },
+    {
+      "name": "Pm",
+      "text": "Pm"
+    },
+    {
+      "name": "prem_B",
+      "text": "prem_B"
+    },
+    {
+      "name": "prem_Bf",
+      "text": "prem_Bf"
+    },
+    {
+      "name": "prem_ib",
+      "text": "prem_ib"
+    },
+    {
+      "name": "prem_ibf",
+      "text": "prem_ibf"
+    },
+    {
+      "name": "prem_K",
+      "text": "prem_K"
+    },
+    {
+      "name": "prem_Kf",
+      "text": "prem_Kf"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "qB",
+      "text": "qB"
+    },
+    {
+      "name": "qBf",
+      "text": "qBf"
+    },
+    {
+      "name": "qBg_A",
+      "text": "qBg_A"
+    },
+    {
+      "name": "qBg_Af",
+      "text": "qBg_Af"
+    },
+    {
+      "name": "qBg_Y",
+      "text": "qBg_Y"
+    },
+    {
+      "name": "qBg_Yf",
+      "text": "qBg_Yf"
+    },
+    {
+      "name": "Qbook",
+      "text": "Qbook"
+    },
+    {
+      "name": "Qbookf",
+      "text": "Qbookf"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "Qf",
+      "text": "Qf"
+    },
+    {
+      "name": "Qfair",
+      "text": "Qfair"
+    },
+    {
+      "name": "Qfairf",
+      "text": "Qfairf"
+    },
+    {
+      "name": "QKg_A",
+      "text": "QKg_A"
+    },
+    {
+      "name": "QKg_Af",
+      "text": "QKg_Af"
+    },
+    {
+      "name": "QKg_Y",
+      "text": "QKg_Y"
+    },
+    {
+      "name": "QKg_Yf",
+      "text": "QKg_Yf"
+    },
+    {
+      "name": "qn",
+      "text": "qn"
+    },
+    {
+      "name": "qn_rf",
+      "text": "qn_rf"
+    },
+    {
+      "name": "qn_rff",
+      "text": "qn_rff"
+    },
+    {
+      "name": "qnbook",
+      "text": "qnbook"
+    },
+    {
+      "name": "qnbookf",
+      "text": "qnbookf"
+    },
+    {
+      "name": "qnf",
+      "text": "qnf"
+    },
+    {
+      "name": "R",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rb",
+      "text": "rb"
+    },
+    {
+      "name": "Rb",
+      "text": "Rb"
+    },
+    {
+      "name": "rbf",
+      "text": "rbf"
+    },
+    {
+      "name": "Rbf",
+      "text": "Rbf"
+    },
+    {
+      "name": "Rf",
+      "text": "Rf"
+    },
+    {
+      "name": "Rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "Rkf",
+      "text": "Rkf"
+    },
+    {
+      "name": "shock_Gamma",
+      "text": "shock_Gamma"
+    },
+    {
+      "name": "shock_Gammaf",
+      "text": "shock_Gammaf"
+    },
+    {
+      "name": "shock_psi",
+      "text": "shock_psi"
+    },
+    {
+      "name": "shock_psif",
+      "text": "shock_psif"
+    },
+    {
+      "name": "varrho",
+      "text": "varrho"
+    },
+    {
+      "name": "varrhof",
+      "text": "varrhof"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "Welf",
+      "text": "Welf"
+    },
+    {
+      "name": "Welff",
+      "text": "Welff"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "X",
+      "text": "X"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    },
+    {
+      "name": "Ym",
+      "text": "Ym"
+    },
+    {
+      "name": "Ymf",
+      "text": "Ymf"
+    },
+    {
+      "name": "Z",
+      "text": "Z"
+    },
+    {
+      "name": "Zf",
+      "text": "Zf"
+    }
+  ]
+}

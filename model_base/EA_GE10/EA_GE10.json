@@ -1,0 +1,261 @@
+{
+  "$schema": "model",
+  "name": "EA_GE10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gelain (2010)",
+    "paper_title": "The external finance premium in the euro area: A dynamic stochastic general equilibrium analysis",
+    "journal": "American Journal of Economics and Finance 21, pp. 49-71",
+    "replicants_name": "M.Jancokova",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Gelain, Paolo"
+    ]
+  },
+  "msr": [
+    "0.97075",
+    "0",
+    "0",
+    "0",
+    "0.1417",
+    "(1-0.9075)*1.6633-0.1417",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.2061*4",
+    "((1-0.9075)*0.1054-0.2061)*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ua",
+      "text": "Technology shock"
+    },
+    {
+      "name": "ub",
+      "text": "Preference shock"
+    },
+    {
+      "name": "ul",
+      "text": "Labor supply shock"
+    },
+    {
+      "name": "ulambdapi",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "uw",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "ux",
+      "text": "ux"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "eb",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "el",
+      "text": "Labor supply shock process"
+    },
+    {
+      "name": "EMP",
+      "text": "EMP"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inv",
+      "text": "Investment"
+    },
+    {
+      "name": "invf",
+      "text": "invf"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "Hours worked"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcf",
+      "text": "mcf"
+    },
+    {
+      "name": "nw",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rn",
+      "text": "rn"
+    },
+    {
+      "name": "S",
+      "text": "S"
+    },
+    {
+      "name": "ug",
+      "text": "ug"
+    },
+    {
+      "name": "wp",
+      "text": "Real wage"
+    },
+    {
+      "name": "wpf",
+      "text": "wpf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ypot",
+      "text": "ypot"
+    },
+    {
+      "name": "z",
+      "text": "Capital returns"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    }
+  ]
+}

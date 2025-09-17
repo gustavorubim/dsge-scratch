@@ -1,0 +1,347 @@
+{
+  "$schema": "model",
+  "name": "US_MR07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Mankiw & Reis (2007)",
+    "paper_title": "Sticky information in general equilibrium.",
+    "journal": "Journal of the European Economic Association 5(2-3), pp. 603-613",
+    "replicants_name": "Christian Rühl",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Mankiw, N. Gregory",
+      "Reis, Robert"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_e",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_e",
+      "text": "e_e"
+    },
+    {
+      "name": "g_e",
+      "text": "g_e"
+    },
+    {
+      "name": "gam_e",
+      "text": "gam_e"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "v_e",
+      "text": "v_e"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "da",
+      "text": "da"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gam",
+      "text": "gam"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "l1",
+      "text": "l1"
+    },
+    {
+      "name": "l10",
+      "text": "l10"
+    },
+    {
+      "name": "l2",
+      "text": "l2"
+    },
+    {
+      "name": "l3",
+      "text": "l3"
+    },
+    {
+      "name": "l4",
+      "text": "l4"
+    },
+    {
+      "name": "l5",
+      "text": "l5"
+    },
+    {
+      "name": "l6",
+      "text": "l6"
+    },
+    {
+      "name": "l7",
+      "text": "l7"
+    },
+    {
+      "name": "l8",
+      "text": "l8"
+    },
+    {
+      "name": "l9",
+      "text": "l9"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "p1",
+      "text": "p1"
+    },
+    {
+      "name": "p10",
+      "text": "p10"
+    },
+    {
+      "name": "p2",
+      "text": "p2"
+    },
+    {
+      "name": "p3",
+      "text": "p3"
+    },
+    {
+      "name": "p4",
+      "text": "p4"
+    },
+    {
+      "name": "p5",
+      "text": "p5"
+    },
+    {
+      "name": "p6",
+      "text": "p6"
+    },
+    {
+      "name": "p7",
+      "text": "p7"
+    },
+    {
+      "name": "p8",
+      "text": "p8"
+    },
+    {
+      "name": "p9",
+      "text": "p9"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R1",
+      "text": "R1"
+    },
+    {
+      "name": "R10",
+      "text": "R10"
+    },
+    {
+      "name": "R2",
+      "text": "R2"
+    },
+    {
+      "name": "R3",
+      "text": "R3"
+    },
+    {
+      "name": "R4",
+      "text": "R4"
+    },
+    {
+      "name": "R5",
+      "text": "R5"
+    },
+    {
+      "name": "R6",
+      "text": "R6"
+    },
+    {
+      "name": "R7",
+      "text": "R7"
+    },
+    {
+      "name": "R8",
+      "text": "R8"
+    },
+    {
+      "name": "R9",
+      "text": "R9"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "w1",
+      "text": "w1"
+    },
+    {
+      "name": "w10",
+      "text": "w10"
+    },
+    {
+      "name": "w2",
+      "text": "w2"
+    },
+    {
+      "name": "w3",
+      "text": "w3"
+    },
+    {
+      "name": "w4",
+      "text": "w4"
+    },
+    {
+      "name": "w5",
+      "text": "w5"
+    },
+    {
+      "name": "w6",
+      "text": "w6"
+    },
+    {
+      "name": "w7",
+      "text": "w7"
+    },
+    {
+      "name": "w8",
+      "text": "w8"
+    },
+    {
+      "name": "w9",
+      "text": "w9"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y1",
+      "text": "y1"
+    },
+    {
+      "name": "y10",
+      "text": "y10"
+    },
+    {
+      "name": "y100",
+      "text": "y100"
+    },
+    {
+      "name": "y2",
+      "text": "y2"
+    },
+    {
+      "name": "y3",
+      "text": "y3"
+    },
+    {
+      "name": "y4",
+      "text": "y4"
+    },
+    {
+      "name": "y5",
+      "text": "y5"
+    },
+    {
+      "name": "y6",
+      "text": "y6"
+    },
+    {
+      "name": "y7",
+      "text": "y7"
+    },
+    {
+      "name": "y8",
+      "text": "y8"
+    },
+    {
+      "name": "y9",
+      "text": "y9"
+    },
+    {
+      "name": "yn",
+      "text": "yn"
+    }
+  ]
+}

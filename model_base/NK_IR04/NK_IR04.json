@@ -1,0 +1,136 @@
+{
+  "$schema": "model",
+  "name": "NK_IR04",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ireland (2004)",
+    "paper_title": "Money's Role in the Monetary Business Cycle",
+    "journal": "Journal of Money, Credit and Banking 36(6), pp. 969-984",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2004",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Ireland, Peter N."
+    ]
+  },
+  "msr": [
+    "0.5481",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5680",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa_",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epse_",
+      "text": "epse_"
+    },
+    {
+      "name": "epsz_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    }
+  ]
+}

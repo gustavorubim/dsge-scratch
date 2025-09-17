@@ -1,0 +1,153 @@
+{
+  "$schema": "model",
+  "name": "EA_BF17",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Benchimol & Fourçans (2017)",
+    "paper_title": "Money And Monetary Policy In The Eurozone: An Empirical Analysis During Crises",
+    "journal": "Macroeconomic Dynamics, Cambridge University Press, vol. 21(03), 677-707",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Benchimol, Jonathan",
+      "Fourçans, André"
+    ]
+  },
+  "msr": [
+    "0.42",
+    "0",
+    "0",
+    "0",
+    "1.8*(1-0.42)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1*(1-0.42)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ua",
+      "text": "Technology shock"
+    },
+    {
+      "name": "ui",
+      "text": "ui"
+    },
+    {
+      "name": "um",
+      "text": "um"
+    },
+    {
+      "name": "up",
+      "text": "Price markup shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "at",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "ei",
+      "text": "ei"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "ep",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "mp",
+      "text": "Money balances"
+    },
+    {
+      "name": "mpf",
+      "text": "mpf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

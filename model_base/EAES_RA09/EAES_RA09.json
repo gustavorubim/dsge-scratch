@@ -1,0 +1,340 @@
+{
+  "$schema": "model",
+  "name": "EAES_RA09",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rabanal (2009)",
+    "paper_title": "Inflation differentials between Spain and the EMU: A DSGE perspective",
+    "journal": "Journal of Money, Credit and Banking 41(6), pp. 1141-1166",
+    "replicants_name": " Martina Jancokova and Anastasia Pukhova",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Rabanal, Pau"
+    ]
+  },
+  "msr": [
+    "0.73",
+    "0",
+    "0",
+    "0",
+    "(1-0.73)*1.43",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_GN",
+      "text": "eps_GN"
+    },
+    {
+      "name": "eps_GN_star",
+      "text": "eps_GN_star"
+    },
+    {
+      "name": "eps_GT",
+      "text": "eps_GT"
+    },
+    {
+      "name": "eps_GT_star",
+      "text": "eps_GT_star"
+    },
+    {
+      "name": "eps_Z",
+      "text": "eps_Z"
+    },
+    {
+      "name": "eps_ZN",
+      "text": "eps_ZN"
+    },
+    {
+      "name": "eps_ZN_star",
+      "text": "eps_ZN_star"
+    },
+    {
+      "name": "eps_ZT",
+      "text": "eps_ZT"
+    },
+    {
+      "name": "eps_ZT_star",
+      "text": "eps_ZT_star"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "c_F",
+      "text": "c_F"
+    },
+    {
+      "name": "c_F_star",
+      "text": "c_F_star"
+    },
+    {
+      "name": "c_H",
+      "text": "c_H"
+    },
+    {
+      "name": "c_H_star",
+      "text": "c_H_star"
+    },
+    {
+      "name": "c_N",
+      "text": "c_N"
+    },
+    {
+      "name": "c_N_star",
+      "text": "c_N_star"
+    },
+    {
+      "name": "c_star",
+      "text": "c_star"
+    },
+    {
+      "name": "dy",
+      "text": "dy"
+    },
+    {
+      "name": "dy_star",
+      "text": "dy_star"
+    },
+    {
+      "name": "g_N",
+      "text": "g_N"
+    },
+    {
+      "name": "g_N_star",
+      "text": "g_N_star"
+    },
+    {
+      "name": "g_T",
+      "text": "g_T"
+    },
+    {
+      "name": "g_T_star",
+      "text": "g_T_star"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "l_N",
+      "text": "l_N"
+    },
+    {
+      "name": "l_N_star",
+      "text": "l_N_star"
+    },
+    {
+      "name": "l_star",
+      "text": "l_star"
+    },
+    {
+      "name": "l_T",
+      "text": "l_T"
+    },
+    {
+      "name": "l_T_star",
+      "text": "l_T_star"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "mu_star",
+      "text": "mu_star"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_EMU",
+      "text": "pi_EMU"
+    },
+    {
+      "name": "pi_F",
+      "text": "pi_F"
+    },
+    {
+      "name": "pi_H",
+      "text": "pi_H"
+    },
+    {
+      "name": "pi_N",
+      "text": "pi_N"
+    },
+    {
+      "name": "pi_N_star",
+      "text": "pi_N_star"
+    },
+    {
+      "name": "pi_star",
+      "text": "pi_star"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rer",
+      "text": "rer"
+    },
+    {
+      "name": "t_F",
+      "text": "t_F"
+    },
+    {
+      "name": "t_F_star",
+      "text": "t_F_star"
+    },
+    {
+      "name": "t_H",
+      "text": "t_H"
+    },
+    {
+      "name": "t_H_star",
+      "text": "t_H_star"
+    },
+    {
+      "name": "t_N",
+      "text": "t_N"
+    },
+    {
+      "name": "t_N_star",
+      "text": "t_N_star"
+    },
+    {
+      "name": "t_T",
+      "text": "t_T"
+    },
+    {
+      "name": "t_T_star",
+      "text": "t_T_star"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "w_star",
+      "text": "w_star"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_EMU",
+      "text": "y_EMU"
+    },
+    {
+      "name": "y_F_star",
+      "text": "y_F_star"
+    },
+    {
+      "name": "y_H",
+      "text": "y_H"
+    },
+    {
+      "name": "y_N",
+      "text": "y_N"
+    },
+    {
+      "name": "y_N_star",
+      "text": "y_N_star"
+    },
+    {
+      "name": "y_star",
+      "text": "y_star"
+    },
+    {
+      "name": "z_N",
+      "text": "z_N"
+    },
+    {
+      "name": "z_N_star",
+      "text": "z_N_star"
+    },
+    {
+      "name": "z_T",
+      "text": "z_T"
+    },
+    {
+      "name": "z_T_star",
+      "text": "z_T_star"
+    }
+  ]
+}

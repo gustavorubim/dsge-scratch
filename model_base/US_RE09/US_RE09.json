@@ -1,0 +1,192 @@
+{
+  "$schema": "model",
+  "name": "US_RE09",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Reis (2009)",
+    "paper_title": "A sticky-information general-equilibrium model for policy analysis",
+    "journal": "Tech. rep., National Bureau of Economic Research",
+    "replicants_name": "Laura Schmidt",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Reis, Robert"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.17350494813421",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.0625290108287302",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_deltaa",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_eps",
+      "text": "e_eps"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "e_gam",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "e_nuu",
+      "text": "Price mrkup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "deltaa",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "eps",
+      "text": "eps"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gam",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "nuu",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yclas",
+      "text": "yclas"
+    },
+    {
+      "name": "yinfn",
+      "text": "yinfn"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zoutput",
+      "text": "zoutput"
+    },
+    {
+      "name": "zwage",
+      "text": "zwage"
+    }
+  ]
+}

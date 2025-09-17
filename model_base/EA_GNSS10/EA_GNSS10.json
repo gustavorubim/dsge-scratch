@@ -1,0 +1,601 @@
+{
+  "$schema": "model",
+  "name": "EA_GNSS10",
+  "capabilities": {
+    "rules": [
+      "GR",
+      "LWW",
+      "SW",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gerali et al. (2010)",
+    "paper_title": "Credit and Banking in a DSGE Model of the Euro Area",
+    "journal": "Journal of Money, Credit and Banking 42 (s1), pp. 107-141",
+    "replicants_name": "Original code provided (S. Schmidt edited)",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Gerali, Andrea",
+      "Neri, Stefano",
+      "Sessa, Luca",
+      "Signoretti, Federico M."
+    ]
+  },
+  "msr": [
+    "0.750481873084311",
+    "0",
+    "0",
+    "0",
+    "2.00384780180824*(1-0.750481873084311)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.303247771697294*(1-0.750481873084311)*4",
+    "-0.303247771697294*(1-0.750481873084311)*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_A_e",
+      "text": "e_A_e"
+    },
+    {
+      "name": "e_eps_K_b",
+      "text": "e_eps_K_b"
+    },
+    {
+      "name": "e_j",
+      "text": "e_j"
+    },
+    {
+      "name": "e_l",
+      "text": "e_l"
+    },
+    {
+      "name": "e_me",
+      "text": "e_me"
+    },
+    {
+      "name": "e_mi",
+      "text": "e_mi"
+    },
+    {
+      "name": "e_mk_be",
+      "text": "e_mk_be"
+    },
+    {
+      "name": "e_mk_bh",
+      "text": "e_mk_bh"
+    },
+    {
+      "name": "e_mk_d",
+      "text": "e_mk_d"
+    },
+    {
+      "name": "e_qk",
+      "text": "e_qk"
+    },
+    {
+      "name": "e_y",
+      "text": "e_y"
+    },
+    {
+      "name": "e_z",
+      "text": "Preference shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A_e",
+      "text": "A_e"
+    },
+    {
+      "name": "aux1",
+      "text": "aux1"
+    },
+    {
+      "name": "B",
+      "text": "B"
+    },
+    {
+      "name": "b_e",
+      "text": "b_e"
+    },
+    {
+      "name": "b_ee",
+      "text": "b_ee"
+    },
+    {
+      "name": "b_eef",
+      "text": "b_eef"
+    },
+    {
+      "name": "b_ef",
+      "text": "b_ef"
+    },
+    {
+      "name": "b_h",
+      "text": "b_h"
+    },
+    {
+      "name": "b_hf",
+      "text": "b_hf"
+    },
+    {
+      "name": "b_i",
+      "text": "b_i"
+    },
+    {
+      "name": "b_if",
+      "text": "b_if"
+    },
+    {
+      "name": "BE",
+      "text": "BE"
+    },
+    {
+      "name": "BEf",
+      "text": "BEf"
+    },
+    {
+      "name": "Bf",
+      "text": "Bf"
+    },
+    {
+      "name": "BH",
+      "text": "BH"
+    },
+    {
+      "name": "BHf",
+      "text": "BHf"
+    },
+    {
+      "name": "bm",
+      "text": "bm"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_e",
+      "text": "c_e"
+    },
+    {
+      "name": "c_ef",
+      "text": "c_ef"
+    },
+    {
+      "name": "c_i",
+      "text": "c_i"
+    },
+    {
+      "name": "c_if",
+      "text": "c_if"
+    },
+    {
+      "name": "c_p",
+      "text": "c_p"
+    },
+    {
+      "name": "c_pf",
+      "text": "c_pf"
+    },
+    {
+      "name": "Cf",
+      "text": "Cf"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "d_b",
+      "text": "d_b"
+    },
+    {
+      "name": "d_bf",
+      "text": "d_bf"
+    },
+    {
+      "name": "d_p",
+      "text": "d_p"
+    },
+    {
+      "name": "d_pf",
+      "text": "d_pf"
+    },
+    {
+      "name": "Df",
+      "text": "Df"
+    },
+    {
+      "name": "ee_j",
+      "text": "ee_j"
+    },
+    {
+      "name": "ee_qk",
+      "text": "ee_qk"
+    },
+    {
+      "name": "ee_z",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "eps_K_b",
+      "text": "eps_K_b"
+    },
+    {
+      "name": "eps_l",
+      "text": "eps_l"
+    },
+    {
+      "name": "eps_y",
+      "text": "eps_y"
+    },
+    {
+      "name": "h_i",
+      "text": "h_i"
+    },
+    {
+      "name": "h_if",
+      "text": "h_if"
+    },
+    {
+      "name": "h_p",
+      "text": "h_p"
+    },
+    {
+      "name": "h_pf",
+      "text": "h_pf"
+    },
+    {
+      "name": "I",
+      "text": "I"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "j_B",
+      "text": "j_B"
+    },
+    {
+      "name": "J_B",
+      "text": "J_B"
+    },
+    {
+      "name": "j_Bf",
+      "text": "j_Bf"
+    },
+    {
+      "name": "J_Bf",
+      "text": "J_Bf"
+    },
+    {
+      "name": "J_R",
+      "text": "J_R"
+    },
+    {
+      "name": "J_Rf",
+      "text": "J_Rf"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "K_b",
+      "text": "K_b"
+    },
+    {
+      "name": "K_bf",
+      "text": "K_bf"
+    },
+    {
+      "name": "k_e",
+      "text": "k_e"
+    },
+    {
+      "name": "k_ef",
+      "text": "k_ef"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "l_i",
+      "text": "l_i"
+    },
+    {
+      "name": "l_id",
+      "text": "l_id"
+    },
+    {
+      "name": "l_idf",
+      "text": "l_idf"
+    },
+    {
+      "name": "l_if",
+      "text": "l_if"
+    },
+    {
+      "name": "l_p",
+      "text": "l_p"
+    },
+    {
+      "name": "l_pd",
+      "text": "l_pd"
+    },
+    {
+      "name": "l_pdf",
+      "text": "l_pdf"
+    },
+    {
+      "name": "l_pf",
+      "text": "l_pf"
+    },
+    {
+      "name": "lam_e",
+      "text": "lam_e"
+    },
+    {
+      "name": "lam_ef",
+      "text": "lam_ef"
+    },
+    {
+      "name": "lam_i",
+      "text": "lam_i"
+    },
+    {
+      "name": "lam_if",
+      "text": "lam_if"
+    },
+    {
+      "name": "lam_p",
+      "text": "lam_p"
+    },
+    {
+      "name": "lam_pf",
+      "text": "lam_pf"
+    },
+    {
+      "name": "m_e",
+      "text": "m_e"
+    },
+    {
+      "name": "m_i",
+      "text": "m_i"
+    },
+    {
+      "name": "mk_be",
+      "text": "mk_be"
+    },
+    {
+      "name": "mk_bh",
+      "text": "mk_bh"
+    },
+    {
+      "name": "mk_d",
+      "text": "mk_d"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pie",
+      "text": "pie"
+    },
+    {
+      "name": "pie_wi",
+      "text": "pie_wi"
+    },
+    {
+      "name": "pie_wp",
+      "text": "pie_wp"
+    },
+    {
+      "name": "PIW",
+      "text": "PIW"
+    },
+    {
+      "name": "q_h",
+      "text": "q_h"
+    },
+    {
+      "name": "q_hf",
+      "text": "q_hf"
+    },
+    {
+      "name": "q_k",
+      "text": "q_k"
+    },
+    {
+      "name": "q_kf",
+      "text": "q_kf"
+    },
+    {
+      "name": "R_b",
+      "text": "R_b"
+    },
+    {
+      "name": "r_be",
+      "text": "r_be"
+    },
+    {
+      "name": "r_bef",
+      "text": "r_bef"
+    },
+    {
+      "name": "R_bf",
+      "text": "R_bf"
+    },
+    {
+      "name": "r_bh",
+      "text": "r_bh"
+    },
+    {
+      "name": "r_bhf",
+      "text": "r_bhf"
+    },
+    {
+      "name": "r_d",
+      "text": "r_d"
+    },
+    {
+      "name": "r_df",
+      "text": "r_df"
+    },
+    {
+      "name": "r_ib",
+      "text": "r_ib"
+    },
+    {
+      "name": "r_ibf",
+      "text": "r_ibf"
+    },
+    {
+      "name": "r_k",
+      "text": "r_k"
+    },
+    {
+      "name": "r_kf",
+      "text": "r_kf"
+    },
+    {
+      "name": "rr_e",
+      "text": "rr_e"
+    },
+    {
+      "name": "s_e",
+      "text": "s_e"
+    },
+    {
+      "name": "s_ef",
+      "text": "s_ef"
+    },
+    {
+      "name": "s_i",
+      "text": "s_i"
+    },
+    {
+      "name": "s_if",
+      "text": "s_if"
+    },
+    {
+      "name": "spr_b",
+      "text": "spr_b"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w_i",
+      "text": "w_i"
+    },
+    {
+      "name": "w_if",
+      "text": "w_if"
+    },
+    {
+      "name": "w_p",
+      "text": "w_p"
+    },
+    {
+      "name": "w_pf",
+      "text": "w_pf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "y_e",
+      "text": "y_e"
+    },
+    {
+      "name": "y_ef",
+      "text": "y_ef"
+    },
+    {
+      "name": "Y1",
+      "text": "Y1"
+    },
+    {
+      "name": "Y1f",
+      "text": "Y1f"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    }
+  ]
+}

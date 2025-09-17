@@ -1,0 +1,163 @@
+{
+  "$schema": "model",
+  "name": "US_MI07AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Milani (2007)",
+    "paper_title": "Expectations, learning and macroeconomic persistence",
+    "journal": "Journal of Monetary Economics 54 (7), pp. 2065-2082",
+    "replicants_name": "P. Kuang and D. Stijepic",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Milani, Fabio"
+    ]
+  },
+  "msr": [
+    "0.914",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*1.484",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*0.801",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "pi",
+      "pi_tilde",
+      "inflationq",
+      "x",
+      "x_tilde"
+    ],
+    "states_long": [
+      "x",
+      "inflationq",
+      "inflationqls",
+      "r_n",
+      "u"
+    ],
+    "states_short": [
+      "x",
+      "inflationq",
+      "r_n",
+      "u"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "v_r",
+      "text": "v_r"
+    },
+    {
+      "name": "v_u",
+      "text": "Price markup shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_tilde",
+      "text": "pi_tilde"
+    },
+    {
+      "name": "r_n",
+      "text": "r_n"
+    },
+    {
+      "name": "u",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "x_tilde",
+      "text": "x_tilde"
+    }
+  ]
+}

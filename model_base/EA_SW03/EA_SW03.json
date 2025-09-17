@@ -1,0 +1,394 @@
+{
+  "$schema": "model",
+  "name": "EA_SW03",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Smets & Wouters (2003)",
+    "paper_title": "An estimated dynamic stochastic general equilibrium model of the euro area",
+    "journal": "Journal of the European Economic Association 1(5), pp. 1123-1175",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2003",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Smets, Frank",
+      "Wouters, Rafael"
+    ]
+  },
+  "msr": [
+    "0.9613",
+    "0",
+    "0",
+    "0",
+    "(1-0.9613)*1.6841+0.1398",
+    "-0.1398",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.9613)*0.0988+0.1586)*4",
+    "-0.1586*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eas",
+      "text": "eas"
+    },
+    {
+      "name": "eb",
+      "text": "Preference shock"
+    },
+    {
+      "name": "econs",
+      "text": "econs"
+    },
+    {
+      "name": "einv",
+      "text": "einv"
+    },
+    {
+      "name": "elab",
+      "text": "elab"
+    },
+    {
+      "name": "els",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eps",
+      "text": "eps"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "ey",
+      "text": "ey"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "as",
+      "text": "as"
+    },
+    {
+      "name": "b",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "dr",
+      "text": "dr"
+    },
+    {
+      "name": "effort",
+      "text": "effort"
+    },
+    {
+      "name": "effortf",
+      "text": "effortf"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "empl",
+      "text": "empl"
+    },
+    {
+      "name": "emplf",
+      "text": "emplf"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "hab",
+      "text": "hab"
+    },
+    {
+      "name": "habf",
+      "text": "habf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inve",
+      "text": "Investment"
+    },
+    {
+      "name": "invef",
+      "text": "invef"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kp",
+      "text": "Capital"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "lab",
+      "text": "Labour"
+    },
+    {
+      "name": "labf",
+      "text": "labf"
+    },
+    {
+      "name": "ls",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcf",
+      "text": "mcf"
+    },
+    {
+      "name": "ms",
+      "text": "ms"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "muf",
+      "text": "muf"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pf",
+      "text": "pf"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pinff",
+      "text": "pinff"
+    },
+    {
+      "name": "pinfLAG1",
+      "text": "pinfLAG1"
+    },
+    {
+      "name": "pinfLAG2",
+      "text": "pinfLAG2"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "pkf",
+      "text": "pkf"
+    },
+    {
+      "name": "ps",
+      "text": "ps"
+    },
+    {
+      "name": "qs",
+      "text": "qs"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "scons",
+      "text": "scons"
+    },
+    {
+      "name": "sinv",
+      "text": "sinv"
+    },
+    {
+      "name": "slab",
+      "text": "slab"
+    },
+    {
+      "name": "spinf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "sw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "sy",
+      "text": "sy"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "ww",
+      "text": "ww"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    },
+    {
+      "name": "zcap",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "zcapf",
+      "text": "zcapf"
+    }
+  ]
+}

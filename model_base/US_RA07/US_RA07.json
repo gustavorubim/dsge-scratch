@@ -1,0 +1,221 @@
+{
+  "$schema": "model",
+  "name": "US_RA07",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rabanal (2007)",
+    "paper_title": "Does inflation increase after a monetary policy tightening? Answers based on a estimated DSGE model",
+    "journal": "Journal of Economic Dynamics & Control 31(3), pp. 906-937",
+    "replicants_name": "Asim Farooq and Martina Jancokova",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Rabanal, Pau"
+    ]
+  },
+  "msr": [
+    "0.94",
+    "0",
+    "0",
+    "0",
+    "(1-0.94)*1.34",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.94)*0.53*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "Technology shock"
+    },
+    {
+      "name": "epsp",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "epsg",
+      "text": "epsg"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal Costs"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "Tobin's q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

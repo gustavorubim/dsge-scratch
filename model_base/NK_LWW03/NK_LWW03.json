@@ -1,0 +1,126 @@
+{
+  "$schema": "model",
+  "name": "NK_LWW03",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Levin et al (2003)",
+    "paper_title": "The Performance of Forecast-Based Monetary Policy Rules under Model Uncertainty",
+    "journal": "American Economic Review 93 (3), pp. 622-645",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2003",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Levin, Andrew",
+      "Wieland, Volker",
+      "Williams, John C."
+    ]
+  },
+  "msr": [
+    "0.755226",
+    "0",
+    "0",
+    "0",
+    "0.602691/4",
+    "0.602691/4",
+    "0.602691/4",
+    "0.602691/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.17616",
+    "-0.972390",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "pdotsh_",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "drff",
+      "text": "drff"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pdot",
+      "text": "pdot"
+    },
+    {
+      "name": "pdotsh",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "rff",
+      "text": "rff"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "$schema": "model",
+  "name": "BRA_SAMBA08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gouvea et al. (2008)",
+    "paper_title": "Samba: Stochastic analytical model with a bayesian approach",
+    "journal": "unpublished",
+    "replicants_name": "Ali Mazyaki",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Model of the Brazilian economy",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Gouvea, Solange",
+      "Minella, André",
+      "Santos, Rafael",
+      "Souza-Sobrinho, Nelson"
+    ]
+  },
+  "msr": [
+    "0.682",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.682)*1.523",
+    "0",
+    "0",
+    "0",
+    "(1-0.682)*0.839*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "c_",
+      "text": "Preference shock"
+    },
+    {
+      "name": "fii_",
+      "text": "fii_"
+    },
+    {
+      "name": "fiistar_",
+      "text": "fiistar_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "gbar_",
+      "text": "gbar_"
+    },
+    {
+      "name": "i_",
+      "text": "i_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "mstar_",
+      "text": "mstar_"
+    },
+    {
+      "name": "n_",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "pibar_",
+      "text": "pibar_"
+    },
+    {
+      "name": "pistar_",
+      "text": "pistar_"
+    },
+    {
+      "name": "r_",
+      "text": "r_"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "bby",
+      "text": "bby"
+    },
+    {
+      "name": "bystar",
+      "text": "bystar"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "co",
+      "text": "co"
+    },
+    {
+      "name": "crot",
+      "text": "crot"
+    },
+    {
+      "name": "fii",
+      "text": "fii"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "g_",
+      "text": "g_"
+    },
+    {
+      "name": "gy",
+      "text": "gy"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mstar",
+      "text": "mstar"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "no",
+      "text": "no"
+    },
+    {
+      "name": "nrot",
+      "text": "nrot"
+    },
+    {
+      "name": "nxy",
+      "text": "nxy"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pibar",
+      "text": "pibar"
+    },
+    {
+      "name": "pistar",
+      "text": "pistar"
+    },
+    {
+      "name": "piva",
+      "text": "piva"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qi",
+      "text": "qi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "sgbar",
+      "text": "sgbar"
+    },
+    {
+      "name": "syhat",
+      "text": "syhat"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "wr",
+      "text": "Real wage"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yva",
+      "text": "yva"
+    },
+    {
+      "name": "zc",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "zfii",
+      "text": "zfii"
+    },
+    {
+      "name": "zfiistar",
+      "text": "zfiistar"
+    },
+    {
+      "name": "zg",
+      "text": "zg"
+    },
+    {
+      "name": "zi",
+      "text": "zi"
+    },
+    {
+      "name": "zn",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "zr",
+      "text": "zr"
+    }
+  ]
+}

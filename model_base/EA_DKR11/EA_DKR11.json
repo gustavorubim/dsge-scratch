@@ -1,0 +1,1611 @@
+{
+  "$schema": "model",
+  "name": "EA_DKR11",
+  "capabilities": {
+    "rules": [
+      "GR",
+      "LWW",
+      "SW",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Darracq Paries et al. (2011)\n",
+    "paper_title": "Macroeconomic propagation under different regulatory regimes: Evidence from an estimated dsge model for the euro area",
+    "journal": "International Journal of Central Banking 7(4), pp. 49-113",
+    "replicants_name": "Original code provided (Marcus Jüppner edited)",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Darracq Pariès, Matthieu",
+      "Kok Sørensen, Christoffer",
+      "Rodriguez Palenzuela, Diego"
+    ]
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false,
+  "shocks": [
+    {
+      "name": "E_A",
+      "text": "Technology shock"
+    },
+    {
+      "name": "E_A_D",
+      "text": "E_A_D"
+    },
+    {
+      "name": "E_B",
+      "text": "Preference shock"
+    },
+    {
+      "name": "E_Bankcap",
+      "text": "E_Bankcap"
+    },
+    {
+      "name": "E_H",
+      "text": "E_H"
+    },
+    {
+      "name": "E_I",
+      "text": "E_I"
+    },
+    {
+      "name": "E_P",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "E_R",
+      "text": "E_R"
+    },
+    {
+      "name": "E_R_D",
+      "text": "E_R_D"
+    },
+    {
+      "name": "E_R_L",
+      "text": "E_R_L"
+    },
+    {
+      "name": "E_R_L_E",
+      "text": "E_R_L_E"
+    },
+    {
+      "name": "E_SIG",
+      "text": "E_SIG"
+    },
+    {
+      "name": "E_SIG_HH",
+      "text": "E_SIG_HH"
+    },
+    {
+      "name": "E_W",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "AP",
+      "text": "AP"
+    },
+    {
+      "name": "AP_D",
+      "text": "AP_D"
+    },
+    {
+      "name": "AR_D",
+      "text": "AR_D"
+    },
+    {
+      "name": "AR_L",
+      "text": "AR_L"
+    },
+    {
+      "name": "AR_L_E",
+      "text": "AR_L_E"
+    },
+    {
+      "name": "AR_L_E_R",
+      "text": "AR_L_E_R"
+    },
+    {
+      "name": "AR_L_E_R_MU",
+      "text": "AR_L_E_R_MU"
+    },
+    {
+      "name": "ATCU",
+      "text": "ATCU"
+    },
+    {
+      "name": "ATCU_D",
+      "text": "ATCU_D"
+    },
+    {
+      "name": "ATCU_Df",
+      "text": "ATCU_Df"
+    },
+    {
+      "name": "ATCU1",
+      "text": "ATCU1"
+    },
+    {
+      "name": "ATCU1_D",
+      "text": "ATCU1_D"
+    },
+    {
+      "name": "ATCU1_Df",
+      "text": "ATCU1_Df"
+    },
+    {
+      "name": "ATCU1f",
+      "text": "ATCU1f"
+    },
+    {
+      "name": "ATCUf",
+      "text": "ATCUf"
+    },
+    {
+      "name": "AW_C",
+      "text": "AW_C"
+    },
+    {
+      "name": "AW_C_NR",
+      "text": "AW_C_NR"
+    },
+    {
+      "name": "AW_D",
+      "text": "AW_D"
+    },
+    {
+      "name": "AW_D_NR",
+      "text": "AW_D_NR"
+    },
+    {
+      "name": "Bankcap",
+      "text": "Bankcap"
+    },
+    {
+      "name": "Bankcapf",
+      "text": "Bankcapf"
+    },
+    {
+      "name": "Bankcapobs",
+      "text": "Bankcapobs"
+    },
+    {
+      "name": "Bankcapobsf",
+      "text": "Bankcapobsf"
+    },
+    {
+      "name": "C",
+      "text": "C"
+    },
+    {
+      "name": "C_E",
+      "text": "C_E"
+    },
+    {
+      "name": "C_Ef",
+      "text": "C_Ef"
+    },
+    {
+      "name": "Cf",
+      "text": "Cf"
+    },
+    {
+      "name": "CNR",
+      "text": "CNR"
+    },
+    {
+      "name": "CNRf",
+      "text": "CNRf"
+    },
+    {
+      "name": "CNRobs",
+      "text": "CNRobs"
+    },
+    {
+      "name": "CNRobsf",
+      "text": "CNRobsf"
+    },
+    {
+      "name": "Cobs",
+      "text": "Cobs"
+    },
+    {
+      "name": "Cobsf",
+      "text": "Cobsf"
+    },
+    {
+      "name": "CPI",
+      "text": "CPI"
+    },
+    {
+      "name": "CPIobs",
+      "text": "CPIobs"
+    },
+    {
+      "name": "CRobs",
+      "text": "CRobs"
+    },
+    {
+      "name": "CRobsf",
+      "text": "CRobsf"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "dDebtobs",
+      "text": "dDebtobs"
+    },
+    {
+      "name": "dDebtobsf",
+      "text": "dDebtobsf"
+    },
+    {
+      "name": "Debt",
+      "text": "Debt"
+    },
+    {
+      "name": "Debt_E",
+      "text": "Debt_E"
+    },
+    {
+      "name": "Debt_Ef",
+      "text": "Debt_Ef"
+    },
+    {
+      "name": "Debt_Eobs",
+      "text": "Debt_Eobs"
+    },
+    {
+      "name": "Debt_Eobsf",
+      "text": "Debt_Eobsf"
+    },
+    {
+      "name": "Debt_TOT",
+      "text": "Debt_TOT"
+    },
+    {
+      "name": "Debt_TOT_W",
+      "text": "Debt_TOT_W"
+    },
+    {
+      "name": "Debt_TOTf",
+      "text": "Debt_TOTf"
+    },
+    {
+      "name": "Debt_TOTobs",
+      "text": "Debt_TOTobs"
+    },
+    {
+      "name": "Debt_TOTobsf",
+      "text": "Debt_TOTobsf"
+    },
+    {
+      "name": "Debtf",
+      "text": "Debtf"
+    },
+    {
+      "name": "Debtobs",
+      "text": "Debtobs"
+    },
+    {
+      "name": "Debtobsf",
+      "text": "Debtobsf"
+    },
+    {
+      "name": "Depo",
+      "text": "Depo"
+    },
+    {
+      "name": "Depof",
+      "text": "Depof"
+    },
+    {
+      "name": "Depoobs",
+      "text": "Depoobs"
+    },
+    {
+      "name": "Depoobsf",
+      "text": "Depoobsf"
+    },
+    {
+      "name": "Df",
+      "text": "Df"
+    },
+    {
+      "name": "DNR",
+      "text": "DNR"
+    },
+    {
+      "name": "DNRf",
+      "text": "DNRf"
+    },
+    {
+      "name": "DNRobs",
+      "text": "DNRobs"
+    },
+    {
+      "name": "DNRobsf",
+      "text": "DNRobsf"
+    },
+    {
+      "name": "Dp",
+      "text": "Dp"
+    },
+    {
+      "name": "Dp_D",
+      "text": "Dp_D"
+    },
+    {
+      "name": "Dp_R_D",
+      "text": "Dp_R_D"
+    },
+    {
+      "name": "Dp_R_L",
+      "text": "Dp_R_L"
+    },
+    {
+      "name": "Dp_R_L_E",
+      "text": "Dp_R_L_E"
+    },
+    {
+      "name": "DRobs",
+      "text": "DRobs"
+    },
+    {
+      "name": "DRobsf",
+      "text": "DRobsf"
+    },
+    {
+      "name": "Dw_C",
+      "text": "Dw_C"
+    },
+    {
+      "name": "Dw_C_NR",
+      "text": "Dw_C_NR"
+    },
+    {
+      "name": "Dw_D",
+      "text": "Dw_D"
+    },
+    {
+      "name": "Dw_D_NR",
+      "text": "Dw_D_NR"
+    },
+    {
+      "name": "E_F",
+      "text": "E_F"
+    },
+    {
+      "name": "E_Ff",
+      "text": "E_Ff"
+    },
+    {
+      "name": "E_G",
+      "text": "E_G"
+    },
+    {
+      "name": "EE_A",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "EE_A_D",
+      "text": "EE_A_D"
+    },
+    {
+      "name": "EE_B",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "EE_Bankcap",
+      "text": "EE_Bankcap"
+    },
+    {
+      "name": "EE_G",
+      "text": "EE_G"
+    },
+    {
+      "name": "EE_H",
+      "text": "EE_H"
+    },
+    {
+      "name": "EE_I",
+      "text": "EE_I"
+    },
+    {
+      "name": "EE_IH",
+      "text": "EE_IH"
+    },
+    {
+      "name": "EE_L",
+      "text": "EE_L"
+    },
+    {
+      "name": "EE_LTV",
+      "text": "EE_LTV"
+    },
+    {
+      "name": "EE_LTV_E",
+      "text": "EE_LTV_E"
+    },
+    {
+      "name": "EE_P",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "EE_P_D",
+      "text": "EE_P_D"
+    },
+    {
+      "name": "EE_P_Df",
+      "text": "EE_P_Df"
+    },
+    {
+      "name": "EE_Pf",
+      "text": "EE_Pf"
+    },
+    {
+      "name": "EE_Q",
+      "text": "EE_Q"
+    },
+    {
+      "name": "EE_R",
+      "text": "EE_R"
+    },
+    {
+      "name": "EE_R_D",
+      "text": "EE_R_D"
+    },
+    {
+      "name": "EE_R_Df",
+      "text": "EE_R_Df"
+    },
+    {
+      "name": "EE_R_L",
+      "text": "EE_R_L"
+    },
+    {
+      "name": "EE_R_L_E",
+      "text": "EE_R_L_E"
+    },
+    {
+      "name": "EE_R_L_Ef",
+      "text": "EE_R_L_Ef"
+    },
+    {
+      "name": "EE_R_Lf",
+      "text": "EE_R_Lf"
+    },
+    {
+      "name": "EE_SIG",
+      "text": "EE_SIG"
+    },
+    {
+      "name": "EE_SIG_HH",
+      "text": "EE_SIG_HH"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS1",
+      "text": "EE_SIG_HH_NEWS1"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS2",
+      "text": "EE_SIG_HH_NEWS2"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS3",
+      "text": "EE_SIG_HH_NEWS3"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS4",
+      "text": "EE_SIG_HH_NEWS4"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS5",
+      "text": "EE_SIG_HH_NEWS5"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS6",
+      "text": "EE_SIG_HH_NEWS6"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS7",
+      "text": "EE_SIG_HH_NEWS7"
+    },
+    {
+      "name": "EE_SIG_HH_NEWS8",
+      "text": "EE_SIG_HH_NEWS8"
+    },
+    {
+      "name": "EE_SIG_NEWS1",
+      "text": "EE_SIG_NEWS1"
+    },
+    {
+      "name": "EE_SIG_NEWS2",
+      "text": "EE_SIG_NEWS2"
+    },
+    {
+      "name": "EE_SIG_NEWS3",
+      "text": "EE_SIG_NEWS3"
+    },
+    {
+      "name": "EE_SIG_NEWS4",
+      "text": "EE_SIG_NEWS4"
+    },
+    {
+      "name": "EE_SIG_NEWS5",
+      "text": "EE_SIG_NEWS5"
+    },
+    {
+      "name": "EE_SIG_NEWS6",
+      "text": "EE_SIG_NEWS6"
+    },
+    {
+      "name": "EE_SIG_NEWS7",
+      "text": "EE_SIG_NEWS7"
+    },
+    {
+      "name": "EE_SIG_NEWS8",
+      "text": "EE_SIG_NEWS8"
+    },
+    {
+      "name": "EE_W",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "EE_Wf",
+      "text": "EE_Wf"
+    },
+    {
+      "name": "EFP_OMEG",
+      "text": "EFP_OMEG"
+    },
+    {
+      "name": "EFP_OMEG_HH",
+      "text": "EFP_OMEG_HH"
+    },
+    {
+      "name": "EFP_OMEG_HHf",
+      "text": "EFP_OMEG_HHf"
+    },
+    {
+      "name": "EFP_OMEGf",
+      "text": "EFP_OMEGf"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "G_OMEG",
+      "text": "G_OMEG"
+    },
+    {
+      "name": "G_OMEG_HH",
+      "text": "G_OMEG_HH"
+    },
+    {
+      "name": "G_OMEG_HHf",
+      "text": "G_OMEG_HHf"
+    },
+    {
+      "name": "G_OMEGf",
+      "text": "G_OMEGf"
+    },
+    {
+      "name": "H_OMEG",
+      "text": "H_OMEG"
+    },
+    {
+      "name": "H_OMEG_HH",
+      "text": "H_OMEG_HH"
+    },
+    {
+      "name": "H_OMEG_HHf",
+      "text": "H_OMEG_HHf"
+    },
+    {
+      "name": "H_OMEGf",
+      "text": "H_OMEGf"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "I_C",
+      "text": "I_C"
+    },
+    {
+      "name": "I_Cf",
+      "text": "I_Cf"
+    },
+    {
+      "name": "I_D",
+      "text": "I_D"
+    },
+    {
+      "name": "I_Df",
+      "text": "I_Df"
+    },
+    {
+      "name": "I_H",
+      "text": "I_H"
+    },
+    {
+      "name": "I_H_NR",
+      "text": "I_H_NR"
+    },
+    {
+      "name": "I_H_NRf",
+      "text": "I_H_NRf"
+    },
+    {
+      "name": "I_Hf",
+      "text": "I_Hf"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "Iobs",
+      "text": "Iobs"
+    },
+    {
+      "name": "Iobsf",
+      "text": "Iobsf"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "K_C",
+      "text": "K_C"
+    },
+    {
+      "name": "K_Cf",
+      "text": "K_Cf"
+    },
+    {
+      "name": "K_D",
+      "text": "K_D"
+    },
+    {
+      "name": "K_Df",
+      "text": "K_Df"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "L",
+      "text": "L"
+    },
+    {
+      "name": "L_C",
+      "text": "L_C"
+    },
+    {
+      "name": "L_Cf",
+      "text": "L_Cf"
+    },
+    {
+      "name": "L_Cobs",
+      "text": "L_Cobs"
+    },
+    {
+      "name": "L_Cobsf",
+      "text": "L_Cobsf"
+    },
+    {
+      "name": "L_D",
+      "text": "L_D"
+    },
+    {
+      "name": "L_Df",
+      "text": "L_Df"
+    },
+    {
+      "name": "L_Dobs",
+      "text": "L_Dobs"
+    },
+    {
+      "name": "L_Dobsf",
+      "text": "L_Dobsf"
+    },
+    {
+      "name": "LAND",
+      "text": "LAND"
+    },
+    {
+      "name": "LEV",
+      "text": "LEV"
+    },
+    {
+      "name": "LEVf",
+      "text": "LEVf"
+    },
+    {
+      "name": "LEVobs",
+      "text": "LEVobs"
+    },
+    {
+      "name": "LEVobsf",
+      "text": "LEVobsf"
+    },
+    {
+      "name": "Lf",
+      "text": "Lf"
+    },
+    {
+      "name": "Lobs",
+      "text": "Lobs"
+    },
+    {
+      "name": "Lobsf",
+      "text": "Lobsf"
+    },
+    {
+      "name": "MC",
+      "text": "MC"
+    },
+    {
+      "name": "MC_D",
+      "text": "MC_D"
+    },
+    {
+      "name": "MC_Df",
+      "text": "MC_Df"
+    },
+    {
+      "name": "MCf",
+      "text": "MCf"
+    },
+    {
+      "name": "N_C_NR",
+      "text": "N_C_NR"
+    },
+    {
+      "name": "N_C_NRf",
+      "text": "N_C_NRf"
+    },
+    {
+      "name": "N_C_S",
+      "text": "N_C_S"
+    },
+    {
+      "name": "N_C_Sf",
+      "text": "N_C_Sf"
+    },
+    {
+      "name": "N_D_NR",
+      "text": "N_D_NR"
+    },
+    {
+      "name": "N_D_NRf",
+      "text": "N_D_NRf"
+    },
+    {
+      "name": "N_D_S",
+      "text": "N_D_S"
+    },
+    {
+      "name": "N_D_Sf",
+      "text": "N_D_Sf"
+    },
+    {
+      "name": "OMEG",
+      "text": "OMEG"
+    },
+    {
+      "name": "OMEG_HH",
+      "text": "OMEG_HH"
+    },
+    {
+      "name": "OMEG_HHf",
+      "text": "OMEG_HHf"
+    },
+    {
+      "name": "OMEGf",
+      "text": "OMEGf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "P_L",
+      "text": "P_L"
+    },
+    {
+      "name": "P_Lf",
+      "text": "P_Lf"
+    },
+    {
+      "name": "PD_Eobs",
+      "text": "PD_Eobs"
+    },
+    {
+      "name": "PD_Eobsf",
+      "text": "PD_Eobsf"
+    },
+    {
+      "name": "PD_HHobs",
+      "text": "PD_HHobs"
+    },
+    {
+      "name": "PD_HHobsf",
+      "text": "PD_HHobsf"
+    },
+    {
+      "name": "PI",
+      "text": "PI"
+    },
+    {
+      "name": "PI_BAR",
+      "text": "PI_BAR"
+    },
+    {
+      "name": "PI_D",
+      "text": "PI_D"
+    },
+    {
+      "name": "PI_Dobs",
+      "text": "PI_Dobs"
+    },
+    {
+      "name": "PIgdpobs",
+      "text": "PIgdpobs"
+    },
+    {
+      "name": "PIobs",
+      "text": "PIobs"
+    },
+    {
+      "name": "Profit_B",
+      "text": "Profit_B"
+    },
+    {
+      "name": "Profit_Bf",
+      "text": "Profit_Bf"
+    },
+    {
+      "name": "PSI",
+      "text": "PSI"
+    },
+    {
+      "name": "PSI_E",
+      "text": "PSI_E"
+    },
+    {
+      "name": "PSI_Ef",
+      "text": "PSI_Ef"
+    },
+    {
+      "name": "PSIf",
+      "text": "PSIf"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Q_D",
+      "text": "Q_D"
+    },
+    {
+      "name": "Q_Df",
+      "text": "Q_Df"
+    },
+    {
+      "name": "Q_H",
+      "text": "Q_H"
+    },
+    {
+      "name": "Q_H_NR",
+      "text": "Q_H_NR"
+    },
+    {
+      "name": "Q_H_NRf",
+      "text": "Q_H_NRf"
+    },
+    {
+      "name": "Q_Hf",
+      "text": "Q_Hf"
+    },
+    {
+      "name": "Qf",
+      "text": "Qf"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_D",
+      "text": "R_D"
+    },
+    {
+      "name": "R_Df",
+      "text": "R_Df"
+    },
+    {
+      "name": "R_Dobs",
+      "text": "R_Dobs"
+    },
+    {
+      "name": "R_Dobsf",
+      "text": "R_Dobsf"
+    },
+    {
+      "name": "R_K",
+      "text": "R_K"
+    },
+    {
+      "name": "R_Kf",
+      "text": "R_Kf"
+    },
+    {
+      "name": "R_L",
+      "text": "R_L"
+    },
+    {
+      "name": "R_L_E",
+      "text": "R_L_E"
+    },
+    {
+      "name": "R_L_E_R",
+      "text": "R_L_E_R"
+    },
+    {
+      "name": "R_L_E_R_MU",
+      "text": "R_L_E_R_MU"
+    },
+    {
+      "name": "R_L_E_R_MUf",
+      "text": "R_L_E_R_MUf"
+    },
+    {
+      "name": "R_L_E_Rf",
+      "text": "R_L_E_Rf"
+    },
+    {
+      "name": "R_L_Ef",
+      "text": "R_L_Ef"
+    },
+    {
+      "name": "R_L_Eobs",
+      "text": "R_L_Eobs"
+    },
+    {
+      "name": "R_L_Eobsf",
+      "text": "R_L_Eobsf"
+    },
+    {
+      "name": "R_Lf",
+      "text": "R_Lf"
+    },
+    {
+      "name": "R_LL",
+      "text": "R_LL"
+    },
+    {
+      "name": "R_LL_E",
+      "text": "R_LL_E"
+    },
+    {
+      "name": "R_LL_Ef",
+      "text": "R_LL_Ef"
+    },
+    {
+      "name": "R_LL_Eobs",
+      "text": "R_LL_Eobs"
+    },
+    {
+      "name": "R_LL_Eobsf",
+      "text": "R_LL_Eobsf"
+    },
+    {
+      "name": "R_LLf",
+      "text": "R_LLf"
+    },
+    {
+      "name": "R_LLobs",
+      "text": "R_LLobs"
+    },
+    {
+      "name": "R_LLobsf",
+      "text": "R_LLobsf"
+    },
+    {
+      "name": "R_Lobs",
+      "text": "R_Lobs"
+    },
+    {
+      "name": "R_Lobsf",
+      "text": "R_Lobsf"
+    },
+    {
+      "name": "RB_D",
+      "text": "RB_D"
+    },
+    {
+      "name": "RB_Df",
+      "text": "RB_Df"
+    },
+    {
+      "name": "RB_Dobs",
+      "text": "RB_Dobs"
+    },
+    {
+      "name": "RB_Dobsf",
+      "text": "RB_Dobsf"
+    },
+    {
+      "name": "RB_L",
+      "text": "RB_L"
+    },
+    {
+      "name": "RB_L_E",
+      "text": "RB_L_E"
+    },
+    {
+      "name": "RB_L_Eobs",
+      "text": "RB_L_Eobs"
+    },
+    {
+      "name": "RB_Lf",
+      "text": "RB_Lf"
+    },
+    {
+      "name": "RB_Lobs",
+      "text": "RB_Lobs"
+    },
+    {
+      "name": "RB_Lobsf",
+      "text": "RB_Lobsf"
+    },
+    {
+      "name": "Rf",
+      "text": "Rf"
+    },
+    {
+      "name": "Robs",
+      "text": "Robs"
+    },
+    {
+      "name": "Robsf",
+      "text": "Robsf"
+    },
+    {
+      "name": "S_Dobs",
+      "text": "S_Dobs"
+    },
+    {
+      "name": "S_Dobsf",
+      "text": "S_Dobsf"
+    },
+    {
+      "name": "S_L_E_R_MUobs",
+      "text": "S_L_E_R_MUobs"
+    },
+    {
+      "name": "S_L_E_R_MUobsf",
+      "text": "S_L_E_R_MUobsf"
+    },
+    {
+      "name": "S_L_E_Robs",
+      "text": "S_L_E_Robs"
+    },
+    {
+      "name": "S_L_E_Robsf",
+      "text": "S_L_E_Robsf"
+    },
+    {
+      "name": "S_L_Eobs",
+      "text": "S_L_Eobs"
+    },
+    {
+      "name": "S_L_Eobsf",
+      "text": "S_L_Eobsf"
+    },
+    {
+      "name": "S_LL_Eobs",
+      "text": "S_LL_Eobs"
+    },
+    {
+      "name": "S_LL_Eobsf",
+      "text": "S_LL_Eobsf"
+    },
+    {
+      "name": "S_LLobs",
+      "text": "S_LLobs"
+    },
+    {
+      "name": "S_LLobsf",
+      "text": "S_LLobsf"
+    },
+    {
+      "name": "S_Lobs",
+      "text": "S_Lobs"
+    },
+    {
+      "name": "S_Lobsf",
+      "text": "S_Lobsf"
+    },
+    {
+      "name": "SB_L",
+      "text": "SB_L"
+    },
+    {
+      "name": "SB_L_E",
+      "text": "SB_L_E"
+    },
+    {
+      "name": "SB_Lf",
+      "text": "SB_Lf"
+    },
+    {
+      "name": "SB_Lobs",
+      "text": "SB_Lobs"
+    },
+    {
+      "name": "SB_Lobsf",
+      "text": "SB_Lobsf"
+    },
+    {
+      "name": "SI",
+      "text": "SI"
+    },
+    {
+      "name": "SI_D",
+      "text": "SI_D"
+    },
+    {
+      "name": "SI_Df",
+      "text": "SI_Df"
+    },
+    {
+      "name": "SI_H",
+      "text": "SI_H"
+    },
+    {
+      "name": "SI_H_NR",
+      "text": "SI_H_NR"
+    },
+    {
+      "name": "SI_H_NRf",
+      "text": "SI_H_NRf"
+    },
+    {
+      "name": "SI_Hf",
+      "text": "SI_Hf"
+    },
+    {
+      "name": "SI1",
+      "text": "SI1"
+    },
+    {
+      "name": "SI1_D",
+      "text": "SI1_D"
+    },
+    {
+      "name": "SI1_Df",
+      "text": "SI1_Df"
+    },
+    {
+      "name": "SI1_H",
+      "text": "SI1_H"
+    },
+    {
+      "name": "SI1_H_NR",
+      "text": "SI1_H_NR"
+    },
+    {
+      "name": "SI1_H_NRf",
+      "text": "SI1_H_NRf"
+    },
+    {
+      "name": "SI1_Hf",
+      "text": "SI1_Hf"
+    },
+    {
+      "name": "SI1f",
+      "text": "SI1f"
+    },
+    {
+      "name": "SIf",
+      "text": "SIf"
+    },
+    {
+      "name": "T_D",
+      "text": "T_D"
+    },
+    {
+      "name": "T_Df",
+      "text": "T_Df"
+    },
+    {
+      "name": "T_Dobs",
+      "text": "T_Dobs"
+    },
+    {
+      "name": "T_Dobsf",
+      "text": "T_Dobsf"
+    },
+    {
+      "name": "TCU",
+      "text": "TCU"
+    },
+    {
+      "name": "TCU_D",
+      "text": "TCU_D"
+    },
+    {
+      "name": "TCU_Df",
+      "text": "TCU_Df"
+    },
+    {
+      "name": "TCUf",
+      "text": "TCUf"
+    },
+    {
+      "name": "UC",
+      "text": "UC"
+    },
+    {
+      "name": "UC_D",
+      "text": "UC_D"
+    },
+    {
+      "name": "UC_Df",
+      "text": "UC_Df"
+    },
+    {
+      "name": "UC_DNR",
+      "text": "UC_DNR"
+    },
+    {
+      "name": "UC_DNRf",
+      "text": "UC_DNRf"
+    },
+    {
+      "name": "UC_E",
+      "text": "UC_E"
+    },
+    {
+      "name": "UC_Ef",
+      "text": "UC_Ef"
+    },
+    {
+      "name": "UCbis",
+      "text": "UCbis"
+    },
+    {
+      "name": "UCbis_E",
+      "text": "UCbis_E"
+    },
+    {
+      "name": "UCbis_Ef",
+      "text": "UCbis_Ef"
+    },
+    {
+      "name": "UCbisf",
+      "text": "UCbisf"
+    },
+    {
+      "name": "UCbisNR",
+      "text": "UCbisNR"
+    },
+    {
+      "name": "UCbisNRf",
+      "text": "UCbisNRf"
+    },
+    {
+      "name": "UCf",
+      "text": "UCf"
+    },
+    {
+      "name": "UCNR",
+      "text": "UCNR"
+    },
+    {
+      "name": "UCNRf",
+      "text": "UCNRf"
+    },
+    {
+      "name": "W",
+      "text": "Real wage"
+    },
+    {
+      "name": "W_C",
+      "text": "W_C"
+    },
+    {
+      "name": "W_C_NR",
+      "text": "W_C_NR"
+    },
+    {
+      "name": "W_C_NRf",
+      "text": "W_C_NRf"
+    },
+    {
+      "name": "W_C_S",
+      "text": "W_C_S"
+    },
+    {
+      "name": "W_C_Sf",
+      "text": "W_C_Sf"
+    },
+    {
+      "name": "W_Cf",
+      "text": "W_Cf"
+    },
+    {
+      "name": "W_Cobs",
+      "text": "W_Cobs"
+    },
+    {
+      "name": "W_Cobsf",
+      "text": "W_Cobsf"
+    },
+    {
+      "name": "W_D",
+      "text": "W_D"
+    },
+    {
+      "name": "W_D_NR",
+      "text": "W_D_NR"
+    },
+    {
+      "name": "W_D_NRf",
+      "text": "W_D_NRf"
+    },
+    {
+      "name": "W_D_S",
+      "text": "W_D_S"
+    },
+    {
+      "name": "W_D_Sf",
+      "text": "W_D_Sf"
+    },
+    {
+      "name": "W_Df",
+      "text": "W_Df"
+    },
+    {
+      "name": "W_Dobs",
+      "text": "W_Dobs"
+    },
+    {
+      "name": "W_Dobsf",
+      "text": "W_Dobsf"
+    },
+    {
+      "name": "WELFARE",
+      "text": "WELFARE"
+    },
+    {
+      "name": "WELFAREf",
+      "text": "WELFAREf"
+    },
+    {
+      "name": "WELFARENR",
+      "text": "WELFARENR"
+    },
+    {
+      "name": "WELFARENRf",
+      "text": "WELFARENRf"
+    },
+    {
+      "name": "Wf",
+      "text": "Wf"
+    },
+    {
+      "name": "Wobs",
+      "text": "Wobs"
+    },
+    {
+      "name": "Wobsf",
+      "text": "Wobsf"
+    },
+    {
+      "name": "X",
+      "text": "X"
+    },
+    {
+      "name": "Xf",
+      "text": "Xf"
+    },
+    {
+      "name": "XNR",
+      "text": "XNR"
+    },
+    {
+      "name": "XNRf",
+      "text": "XNRf"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    },
+    {
+      "name": "YGAP",
+      "text": "YGAP"
+    },
+    {
+      "name": "YGAPobs",
+      "text": "YGAPobs"
+    },
+    {
+      "name": "Yobs",
+      "text": "Yobs"
+    },
+    {
+      "name": "Yobsf",
+      "text": "Yobsf"
+    },
+    {
+      "name": "Z",
+      "text": "Z"
+    },
+    {
+      "name": "Z_D",
+      "text": "Z_D"
+    },
+    {
+      "name": "Z_Df",
+      "text": "Z_Df"
+    },
+    {
+      "name": "Z_Dobs",
+      "text": "Z_Dobs"
+    },
+    {
+      "name": "Z_Dobsf",
+      "text": "Z_Dobsf"
+    },
+    {
+      "name": "Z1_R_D",
+      "text": "Z1_R_D"
+    },
+    {
+      "name": "Z1_R_L",
+      "text": "Z1_R_L"
+    },
+    {
+      "name": "Z1_R_L_E",
+      "text": "Z1_R_L_E"
+    },
+    {
+      "name": "Z1_R_L_E_R",
+      "text": "Z1_R_L_E_R"
+    },
+    {
+      "name": "Z1_R_L_E_R_MU",
+      "text": "Z1_R_L_E_R_MU"
+    },
+    {
+      "name": "Z2_R_D",
+      "text": "Z2_R_D"
+    },
+    {
+      "name": "Z2_R_L",
+      "text": "Z2_R_L"
+    },
+    {
+      "name": "Z2_R_L_E",
+      "text": "Z2_R_L_E"
+    },
+    {
+      "name": "Z2_R_L_E_R",
+      "text": "Z2_R_L_E_R"
+    },
+    {
+      "name": "Z2_R_L_E_R_MU",
+      "text": "Z2_R_L_E_R_MU"
+    },
+    {
+      "name": "Zf",
+      "text": "Zf"
+    },
+    {
+      "name": "Zobs",
+      "text": "Zobs"
+    },
+    {
+      "name": "Zobsf",
+      "text": "Zobsf"
+    },
+    {
+      "name": "ZP1",
+      "text": "ZP1"
+    },
+    {
+      "name": "ZP1_D",
+      "text": "ZP1_D"
+    },
+    {
+      "name": "ZP2",
+      "text": "ZP2"
+    },
+    {
+      "name": "ZP2_D",
+      "text": "ZP2_D"
+    },
+    {
+      "name": "ZW1_C",
+      "text": "ZW1_C"
+    },
+    {
+      "name": "ZW1_D",
+      "text": "ZW1_D"
+    },
+    {
+      "name": "ZW2_C",
+      "text": "ZW2_C"
+    },
+    {
+      "name": "ZW2_D",
+      "text": "ZW2_D"
+    },
+    {
+      "name": "ZWNR1_C",
+      "text": "ZWNR1_C"
+    },
+    {
+      "name": "ZWNR1_D",
+      "text": "ZWNR1_D"
+    },
+    {
+      "name": "ZWNR2_C",
+      "text": "ZWNR2_C"
+    },
+    {
+      "name": "ZWNR2_D",
+      "text": "ZWNR2_D"
+    }
+  ]
+}

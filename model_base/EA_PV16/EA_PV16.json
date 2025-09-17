@@ -1,0 +1,1510 @@
+{
+  "$schema": "model",
+  "name": "EA_PV16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Priftis & Vogel (2016)",
+    "paper_title": "The Portfolio Balance Mechanism and QE in the Euro Area",
+    "journal": "Manchester School, University of Manchester, vol. 84(S1), 84-105",
+    "replicants_name": "original code provided by the authors",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Priftis, Romanos",
+      "Vogel, Lukas"
+    ]
+  },
+  "msr": [
+    "0.82",
+    "0",
+    "0",
+    "0",
+    "0.18*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.18*0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ea_a",
+      "text": "ea_a"
+    },
+    {
+      "name": "ea_btar",
+      "text": "ea_btar"
+    },
+    {
+      "name": "ea_bwyt",
+      "text": "ea_bwyt"
+    },
+    {
+      "name": "ea_eps_ben",
+      "text": "ea_eps_ben"
+    },
+    {
+      "name": "ea_eps_clc",
+      "text": "ea_eps_clc"
+    },
+    {
+      "name": "ea_eps_cnlc",
+      "text": "ea_eps_cnlc"
+    },
+    {
+      "name": "ea_eps_eta",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "ea_eps_etax",
+      "text": "ea_eps_etax"
+    },
+    {
+      "name": "ea_eps_g",
+      "text": "ea_eps_g"
+    },
+    {
+      "name": "ea_eps_i",
+      "text": "ea_eps_i"
+    },
+    {
+      "name": "ea_eps_ig",
+      "text": "ea_eps_ig"
+    },
+    {
+      "name": "ea_eps_im",
+      "text": "ea_eps_im"
+    },
+    {
+      "name": "ea_eps_l",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "ea_eps_ltfp",
+      "text": "ea_eps_ltfp"
+    },
+    {
+      "name": "EA_eps_qe",
+      "text": "EA_eps_qe"
+    },
+    {
+      "name": "ea_eps_rpremb",
+      "text": "ea_eps_rpremb"
+    },
+    {
+      "name": "ea_eps_rpreme",
+      "text": "ea_eps_rpreme"
+    },
+    {
+      "name": "ea_eps_rpremk",
+      "text": "ea_eps_rpremk"
+    },
+    {
+      "name": "ea_eps_tl",
+      "text": "ea_eps_tl"
+    },
+    {
+      "name": "ea_eps_tr",
+      "text": "Government transfers shock"
+    },
+    {
+      "name": "ea_eps_trlc",
+      "text": "ea_eps_trlc"
+    },
+    {
+      "name": "ea_eps_ucap",
+      "text": "ea_eps_ucap"
+    },
+    {
+      "name": "ea_eps_v",
+      "text": "ea_eps_v"
+    },
+    {
+      "name": "ea_eps_w",
+      "text": "ea_eps_w"
+    },
+    {
+      "name": "ea_ex_ben",
+      "text": "ea_ex_ben"
+    },
+    {
+      "name": "ea_ex_by",
+      "text": "ea_ex_by"
+    },
+    {
+      "name": "ea_ex_gby",
+      "text": "ea_ex_gby"
+    },
+    {
+      "name": "ea_ex_gs",
+      "text": "ea_ex_gs"
+    },
+    {
+      "name": "ea_ex_igs",
+      "text": "ea_ex_igs"
+    },
+    {
+      "name": "ea_ex_inf",
+      "text": "ea_ex_inf"
+    },
+    {
+      "name": "ea_ex_ltfp",
+      "text": "ea_ex_ltfp"
+    },
+    {
+      "name": "ea_ex_tl",
+      "text": "ea_ex_tl"
+    },
+    {
+      "name": "ea_ex_trlc",
+      "text": "ea_ex_trlc"
+    },
+    {
+      "name": "ea_ex_tvat",
+      "text": "ea_ex_tvat"
+    },
+    {
+      "name": "ea_fcl",
+      "text": "ea_fcl"
+    },
+    {
+      "name": "ea_fcy",
+      "text": "ea_fcy"
+    },
+    {
+      "name": "ea_ig",
+      "text": "ea_ig"
+    },
+    {
+      "name": "ea_im1lag",
+      "text": "ea_im1lag"
+    },
+    {
+      "name": "EA_inoml",
+      "text": "EA_inoml"
+    },
+    {
+      "name": "ea_libdum",
+      "text": "ea_libdum"
+    },
+    {
+      "name": "ea_npart",
+      "text": "ea_npart"
+    },
+    {
+      "name": "EA_profcb",
+      "text": "EA_profcb"
+    },
+    {
+      "name": "ea_rpremb",
+      "text": "ea_rpremb"
+    },
+    {
+      "name": "ea_rpremk",
+      "text": "ea_rpremk"
+    },
+    {
+      "name": "ea_size",
+      "text": "ea_size"
+    },
+    {
+      "name": "ea_slc",
+      "text": "ea_slc"
+    },
+    {
+      "name": "ea_ssc",
+      "text": "ea_ssc"
+    },
+    {
+      "name": "ea_taxdum",
+      "text": "ea_taxdum"
+    },
+    {
+      "name": "ea_taxshare",
+      "text": "ea_taxshare"
+    },
+    {
+      "name": "ea_tc",
+      "text": "ea_tc"
+    },
+    {
+      "name": "ea_trshare",
+      "text": "ea_trshare"
+    },
+    {
+      "name": "ea_tryshare",
+      "text": "ea_tryshare"
+    },
+    {
+      "name": "ea_tvat",
+      "text": "ea_tvat"
+    },
+    {
+      "name": "ea_upi",
+      "text": "ea_upi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "null",
+      "text": "null"
+    },
+    {
+      "name": "r_a",
+      "text": "r_a"
+    },
+    {
+      "name": "r_btar",
+      "text": "r_btar"
+    },
+    {
+      "name": "r_e",
+      "text": "r_e"
+    },
+    {
+      "name": "r_eps_ben",
+      "text": "r_eps_ben"
+    },
+    {
+      "name": "r_eps_clc",
+      "text": "r_eps_clc"
+    },
+    {
+      "name": "r_eps_cnlc",
+      "text": "r_eps_cnlc"
+    },
+    {
+      "name": "r_eps_eta",
+      "text": "r_eps_eta"
+    },
+    {
+      "name": "r_eps_etax",
+      "text": "r_eps_etax"
+    },
+    {
+      "name": "r_eps_g",
+      "text": "r_eps_g"
+    },
+    {
+      "name": "r_eps_i",
+      "text": "r_eps_i"
+    },
+    {
+      "name": "r_eps_ig",
+      "text": "r_eps_ig"
+    },
+    {
+      "name": "r_eps_im",
+      "text": "r_eps_im"
+    },
+    {
+      "name": "r_eps_l",
+      "text": "r_eps_l"
+    },
+    {
+      "name": "r_eps_ltfp",
+      "text": "r_eps_ltfp"
+    },
+    {
+      "name": "r_eps_m",
+      "text": "r_eps_m"
+    },
+    {
+      "name": "r_eps_poil",
+      "text": "r_eps_poil"
+    },
+    {
+      "name": "R_eps_qe",
+      "text": "R_eps_qe"
+    },
+    {
+      "name": "r_eps_rpremb",
+      "text": "r_eps_rpremb"
+    },
+    {
+      "name": "r_eps_rpremk",
+      "text": "r_eps_rpremk"
+    },
+    {
+      "name": "r_eps_tl",
+      "text": "r_eps_tl"
+    },
+    {
+      "name": "r_eps_tr",
+      "text": "r_eps_tr"
+    },
+    {
+      "name": "r_eps_trlc",
+      "text": "r_eps_trlc"
+    },
+    {
+      "name": "r_eps_ucap",
+      "text": "r_eps_ucap"
+    },
+    {
+      "name": "r_eps_v",
+      "text": "r_eps_v"
+    },
+    {
+      "name": "r_eps_w",
+      "text": "r_eps_w"
+    },
+    {
+      "name": "r_ex_ben",
+      "text": "r_ex_ben"
+    },
+    {
+      "name": "r_ex_by",
+      "text": "r_ex_by"
+    },
+    {
+      "name": "r_ex_gby",
+      "text": "r_ex_gby"
+    },
+    {
+      "name": "r_ex_gs",
+      "text": "r_ex_gs"
+    },
+    {
+      "name": "r_ex_igs",
+      "text": "r_ex_igs"
+    },
+    {
+      "name": "r_ex_inf",
+      "text": "r_ex_inf"
+    },
+    {
+      "name": "r_ex_ltfp",
+      "text": "r_ex_ltfp"
+    },
+    {
+      "name": "r_ex_tl",
+      "text": "r_ex_tl"
+    },
+    {
+      "name": "r_ex_trlc",
+      "text": "r_ex_trlc"
+    },
+    {
+      "name": "r_ex_tvat",
+      "text": "r_ex_tvat"
+    },
+    {
+      "name": "r_fcl",
+      "text": "r_fcl"
+    },
+    {
+      "name": "r_fcy",
+      "text": "r_fcy"
+    },
+    {
+      "name": "r_g",
+      "text": "r_g"
+    },
+    {
+      "name": "r_ig",
+      "text": "r_ig"
+    },
+    {
+      "name": "r_ilag",
+      "text": "r_ilag"
+    },
+    {
+      "name": "r_im1lag",
+      "text": "r_im1lag"
+    },
+    {
+      "name": "R_inoml",
+      "text": "R_inoml"
+    },
+    {
+      "name": "r_npart",
+      "text": "r_npart"
+    },
+    {
+      "name": "r_rpremb",
+      "text": "r_rpremb"
+    },
+    {
+      "name": "r_rpremk",
+      "text": "r_rpremk"
+    },
+    {
+      "name": "r_size",
+      "text": "r_size"
+    },
+    {
+      "name": "r_slc",
+      "text": "r_slc"
+    },
+    {
+      "name": "r_ssc",
+      "text": "r_ssc"
+    },
+    {
+      "name": "r_taxdum",
+      "text": "r_taxdum"
+    },
+    {
+      "name": "r_taxshare",
+      "text": "r_taxshare"
+    },
+    {
+      "name": "r_tc",
+      "text": "r_tc"
+    },
+    {
+      "name": "r_tinf",
+      "text": "r_tinf"
+    },
+    {
+      "name": "r_trshare",
+      "text": "r_trshare"
+    },
+    {
+      "name": "r_tryshare",
+      "text": "r_tryshare"
+    },
+    {
+      "name": "r_tvat",
+      "text": "r_tvat"
+    },
+    {
+      "name": "r_ty",
+      "text": "r_ty"
+    },
+    {
+      "name": "r_upi",
+      "text": "r_upi"
+    },
+    {
+      "name": "w_coreinf",
+      "text": "w_coreinf"
+    },
+    {
+      "name": "w_gpop",
+      "text": "w_gpop"
+    },
+    {
+      "name": "w_gtfp",
+      "text": "w_gtfp"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ea_b",
+      "text": "ea_b"
+    },
+    {
+      "name": "ea_ben",
+      "text": "ea_ben"
+    },
+    {
+      "name": "EA_bl",
+      "text": "EA_bl"
+    },
+    {
+      "name": "EA_blcb",
+      "text": "EA_blcb"
+    },
+    {
+      "name": "EA_blnlc",
+      "text": "EA_blnlc"
+    },
+    {
+      "name": "ea_br",
+      "text": "ea_br"
+    },
+    {
+      "name": "EA_bs",
+      "text": "EA_bs"
+    },
+    {
+      "name": "ea_bw",
+      "text": "ea_bw"
+    },
+    {
+      "name": "ea_bwr",
+      "text": "ea_bwr"
+    },
+    {
+      "name": "ea_by",
+      "text": "ea_by"
+    },
+    {
+      "name": "ea_c",
+      "text": "Consumption"
+    },
+    {
+      "name": "ea_cay",
+      "text": "ea_cay"
+    },
+    {
+      "name": "ea_clc",
+      "text": "ea_clc"
+    },
+    {
+      "name": "ea_cnlc",
+      "text": "ea_cnlc"
+    },
+    {
+      "name": "ea_db",
+      "text": "ea_db"
+    },
+    {
+      "name": "EA_dbl",
+      "text": "EA_dbl"
+    },
+    {
+      "name": "EA_dblcb",
+      "text": "EA_dblcb"
+    },
+    {
+      "name": "ea_dbr",
+      "text": "ea_dbr"
+    },
+    {
+      "name": "EA_dbs",
+      "text": "EA_dbs"
+    },
+    {
+      "name": "ea_dbwr",
+      "text": "ea_dbwr"
+    },
+    {
+      "name": "ea_dc",
+      "text": "ea_dc"
+    },
+    {
+      "name": "ea_dcnlc",
+      "text": "ea_dcnlc"
+    },
+    {
+      "name": "ea_de",
+      "text": "ea_de"
+    },
+    {
+      "name": "ea_dex",
+      "text": "ea_dex"
+    },
+    {
+      "name": "ea_dexl",
+      "text": "ea_dexl"
+    },
+    {
+      "name": "ea_dexr",
+      "text": "ea_dexr"
+    },
+    {
+      "name": "ea_dexucap",
+      "text": "ea_dexucap"
+    },
+    {
+      "name": "ea_dgs",
+      "text": "ea_dgs"
+    },
+    {
+      "name": "ea_di",
+      "text": "ea_di"
+    },
+    {
+      "name": "ea_digs",
+      "text": "ea_digs"
+    },
+    {
+      "name": "ea_dim",
+      "text": "ea_dim"
+    },
+    {
+      "name": "ea_dinfc",
+      "text": "ea_dinfc"
+    },
+    {
+      "name": "ea_dinfx",
+      "text": "ea_dinfx"
+    },
+    {
+      "name": "ea_dinfy",
+      "text": "ea_dinfy"
+    },
+    {
+      "name": "ea_dinom",
+      "text": "ea_dinom"
+    },
+    {
+      "name": "ea_dk",
+      "text": "ea_dk"
+    },
+    {
+      "name": "ea_dkg",
+      "text": "ea_dkg"
+    },
+    {
+      "name": "ea_dl",
+      "text": "ea_dl"
+    },
+    {
+      "name": "ea_dlamlc",
+      "text": "ea_dlamlc"
+    },
+    {
+      "name": "ea_dlamnlc",
+      "text": "ea_dlamnlc"
+    },
+    {
+      "name": "ea_dltfp",
+      "text": "ea_dltfp"
+    },
+    {
+      "name": "EA_dm",
+      "text": "EA_dm"
+    },
+    {
+      "name": "ea_dnomint",
+      "text": "ea_dnomint"
+    },
+    {
+      "name": "ea_doil",
+      "text": "ea_doil"
+    },
+    {
+      "name": "EA_dpbl",
+      "text": "EA_dpbl"
+    },
+    {
+      "name": "ea_dpim",
+      "text": "ea_dpim"
+    },
+    {
+      "name": "ea_dpx",
+      "text": "ea_dpx"
+    },
+    {
+      "name": "ea_dpy",
+      "text": "ea_dpy"
+    },
+    {
+      "name": "ea_dq",
+      "text": "ea_dq"
+    },
+    {
+      "name": "ea_dr",
+      "text": "ea_dr"
+    },
+    {
+      "name": "ea_drealint",
+      "text": "ea_drealint"
+    },
+    {
+      "name": "ea_dtl",
+      "text": "ea_dtl"
+    },
+    {
+      "name": "ea_dv",
+      "text": "ea_dv"
+    },
+    {
+      "name": "ea_dwinf",
+      "text": "ea_dwinf"
+    },
+    {
+      "name": "ea_dwr",
+      "text": "ea_dwr"
+    },
+    {
+      "name": "ea_dy",
+      "text": "ea_dy"
+    },
+    {
+      "name": "ea_e",
+      "text": "ea_e"
+    },
+    {
+      "name": "ea_eps_gs",
+      "text": "ea_eps_gs"
+    },
+    {
+      "name": "ea_eps_igs",
+      "text": "ea_eps_igs"
+    },
+    {
+      "name": "ea_eps_rpremeimpl",
+      "text": "ea_eps_rpremeimpl"
+    },
+    {
+      "name": "ea_eps_rpremkimpl",
+      "text": "ea_eps_rpremkimpl"
+    },
+    {
+      "name": "ea_eta",
+      "text": "ea_eta"
+    },
+    {
+      "name": "ea_ex",
+      "text": "ea_ex"
+    },
+    {
+      "name": "ea_ex_l",
+      "text": "ea_ex_l"
+    },
+    {
+      "name": "ea_ex_r",
+      "text": "ea_ex_r"
+    },
+    {
+      "name": "ea_ex_ucap",
+      "text": "ea_ex_ucap"
+    },
+    {
+      "name": "ea_f",
+      "text": "ea_f"
+    },
+    {
+      "name": "ea_g",
+      "text": "ea_g"
+    },
+    {
+      "name": "ea_gby",
+      "text": "ea_gby"
+    },
+    {
+      "name": "ea_gs",
+      "text": "ea_gs"
+    },
+    {
+      "name": "ea_i",
+      "text": "ea_i"
+    },
+    {
+      "name": "ea_igs",
+      "text": "ea_igs"
+    },
+    {
+      "name": "ea_im",
+      "text": "ea_im"
+    },
+    {
+      "name": "ea_imr",
+      "text": "ea_imr"
+    },
+    {
+      "name": "ea_infc",
+      "text": "ea_infc"
+    },
+    {
+      "name": "ea_inflation",
+      "text": "ea_inflation"
+    },
+    {
+      "name": "ea_infx",
+      "text": "ea_infx"
+    },
+    {
+      "name": "ea_infy",
+      "text": "ea_infy"
+    },
+    {
+      "name": "ea_inom",
+      "text": "ea_inom"
+    },
+    {
+      "name": "ea_k",
+      "text": "ea_k"
+    },
+    {
+      "name": "ea_kg",
+      "text": "ea_kg"
+    },
+    {
+      "name": "ea_l",
+      "text": "ea_l"
+    },
+    {
+      "name": "ea_lamlc",
+      "text": "ea_lamlc"
+    },
+    {
+      "name": "ea_lamnlc",
+      "text": "ea_lamnlc"
+    },
+    {
+      "name": "ea_ltfp",
+      "text": "ea_ltfp"
+    },
+    {
+      "name": "ea_m",
+      "text": "ea_m"
+    },
+    {
+      "name": "ea_nomint",
+      "text": "ea_nomint"
+    },
+    {
+      "name": "ea_o",
+      "text": "ea_o"
+    },
+    {
+      "name": "ea_oil",
+      "text": "ea_oil"
+    },
+    {
+      "name": "EA_pbl",
+      "text": "EA_pbl"
+    },
+    {
+      "name": "ea_pc",
+      "text": "ea_pc"
+    },
+    {
+      "name": "ea_pcy",
+      "text": "ea_pcy"
+    },
+    {
+      "name": "ea_pim",
+      "text": "ea_pim"
+    },
+    {
+      "name": "ea_po",
+      "text": "ea_po"
+    },
+    {
+      "name": "ea_poil",
+      "text": "ea_poil"
+    },
+    {
+      "name": "ea_px",
+      "text": "ea_px"
+    },
+    {
+      "name": "ea_py",
+      "text": "ea_py"
+    },
+    {
+      "name": "ea_q",
+      "text": "Tonbin's q"
+    },
+    {
+      "name": "ea_r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "ea_realint",
+      "text": "ea_realint"
+    },
+    {
+      "name": "ea_tax",
+      "text": "ea_tax"
+    },
+    {
+      "name": "ea_tby",
+      "text": "ea_tby"
+    },
+    {
+      "name": "ea_tfp",
+      "text": "ea_tfp"
+    },
+    {
+      "name": "ea_tl",
+      "text": "ea_tl"
+    },
+    {
+      "name": "ea_tot",
+      "text": "ea_tot"
+    },
+    {
+      "name": "ea_toty",
+      "text": "ea_toty"
+    },
+    {
+      "name": "ea_tpremimpl",
+      "text": "ea_tpremimpl"
+    },
+    {
+      "name": "ea_tr",
+      "text": "ea_tr"
+    },
+    {
+      "name": "ea_trlc",
+      "text": "ea_trlc"
+    },
+    {
+      "name": "ea_ucap",
+      "text": "ea_ucap"
+    },
+    {
+      "name": "ea_ucnlc",
+      "text": "ea_ucnlc"
+    },
+    {
+      "name": "ea_v",
+      "text": "ea_v"
+    },
+    {
+      "name": "ea_vl",
+      "text": "ea_vl"
+    },
+    {
+      "name": "ea_winf",
+      "text": "ea_winf"
+    },
+    {
+      "name": "ea_wr",
+      "text": "Real wage"
+    },
+    {
+      "name": "ea_wrinf",
+      "text": "ea_wrinf"
+    },
+    {
+      "name": "ea_y",
+      "text": "ea_y"
+    },
+    {
+      "name": "ea_ygap",
+      "text": "ea_ygap"
+    },
+    {
+      "name": "EA_yobs",
+      "text": "EA_yobs"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "r_b",
+      "text": "r_b"
+    },
+    {
+      "name": "r_ben",
+      "text": "r_ben"
+    },
+    {
+      "name": "R_bl",
+      "text": "R_bl"
+    },
+    {
+      "name": "R_blcb",
+      "text": "R_blcb"
+    },
+    {
+      "name": "R_blnlc",
+      "text": "R_blnlc"
+    },
+    {
+      "name": "r_br",
+      "text": "r_br"
+    },
+    {
+      "name": "R_bs",
+      "text": "R_bs"
+    },
+    {
+      "name": "r_bw",
+      "text": "r_bw"
+    },
+    {
+      "name": "r_bwr",
+      "text": "r_bwr"
+    },
+    {
+      "name": "r_by",
+      "text": "r_by"
+    },
+    {
+      "name": "r_c",
+      "text": "r_c"
+    },
+    {
+      "name": "r_cay",
+      "text": "r_cay"
+    },
+    {
+      "name": "r_clc",
+      "text": "r_clc"
+    },
+    {
+      "name": "r_cnlc",
+      "text": "r_cnlc"
+    },
+    {
+      "name": "r_db",
+      "text": "r_db"
+    },
+    {
+      "name": "R_dbl",
+      "text": "R_dbl"
+    },
+    {
+      "name": "R_dblcb",
+      "text": "R_dblcb"
+    },
+    {
+      "name": "r_dbr",
+      "text": "r_dbr"
+    },
+    {
+      "name": "R_dbs",
+      "text": "R_dbs"
+    },
+    {
+      "name": "r_dbwr",
+      "text": "r_dbwr"
+    },
+    {
+      "name": "r_dc",
+      "text": "r_dc"
+    },
+    {
+      "name": "r_dcnlc",
+      "text": "r_dcnlc"
+    },
+    {
+      "name": "r_dex",
+      "text": "r_dex"
+    },
+    {
+      "name": "r_dexl",
+      "text": "r_dexl"
+    },
+    {
+      "name": "r_dexr",
+      "text": "r_dexr"
+    },
+    {
+      "name": "r_dexucap",
+      "text": "r_dexucap"
+    },
+    {
+      "name": "r_dgs",
+      "text": "r_dgs"
+    },
+    {
+      "name": "r_di",
+      "text": "r_di"
+    },
+    {
+      "name": "r_digs",
+      "text": "r_digs"
+    },
+    {
+      "name": "r_dim",
+      "text": "r_dim"
+    },
+    {
+      "name": "r_dinfc",
+      "text": "r_dinfc"
+    },
+    {
+      "name": "r_dinfx",
+      "text": "r_dinfx"
+    },
+    {
+      "name": "r_dinfy",
+      "text": "r_dinfy"
+    },
+    {
+      "name": "r_dinom",
+      "text": "r_dinom"
+    },
+    {
+      "name": "r_dk",
+      "text": "r_dk"
+    },
+    {
+      "name": "r_dkg",
+      "text": "r_dkg"
+    },
+    {
+      "name": "r_dl",
+      "text": "r_dl"
+    },
+    {
+      "name": "r_dlamlc",
+      "text": "r_dlamlc"
+    },
+    {
+      "name": "r_dlamnlc",
+      "text": "r_dlamnlc"
+    },
+    {
+      "name": "r_dltfp",
+      "text": "r_dltfp"
+    },
+    {
+      "name": "R_dm",
+      "text": "R_dm"
+    },
+    {
+      "name": "r_dnomint",
+      "text": "r_dnomint"
+    },
+    {
+      "name": "r_doil",
+      "text": "r_doil"
+    },
+    {
+      "name": "R_dpbl",
+      "text": "R_dpbl"
+    },
+    {
+      "name": "r_dpim",
+      "text": "r_dpim"
+    },
+    {
+      "name": "r_dpx",
+      "text": "r_dpx"
+    },
+    {
+      "name": "r_dpy",
+      "text": "r_dpy"
+    },
+    {
+      "name": "r_dq",
+      "text": "r_dq"
+    },
+    {
+      "name": "r_dr",
+      "text": "r_dr"
+    },
+    {
+      "name": "r_drealint",
+      "text": "r_drealint"
+    },
+    {
+      "name": "r_dtl",
+      "text": "r_dtl"
+    },
+    {
+      "name": "r_dv",
+      "text": "r_dv"
+    },
+    {
+      "name": "r_dwinf",
+      "text": "r_dwinf"
+    },
+    {
+      "name": "r_dwr",
+      "text": "r_dwr"
+    },
+    {
+      "name": "r_dy",
+      "text": "r_dy"
+    },
+    {
+      "name": "r_eps_gs",
+      "text": "r_eps_gs"
+    },
+    {
+      "name": "r_eps_igs",
+      "text": "r_eps_igs"
+    },
+    {
+      "name": "r_eps_rpremkimpl",
+      "text": "r_eps_rpremkimpl"
+    },
+    {
+      "name": "r_eta",
+      "text": "r_eta"
+    },
+    {
+      "name": "r_ex",
+      "text": "r_ex"
+    },
+    {
+      "name": "r_ex_l",
+      "text": "r_ex_l"
+    },
+    {
+      "name": "r_ex_r",
+      "text": "r_ex_r"
+    },
+    {
+      "name": "r_ex_ucap",
+      "text": "r_ex_ucap"
+    },
+    {
+      "name": "r_exoil",
+      "text": "r_exoil"
+    },
+    {
+      "name": "r_f",
+      "text": "r_f"
+    },
+    {
+      "name": "r_gby",
+      "text": "r_gby"
+    },
+    {
+      "name": "r_gs",
+      "text": "r_gs"
+    },
+    {
+      "name": "r_i",
+      "text": "r_i"
+    },
+    {
+      "name": "r_igs",
+      "text": "r_igs"
+    },
+    {
+      "name": "r_im",
+      "text": "r_im"
+    },
+    {
+      "name": "r_imea",
+      "text": "r_imea"
+    },
+    {
+      "name": "r_infc",
+      "text": "r_infc"
+    },
+    {
+      "name": "r_inflation",
+      "text": "r_inflation"
+    },
+    {
+      "name": "r_infx",
+      "text": "r_infx"
+    },
+    {
+      "name": "r_infy",
+      "text": "r_infy"
+    },
+    {
+      "name": "r_inom",
+      "text": "r_inom"
+    },
+    {
+      "name": "r_k",
+      "text": "r_k"
+    },
+    {
+      "name": "r_kg",
+      "text": "r_kg"
+    },
+    {
+      "name": "r_l",
+      "text": "r_l"
+    },
+    {
+      "name": "r_lamlc",
+      "text": "r_lamlc"
+    },
+    {
+      "name": "r_lamnlc",
+      "text": "r_lamnlc"
+    },
+    {
+      "name": "r_ltfp",
+      "text": "r_ltfp"
+    },
+    {
+      "name": "r_m",
+      "text": "r_m"
+    },
+    {
+      "name": "r_nomint",
+      "text": "r_nomint"
+    },
+    {
+      "name": "r_o",
+      "text": "r_o"
+    },
+    {
+      "name": "r_oil",
+      "text": "r_oil"
+    },
+    {
+      "name": "R_pbl",
+      "text": "R_pbl"
+    },
+    {
+      "name": "r_pc",
+      "text": "r_pc"
+    },
+    {
+      "name": "r_pcy",
+      "text": "r_pcy"
+    },
+    {
+      "name": "r_pim",
+      "text": "r_pim"
+    },
+    {
+      "name": "r_po",
+      "text": "r_po"
+    },
+    {
+      "name": "r_poil",
+      "text": "r_poil"
+    },
+    {
+      "name": "R_profcb",
+      "text": "R_profcb"
+    },
+    {
+      "name": "r_px",
+      "text": "r_px"
+    },
+    {
+      "name": "r_py",
+      "text": "r_py"
+    },
+    {
+      "name": "r_q",
+      "text": "r_q"
+    },
+    {
+      "name": "r_r",
+      "text": "r_r"
+    },
+    {
+      "name": "r_realint",
+      "text": "r_realint"
+    },
+    {
+      "name": "r_tax",
+      "text": "r_tax"
+    },
+    {
+      "name": "r_tby",
+      "text": "r_tby"
+    },
+    {
+      "name": "r_tfp",
+      "text": "r_tfp"
+    },
+    {
+      "name": "r_tl",
+      "text": "r_tl"
+    },
+    {
+      "name": "r_tot",
+      "text": "r_tot"
+    },
+    {
+      "name": "r_toty",
+      "text": "r_toty"
+    },
+    {
+      "name": "r_tpremimpl",
+      "text": "r_tpremimpl"
+    },
+    {
+      "name": "r_tr",
+      "text": "r_tr"
+    },
+    {
+      "name": "r_trlc",
+      "text": "r_trlc"
+    },
+    {
+      "name": "r_ucap",
+      "text": "r_ucap"
+    },
+    {
+      "name": "r_ucnlc",
+      "text": "r_ucnlc"
+    },
+    {
+      "name": "r_v",
+      "text": "r_v"
+    },
+    {
+      "name": "r_vl",
+      "text": "r_vl"
+    },
+    {
+      "name": "r_winf",
+      "text": "r_winf"
+    },
+    {
+      "name": "r_wr",
+      "text": "r_wr"
+    },
+    {
+      "name": "r_wrinf",
+      "text": "r_wrinf"
+    },
+    {
+      "name": "r_y",
+      "text": "r_y"
+    },
+    {
+      "name": "r_ygap",
+      "text": "r_ygap"
+    },
+    {
+      "name": "R_yobs",
+      "text": "R_yobs"
+    }
+  ]
+}

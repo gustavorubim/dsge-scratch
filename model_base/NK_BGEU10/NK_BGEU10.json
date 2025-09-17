@@ -1,0 +1,136 @@
+{
+  "$schema": "model",
+  "name": "NK_BGEU10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Blanchard & Gali (2010) EU",
+    "paper_title": "Labor markets and monetary policy: A New Keynesian model with unemployment",
+    "journal": "American Economic Journal: Macroeconomics 2(2), pp. 1-30",
+    "replicants_name": "Dennis Gram and Johannes Van Vlodrop",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "Calibrated for the European labor market",
+    "category": "Calibrated model",
+    "authors": [
+      "Blanchard, Olivier",
+      "Gali, Jordí"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "uhat",
+      "text": "uhat"
+    },
+    {
+      "name": "uhatf",
+      "text": "uhatf"
+    },
+    {
+      "name": "xhat",
+      "text": "xhat"
+    },
+    {
+      "name": "xhatf",
+      "text": "xhatf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

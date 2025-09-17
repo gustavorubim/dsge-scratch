@@ -1,0 +1,450 @@
+{
+  "$schema": "model",
+  "name": "US_IN10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Iacoviello & Neri (2010)",
+    "paper_title": "Housing market spillovers: Evidence from an estimated dsge model",
+    "journal": "American Economic Journal: Macroeconomics 2 (2), pp. 125-64",
+    "replicants_name": "Original code provided (M. Lalik and A. Mazany edited)",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Iacoviello, Matteo",
+      "Neri, Stefano"
+    ]
+  },
+  "msr": [
+    "0.59913",
+    "0",
+    "0",
+    "0",
+    "(1-0.59913)*1.40444",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*(1-0.59913)*0.51261",
+    "-4*(1-0.59913)*0.51261",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_c",
+      "text": "eps_c"
+    },
+    {
+      "name": "eps_h",
+      "text": "eps_h"
+    },
+    {
+      "name": "eps_j",
+      "text": "eps_j"
+    },
+    {
+      "name": "eps_k",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "eps_p",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eps_s",
+      "text": "eps_s"
+    },
+    {
+      "name": "eps_t",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "eps_z",
+      "text": "Preference shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a_c",
+      "text": "a_c"
+    },
+    {
+      "name": "a_h",
+      "text": "a_h"
+    },
+    {
+      "name": "a_j",
+      "text": "a_j"
+    },
+    {
+      "name": "a_k",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "a_s",
+      "text": "a_s"
+    },
+    {
+      "name": "a_t",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "a_z",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "bf",
+      "text": "bf"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c1",
+      "text": "c1"
+    },
+    {
+      "name": "c1f",
+      "text": "c1f"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "data_CC",
+      "text": "data_CC"
+    },
+    {
+      "name": "data_CCf",
+      "text": "data_CCf"
+    },
+    {
+      "name": "data_DP",
+      "text": "data_DP"
+    },
+    {
+      "name": "data_IH",
+      "text": "data_IH"
+    },
+    {
+      "name": "data_IHf",
+      "text": "data_IHf"
+    },
+    {
+      "name": "data_IK",
+      "text": "data_IK"
+    },
+    {
+      "name": "data_IKf",
+      "text": "data_IKf"
+    },
+    {
+      "name": "data_NC",
+      "text": "data_NC"
+    },
+    {
+      "name": "data_NH",
+      "text": "data_NH"
+    },
+    {
+      "name": "data_QQ",
+      "text": "data_QQ"
+    },
+    {
+      "name": "data_RR",
+      "text": "data_RR"
+    },
+    {
+      "name": "data_WC",
+      "text": "data_WC"
+    },
+    {
+      "name": "data_WH",
+      "text": "data_WH"
+    },
+    {
+      "name": "dp",
+      "text": "dp"
+    },
+    {
+      "name": "h",
+      "text": "h"
+    },
+    {
+      "name": "h1",
+      "text": "h1"
+    },
+    {
+      "name": "h1f",
+      "text": "h1f"
+    },
+    {
+      "name": "hf",
+      "text": "hf"
+    },
+    {
+      "name": "I",
+      "text": "I"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "kc",
+      "text": "kc"
+    },
+    {
+      "name": "kcf",
+      "text": "kcf"
+    },
+    {
+      "name": "kh",
+      "text": "kh"
+    },
+    {
+      "name": "khf",
+      "text": "khf"
+    },
+    {
+      "name": "lm",
+      "text": "lm"
+    },
+    {
+      "name": "lmf",
+      "text": "lmf"
+    },
+    {
+      "name": "nc",
+      "text": "nc"
+    },
+    {
+      "name": "nc1",
+      "text": "nc1"
+    },
+    {
+      "name": "nc1f",
+      "text": "nc1f"
+    },
+    {
+      "name": "ncf",
+      "text": "ncf"
+    },
+    {
+      "name": "nh",
+      "text": "nh"
+    },
+    {
+      "name": "nh1",
+      "text": "nh1"
+    },
+    {
+      "name": "nh1f",
+      "text": "nh1f"
+    },
+    {
+      "name": "nhf",
+      "text": "nhf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rkc",
+      "text": "rkc"
+    },
+    {
+      "name": "rkcf",
+      "text": "rkcf"
+    },
+    {
+      "name": "rkh",
+      "text": "rkh"
+    },
+    {
+      "name": "rkhf",
+      "text": "rkhf"
+    },
+    {
+      "name": "uc",
+      "text": "uc"
+    },
+    {
+      "name": "uc1",
+      "text": "uc1"
+    },
+    {
+      "name": "uc1f",
+      "text": "uc1f"
+    },
+    {
+      "name": "ucf",
+      "text": "ucf"
+    },
+    {
+      "name": "wc",
+      "text": "wc"
+    },
+    {
+      "name": "wc1",
+      "text": "wc1"
+    },
+    {
+      "name": "wc1f",
+      "text": "wc1f"
+    },
+    {
+      "name": "wcf",
+      "text": "wcf"
+    },
+    {
+      "name": "wh",
+      "text": "wh"
+    },
+    {
+      "name": "wh1",
+      "text": "wh1"
+    },
+    {
+      "name": "wh1f",
+      "text": "wh1f"
+    },
+    {
+      "name": "whf",
+      "text": "whf"
+    },
+    {
+      "name": "X",
+      "text": "X"
+    },
+    {
+      "name": "xwc",
+      "text": "xwc"
+    },
+    {
+      "name": "xwc1",
+      "text": "xwc1"
+    },
+    {
+      "name": "xwh",
+      "text": "xwh"
+    },
+    {
+      "name": "xwh1",
+      "text": "xwh1"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    },
+    {
+      "name": "zata_GDP",
+      "text": "zata_GDP"
+    },
+    {
+      "name": "zata_GDPf",
+      "text": "zata_GDPf"
+    },
+    {
+      "name": "zkc",
+      "text": "zkc"
+    },
+    {
+      "name": "zkcf",
+      "text": "zkcf"
+    },
+    {
+      "name": "zkh",
+      "text": "zkh"
+    },
+    {
+      "name": "zkhf",
+      "text": "zkhf"
+    }
+  ]
+}

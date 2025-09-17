@@ -1,0 +1,235 @@
+{
+  "$schema": "model",
+  "name": "US_FV10",
+  "capabilities": {
+    "rules": [
+      "GR",
+      "LWW",
+      "SW",
+      "OW13",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Fernández-Villaverde (2010)",
+    "paper_title": "The Econometrics of DSGE Models",
+    "journal": "SERIEs 1 (1-2), 3-49",
+    "replicants_name": "Philipp Lieberknecht",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Fernández-Villaverde, Jesús"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "Technology shock"
+    },
+    {
+      "name": "epsd",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epsmu_I",
+      "text": "Investement technology shock"
+    },
+    {
+      "name": "epsphi",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "F",
+      "text": "F"
+    },
+    {
+      "name": "Ff",
+      "text": "Ff"
+    },
+    {
+      "name": "g1",
+      "text": "g1"
+    },
+    {
+      "name": "g2",
+      "text": "g2"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "ld",
+      "text": "ld"
+    },
+    {
+      "name": "ldf",
+      "text": "ldf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mu_A",
+      "text": "mu_A"
+    },
+    {
+      "name": "mu_I",
+      "text": "mu_I"
+    },
+    {
+      "name": "mu_z",
+      "text": "mu_z"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "PI",
+      "text": "PI"
+    },
+    {
+      "name": "PIstar",
+      "text": "PIstar"
+    },
+    {
+      "name": "PIstarw",
+      "text": "PIstarw"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "Capital returns"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "Rf",
+      "text": "Rf"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "vp",
+      "text": "vp"
+    },
+    {
+      "name": "vw",
+      "text": "vw"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "x",
+      "text": "Investment"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "yd",
+      "text": "yd"
+    },
+    {
+      "name": "ydf",
+      "text": "ydf"
+    }
+  ]
+}

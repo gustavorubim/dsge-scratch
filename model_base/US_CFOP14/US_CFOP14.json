@@ -1,0 +1,388 @@
+{
+  "$schema": "model",
+  "name": "US_CFOP14",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Carlstrom et al. (2014)",
+    "paper_title": "Estimating contract indexation in a financial accelerator model",
+    "journal": "Journal of Economic Dynamics & Control 46, pp. 130-194",
+    "replicants_name": "Hayk Kamalyan and Jorge Quintana",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Carlstrom, Charles T.",
+      "Fuerst, Timothy S.",
+      "Ortiz, Alberto",
+      "Paustian, Matthias"
+    ]
+  },
+  "msr": [
+    "0.86",
+    "0",
+    "0",
+    "0",
+    "0.2954",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.8616",
+    "-0.8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "bs",
+      "text": "Preference shock"
+    },
+    {
+      "name": "efps",
+      "text": "efps"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "lambdaps",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "lambdaws",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "mius",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "nws",
+      "text": "nws"
+    },
+    {
+      "name": "Rs",
+      "text": "Rs"
+    },
+    {
+      "name": "upsilons",
+      "text": "upsilons"
+    },
+    {
+      "name": "zs",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ARMAlambdap",
+      "text": "ARMAlambdap"
+    },
+    {
+      "name": "ARMAlambdaw",
+      "text": "ARMAlambdaw"
+    },
+    {
+      "name": "b",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "credit",
+      "text": "credit"
+    },
+    {
+      "name": "cstar",
+      "text": "cstar"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gdp",
+      "text": "gdp"
+    },
+    {
+      "name": "gdpstar",
+      "text": "gdpstar"
+    },
+    {
+      "name": "gs",
+      "text": "gs"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "istar",
+      "text": "istar"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kbar",
+      "text": "Capital"
+    },
+    {
+      "name": "kbarstar",
+      "text": "kbarstar"
+    },
+    {
+      "name": "kstar",
+      "text": "kstar"
+    },
+    {
+      "name": "L",
+      "text": "Labour"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambdae",
+      "text": "lambdae"
+    },
+    {
+      "name": "lambdaestar",
+      "text": "lambdaestar"
+    },
+    {
+      "name": "lambdap",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambdastar",
+      "text": "lambdastar"
+    },
+    {
+      "name": "lambdaw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "lamefp",
+      "text": "lamefp"
+    },
+    {
+      "name": "lamnw",
+      "text": "lamnw"
+    },
+    {
+      "name": "Lstar",
+      "text": "Lstar"
+    },
+    {
+      "name": "miu",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "mp",
+      "text": "mp"
+    },
+    {
+      "name": "mpk",
+      "text": "mpk"
+    },
+    {
+      "name": "mpkstar",
+      "text": "mpkstar"
+    },
+    {
+      "name": "nw",
+      "text": "nw"
+    },
+    {
+      "name": "nwstar",
+      "text": "nwstar"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "promz",
+      "text": "promz"
+    },
+    {
+      "name": "promzstar",
+      "text": "promzstar"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qstar",
+      "text": "qstar"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Rd",
+      "text": "Rd"
+    },
+    {
+      "name": "Rdstar",
+      "text": "Rdstar"
+    },
+    {
+      "name": "Rk",
+      "text": "Rk"
+    },
+    {
+      "name": "Rke",
+      "text": "Rke"
+    },
+    {
+      "name": "Rkestar",
+      "text": "Rkestar"
+    },
+    {
+      "name": "Rkstar",
+      "text": "Rkstar"
+    },
+    {
+      "name": "Rl",
+      "text": "Rl"
+    },
+    {
+      "name": "Rlstar",
+      "text": "Rlstar"
+    },
+    {
+      "name": "Rstar",
+      "text": "Rstar"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "spr",
+      "text": "spr"
+    },
+    {
+      "name": "sprstar",
+      "text": "sprstar"
+    },
+    {
+      "name": "sstar",
+      "text": "sstar"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilizaton rate"
+    },
+    {
+      "name": "upsilon",
+      "text": "upsilon"
+    },
+    {
+      "name": "ustar",
+      "text": "ustar"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wgap",
+      "text": "wgap"
+    },
+    {
+      "name": "wgapstar",
+      "text": "wgapstar"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    }
+  ]
+}

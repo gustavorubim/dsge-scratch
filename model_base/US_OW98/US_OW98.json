@@ -1,0 +1,261 @@
+{
+  "$schema": "model",
+  "name": "US_OW98",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Orphanides & Wieland (1998)",
+    "paper_title": "Price stability and monetary policy effectiveness when nominal interest rates are bounded at zero",
+    "journal": "Finance and Economics Discussion Series 1998-35, Board of Governors of the Federal Reserve System (U.S.)",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1998",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Orphanides, Athanasios",
+      "Wieland, Volker"
+    ]
+  },
+  "msr": [
+    "0.760",
+    "0",
+    "0",
+    "0",
+    "0.625/4",
+    "0.625/4",
+    "0.625/4",
+    "0.625/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.171",
+    "-0.967",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "cwsh",
+      "text": "cwsh"
+    },
+    {
+      "name": "ecsh",
+      "text": "ecsh"
+    },
+    {
+      "name": "efish",
+      "text": "efish"
+    },
+    {
+      "name": "eiish",
+      "text": "eiish"
+    },
+    {
+      "name": "exsh",
+      "text": "exsh"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cwage",
+      "text": "cwage"
+    },
+    {
+      "name": "cwage1",
+      "text": "cwage1"
+    },
+    {
+      "name": "cwage2",
+      "text": "cwage2"
+    },
+    {
+      "name": "drff",
+      "text": "drff"
+    },
+    {
+      "name": "dygap",
+      "text": "dygap"
+    },
+    {
+      "name": "ec",
+      "text": "Consumption"
+    },
+    {
+      "name": "efi",
+      "text": "efi"
+    },
+    {
+      "name": "efi1",
+      "text": "efi1"
+    },
+    {
+      "name": "efi2",
+      "text": "efi2"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "egsh",
+      "text": "egsh"
+    },
+    {
+      "name": "eii",
+      "text": "eii"
+    },
+    {
+      "name": "eii1",
+      "text": "eii1"
+    },
+    {
+      "name": "eii2",
+      "text": "eii2"
+    },
+    {
+      "name": "ex",
+      "text": "ex"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pdot",
+      "text": "pdot"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pitarg",
+      "text": "pitarg"
+    },
+    {
+      "name": "plevel",
+      "text": "plevel"
+    },
+    {
+      "name": "plevel1",
+      "text": "plevel1"
+    },
+    {
+      "name": "plevel2",
+      "text": "plevel2"
+    },
+    {
+      "name": "plevel3",
+      "text": "plevel3"
+    },
+    {
+      "name": "rff",
+      "text": "rff"
+    },
+    {
+      "name": "rff1",
+      "text": "rff1"
+    },
+    {
+      "name": "rho1",
+      "text": "rho1"
+    },
+    {
+      "name": "rho16",
+      "text": "rho16"
+    },
+    {
+      "name": "rho28",
+      "text": "rho28"
+    },
+    {
+      "name": "rho40",
+      "text": "rho40"
+    },
+    {
+      "name": "rl",
+      "text": "rl"
+    },
+    {
+      "name": "rrl",
+      "text": "rrl"
+    },
+    {
+      "name": "vindex",
+      "text": "vindex"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    },
+    {
+      "name": "ygap1",
+      "text": "ygap1"
+    },
+    {
+      "name": "ygap2",
+      "text": "ygap2"
+    },
+    {
+      "name": "yp",
+      "text": "yp"
+    }
+  ]
+}

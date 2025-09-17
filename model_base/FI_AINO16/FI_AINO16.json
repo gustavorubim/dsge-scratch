@@ -1,0 +1,714 @@
+{
+  "$schema": "model",
+  "name": "FI_AINO16",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kilponen et al. (2016)",
+    "paper_title": "The AINO II model",
+    "journal": "Bank of Finland Research Discussion Paper 16/2016",
+    "replicants_name": "Phillip Lieberknecht",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "Open-economy model for Finnland. WARNING: monetary policy is assumed exogenous here, hence policy rules are ineffective!",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Kilponen, Juha",
+      "Orjasniemi, Seppo",
+      "Ripatti, Antti",
+      "Verona, Fabio"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsBankCapital",
+      "text": "epsBankCapital"
+    },
+    {
+      "name": "epsdS",
+      "text": "epsdS"
+    },
+    {
+      "name": "epsEPSB",
+      "text": "epsEPSB"
+    },
+    {
+      "name": "epshG",
+      "text": "epshG"
+    },
+    {
+      "name": "epsIG",
+      "text": "epsIG"
+    },
+    {
+      "name": "epsLAMBDACM",
+      "text": "epsLAMBDACM"
+    },
+    {
+      "name": "epsLAMBDACY",
+      "text": "epsLAMBDACY"
+    },
+    {
+      "name": "epsLAMBDAIY",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "epsLAMBDAK",
+      "text": "epsLAMBDAK"
+    },
+    {
+      "name": "epsLAMBDALT",
+      "text": "epsLAMBDALT"
+    },
+    {
+      "name": "epsLAMW",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "epsMU",
+      "text": "epsMU"
+    },
+    {
+      "name": "epsMW",
+      "text": "epsMW"
+    },
+    {
+      "name": "epsnuB",
+      "text": "epsnuB"
+    },
+    {
+      "name": "epsPIEW",
+      "text": "epsPIEW"
+    },
+    {
+      "name": "epsPOILS",
+      "text": "epsPOILS"
+    },
+    {
+      "name": "epsPRAWS",
+      "text": "epsPRAWS"
+    },
+    {
+      "name": "epsUPSILON",
+      "text": "epsUPSILON"
+    },
+    {
+      "name": "epsUPSILONMC",
+      "text": "epsUPSILONMC"
+    },
+    {
+      "name": "epsUPSILONX",
+      "text": "epsUPSILONX"
+    },
+    {
+      "name": "epsXX",
+      "text": "epsXX"
+    },
+    {
+      "name": "epsZETACH",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epsZETAEUR",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "astar",
+      "text": "astar"
+    },
+    {
+      "name": "astarf",
+      "text": "astarf"
+    },
+    {
+      "name": "bankprofits",
+      "text": "bankprofits"
+    },
+    {
+      "name": "bankprofitsf",
+      "text": "bankprofitsf"
+    },
+    {
+      "name": "bka",
+      "text": "bka"
+    },
+    {
+      "name": "bkaf",
+      "text": "bkaf"
+    },
+    {
+      "name": "bstar",
+      "text": "bstar"
+    },
+    {
+      "name": "bstarf",
+      "text": "bstarf"
+    },
+    {
+      "name": "btot",
+      "text": "btot"
+    },
+    {
+      "name": "btotf",
+      "text": "btotf"
+    },
+    {
+      "name": "by",
+      "text": "by"
+    },
+    {
+      "name": "byf",
+      "text": "byf"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "cGF",
+      "text": "cGF"
+    },
+    {
+      "name": "cH",
+      "text": "cH"
+    },
+    {
+      "name": "cHf",
+      "text": "cHf"
+    },
+    {
+      "name": "deposits",
+      "text": "deposits"
+    },
+    {
+      "name": "depositsf",
+      "text": "depositsf"
+    },
+    {
+      "name": "ds",
+      "text": "ds"
+    },
+    {
+      "name": "epsb",
+      "text": "epsb"
+    },
+    {
+      "name": "epsGF",
+      "text": "epsGF"
+    },
+    {
+      "name": "epsKB",
+      "text": "epsKB"
+    },
+    {
+      "name": "epsrEUR",
+      "text": "epsrEUR"
+    },
+    {
+      "name": "epsX",
+      "text": "epsX"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "h",
+      "text": "Hours worked"
+    },
+    {
+      "name": "hf",
+      "text": "hf"
+    },
+    {
+      "name": "hF",
+      "text": "hF"
+    },
+    {
+      "name": "hFf",
+      "text": "hFf"
+    },
+    {
+      "name": "hG",
+      "text": "hG"
+    },
+    {
+      "name": "iG",
+      "text": "iG"
+    },
+    {
+      "name": "iH",
+      "text": "iH"
+    },
+    {
+      "name": "iHf",
+      "text": "iHf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "iT",
+      "text": "Investment"
+    },
+    {
+      "name": "iTf",
+      "text": "iTf"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kbank",
+      "text": "kbank"
+    },
+    {
+      "name": "kbankf",
+      "text": "kbankf"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "lamCM",
+      "text": "lamCM"
+    },
+    {
+      "name": "lamCY",
+      "text": "lamCY"
+    },
+    {
+      "name": "lamIY",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "lamK",
+      "text": "lamK"
+    },
+    {
+      "name": "lamLT",
+      "text": "lamLT"
+    },
+    {
+      "name": "lamW",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "lev_e",
+      "text": "lev_e"
+    },
+    {
+      "name": "lev_ef",
+      "text": "lev_ef"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "mC",
+      "text": "mC"
+    },
+    {
+      "name": "mCf",
+      "text": "mCf"
+    },
+    {
+      "name": "mcX",
+      "text": "mcX"
+    },
+    {
+      "name": "mcXf",
+      "text": "mcXf"
+    },
+    {
+      "name": "mcY",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcYf",
+      "text": "mcYf"
+    },
+    {
+      "name": "mf",
+      "text": "mf"
+    },
+    {
+      "name": "mI",
+      "text": "mI"
+    },
+    {
+      "name": "mIf",
+      "text": "mIf"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "mW",
+      "text": "mW"
+    },
+    {
+      "name": "mX",
+      "text": "mX"
+    },
+    {
+      "name": "mXf",
+      "text": "mXf"
+    },
+    {
+      "name": "nuB",
+      "text": "nuB"
+    },
+    {
+      "name": "nwe",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "nwef",
+      "text": "nwef"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pC",
+      "text": "pC"
+    },
+    {
+      "name": "pCf",
+      "text": "pCf"
+    },
+    {
+      "name": "pI",
+      "text": "pI"
+    },
+    {
+      "name": "pieC",
+      "text": "pieC"
+    },
+    {
+      "name": "pieCf",
+      "text": "pieCf"
+    },
+    {
+      "name": "pieI",
+      "text": "pieI"
+    },
+    {
+      "name": "pieIf",
+      "text": "pieIf"
+    },
+    {
+      "name": "pieM",
+      "text": "pieM"
+    },
+    {
+      "name": "pieMC",
+      "text": "pieMC"
+    },
+    {
+      "name": "pieMCf",
+      "text": "pieMCf"
+    },
+    {
+      "name": "pieMf",
+      "text": "pieMf"
+    },
+    {
+      "name": "pieOILS",
+      "text": "pieOILS"
+    },
+    {
+      "name": "pieOILSf",
+      "text": "pieOILSf"
+    },
+    {
+      "name": "pieRAWS",
+      "text": "pieRAWS"
+    },
+    {
+      "name": "pieRAWSf",
+      "text": "pieRAWSf"
+    },
+    {
+      "name": "pieW",
+      "text": "pieW"
+    },
+    {
+      "name": "pieX",
+      "text": "pieX"
+    },
+    {
+      "name": "pieXf",
+      "text": "pieXf"
+    },
+    {
+      "name": "pieY",
+      "text": "pieY"
+    },
+    {
+      "name": "pieYf",
+      "text": "pieYf"
+    },
+    {
+      "name": "pIf",
+      "text": "pIf"
+    },
+    {
+      "name": "pM",
+      "text": "pM"
+    },
+    {
+      "name": "pMf",
+      "text": "pMf"
+    },
+    {
+      "name": "pO",
+      "text": "pO"
+    },
+    {
+      "name": "pOf",
+      "text": "pOf"
+    },
+    {
+      "name": "pOILS",
+      "text": "pOILS"
+    },
+    {
+      "name": "pRAWS",
+      "text": "pRAWS"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "pX",
+      "text": "pX"
+    },
+    {
+      "name": "pXf",
+      "text": "pXf"
+    },
+    {
+      "name": "q",
+      "text": "Tobin's q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "rb",
+      "text": "rb"
+    },
+    {
+      "name": "RB",
+      "text": "RB"
+    },
+    {
+      "name": "rbf",
+      "text": "rbf"
+    },
+    {
+      "name": "RBf",
+      "text": "RBf"
+    },
+    {
+      "name": "rEUR",
+      "text": "rEUR"
+    },
+    {
+      "name": "rFI",
+      "text": "rFI"
+    },
+    {
+      "name": "rFIf",
+      "text": "rFIf"
+    },
+    {
+      "name": "rK",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rKf",
+      "text": "rKf"
+    },
+    {
+      "name": "rs",
+      "text": "rs"
+    },
+    {
+      "name": "rsf",
+      "text": "rsf"
+    },
+    {
+      "name": "rwage",
+      "text": "Real wage"
+    },
+    {
+      "name": "rwagef",
+      "text": "rwagef"
+    },
+    {
+      "name": "tbY",
+      "text": "tbY"
+    },
+    {
+      "name": "tbYf",
+      "text": "tbYf"
+    },
+    {
+      "name": "ToT",
+      "text": "ToT"
+    },
+    {
+      "name": "ToTf",
+      "text": "ToTf"
+    },
+    {
+      "name": "trY",
+      "text": "trY"
+    },
+    {
+      "name": "trYf",
+      "text": "trYf"
+    },
+    {
+      "name": "upsilon",
+      "text": "upsilon"
+    },
+    {
+      "name": "upsilonMC",
+      "text": "upsilonMC"
+    },
+    {
+      "name": "upsilonX",
+      "text": "upsilonX"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "wF",
+      "text": "wF"
+    },
+    {
+      "name": "wFf",
+      "text": "wFf"
+    },
+    {
+      "name": "wG",
+      "text": "wG"
+    },
+    {
+      "name": "wGf",
+      "text": "wGf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yC",
+      "text": "yC"
+    },
+    {
+      "name": "yCf",
+      "text": "yCf"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "yI",
+      "text": "yI"
+    },
+    {
+      "name": "yIf",
+      "text": "yIf"
+    },
+    {
+      "name": "yX",
+      "text": "yX"
+    },
+    {
+      "name": "yXf",
+      "text": "yXf"
+    },
+    {
+      "name": "zetaCH",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "zetaEUR",
+      "text": "Risk premium shock process"
+    }
+  ]
+}

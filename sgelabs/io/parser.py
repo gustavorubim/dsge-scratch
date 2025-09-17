@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import keyword
 import re
 from pathlib import Path
 from typing import Dict, List
@@ -10,16 +11,40 @@ from sgelabs.ir.model import Equation, ModelIR, Shock, Variable
 from sgelabs.utils.timing import alias_for_shift, collect_shifts, replace_time_indices
 
 _ASSIGNMENT_TARGET_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
+_MEAN_PATTERN = re.compile(r"mean\(\s*\[(?P<body>[^\]]+)\]\s*\)", re.IGNORECASE)
 
 # SymPy built-in symbols that conflict with variable names
 SYMPY_CONFLICTS = {'I', 'E', 'S', 'N', 'C', 'O', 'Q', 'pi', 'oo'}
 
 def _create_variable_mapping(all_names: List[str]) -> Dict[str, str]:
-    """Create mapping for variables that conflict with SymPy built-ins."""
-    mapping = {}
+    """Create mapping for variables that conflict with SymPy/Python names."""
+    mapping: Dict[str, str] = {}
+    existing = set(all_names)
+
+    def reserve(name: str) -> str:
+        base = f"{name}_var"
+        candidate = base
+        suffix = 1
+        while candidate in existing or candidate in mapping.values():
+            candidate = f"{base}_{suffix}"
+            suffix += 1
+        existing.add(candidate)
+        return candidate
+
     for name in all_names:
-        if name in SYMPY_CONFLICTS:
-            mapping[name] = f"{name}_var"
+        needs_mapping = False
+        if name in SYMPY_CONFLICTS or keyword.iskeyword(name):
+            needs_mapping = True
+        else:
+            try:
+                # Ensure SymPy can parse the bare symbol; if not, remap it.
+                sp.sympify(name)
+            except Exception:
+                needs_mapping = True
+
+        if needs_mapping:
+            mapping[name] = reserve(name)
+
     return mapping
 
 def _apply_variable_mapping(text: str, mapping: Dict[str, str]) -> str:
@@ -32,6 +57,20 @@ def _apply_variable_mapping(text: str, mapping: Dict[str, str]) -> str:
         pattern = r'\b' + re.escape(original) + r'\b'
         text = re.sub(pattern, replacement, text)
     return text
+
+
+def _normalize_expression(expr: str) -> str:
+    """Rewrite non-SymPy constructs into SymPy-friendly syntax."""
+
+    def _expand_mean(match: re.Match[str]) -> str:
+        body = match.group("body")
+        tokens = [token.strip() for token in body.split(',') if token.strip()]
+        if not tokens:
+            return "0"
+        numerator = " + ".join(tokens)
+        return f"({numerator})/{len(tokens)}"
+
+    return _MEAN_PATTERN.sub(_expand_mean, expr)
 
 def _extract_hardcoded_values() -> Dict[str, float]:
     """Extract hardcoded parameter values for EA_GNSS10 model."""
@@ -107,7 +146,7 @@ def _strip_comments(text: str) -> str:
     clean_lines: List[str] = []
     for raw in without_block.splitlines():
         line = raw
-        for marker in ("//", "%", "#"):
+        for marker in ("//", "%"):
             idx = line.find(marker)
             if idx != -1:
                 line = line[:idx]
@@ -233,13 +272,18 @@ def parse_mod_file(path: str | Path) -> ModelIR:
             elif "=" in raw_line and raw_line.endswith(";"):
                 name, expr = raw_line[:-1].split("=", 1)
                 target = name.strip()
-                expr_text = expr.strip()
+                if target.startswith('#'):
+                    target = target.lstrip('#').strip()
+                if not target:
+                    i += 1
+                    continue
+                expr_text = _normalize_expression(expr.strip())
 
                 # Skip MATLAB/Dynare-specific syntax that can't be parsed by sympy
                 if ("M_." in expr_text or "(" in expr_text and ":" in expr_text or
                     "eval(" in expr_text or "cd(" in expr_text or "load(" in expr_text or
-                    expr_text == "cd" or "cd(" in raw_line or
-                    "coeffs(" in expr_text or "mean(" in expr_text or
+                    expr_text == "cd" or "cd(" in raw_line or expr_text == "pwd" or
+                    "coeffs(" in expr_text or
                     "max(" in expr_text or "min(" in expr_text or
                     "sum(" in expr_text or "[" in expr_text and "]" in expr_text or
                     "median_values" in expr_text or ".txt" in expr_text):
@@ -295,6 +339,25 @@ def parse_mod_file(path: str | Path) -> ModelIR:
             continue
 
         if state == "model":
+            stripped = raw_line.strip()
+            if stripped.startswith("#") and stripped.endswith(";") and "=" in stripped:
+                macro_body = stripped[1:-1].strip()
+                lhs, rhs = macro_body.split("=", 1)
+                macro_name = lhs.strip()
+                expr_text = _normalize_expression(rhs.strip())
+                if macro_name:
+                    try:
+                        expr_sym = sp.sympify(expr_text, locals=params | initvals | param_symbols)
+                    except (sp.SympifyError, TypeError, ValueError):
+                        expr_sym = None
+                    if expr_sym is not None:
+                        if hasattr(expr_sym, 'free_symbols') and expr_sym.free_symbols:
+                            param_exprs[macro_name] = expr_sym
+                        else:
+                            params[macro_name] = float(sp.N(expr_sym))
+                        param_symbols.setdefault(macro_name, sp.symbols(macro_name))
+                i += 1
+                continue
             if lower == "end;":
                 state = None
                 buffer = []
@@ -306,7 +369,10 @@ def parse_mod_file(path: str | Path) -> ModelIR:
                 buffer = []
                 stmt_clean = statement[:-1].strip()
                 if stmt_clean:
-                    raw_equations.append(stmt_clean)
+                    if stmt_clean[0] in {"+", "-"} and raw_equations:
+                        raw_equations[-1] = f"{raw_equations[-1]} {stmt_clean}"
+                    else:
+                        raw_equations.append(stmt_clean)
             i += 1
             continue
 
@@ -408,6 +474,12 @@ def parse_mod_file(path: str | Path) -> ModelIR:
 
         # Update all_names list
         all_names = [var_mapping.get(name, name) for name in all_names]
+
+        if varobs:
+            varobs = [var_mapping.get(name, name) for name in varobs]
+
+        if shocks:
+            shocks = {var_mapping.get(name, name): value for name, value in shocks.items()}
 
     shifts = collect_shifts(raw_equations, all_names)
 

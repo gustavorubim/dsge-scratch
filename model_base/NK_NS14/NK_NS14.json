@@ -1,0 +1,291 @@
+{
+  "$schema": "model",
+  "name": "NK_NS14",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Nakamura & Steinsson (2014)",
+    "paper_title": "Fiscal stimulus in a monetary union: Evidence from US regions",
+    "journal": "American Economic Review 4, pp. 753-792",
+    "replicants_name": "Bopjun Gwak and Paul Reimers",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Nakamura, Emi",
+      "Steinsson, Jón"
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0.2*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.2*0.5*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_n",
+      "text": "c_n"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "cf_n",
+      "text": "cf_n"
+    },
+    {
+      "name": "eg_agg",
+      "text": "eg_agg"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "g_n",
+      "text": "g_n"
+    },
+    {
+      "name": "gf",
+      "text": "gf"
+    },
+    {
+      "name": "gf_n",
+      "text": "gf_n"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "i_n",
+      "text": "i_n"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "if_n",
+      "text": "if_n"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "k_n",
+      "text": "k_n"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kf_n",
+      "text": "kf_n"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "l_n",
+      "text": "l_n"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "lf_n",
+      "text": "lf_n"
+    },
+    {
+      "name": "ny",
+      "text": "ny"
+    },
+    {
+      "name": "ny_n",
+      "text": "ny_n"
+    },
+    {
+      "name": "nyf",
+      "text": "nyf"
+    },
+    {
+      "name": "nyf_n",
+      "text": "nyf_n"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pf",
+      "text": "pf"
+    },
+    {
+      "name": "pH",
+      "text": "pH"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pif",
+      "text": "pif"
+    },
+    {
+      "name": "piF",
+      "text": "piF"
+    },
+    {
+      "name": "piH",
+      "text": "piH"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_n",
+      "text": "r_n"
+    },
+    {
+      "name": "sF",
+      "text": "sF"
+    },
+    {
+      "name": "sF_n",
+      "text": "sF_n"
+    },
+    {
+      "name": "sH",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "sH_n",
+      "text": "sH_n"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "w_n",
+      "text": "w_n"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "wf_n",
+      "text": "wf_n"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_n",
+      "text": "y_n"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "yf_n",
+      "text": "yf_n"
+    }
+  ]
+}

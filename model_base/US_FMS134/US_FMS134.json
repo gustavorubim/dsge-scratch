@@ -1,0 +1,314 @@
+{
+  "$schema": "model",
+  "name": "US_FMS134",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Fève et al. (2013)",
+    "paper_title": "A pitfall with estimated dsge-based government spending multipliers",
+    "journal": "American Economic Journal: Macroeconomics 4, pp. 141-178",
+    "replicants_name": "Egbert Amoncio and Uros Herman",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Fève, Patrick",
+      "Matheron, Julien",
+      "Sahuc, Jean-Guillaume"
+    ]
+  },
+  "msr": [
+    "0.7987",
+    "0",
+    "0",
+    "0",
+    "(1-0.7987)*1.5189",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.7987)*0.0075+0.2394)",
+    "-4*0.2394",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "zetab",
+      "text": "zetab"
+    },
+    {
+      "name": "zetap",
+      "text": "zetap"
+    },
+    {
+      "name": "zetaw",
+      "text": "zetaw"
+    },
+    {
+      "name": "zetax",
+      "text": "zetax"
+    },
+    {
+      "name": "zetaz",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "cstar",
+      "text": "cstar"
+    },
+    {
+      "name": "cstarf",
+      "text": "cstarf"
+    },
+    {
+      "name": "dcobs",
+      "text": "dcobs"
+    },
+    {
+      "name": "dgobs",
+      "text": "dgobs"
+    },
+    {
+      "name": "dwobs",
+      "text": "dwobs"
+    },
+    {
+      "name": "dxobs",
+      "text": "dxobs"
+    },
+    {
+      "name": "dyobs",
+      "text": "dyobs"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "ep",
+      "text": "ep"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "ex",
+      "text": "ex"
+    },
+    {
+      "name": "ez",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gf",
+      "text": "gf"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "infl4",
+      "text": "infl4"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflobs",
+      "text": "inflobs"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kp",
+      "text": "Capital"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "labobs2",
+      "text": "labobs2"
+    },
+    {
+      "name": "labor",
+      "text": "Labour"
+    },
+    {
+      "name": "laborf",
+      "text": "laborf"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mrs",
+      "text": "mrs"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "q",
+      "text": "Tobin's q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "x",
+      "text": "Investment"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "zetag",
+      "text": "zetag"
+    }
+  ]
+}

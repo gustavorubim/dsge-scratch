@@ -1,0 +1,367 @@
+{
+  "$schema": "model",
+  "name": "US_LWY13",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Leeper et al. (2013)",
+    "paper_title": "Fiscal foresight and information flows",
+    "journal": "Econometrica 81 (3), 1115-1145",
+    "replicants_name": "Balint Tatar",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Leeper, Eric M.",
+      "Walker, Todd B.",
+      "Yang, S.-C. Susan"
+    ]
+  },
+  "msr": [
+    "0.864376848",
+    "0",
+    "0",
+    "0",
+    "0.301234915",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.179182587*4",
+    "-0.173996187*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilona",
+      "text": "Technology shock"
+    },
+    {
+      "name": "epsilonb",
+      "text": "epsilonb"
+    },
+    {
+      "name": "epsiloni",
+      "text": "epsiloni"
+    },
+    {
+      "name": "epsilonp",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "epsilontk",
+      "text": "epsilontk"
+    },
+    {
+      "name": "epsilontl",
+      "text": "epsilontl"
+    },
+    {
+      "name": "epsilonw",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "epsilonz",
+      "text": "Government transfers shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "bstar",
+      "text": "bstar"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cnr",
+      "text": "cnr"
+    },
+    {
+      "name": "cnrstar",
+      "text": "cnrstar"
+    },
+    {
+      "name": "cr",
+      "text": "cr"
+    },
+    {
+      "name": "crstar",
+      "text": "crstar"
+    },
+    {
+      "name": "cstar",
+      "text": "cstar"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gstar",
+      "text": "gstar"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "istar",
+      "text": "istar"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kbar",
+      "text": "kbar"
+    },
+    {
+      "name": "kbarstar",
+      "text": "kbarstar"
+    },
+    {
+      "name": "kstar",
+      "text": "kstar"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "lstar",
+      "text": "lstar"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcstar",
+      "text": "mcstar"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qstar",
+      "text": "qstar"
+    },
+    {
+      "name": "r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkstar",
+      "text": "rkstar"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "sb",
+      "text": "sb"
+    },
+    {
+      "name": "sbstar",
+      "text": "sbstar"
+    },
+    {
+      "name": "tauk",
+      "text": "tauk"
+    },
+    {
+      "name": "taukstar",
+      "text": "taukstar"
+    },
+    {
+      "name": "taul",
+      "text": "taul"
+    },
+    {
+      "name": "taulstar",
+      "text": "taulstar"
+    },
+    {
+      "name": "Tk",
+      "text": "Tk"
+    },
+    {
+      "name": "Tkstar",
+      "text": "Tkstar"
+    },
+    {
+      "name": "Tl",
+      "text": "Tl"
+    },
+    {
+      "name": "Tlstar",
+      "text": "Tlstar"
+    },
+    {
+      "name": "ua",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "ub",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "ug",
+      "text": "ug"
+    },
+    {
+      "name": "ui",
+      "text": "ui"
+    },
+    {
+      "name": "um",
+      "text": "um"
+    },
+    {
+      "name": "up",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "utk",
+      "text": "utk"
+    },
+    {
+      "name": "utl",
+      "text": "utl"
+    },
+    {
+      "name": "uw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "uz",
+      "text": "Government transfers shock process"
+    },
+    {
+      "name": "v",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "vstar",
+      "text": "vstar"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zstar",
+      "text": "zstar"
+    }
+  ]
+}

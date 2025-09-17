@@ -1,0 +1,153 @@
+{
+  "$schema": "model",
+  "name": "NK_MCN99cr",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "McCallum & Nelson (1999)",
+    "paper_title": "Performance of Operational Policy Rules in an Estimated Semiclassical Structural Model",
+    "journal": "Taylor, J. B. (Ed.), Monetary Policy Rules, pp. 15-56",
+    "replicants_name": null,
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "McCallum, Bennett",
+      "Nelson, Edward"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "ev_",
+      "text": "Demand shock"
+    },
+    {
+      "name": "ey_",
+      "text": "ey_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "u_",
+      "text": "Preference shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "eta",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "inv",
+      "text": "Investment"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "v",
+      "text": "Demand shock process"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ybar",
+      "text": "ybar"
+    },
+    {
+      "name": "ytilde",
+      "text": "ytilde"
+    }
+  ]
+}

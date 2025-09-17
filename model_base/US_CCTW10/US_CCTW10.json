@@ -1,0 +1,364 @@
+{
+  "$schema": "model",
+  "name": "US_CCTW10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Cogan et al. (2010)",
+    "paper_title": "New keynesian versus old keynesian government spending multipliers",
+    "journal": "Journal of Economic Dynamics and Control 34(3), pp. 281-295",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Cogan, John F.",
+      "Cwik, Tobias",
+      "Taylor, John B.",
+      "Wieland, Volker"
+    ]
+  },
+  "msr": [
+    "0.8180",
+    "0",
+    "0",
+    "0",
+    "(1-0.8180)*2.0520",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.8180)*0.0830+0.2321)*4",
+    "-0.2321*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eb",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eqs",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "ew",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_lc",
+      "text": "c_lc"
+    },
+    {
+      "name": "c_lcf",
+      "text": "c_lcf"
+    },
+    {
+      "name": "c_nlc",
+      "text": "c_nlc"
+    },
+    {
+      "name": "c_nlcf",
+      "text": "c_nlcf"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "dc",
+      "text": "Consumption change"
+    },
+    {
+      "name": "debt",
+      "text": "debt"
+    },
+    {
+      "name": "debtf",
+      "text": "debtf"
+    },
+    {
+      "name": "dinve",
+      "text": "Investment change"
+    },
+    {
+      "name": "dlab",
+      "text": "dlab"
+    },
+    {
+      "name": "dw",
+      "text": "Wage change"
+    },
+    {
+      "name": "dy",
+      "text": "Output change"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "epinfma",
+      "text": "epinfma"
+    },
+    {
+      "name": "ewma",
+      "text": "ewma"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gry",
+      "text": "gry"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inve",
+      "text": "Investment"
+    },
+    {
+      "name": "invef",
+      "text": "invef"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "lab",
+      "text": "Labour"
+    },
+    {
+      "name": "labf",
+      "text": "labf"
+    },
+    {
+      "name": "labobs",
+      "text": "labobs"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mcf",
+      "text": "mcf"
+    },
+    {
+      "name": "ms",
+      "text": "ms"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pinflag1",
+      "text": "pinflag1"
+    },
+    {
+      "name": "pinflag2",
+      "text": "pinflag2"
+    },
+    {
+      "name": "pinfobs",
+      "text": "pinfobs"
+    },
+    {
+      "name": "pinfobs4",
+      "text": "pinfobs4"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "pkf",
+      "text": "pkf"
+    },
+    {
+      "name": "qs",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "realinterest",
+      "text": "realinterest"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
+    {
+      "name": "robs4",
+      "text": "robs4"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "spinf",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "sw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "t",
+      "text": "t"
+    },
+    {
+      "name": "tf",
+      "text": "tf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "zcap",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "zcapf",
+      "text": "zcapf"
+    }
+  ]
+}

@@ -1,0 +1,1087 @@
+{
+  "$schema": "model",
+  "name": "EAUS_NAWM08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Coenen et al. (2008)",
+    "paper_title": "Tax reform and labour-market performance in the euro area: A simulation-based analysis using the New Area-Wide Model",
+    "journal": "Journal of Economic Dynamics & Control 32(8), pp. 2543-2583",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "New Area Wide model of Euro Area and USA",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Coenen, Günther",
+      "McAdam, Peter",
+      "Straub, Roland"
+    ]
+  },
+  "msr": [
+    "0.95",
+    "0",
+    "0",
+    "0",
+    "(1-0.95)*2.00*1.02/(1.0506*4)",
+    "(1-0.95)*2.00*1.02/(1.0506*4)",
+    "(1-0.95)*2.00*1.02/(1.0506*4)",
+    "(1-0.95)*2.00*1.02/(1.0506*4)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.10/1.0506",
+    "-0.10/1.0506",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "EA_EPSRP",
+      "text": "EA_EPSRP"
+    },
+    {
+      "name": "EA_EPSTAUC",
+      "text": "EA_EPSTAUC"
+    },
+    {
+      "name": "EA_EPSTAUD",
+      "text": "EA_EPSTAUD"
+    },
+    {
+      "name": "EA_EPSTAUK",
+      "text": "EA_EPSTAUK"
+    },
+    {
+      "name": "EA_EPSTAUN",
+      "text": "EA_EPSTAUN"
+    },
+    {
+      "name": "EA_EPSTAUWF",
+      "text": "EA_EPSTAUWF"
+    },
+    {
+      "name": "EA_EPSTAUWH",
+      "text": "EA_EPSTAUWH"
+    },
+    {
+      "name": "EA_EPSTR",
+      "text": "EA_EPSTR"
+    },
+    {
+      "name": "EA_EPSZ",
+      "text": "EA_EPSZ"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "US_EPSG",
+      "text": "US_EPSG"
+    },
+    {
+      "name": "US_EPSTAUC",
+      "text": "US_EPSTAUC"
+    },
+    {
+      "name": "US_EPSTAUD",
+      "text": "US_EPSTAUD"
+    },
+    {
+      "name": "US_EPSTAUK",
+      "text": "US_EPSTAUK"
+    },
+    {
+      "name": "US_EPSTAUN",
+      "text": "US_EPSTAUN"
+    },
+    {
+      "name": "US_EPSTAUWF",
+      "text": "US_EPSTAUWF"
+    },
+    {
+      "name": "US_EPSTAUWH",
+      "text": "US_EPSTAUWH"
+    },
+    {
+      "name": "US_EPSTR",
+      "text": "US_EPSTR"
+    },
+    {
+      "name": "US_EPSZ",
+      "text": "US_EPSZ"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "EA_B",
+      "text": "EA_B"
+    },
+    {
+      "name": "EA_BF",
+      "text": "EA_BF"
+    },
+    {
+      "name": "EA_BY",
+      "text": "EA_BY"
+    },
+    {
+      "name": "EA_C",
+      "text": "EA_C"
+    },
+    {
+      "name": "EA_CI",
+      "text": "EA_CI"
+    },
+    {
+      "name": "EA_CJ",
+      "text": "EA_CJ"
+    },
+    {
+      "name": "EA_CY",
+      "text": "EA_CY"
+    },
+    {
+      "name": "EA_D",
+      "text": "EA_D"
+    },
+    {
+      "name": "EA_EPSG",
+      "text": "EA_EPSG"
+    },
+    {
+      "name": "EA_EPSILONM",
+      "text": "EA_EPSILONM"
+    },
+    {
+      "name": "EA_FH",
+      "text": "EA_FH"
+    },
+    {
+      "name": "EA_FI",
+      "text": "EA_FI"
+    },
+    {
+      "name": "EA_FJ",
+      "text": "EA_FJ"
+    },
+    {
+      "name": "EA_FX",
+      "text": "EA_FX"
+    },
+    {
+      "name": "EA_G",
+      "text": "EA_G"
+    },
+    {
+      "name": "EA_GAMMAB",
+      "text": "EA_GAMMAB"
+    },
+    {
+      "name": "EA_GAMMAI",
+      "text": "EA_GAMMAI"
+    },
+    {
+      "name": "EA_GAMMAIDER",
+      "text": "EA_GAMMAIDER"
+    },
+    {
+      "name": "EA_GAMMAIMC",
+      "text": "EA_GAMMAIMC"
+    },
+    {
+      "name": "EA_GAMMAIMCDAG",
+      "text": "EA_GAMMAIMCDAG"
+    },
+    {
+      "name": "EA_GAMMAIMI",
+      "text": "EA_GAMMAIMI"
+    },
+    {
+      "name": "EA_GAMMAIMIDAG",
+      "text": "EA_GAMMAIMIDAG"
+    },
+    {
+      "name": "EA_GAMMAU",
+      "text": "EA_GAMMAU"
+    },
+    {
+      "name": "EA_GAMMAUDER",
+      "text": "EA_GAMMAUDER"
+    },
+    {
+      "name": "EA_GAMMAV",
+      "text": "EA_GAMMAV"
+    },
+    {
+      "name": "EA_GAMMAVI",
+      "text": "EA_GAMMAVI"
+    },
+    {
+      "name": "EA_GAMMAVIDER",
+      "text": "EA_GAMMAVIDER"
+    },
+    {
+      "name": "EA_GAMMAVJ",
+      "text": "EA_GAMMAVJ"
+    },
+    {
+      "name": "EA_GAMMAVJDER",
+      "text": "EA_GAMMAVJDER"
+    },
+    {
+      "name": "EA_GH",
+      "text": "EA_GH"
+    },
+    {
+      "name": "EA_GI",
+      "text": "EA_GI"
+    },
+    {
+      "name": "EA_GJ",
+      "text": "EA_GJ"
+    },
+    {
+      "name": "EA_GX",
+      "text": "EA_GX"
+    },
+    {
+      "name": "EA_GY",
+      "text": "EA_GY"
+    },
+    {
+      "name": "EA_H",
+      "text": "EA_H"
+    },
+    {
+      "name": "EA_HC",
+      "text": "EA_HC"
+    },
+    {
+      "name": "EA_HI",
+      "text": "EA_HI"
+    },
+    {
+      "name": "EA_I",
+      "text": "EA_I"
+    },
+    {
+      "name": "EA_II",
+      "text": "EA_II"
+    },
+    {
+      "name": "EA_IM",
+      "text": "EA_IM"
+    },
+    {
+      "name": "EA_IMC",
+      "text": "EA_IMC"
+    },
+    {
+      "name": "EA_IMCY",
+      "text": "EA_IMCY"
+    },
+    {
+      "name": "EA_IMI",
+      "text": "EA_IMI"
+    },
+    {
+      "name": "EA_IMIY",
+      "text": "EA_IMIY"
+    },
+    {
+      "name": "EA_IMY",
+      "text": "EA_IMY"
+    },
+    {
+      "name": "EA_IY",
+      "text": "EA_IY"
+    },
+    {
+      "name": "EA_K",
+      "text": "EA_K"
+    },
+    {
+      "name": "EA_KD",
+      "text": "EA_KD"
+    },
+    {
+      "name": "EA_KI",
+      "text": "EA_KI"
+    },
+    {
+      "name": "EA_LAMBDAI",
+      "text": "EA_LAMBDAI"
+    },
+    {
+      "name": "EA_LAMBDAJ",
+      "text": "EA_LAMBDAJ"
+    },
+    {
+      "name": "EA_M",
+      "text": "EA_M"
+    },
+    {
+      "name": "EA_MC",
+      "text": "EA_MC"
+    },
+    {
+      "name": "EA_MI",
+      "text": "EA_MI"
+    },
+    {
+      "name": "EA_MJ",
+      "text": "EA_MJ"
+    },
+    {
+      "name": "EA_ND",
+      "text": "EA_ND"
+    },
+    {
+      "name": "EA_NDI",
+      "text": "EA_NDI"
+    },
+    {
+      "name": "EA_NDJ",
+      "text": "EA_NDJ"
+    },
+    {
+      "name": "EA_NI",
+      "text": "EA_NI"
+    },
+    {
+      "name": "EA_NJ",
+      "text": "EA_NJ"
+    },
+    {
+      "name": "EA_PH",
+      "text": "EA_PH"
+    },
+    {
+      "name": "EA_PHTILDE",
+      "text": "EA_PHTILDE"
+    },
+    {
+      "name": "EA_PI",
+      "text": "EA_PI"
+    },
+    {
+      "name": "EA_PIC",
+      "text": "EA_PIC"
+    },
+    {
+      "name": "EA_PIC4",
+      "text": "EA_PIC4"
+    },
+    {
+      "name": "EA_PIH",
+      "text": "EA_PIH"
+    },
+    {
+      "name": "EA_PIIM",
+      "text": "EA_PIIM"
+    },
+    {
+      "name": "EA_PIM",
+      "text": "EA_PIM"
+    },
+    {
+      "name": "EA_PIMTILDE",
+      "text": "EA_PIMTILDE"
+    },
+    {
+      "name": "EA_PY",
+      "text": "EA_PY"
+    },
+    {
+      "name": "EA_Q",
+      "text": "EA_Q"
+    },
+    {
+      "name": "EA_QC",
+      "text": "EA_QC"
+    },
+    {
+      "name": "EA_QI",
+      "text": "EA_QI"
+    },
+    {
+      "name": "EA_R",
+      "text": "EA_R"
+    },
+    {
+      "name": "EA_RER",
+      "text": "EA_RER"
+    },
+    {
+      "name": "EA_RERDEP",
+      "text": "EA_RERDEP"
+    },
+    {
+      "name": "EA_RK",
+      "text": "EA_RK"
+    },
+    {
+      "name": "EA_RP",
+      "text": "EA_RP"
+    },
+    {
+      "name": "EA_RR",
+      "text": "EA_RR"
+    },
+    {
+      "name": "EA_RRSTAR",
+      "text": "EA_RRSTAR"
+    },
+    {
+      "name": "EA_SH",
+      "text": "EA_SH"
+    },
+    {
+      "name": "EA_SI",
+      "text": "EA_SI"
+    },
+    {
+      "name": "EA_SJ",
+      "text": "EA_SJ"
+    },
+    {
+      "name": "EA_SX",
+      "text": "EA_SX"
+    },
+    {
+      "name": "EA_T",
+      "text": "EA_T"
+    },
+    {
+      "name": "EA_TAUC",
+      "text": "EA_TAUC"
+    },
+    {
+      "name": "EA_TAUD",
+      "text": "EA_TAUD"
+    },
+    {
+      "name": "EA_TAUK",
+      "text": "EA_TAUK"
+    },
+    {
+      "name": "EA_TAUN",
+      "text": "EA_TAUN"
+    },
+    {
+      "name": "EA_TAUWF",
+      "text": "EA_TAUWF"
+    },
+    {
+      "name": "EA_TAUWH",
+      "text": "EA_TAUWH"
+    },
+    {
+      "name": "EA_TB",
+      "text": "EA_TB"
+    },
+    {
+      "name": "EA_TI",
+      "text": "EA_TI"
+    },
+    {
+      "name": "EA_TJ",
+      "text": "EA_TJ"
+    },
+    {
+      "name": "EA_TOT",
+      "text": "EA_TOT"
+    },
+    {
+      "name": "EA_TR",
+      "text": "EA_TR"
+    },
+    {
+      "name": "EA_TRI",
+      "text": "EA_TRI"
+    },
+    {
+      "name": "EA_TRJ",
+      "text": "EA_TRJ"
+    },
+    {
+      "name": "EA_TRY",
+      "text": "EA_TRY"
+    },
+    {
+      "name": "EA_TY",
+      "text": "EA_TY"
+    },
+    {
+      "name": "EA_U",
+      "text": "EA_U"
+    },
+    {
+      "name": "EA_UTILI",
+      "text": "EA_UTILI"
+    },
+    {
+      "name": "EA_UTILJ",
+      "text": "EA_UTILJ"
+    },
+    {
+      "name": "EA_VI",
+      "text": "EA_VI"
+    },
+    {
+      "name": "EA_VJ",
+      "text": "EA_VJ"
+    },
+    {
+      "name": "EA_W",
+      "text": "EA_W"
+    },
+    {
+      "name": "EA_WI",
+      "text": "EA_WI"
+    },
+    {
+      "name": "EA_WITILDE",
+      "text": "EA_WITILDE"
+    },
+    {
+      "name": "EA_WJ",
+      "text": "EA_WJ"
+    },
+    {
+      "name": "EA_WJTILDE",
+      "text": "EA_WJTILDE"
+    },
+    {
+      "name": "EA_Y",
+      "text": "EA_Y"
+    },
+    {
+      "name": "EA_YGAP",
+      "text": "EA_YGAP"
+    },
+    {
+      "name": "EA_YGROWTH",
+      "text": "EA_YGROWTH"
+    },
+    {
+      "name": "EA_YS",
+      "text": "EA_YS"
+    },
+    {
+      "name": "EA_YSHARE",
+      "text": "EA_YSHARE"
+    },
+    {
+      "name": "EA_Z",
+      "text": "EA_Z"
+    },
+    {
+      "name": "EAUS_RER",
+      "text": "EAUS_RER"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "US_B",
+      "text": "US_B"
+    },
+    {
+      "name": "US_BF",
+      "text": "US_BF"
+    },
+    {
+      "name": "US_BY",
+      "text": "US_BY"
+    },
+    {
+      "name": "US_C",
+      "text": "US_C"
+    },
+    {
+      "name": "US_CI",
+      "text": "US_CI"
+    },
+    {
+      "name": "US_CJ",
+      "text": "US_CJ"
+    },
+    {
+      "name": "US_CY",
+      "text": "US_CY"
+    },
+    {
+      "name": "US_D",
+      "text": "US_D"
+    },
+    {
+      "name": "US_EPSILONM",
+      "text": "US_EPSILONM"
+    },
+    {
+      "name": "US_FH",
+      "text": "US_FH"
+    },
+    {
+      "name": "US_FI",
+      "text": "US_FI"
+    },
+    {
+      "name": "US_FJ",
+      "text": "US_FJ"
+    },
+    {
+      "name": "US_FX",
+      "text": "US_FX"
+    },
+    {
+      "name": "US_G",
+      "text": "US_G"
+    },
+    {
+      "name": "US_GAMMAI",
+      "text": "US_GAMMAI"
+    },
+    {
+      "name": "US_GAMMAIDER",
+      "text": "US_GAMMAIDER"
+    },
+    {
+      "name": "US_GAMMAIMC",
+      "text": "US_GAMMAIMC"
+    },
+    {
+      "name": "US_GAMMAIMCDAG",
+      "text": "US_GAMMAIMCDAG"
+    },
+    {
+      "name": "US_GAMMAIMI",
+      "text": "US_GAMMAIMI"
+    },
+    {
+      "name": "US_GAMMAIMIDAG",
+      "text": "US_GAMMAIMIDAG"
+    },
+    {
+      "name": "US_GAMMAU",
+      "text": "US_GAMMAU"
+    },
+    {
+      "name": "US_GAMMAUDER",
+      "text": "US_GAMMAUDER"
+    },
+    {
+      "name": "US_GAMMAV",
+      "text": "US_GAMMAV"
+    },
+    {
+      "name": "US_GAMMAVI",
+      "text": "US_GAMMAVI"
+    },
+    {
+      "name": "US_GAMMAVIDER",
+      "text": "US_GAMMAVIDER"
+    },
+    {
+      "name": "US_GAMMAVJ",
+      "text": "US_GAMMAVJ"
+    },
+    {
+      "name": "US_GAMMAVJDER",
+      "text": "US_GAMMAVJDER"
+    },
+    {
+      "name": "US_GH",
+      "text": "US_GH"
+    },
+    {
+      "name": "US_GI",
+      "text": "US_GI"
+    },
+    {
+      "name": "US_GJ",
+      "text": "US_GJ"
+    },
+    {
+      "name": "US_GX",
+      "text": "US_GX"
+    },
+    {
+      "name": "US_GY",
+      "text": "US_GY"
+    },
+    {
+      "name": "US_H",
+      "text": "US_H"
+    },
+    {
+      "name": "US_HC",
+      "text": "US_HC"
+    },
+    {
+      "name": "US_HI",
+      "text": "US_HI"
+    },
+    {
+      "name": "US_I",
+      "text": "US_I"
+    },
+    {
+      "name": "US_II",
+      "text": "US_II"
+    },
+    {
+      "name": "US_IM",
+      "text": "US_IM"
+    },
+    {
+      "name": "US_IMC",
+      "text": "US_IMC"
+    },
+    {
+      "name": "US_IMCY",
+      "text": "US_IMCY"
+    },
+    {
+      "name": "US_IMI",
+      "text": "US_IMI"
+    },
+    {
+      "name": "US_IMIY",
+      "text": "US_IMIY"
+    },
+    {
+      "name": "US_IMY",
+      "text": "US_IMY"
+    },
+    {
+      "name": "US_IY",
+      "text": "US_IY"
+    },
+    {
+      "name": "US_K",
+      "text": "US_K"
+    },
+    {
+      "name": "US_KD",
+      "text": "US_KD"
+    },
+    {
+      "name": "US_KI",
+      "text": "US_KI"
+    },
+    {
+      "name": "US_LAMBDAI",
+      "text": "US_LAMBDAI"
+    },
+    {
+      "name": "US_LAMBDAJ",
+      "text": "US_LAMBDAJ"
+    },
+    {
+      "name": "US_M",
+      "text": "US_M"
+    },
+    {
+      "name": "US_MC",
+      "text": "US_MC"
+    },
+    {
+      "name": "US_MI",
+      "text": "US_MI"
+    },
+    {
+      "name": "US_MJ",
+      "text": "US_MJ"
+    },
+    {
+      "name": "US_ND",
+      "text": "US_ND"
+    },
+    {
+      "name": "US_NDI",
+      "text": "US_NDI"
+    },
+    {
+      "name": "US_NDJ",
+      "text": "US_NDJ"
+    },
+    {
+      "name": "US_NI",
+      "text": "US_NI"
+    },
+    {
+      "name": "US_NJ",
+      "text": "US_NJ"
+    },
+    {
+      "name": "US_PH",
+      "text": "US_PH"
+    },
+    {
+      "name": "US_PHTILDE",
+      "text": "US_PHTILDE"
+    },
+    {
+      "name": "US_PI",
+      "text": "US_PI"
+    },
+    {
+      "name": "US_PIC",
+      "text": "US_PIC"
+    },
+    {
+      "name": "US_PIC4",
+      "text": "US_PIC4"
+    },
+    {
+      "name": "US_PIH",
+      "text": "US_PIH"
+    },
+    {
+      "name": "US_PIIM",
+      "text": "US_PIIM"
+    },
+    {
+      "name": "US_PIM",
+      "text": "US_PIM"
+    },
+    {
+      "name": "US_PIMTILDE",
+      "text": "US_PIMTILDE"
+    },
+    {
+      "name": "US_PY",
+      "text": "US_PY"
+    },
+    {
+      "name": "US_Q",
+      "text": "US_Q"
+    },
+    {
+      "name": "US_QC",
+      "text": "US_QC"
+    },
+    {
+      "name": "US_QI",
+      "text": "US_QI"
+    },
+    {
+      "name": "US_R",
+      "text": "US_R"
+    },
+    {
+      "name": "US_RK",
+      "text": "US_RK"
+    },
+    {
+      "name": "US_RR",
+      "text": "US_RR"
+    },
+    {
+      "name": "US_RRSTAR",
+      "text": "US_RRSTAR"
+    },
+    {
+      "name": "US_SH",
+      "text": "US_SH"
+    },
+    {
+      "name": "US_SI",
+      "text": "US_SI"
+    },
+    {
+      "name": "US_SJ",
+      "text": "US_SJ"
+    },
+    {
+      "name": "US_SX",
+      "text": "US_SX"
+    },
+    {
+      "name": "US_T",
+      "text": "US_T"
+    },
+    {
+      "name": "US_TAUC",
+      "text": "US_TAUC"
+    },
+    {
+      "name": "US_TAUD",
+      "text": "US_TAUD"
+    },
+    {
+      "name": "US_TAUK",
+      "text": "US_TAUK"
+    },
+    {
+      "name": "US_TAUN",
+      "text": "US_TAUN"
+    },
+    {
+      "name": "US_TAUWF",
+      "text": "US_TAUWF"
+    },
+    {
+      "name": "US_TAUWH",
+      "text": "US_TAUWH"
+    },
+    {
+      "name": "US_TI",
+      "text": "US_TI"
+    },
+    {
+      "name": "US_TJ",
+      "text": "US_TJ"
+    },
+    {
+      "name": "US_TR",
+      "text": "US_TR"
+    },
+    {
+      "name": "US_TRI",
+      "text": "US_TRI"
+    },
+    {
+      "name": "US_TRJ",
+      "text": "US_TRJ"
+    },
+    {
+      "name": "US_TRY",
+      "text": "US_TRY"
+    },
+    {
+      "name": "US_TY",
+      "text": "US_TY"
+    },
+    {
+      "name": "US_U",
+      "text": "US_U"
+    },
+    {
+      "name": "US_UTILI",
+      "text": "US_UTILI"
+    },
+    {
+      "name": "US_UTILJ",
+      "text": "US_UTILJ"
+    },
+    {
+      "name": "US_VI",
+      "text": "US_VI"
+    },
+    {
+      "name": "US_VJ",
+      "text": "US_VJ"
+    },
+    {
+      "name": "US_W",
+      "text": "US_W"
+    },
+    {
+      "name": "US_WI",
+      "text": "US_WI"
+    },
+    {
+      "name": "US_WITILDE",
+      "text": "US_WITILDE"
+    },
+    {
+      "name": "US_WJ",
+      "text": "US_WJ"
+    },
+    {
+      "name": "US_WJTILDE",
+      "text": "US_WJTILDE"
+    },
+    {
+      "name": "US_Y",
+      "text": "US_Y"
+    },
+    {
+      "name": "US_YGAP",
+      "text": "US_YGAP"
+    },
+    {
+      "name": "US_YGROWTH",
+      "text": "US_YGROWTH"
+    },
+    {
+      "name": "US_YS",
+      "text": "US_YS"
+    },
+    {
+      "name": "US_YSHARE",
+      "text": "US_YSHARE"
+    },
+    {
+      "name": "US_Z",
+      "text": "US_Z"
+    },
+    {
+      "name": "USEA_RER",
+      "text": "USEA_RER"
+    }
+  ]
+}

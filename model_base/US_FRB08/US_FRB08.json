@@ -1,0 +1,1742 @@
+{
+  "$schema": "model",
+  "name": "US_FRB08",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "OW08",
+      "OW13",
+      "Coenen"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Federal Reserve Board model II",
+    "paper_title": "Documentation of linearized FRB/US",
+    "journal": null,
+    "replicants_name": "M. Wolters with M. Burgert",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Linearized by Brayton & Laubach (2008)",
+    "category": "Estimated US model",
+    "authors": [
+      "Brayton, Flint",
+      "Laubach, Thomas"
+    ]
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ceng_",
+      "text": "ceng_"
+    },
+    {
+      "name": "dlpl_",
+      "text": "dlpl_"
+    },
+    {
+      "name": "ecd_",
+      "text": "ecd_"
+    },
+    {
+      "name": "ech_",
+      "text": "ech_"
+    },
+    {
+      "name": "eco_",
+      "text": "eco_"
+    },
+    {
+      "name": "egsi_",
+      "text": "egsi_"
+    },
+    {
+      "name": "egsl_",
+      "text": "egsl_"
+    },
+    {
+      "name": "egso_",
+      "text": "egso_"
+    },
+    {
+      "name": "eh_",
+      "text": "eh_"
+    },
+    {
+      "name": "emo_",
+      "text": "emo_"
+    },
+    {
+      "name": "epdc_",
+      "text": "epdc_"
+    },
+    {
+      "name": "epdo_",
+      "text": "epdo_"
+    },
+    {
+      "name": "eps_",
+      "text": "eps_"
+    },
+    {
+      "name": "ex_",
+      "text": "ex_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "fpi10_",
+      "text": "fpi10_"
+    },
+    {
+      "name": "fpxrr_",
+      "text": "fpxrr_"
+    },
+    {
+      "name": "frl10_",
+      "text": "frl10_"
+    },
+    {
+      "name": "fxgap_",
+      "text": "fxgap_"
+    },
+    {
+      "name": "gftrd_",
+      "text": "gftrd_"
+    },
+    {
+      "name": "gstrd_",
+      "text": "gstrd_"
+    },
+    {
+      "name": "hmfpt_",
+      "text": "hmfpt_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ki_",
+      "text": "ki_"
+    },
+    {
+      "name": "lhp_",
+      "text": "lhp_"
+    },
+    {
+      "name": "mfpt_",
+      "text": "mfpt_"
+    },
+    {
+      "name": "pcengr_",
+      "text": "pcengr_"
+    },
+    {
+      "name": "pcer_",
+      "text": "pcer_"
+    },
+    {
+      "name": "pcfr_",
+      "text": "pcfr_"
+    },
+    {
+      "name": "pcniar_",
+      "text": "pcniar_"
+    },
+    {
+      "name": "pmor_",
+      "text": "pmor_"
+    },
+    {
+      "name": "poilr_",
+      "text": "poilr_"
+    },
+    {
+      "name": "pxncr_",
+      "text": "pxncr_"
+    },
+    {
+      "name": "rbaap_",
+      "text": "rbaap_"
+    },
+    {
+      "name": "rcar_",
+      "text": "rcar_"
+    },
+    {
+      "name": "rcbp_",
+      "text": "rcbp_"
+    },
+    {
+      "name": "rcgain_",
+      "text": "rcgain_"
+    },
+    {
+      "name": "reqp_",
+      "text": "reqp_"
+    },
+    {
+      "name": "rfynic_",
+      "text": "rfynic_"
+    },
+    {
+      "name": "rfynil_",
+      "text": "rfynil_"
+    },
+    {
+      "name": "rg10p_",
+      "text": "rg10p_"
+    },
+    {
+      "name": "rg5p_",
+      "text": "rg5p_"
+    },
+    {
+      "name": "rgfint_",
+      "text": "rgfint_"
+    },
+    {
+      "name": "rme_",
+      "text": "rme_"
+    },
+    {
+      "name": "rtbe_",
+      "text": "rtbe_"
+    },
+    {
+      "name": "trfci_",
+      "text": "trfci_"
+    },
+    {
+      "name": "trfp_",
+      "text": "trfp_"
+    },
+    {
+      "name": "trsci_",
+      "text": "trsci_"
+    },
+    {
+      "name": "trsib_",
+      "text": "trsib_"
+    },
+    {
+      "name": "trsp_",
+      "text": "trsp_"
+    },
+    {
+      "name": "trssi_",
+      "text": "trssi_"
+    },
+    {
+      "name": "uces_",
+      "text": "uces_"
+    },
+    {
+      "name": "ucfs_",
+      "text": "ucfs_"
+    },
+    {
+      "name": "wdnfcnr_",
+      "text": "wdnfcnr_"
+    },
+    {
+      "name": "yhibnr_",
+      "text": "yhibnr_"
+    },
+    {
+      "name": "ynidnr_",
+      "text": "ynidnr_"
+    },
+    {
+      "name": "yniish_",
+      "text": "yniish_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "ceng",
+      "text": "ceng"
+    },
+    {
+      "name": "cengl1",
+      "text": "cengl1"
+    },
+    {
+      "name": "cengl2",
+      "text": "cengl2"
+    },
+    {
+      "name": "dlpl",
+      "text": "dlpl"
+    },
+    {
+      "name": "dlpll1",
+      "text": "dlpll1"
+    },
+    {
+      "name": "dlpll2",
+      "text": "dlpll2"
+    },
+    {
+      "name": "dlpxp",
+      "text": "dlpxp"
+    },
+    {
+      "name": "dlpxpl1",
+      "text": "dlpxpl1"
+    },
+    {
+      "name": "dlpxpl2",
+      "text": "dlpxpl2"
+    },
+    {
+      "name": "dlpxpl3",
+      "text": "dlpxpl3"
+    },
+    {
+      "name": "dpxnc",
+      "text": "dpxnc"
+    },
+    {
+      "name": "dpxncl1",
+      "text": "dpxncl1"
+    },
+    {
+      "name": "dpxncl2",
+      "text": "dpxncl2"
+    },
+    {
+      "name": "drffe",
+      "text": "drffe"
+    },
+    {
+      "name": "ec",
+      "text": "ec"
+    },
+    {
+      "name": "ecd",
+      "text": "ecd"
+    },
+    {
+      "name": "ecdl1",
+      "text": "ecdl1"
+    },
+    {
+      "name": "ech",
+      "text": "ech"
+    },
+    {
+      "name": "echsh",
+      "text": "echsh"
+    },
+    {
+      "name": "echshl1",
+      "text": "echshl1"
+    },
+    {
+      "name": "ecnia",
+      "text": "ecnia"
+    },
+    {
+      "name": "eco",
+      "text": "eco"
+    },
+    {
+      "name": "ecol1",
+      "text": "ecol1"
+    },
+    {
+      "name": "efs",
+      "text": "efs"
+    },
+    {
+      "name": "efsl1",
+      "text": "efsl1"
+    },
+    {
+      "name": "efsl2",
+      "text": "efsl2"
+    },
+    {
+      "name": "efsl3",
+      "text": "efsl3"
+    },
+    {
+      "name": "efsl4",
+      "text": "efsl4"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "egfi",
+      "text": "egfi"
+    },
+    {
+      "name": "egfi_",
+      "text": "egfi_"
+    },
+    {
+      "name": "egfil1",
+      "text": "egfil1"
+    },
+    {
+      "name": "egfil2",
+      "text": "egfil2"
+    },
+    {
+      "name": "egfl",
+      "text": "egfl"
+    },
+    {
+      "name": "egfl_",
+      "text": "egfl_"
+    },
+    {
+      "name": "egfll1",
+      "text": "egfll1"
+    },
+    {
+      "name": "egfll2",
+      "text": "egfll2"
+    },
+    {
+      "name": "egfo",
+      "text": "egfo"
+    },
+    {
+      "name": "egfol1",
+      "text": "egfol1"
+    },
+    {
+      "name": "egfol2",
+      "text": "egfol2"
+    },
+    {
+      "name": "egsi",
+      "text": "egsi"
+    },
+    {
+      "name": "egsil1",
+      "text": "egsil1"
+    },
+    {
+      "name": "egsil2",
+      "text": "egsil2"
+    },
+    {
+      "name": "egsl",
+      "text": "egsl"
+    },
+    {
+      "name": "egsll1",
+      "text": "egsll1"
+    },
+    {
+      "name": "egsll2",
+      "text": "egsll2"
+    },
+    {
+      "name": "egso",
+      "text": "egso"
+    },
+    {
+      "name": "egsol1",
+      "text": "egsol1"
+    },
+    {
+      "name": "egsol2",
+      "text": "egsol2"
+    },
+    {
+      "name": "egt",
+      "text": "egt"
+    },
+    {
+      "name": "eh",
+      "text": "eh"
+    },
+    {
+      "name": "ehl1",
+      "text": "ehl1"
+    },
+    {
+      "name": "ehl2",
+      "text": "ehl2"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "emo",
+      "text": "emo"
+    },
+    {
+      "name": "emp",
+      "text": "emp"
+    },
+    {
+      "name": "empt",
+      "text": "empt"
+    },
+    {
+      "name": "epd",
+      "text": "epd"
+    },
+    {
+      "name": "epdc",
+      "text": "epdc"
+    },
+    {
+      "name": "epdcl1",
+      "text": "epdcl1"
+    },
+    {
+      "name": "epdcl2",
+      "text": "epdcl2"
+    },
+    {
+      "name": "epdo",
+      "text": "epdo"
+    },
+    {
+      "name": "epdol1",
+      "text": "epdol1"
+    },
+    {
+      "name": "epdol2",
+      "text": "epdol2"
+    },
+    {
+      "name": "eps",
+      "text": "eps"
+    },
+    {
+      "name": "epsl1",
+      "text": "epsl1"
+    },
+    {
+      "name": "epsl2",
+      "text": "epsl2"
+    },
+    {
+      "name": "ex",
+      "text": "ex"
+    },
+    {
+      "name": "fcbnr",
+      "text": "fcbnr"
+    },
+    {
+      "name": "fgdp",
+      "text": "fgdp"
+    },
+    {
+      "name": "fgdpl1",
+      "text": "fgdpl1"
+    },
+    {
+      "name": "fgdpl2",
+      "text": "fgdpl2"
+    },
+    {
+      "name": "fgdpl3",
+      "text": "fgdpl3"
+    },
+    {
+      "name": "fgdpl4",
+      "text": "fgdpl4"
+    },
+    {
+      "name": "fgdpl5",
+      "text": "fgdpl5"
+    },
+    {
+      "name": "fgdpt",
+      "text": "fgdpt"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "fnicnr",
+      "text": "fnicnr"
+    },
+    {
+      "name": "fnilnr",
+      "text": "fnilnr"
+    },
+    {
+      "name": "fpi10",
+      "text": "fpi10"
+    },
+    {
+      "name": "fpi10l1",
+      "text": "fpi10l1"
+    },
+    {
+      "name": "fpi10l2",
+      "text": "fpi10l2"
+    },
+    {
+      "name": "fpi10l3",
+      "text": "fpi10l3"
+    },
+    {
+      "name": "fpi10t",
+      "text": "fpi10t"
+    },
+    {
+      "name": "fpic",
+      "text": "fpic"
+    },
+    {
+      "name": "fpxr",
+      "text": "fpxr"
+    },
+    {
+      "name": "fpxrr",
+      "text": "fpxrr"
+    },
+    {
+      "name": "fpxrrl1",
+      "text": "fpxrrl1"
+    },
+    {
+      "name": "frl10",
+      "text": "frl10"
+    },
+    {
+      "name": "frl10l1",
+      "text": "frl10l1"
+    },
+    {
+      "name": "frs10",
+      "text": "frs10"
+    },
+    {
+      "name": "fxgap",
+      "text": "fxgap"
+    },
+    {
+      "name": "fxgapl1",
+      "text": "fxgapl1"
+    },
+    {
+      "name": "fynicnr",
+      "text": "fynicnr"
+    },
+    {
+      "name": "fynilnr",
+      "text": "fynilnr"
+    },
+    {
+      "name": "gfdbtl1",
+      "text": "gfdbtl1"
+    },
+    {
+      "name": "gfdbtnr",
+      "text": "gfdbtnr"
+    },
+    {
+      "name": "gfdefnr",
+      "text": "gfdefnr"
+    },
+    {
+      "name": "gfexpnr",
+      "text": "gfexpnr"
+    },
+    {
+      "name": "gfintnr",
+      "text": "gfintnr"
+    },
+    {
+      "name": "gfrecnr",
+      "text": "gfrecnr"
+    },
+    {
+      "name": "gftrd",
+      "text": "gftrd"
+    },
+    {
+      "name": "gsdbtl1",
+      "text": "gsdbtl1"
+    },
+    {
+      "name": "gsdbtnr",
+      "text": "gsdbtnr"
+    },
+    {
+      "name": "gsexpnr",
+      "text": "gsexpnr"
+    },
+    {
+      "name": "gsintnr",
+      "text": "gsintnr"
+    },
+    {
+      "name": "gsrecnr",
+      "text": "gsrecnr"
+    },
+    {
+      "name": "gssrpnr",
+      "text": "gssrpnr"
+    },
+    {
+      "name": "gstrd",
+      "text": "gstrd"
+    },
+    {
+      "name": "hgemp",
+      "text": "hgemp"
+    },
+    {
+      "name": "hggdpl1",
+      "text": "hggdpl1"
+    },
+    {
+      "name": "hggdpl2",
+      "text": "hggdpl2"
+    },
+    {
+      "name": "hggdpt",
+      "text": "hggdpt"
+    },
+    {
+      "name": "hgpmor",
+      "text": "hgpmor"
+    },
+    {
+      "name": "hgx",
+      "text": "hgx"
+    },
+    {
+      "name": "hgxgv",
+      "text": "hgxgv"
+    },
+    {
+      "name": "hgxhhi",
+      "text": "hgxhhi"
+    },
+    {
+      "name": "hgxl1",
+      "text": "hgxl1"
+    },
+    {
+      "name": "hks",
+      "text": "hks"
+    },
+    {
+      "name": "hmfpt",
+      "text": "hmfpt"
+    },
+    {
+      "name": "hmfptl1",
+      "text": "hmfptl1"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "jccanr",
+      "text": "jccanr"
+    },
+    {
+      "name": "kcd",
+      "text": "kcd"
+    },
+    {
+      "name": "kh",
+      "text": "kh"
+    },
+    {
+      "name": "ki",
+      "text": "ki"
+    },
+    {
+      "name": "kil1",
+      "text": "kil1"
+    },
+    {
+      "name": "kil2",
+      "text": "kil2"
+    },
+    {
+      "name": "kil3",
+      "text": "kil3"
+    },
+    {
+      "name": "kil4",
+      "text": "kil4"
+    },
+    {
+      "name": "kpdc",
+      "text": "kpdc"
+    },
+    {
+      "name": "kpdo",
+      "text": "kpdo"
+    },
+    {
+      "name": "kps",
+      "text": "kps"
+    },
+    {
+      "name": "ks",
+      "text": "ks"
+    },
+    {
+      "name": "left",
+      "text": "left"
+    },
+    {
+      "name": "leh",
+      "text": "leh"
+    },
+    {
+      "name": "leo",
+      "text": "leo"
+    },
+    {
+      "name": "lep",
+      "text": "lep"
+    },
+    {
+      "name": "leppol1",
+      "text": "leppol1"
+    },
+    {
+      "name": "leppol2",
+      "text": "leppol2"
+    },
+    {
+      "name": "leppot",
+      "text": "leppot"
+    },
+    {
+      "name": "lest",
+      "text": "lest"
+    },
+    {
+      "name": "lfpr",
+      "text": "lfpr"
+    },
+    {
+      "name": "lhp",
+      "text": "lhp"
+    },
+    {
+      "name": "lhpl1",
+      "text": "lhpl1"
+    },
+    {
+      "name": "lprdt",
+      "text": "lprdt"
+    },
+    {
+      "name": "lur",
+      "text": "lur"
+    },
+    {
+      "name": "lurl1",
+      "text": "lurl1"
+    },
+    {
+      "name": "lurnal1",
+      "text": "lurnal1"
+    },
+    {
+      "name": "lurnat",
+      "text": "lurnat"
+    },
+    {
+      "name": "lww",
+      "text": "lww"
+    },
+    {
+      "name": "lzecd",
+      "text": "lzecd"
+    },
+    {
+      "name": "lzeco",
+      "text": "lzeco"
+    },
+    {
+      "name": "lzeh",
+      "text": "lzeh"
+    },
+    {
+      "name": "lzgapc2",
+      "text": "lzgapc2"
+    },
+    {
+      "name": "lzlhp",
+      "text": "lzlhp"
+    },
+    {
+      "name": "lzlurc",
+      "text": "lzlurc"
+    },
+    {
+      "name": "lzlurl",
+      "text": "lzlurl"
+    },
+    {
+      "name": "lzlurnc",
+      "text": "lzlurnc"
+    },
+    {
+      "name": "lzpc",
+      "text": "lzpc"
+    },
+    {
+      "name": "lzpib5",
+      "text": "lzpib5"
+    },
+    {
+      "name": "lzpl",
+      "text": "lzpl"
+    },
+    {
+      "name": "lzpnc",
+      "text": "lzpnc"
+    },
+    {
+      "name": "lzvpdc",
+      "text": "lzvpdc"
+    },
+    {
+      "name": "lzvpdo",
+      "text": "lzvpdo"
+    },
+    {
+      "name": "lzvpol1",
+      "text": "lzvpol1"
+    },
+    {
+      "name": "lzvps",
+      "text": "lzvps"
+    },
+    {
+      "name": "lzvpsl1",
+      "text": "lzvpsl1"
+    },
+    {
+      "name": "lzxbc",
+      "text": "lzxbc"
+    },
+    {
+      "name": "lzxbo",
+      "text": "lzxbo"
+    },
+    {
+      "name": "lzxbol1",
+      "text": "lzxbol1"
+    },
+    {
+      "name": "lzxbs",
+      "text": "lzxbs"
+    },
+    {
+      "name": "lzxbsl1",
+      "text": "lzxbsl1"
+    },
+    {
+      "name": "lzynid",
+      "text": "lzynid"
+    },
+    {
+      "name": "mfpt",
+      "text": "mfpt"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pcengl1",
+      "text": "pcengl1"
+    },
+    {
+      "name": "pcengr",
+      "text": "pcengr"
+    },
+    {
+      "name": "pcer",
+      "text": "pcer"
+    },
+    {
+      "name": "pcerl1",
+      "text": "pcerl1"
+    },
+    {
+      "name": "pcfr",
+      "text": "pcfr"
+    },
+    {
+      "name": "pcfrl1",
+      "text": "pcfrl1"
+    },
+    {
+      "name": "pcfrl2",
+      "text": "pcfrl2"
+    },
+    {
+      "name": "pcfrl3",
+      "text": "pcfrl3"
+    },
+    {
+      "name": "pcniar",
+      "text": "pcniar"
+    },
+    {
+      "name": "pcxfer",
+      "text": "pcxfer"
+    },
+    {
+      "name": "pgdpr",
+      "text": "pgdpr"
+    },
+    {
+      "name": "picnia",
+      "text": "picnia"
+    },
+    {
+      "name": "picnil1",
+      "text": "picnil1"
+    },
+    {
+      "name": "picnil2",
+      "text": "picnil2"
+    },
+    {
+      "name": "picnil3",
+      "text": "picnil3"
+    },
+    {
+      "name": "picxfe",
+      "text": "picxfe"
+    },
+    {
+      "name": "picxfl1",
+      "text": "picxfl1"
+    },
+    {
+      "name": "picxfl2",
+      "text": "picxfl2"
+    },
+    {
+      "name": "picxfl3",
+      "text": "picxfl3"
+    },
+    {
+      "name": "pigdp",
+      "text": "pigdp"
+    },
+    {
+      "name": "pimor",
+      "text": "pimor"
+    },
+    {
+      "name": "plminr",
+      "text": "plminr"
+    },
+    {
+      "name": "plr",
+      "text": "plr"
+    },
+    {
+      "name": "pmor",
+      "text": "pmor"
+    },
+    {
+      "name": "poilr",
+      "text": "poilr"
+    },
+    {
+      "name": "poilrl1",
+      "text": "poilrl1"
+    },
+    {
+      "name": "ppdcr",
+      "text": "ppdcr"
+    },
+    {
+      "name": "pxbr",
+      "text": "pxbr"
+    },
+    {
+      "name": "pxbrl1",
+      "text": "pxbrl1"
+    },
+    {
+      "name": "pxgr",
+      "text": "pxgr"
+    },
+    {
+      "name": "pxncr",
+      "text": "pxncr"
+    },
+    {
+      "name": "qec",
+      "text": "qec"
+    },
+    {
+      "name": "qecd",
+      "text": "qecd"
+    },
+    {
+      "name": "qeh",
+      "text": "qeh"
+    },
+    {
+      "name": "qehf1",
+      "text": "qehf1"
+    },
+    {
+      "name": "qepdc",
+      "text": "qepdc"
+    },
+    {
+      "name": "qepdo",
+      "text": "qepdo"
+    },
+    {
+      "name": "qepdol1",
+      "text": "qepdol1"
+    },
+    {
+      "name": "qeps",
+      "text": "qeps"
+    },
+    {
+      "name": "qepsl1",
+      "text": "qepsl1"
+    },
+    {
+      "name": "qlhp",
+      "text": "qlhp"
+    },
+    {
+      "name": "qlhpl1",
+      "text": "qlhpl1"
+    },
+    {
+      "name": "qpcniar",
+      "text": "qpcniar"
+    },
+    {
+      "name": "qplr",
+      "text": "qplr"
+    },
+    {
+      "name": "qpxgr",
+      "text": "qpxgr"
+    },
+    {
+      "name": "qpxncr",
+      "text": "qpxncr"
+    },
+    {
+      "name": "qpxpr",
+      "text": "qpxpr"
+    },
+    {
+      "name": "qynidnr",
+      "text": "qynidnr"
+    },
+    {
+      "name": "rbaae",
+      "text": "rbaae"
+    },
+    {
+      "name": "rbaap",
+      "text": "rbaap"
+    },
+    {
+      "name": "rcar",
+      "text": "rcar"
+    },
+    {
+      "name": "rcbe",
+      "text": "rcbe"
+    },
+    {
+      "name": "rcbp",
+      "text": "rcbp"
+    },
+    {
+      "name": "rcgain",
+      "text": "rcgain"
+    },
+    {
+      "name": "req",
+      "text": "req"
+    },
+    {
+      "name": "reqp",
+      "text": "reqp"
+    },
+    {
+      "name": "rffe",
+      "text": "rffe"
+    },
+    {
+      "name": "rfftay",
+      "text": "rfftay"
+    },
+    {
+      "name": "rfyncl1",
+      "text": "rfyncl1"
+    },
+    {
+      "name": "rfynic",
+      "text": "rfynic"
+    },
+    {
+      "name": "rfynil",
+      "text": "rfynil"
+    },
+    {
+      "name": "rfynll1",
+      "text": "rfynll1"
+    },
+    {
+      "name": "rg10e",
+      "text": "rg10e"
+    },
+    {
+      "name": "rg10p",
+      "text": "rg10p"
+    },
+    {
+      "name": "rg5e",
+      "text": "rg5e"
+    },
+    {
+      "name": "rg5el1",
+      "text": "rg5el1"
+    },
+    {
+      "name": "rg5p",
+      "text": "rg5p"
+    },
+    {
+      "name": "rgfinl1",
+      "text": "rgfinl1"
+    },
+    {
+      "name": "rgfint",
+      "text": "rgfint"
+    },
+    {
+      "name": "rme",
+      "text": "rme"
+    },
+    {
+      "name": "rmel1",
+      "text": "rmel1"
+    },
+    {
+      "name": "rmel2",
+      "text": "rmel2"
+    },
+    {
+      "name": "rpd",
+      "text": "rpd"
+    },
+    {
+      "name": "rrmet",
+      "text": "rrmet"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "rtbe",
+      "text": "rtbe"
+    },
+    {
+      "name": "rtbel1",
+      "text": "rtbel1"
+    },
+    {
+      "name": "rtpdc",
+      "text": "rtpdc"
+    },
+    {
+      "name": "rtpdo",
+      "text": "rtpdo"
+    },
+    {
+      "name": "rtps",
+      "text": "rtps"
+    },
+    {
+      "name": "tapdda",
+      "text": "tapdda"
+    },
+    {
+      "name": "tfpnr",
+      "text": "tfpnr"
+    },
+    {
+      "name": "trfci",
+      "text": "trfci"
+    },
+    {
+      "name": "trfp",
+      "text": "trfp"
+    },
+    {
+      "name": "trfpl1",
+      "text": "trfpl1"
+    },
+    {
+      "name": "trfpt",
+      "text": "trfpt"
+    },
+    {
+      "name": "trfptl1",
+      "text": "trfptl1"
+    },
+    {
+      "name": "trsci",
+      "text": "trsci"
+    },
+    {
+      "name": "trsib",
+      "text": "trsib"
+    },
+    {
+      "name": "trsp",
+      "text": "trsp"
+    },
+    {
+      "name": "trspt",
+      "text": "trspt"
+    },
+    {
+      "name": "trssi",
+      "text": "trssi"
+    },
+    {
+      "name": "trssil1",
+      "text": "trssil1"
+    },
+    {
+      "name": "tryh",
+      "text": "tryh"
+    },
+    {
+      "name": "tspnr",
+      "text": "tspnr"
+    },
+    {
+      "name": "uces",
+      "text": "uces"
+    },
+    {
+      "name": "ucesl1",
+      "text": "ucesl1"
+    },
+    {
+      "name": "ucfs",
+      "text": "ucfs"
+    },
+    {
+      "name": "ucfsl1",
+      "text": "ucfsl1"
+    },
+    {
+      "name": "veoa",
+      "text": "veoa"
+    },
+    {
+      "name": "vpdc",
+      "text": "vpdc"
+    },
+    {
+      "name": "vpdcf1",
+      "text": "vpdcf1"
+    },
+    {
+      "name": "vpdo",
+      "text": "vpdo"
+    },
+    {
+      "name": "vpdof1",
+      "text": "vpdof1"
+    },
+    {
+      "name": "vps",
+      "text": "vps"
+    },
+    {
+      "name": "vpsf1",
+      "text": "vpsf1"
+    },
+    {
+      "name": "wdnfcl1",
+      "text": "wdnfcl1"
+    },
+    {
+      "name": "wdnfcl2",
+      "text": "wdnfcl2"
+    },
+    {
+      "name": "wdnfcnr",
+      "text": "wdnfcnr"
+    },
+    {
+      "name": "wpo",
+      "text": "wpo"
+    },
+    {
+      "name": "wpsnr",
+      "text": "wpsnr"
+    },
+    {
+      "name": "xb",
+      "text": "xb"
+    },
+    {
+      "name": "xbf1",
+      "text": "xbf1"
+    },
+    {
+      "name": "xbl1",
+      "text": "xbl1"
+    },
+    {
+      "name": "xbnr",
+      "text": "xbnr"
+    },
+    {
+      "name": "xg",
+      "text": "xg"
+    },
+    {
+      "name": "xgap",
+      "text": "xgap"
+    },
+    {
+      "name": "xgap2",
+      "text": "xgap2"
+    },
+    {
+      "name": "xgap2l1",
+      "text": "xgap2l1"
+    },
+    {
+      "name": "xgdp",
+      "text": "xgdp"
+    },
+    {
+      "name": "xgdpnl1",
+      "text": "xgdpnl1"
+    },
+    {
+      "name": "xgdpnr",
+      "text": "xgdpnr"
+    },
+    {
+      "name": "xgdpt",
+      "text": "xgdpt"
+    },
+    {
+      "name": "xgdptl1",
+      "text": "xgdptl1"
+    },
+    {
+      "name": "xgdptl2",
+      "text": "xgdptl2"
+    },
+    {
+      "name": "xgl1",
+      "text": "xgl1"
+    },
+    {
+      "name": "xgnr",
+      "text": "xgnr"
+    },
+    {
+      "name": "xgpot",
+      "text": "xgpot"
+    },
+    {
+      "name": "xgvt",
+      "text": "xgvt"
+    },
+    {
+      "name": "xhhit",
+      "text": "xhhit"
+    },
+    {
+      "name": "xp",
+      "text": "xp"
+    },
+    {
+      "name": "ycsnr",
+      "text": "ycsnr"
+    },
+    {
+      "name": "yh",
+      "text": "yh"
+    },
+    {
+      "name": "yhibnl1",
+      "text": "yhibnl1"
+    },
+    {
+      "name": "yhibnr",
+      "text": "yhibnr"
+    },
+    {
+      "name": "yhinr",
+      "text": "yhinr"
+    },
+    {
+      "name": "yhl",
+      "text": "yhl"
+    },
+    {
+      "name": "yhp",
+      "text": "yhp"
+    },
+    {
+      "name": "yhpntnr",
+      "text": "yhpntnr"
+    },
+    {
+      "name": "yht",
+      "text": "yht"
+    },
+    {
+      "name": "ynicpnr",
+      "text": "ynicpnr"
+    },
+    {
+      "name": "ynidnl1",
+      "text": "ynidnl1"
+    },
+    {
+      "name": "ynidnr",
+      "text": "ynidnr"
+    },
+    {
+      "name": "yniinr",
+      "text": "yniinr"
+    },
+    {
+      "name": "yniish",
+      "text": "yniish"
+    },
+    {
+      "name": "ynilnl1",
+      "text": "ynilnl1"
+    },
+    {
+      "name": "ynilnr",
+      "text": "ynilnr"
+    },
+    {
+      "name": "yninr",
+      "text": "yninr"
+    },
+    {
+      "name": "yninrl1",
+      "text": "yninrl1"
+    },
+    {
+      "name": "ypnr",
+      "text": "ypnr"
+    },
+    {
+      "name": "zdivgr",
+      "text": "zdivgr"
+    },
+    {
+      "name": "zecd",
+      "text": "zecd"
+    },
+    {
+      "name": "zeco",
+      "text": "zeco"
+    },
+    {
+      "name": "zeh",
+      "text": "zeh"
+    },
+    {
+      "name": "zehf2",
+      "text": "zehf2"
+    },
+    {
+      "name": "zgap05",
+      "text": "zgap05"
+    },
+    {
+      "name": "zgap10",
+      "text": "zgap10"
+    },
+    {
+      "name": "zgap30",
+      "text": "zgap30"
+    },
+    {
+      "name": "zgapc2",
+      "text": "zgapc2"
+    },
+    {
+      "name": "zlhp",
+      "text": "zlhp"
+    },
+    {
+      "name": "zlurc",
+      "text": "zlurc"
+    },
+    {
+      "name": "zlurl",
+      "text": "zlurl"
+    },
+    {
+      "name": "zlurnc",
+      "text": "zlurnc"
+    },
+    {
+      "name": "zpc",
+      "text": "zpc"
+    },
+    {
+      "name": "zpi10",
+      "text": "zpi10"
+    },
+    {
+      "name": "zpi5",
+      "text": "zpi5"
+    },
+    {
+      "name": "zpib5",
+      "text": "zpib5"
+    },
+    {
+      "name": "zpic30",
+      "text": "zpic30"
+    },
+    {
+      "name": "zpl",
+      "text": "zpl"
+    },
+    {
+      "name": "zpnc",
+      "text": "zpnc"
+    },
+    {
+      "name": "zrff10",
+      "text": "zrff10"
+    },
+    {
+      "name": "zrff30",
+      "text": "zrff30"
+    },
+    {
+      "name": "zrff5",
+      "text": "zrff5"
+    },
+    {
+      "name": "zvpdc",
+      "text": "zvpdc"
+    },
+    {
+      "name": "zvpdcf2",
+      "text": "zvpdcf2"
+    },
+    {
+      "name": "zvpdo",
+      "text": "zvpdo"
+    },
+    {
+      "name": "zvpdof2",
+      "text": "zvpdof2"
+    },
+    {
+      "name": "zvps",
+      "text": "zvps"
+    },
+    {
+      "name": "zvpsf2",
+      "text": "zvpsf2"
+    },
+    {
+      "name": "zxbc",
+      "text": "zxbc"
+    },
+    {
+      "name": "zxbcf2",
+      "text": "zxbcf2"
+    },
+    {
+      "name": "zxbo",
+      "text": "zxbo"
+    },
+    {
+      "name": "zxbof2",
+      "text": "zxbof2"
+    },
+    {
+      "name": "zxbs",
+      "text": "zxbs"
+    },
+    {
+      "name": "zxbsf2",
+      "text": "zxbsf2"
+    },
+    {
+      "name": "zyh",
+      "text": "zyh"
+    },
+    {
+      "name": "zyhp",
+      "text": "zyhp"
+    },
+    {
+      "name": "zyht",
+      "text": "zyht"
+    },
+    {
+      "name": "zynid",
+      "text": "zynid"
+    }
+  ]
+}

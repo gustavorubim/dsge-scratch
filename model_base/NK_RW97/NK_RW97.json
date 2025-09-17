@@ -1,0 +1,111 @@
+{
+  "$schema": "model",
+  "name": "NK_RW97",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rotemberg & Woodford (1997)",
+    "paper_title": "An Optimization-Based Econometric Framework for the Evaluation of Monetary Policy",
+    "journal": "NBER Macroeconomics Annual 12, pp. 297-346",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1997",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Rotemberg, Julio",
+      "Woodford, Michael"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "u_",
+      "text": "Price markup shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "g_",
+      "text": "g_"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "rnat",
+      "text": "rnat"
+    },
+    {
+      "name": "u",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ynat",
+      "text": "ynat"
+    }
+  ]
+}

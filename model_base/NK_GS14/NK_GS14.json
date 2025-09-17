@@ -1,0 +1,373 @@
+{
+  "$schema": "model",
+  "name": "NK_GS14",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gambacorta & Signoretti (2014)",
+    "paper_title": "Should monetary policy lean against the wind? An analysis based on a DSGE model with banking",
+    "journal": "Journal of Economic Dynamics and Control, 43, 146-174",
+    "replicants_name": "Nora Lamersdorf",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gambacorta, Leonardo",
+      "Signoretti, Federico M."
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_A_e",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_mk_y",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A_e",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "B",
+      "text": "B"
+    },
+    {
+      "name": "b_ee",
+      "text": "b_ee"
+    },
+    {
+      "name": "b_eef",
+      "text": "b_eef"
+    },
+    {
+      "name": "Bf",
+      "text": "Bf"
+    },
+    {
+      "name": "C",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_e",
+      "text": "c_e"
+    },
+    {
+      "name": "c_ef",
+      "text": "c_ef"
+    },
+    {
+      "name": "c_p",
+      "text": "c_p"
+    },
+    {
+      "name": "c_pf",
+      "text": "c_pf"
+    },
+    {
+      "name": "Cf",
+      "text": "Cf"
+    },
+    {
+      "name": "D",
+      "text": "D"
+    },
+    {
+      "name": "d_p",
+      "text": "d_p"
+    },
+    {
+      "name": "d_pf",
+      "text": "d_pf"
+    },
+    {
+      "name": "Df",
+      "text": "Df"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "J_B",
+      "text": "J_B"
+    },
+    {
+      "name": "J_Bf",
+      "text": "J_Bf"
+    },
+    {
+      "name": "J_R",
+      "text": "J_R"
+    },
+    {
+      "name": "J_Rf",
+      "text": "J_Rf"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "K_b",
+      "text": "K_b"
+    },
+    {
+      "name": "K_bf",
+      "text": "K_bf"
+    },
+    {
+      "name": "k_e",
+      "text": "k_e"
+    },
+    {
+      "name": "k_ef",
+      "text": "k_ef"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "l_p",
+      "text": "Labour"
+    },
+    {
+      "name": "l_pd",
+      "text": "l_pd"
+    },
+    {
+      "name": "l_pdf",
+      "text": "l_pdf"
+    },
+    {
+      "name": "l_pf",
+      "text": "l_pf"
+    },
+    {
+      "name": "lam_e",
+      "text": "lam_e"
+    },
+    {
+      "name": "lam_ef",
+      "text": "lam_ef"
+    },
+    {
+      "name": "lam_p",
+      "text": "lam_p"
+    },
+    {
+      "name": "lam_pf",
+      "text": "lam_pf"
+    },
+    {
+      "name": "lev",
+      "text": "lev"
+    },
+    {
+      "name": "levf",
+      "text": "levf"
+    },
+    {
+      "name": "mc_E",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mc_Ef",
+      "text": "mc_Ef"
+    },
+    {
+      "name": "mk_y",
+      "text": "mk_y"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pie",
+      "text": "pie"
+    },
+    {
+      "name": "q_k",
+      "text": "q_k"
+    },
+    {
+      "name": "q_kf",
+      "text": "q_kf"
+    },
+    {
+      "name": "r_b",
+      "text": "r_b"
+    },
+    {
+      "name": "R_b",
+      "text": "R_b"
+    },
+    {
+      "name": "r_bf",
+      "text": "r_bf"
+    },
+    {
+      "name": "R_bf",
+      "text": "R_bf"
+    },
+    {
+      "name": "r_ib",
+      "text": "r_ib"
+    },
+    {
+      "name": "r_ibf",
+      "text": "r_ibf"
+    },
+    {
+      "name": "r_k",
+      "text": "Capital returns"
+    },
+    {
+      "name": "r_kf",
+      "text": "r_kf"
+    },
+    {
+      "name": "rr",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "s_e",
+      "text": "s_e"
+    },
+    {
+      "name": "s_ef",
+      "text": "s_ef"
+    },
+    {
+      "name": "spread",
+      "text": "spread"
+    },
+    {
+      "name": "spreadf",
+      "text": "spreadf"
+    },
+    {
+      "name": "w_p",
+      "text": "w_p"
+    },
+    {
+      "name": "w_pf",
+      "text": "w_pf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "y_e",
+      "text": "y_e"
+    },
+    {
+      "name": "y_ef",
+      "text": "y_ef"
+    },
+    {
+      "name": "Y1",
+      "text": "Y1"
+    },
+    {
+      "name": "Y1f",
+      "text": "Y1f"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    }
+  ]
+}

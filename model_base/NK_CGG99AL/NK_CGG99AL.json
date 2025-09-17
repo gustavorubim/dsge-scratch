@@ -1,0 +1,142 @@
+{
+  "$schema": "model",
+  "name": "NK_CGG99AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Clarida et al. (1999) AL",
+    "paper_title": "The science of monetary policy: A New Keynesian perspective",
+    "journal": "Journal of Economic Literature 37(4), pp. 1661-1707",
+    "replicants_name": "V. Audzei and S. Schmidt",
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Clarida, Richard",
+      "Gali, Jordí",
+      "Gertler, Mark"
+    ]
+  },
+  "msr": [
+    "0.79",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*2.15",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*.93/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "inflationq",
+      "pi",
+      "x"
+    ],
+    "states_long": [
+      "inflationql",
+      "inflationql2",
+      "outputgap",
+      "inflationq",
+      "interest"
+    ],
+    "states_short": [
+      "inflationq",
+      "outputgap",
+      "interest"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "demand_",
+      "text": "Demand shock"
+    },
+    {
+      "name": "inflation_",
+      "text": "inflation_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    }
+  ]
+}

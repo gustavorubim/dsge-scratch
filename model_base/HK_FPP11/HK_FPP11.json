@@ -1,0 +1,132 @@
+{
+  "$schema": "model",
+  "name": "HK_FPP11",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Funke et al. (2011)",
+    "paper_title": "Stock market wealth effects in an estimated DSGE model for Hong Kong",
+    "journal": "Economic Modelling 28, pp. 316-334",
+    "replicants_name": "Xiaobei He and Tong Wang",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Funke, Michael",
+      "Paetz, Michael",
+      "Pytlarczyk, Ernest"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "epsa"
+    },
+    {
+      "name": "epseta",
+      "text": "epseta"
+    },
+    {
+      "name": "epsy",
+      "text": "epsy"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "mu_p",
+      "text": "Price markup shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_H",
+      "text": "pi_H"
+    },
+    {
+      "name": "q_dach",
+      "text": "q_dach"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rr",
+      "text": "rr"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "shock_eta",
+      "text": "shock_eta"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_n",
+      "text": "y_n"
+    },
+    {
+      "name": "y_stern",
+      "text": "y_stern"
+    }
+  ]
+}

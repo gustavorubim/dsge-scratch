@@ -1,0 +1,228 @@
+{
+  "$schema": "model",
+  "name": "US_IAC05",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Iacoviello (2005)",
+    "paper_title": "House prices, borrowing constraints, and monetary policy in the business cycle",
+    "journal": "The American Economic Review 95(3), pp. 739-764",
+    "replicants_name": "Denis Gorea",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Iacoviello, Matteo"
+    ]
+  },
+  "msr": [
+    "0.73",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.73)*(1+0.27)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*(1-0.73)*0.13",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eAhat",
+      "text": "Technology shock"
+    },
+    {
+      "name": "ejhat",
+      "text": "ejhat"
+    },
+    {
+      "name": "euhat",
+      "text": "euhat"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "Ahat",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "b2hat",
+      "text": "b2hat"
+    },
+    {
+      "name": "b2hatf",
+      "text": "b2hatf"
+    },
+    {
+      "name": "bhat",
+      "text": "bhat"
+    },
+    {
+      "name": "bhatf",
+      "text": "bhatf"
+    },
+    {
+      "name": "c1hat",
+      "text": "c1hat"
+    },
+    {
+      "name": "c1hatf",
+      "text": "c1hatf"
+    },
+    {
+      "name": "c2hat",
+      "text": "c2hat"
+    },
+    {
+      "name": "c2hatf",
+      "text": "c2hatf"
+    },
+    {
+      "name": "chat",
+      "text": "Consumption"
+    },
+    {
+      "name": "chatf",
+      "text": "chatf"
+    },
+    {
+      "name": "h2hat",
+      "text": "h2hat"
+    },
+    {
+      "name": "h2hatf",
+      "text": "h2hatf"
+    },
+    {
+      "name": "hhat",
+      "text": "hhat"
+    },
+    {
+      "name": "hhatf",
+      "text": "hhatf"
+    },
+    {
+      "name": "Ihat",
+      "text": "Investment"
+    },
+    {
+      "name": "Ihatf",
+      "text": "Ihatf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "jhat",
+      "text": "jhat"
+    },
+    {
+      "name": "Khat",
+      "text": "Capital"
+    },
+    {
+      "name": "Khatf",
+      "text": "Khatf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pihat",
+      "text": "pihat"
+    },
+    {
+      "name": "qhat",
+      "text": "qhat"
+    },
+    {
+      "name": "qhatf",
+      "text": "qhatf"
+    },
+    {
+      "name": "Rhat",
+      "text": "Rhat"
+    },
+    {
+      "name": "rrhat",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rrhatf",
+      "text": "rrhatf"
+    },
+    {
+      "name": "uhat",
+      "text": "uhat"
+    },
+    {
+      "name": "Xhat",
+      "text": "Xhat"
+    },
+    {
+      "name": "Yhat",
+      "text": "Yhat"
+    },
+    {
+      "name": "Yhatf",
+      "text": "Yhatf"
+    }
+  ]
+}

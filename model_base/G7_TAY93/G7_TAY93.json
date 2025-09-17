@@ -1,0 +1,1917 @@
+{
+  "$schema": "model",
+  "name": "G7_TAY93",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Taylor (1993) G7",
+    "paper_title": "Macroeconomic Policy in a World Economy",
+    "journal": "W.W. Norton, New York",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "Model of G7 economies",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Taylor, John B."
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "c3_",
+      "text": "c3_"
+    },
+    {
+      "name": "c4_",
+      "text": "c4_"
+    },
+    {
+      "name": "cd0_",
+      "text": "cd0_"
+    },
+    {
+      "name": "cd1_",
+      "text": "cd1_"
+    },
+    {
+      "name": "cd2_",
+      "text": "cd2_"
+    },
+    {
+      "name": "cd5_",
+      "text": "cd5_"
+    },
+    {
+      "name": "cd6_",
+      "text": "cd6_"
+    },
+    {
+      "name": "cn0_",
+      "text": "cn0_"
+    },
+    {
+      "name": "cn1_",
+      "text": "cn1_"
+    },
+    {
+      "name": "cn2_",
+      "text": "cn2_"
+    },
+    {
+      "name": "cn5_",
+      "text": "cn5_"
+    },
+    {
+      "name": "cn6_",
+      "text": "cn6_"
+    },
+    {
+      "name": "cs0_",
+      "text": "cs0_"
+    },
+    {
+      "name": "cs1_",
+      "text": "cs1_"
+    },
+    {
+      "name": "cs2_",
+      "text": "cs2_"
+    },
+    {
+      "name": "cs5_",
+      "text": "cs5_"
+    },
+    {
+      "name": "cs6_",
+      "text": "cs6_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "if1_",
+      "text": "if1_"
+    },
+    {
+      "name": "if3_",
+      "text": "if3_"
+    },
+    {
+      "name": "if4_",
+      "text": "if4_"
+    },
+    {
+      "name": "ii0_",
+      "text": "ii0_"
+    },
+    {
+      "name": "ii1_",
+      "text": "ii1_"
+    },
+    {
+      "name": "ii2_",
+      "text": "ii2_"
+    },
+    {
+      "name": "ii3_",
+      "text": "ii3_"
+    },
+    {
+      "name": "ii4_",
+      "text": "ii4_"
+    },
+    {
+      "name": "ii5_",
+      "text": "ii5_"
+    },
+    {
+      "name": "ii6_",
+      "text": "ii6_"
+    },
+    {
+      "name": "in2_",
+      "text": "in2_"
+    },
+    {
+      "name": "in5_",
+      "text": "in5_"
+    },
+    {
+      "name": "in6_",
+      "text": "in6_"
+    },
+    {
+      "name": "ine0_",
+      "text": "ine0_"
+    },
+    {
+      "name": "ins0_",
+      "text": "ins0_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ir0_",
+      "text": "ir0_"
+    },
+    {
+      "name": "ir2_",
+      "text": "ir2_"
+    },
+    {
+      "name": "ir5_",
+      "text": "ir5_"
+    },
+    {
+      "name": "ir6_",
+      "text": "ir6_"
+    },
+    {
+      "name": "lex0_",
+      "text": "lex0_"
+    },
+    {
+      "name": "lex1_",
+      "text": "lex1_"
+    },
+    {
+      "name": "lex2_",
+      "text": "lex2_"
+    },
+    {
+      "name": "lex3_",
+      "text": "lex3_"
+    },
+    {
+      "name": "lex4_",
+      "text": "lex4_"
+    },
+    {
+      "name": "lex5_",
+      "text": "lex5_"
+    },
+    {
+      "name": "lex6_",
+      "text": "lex6_"
+    },
+    {
+      "name": "lg1_",
+      "text": "lg1_"
+    },
+    {
+      "name": "lg2_",
+      "text": "lg2_"
+    },
+    {
+      "name": "lg3_",
+      "text": "lg3_"
+    },
+    {
+      "name": "lg4_",
+      "text": "lg4_"
+    },
+    {
+      "name": "lg5_",
+      "text": "lg5_"
+    },
+    {
+      "name": "lg6_",
+      "text": "lg6_"
+    },
+    {
+      "name": "lim0_",
+      "text": "lim0_"
+    },
+    {
+      "name": "lim1_",
+      "text": "lim1_"
+    },
+    {
+      "name": "lim2_",
+      "text": "lim2_"
+    },
+    {
+      "name": "lim3_",
+      "text": "lim3_"
+    },
+    {
+      "name": "lim4_",
+      "text": "lim4_"
+    },
+    {
+      "name": "lim5_",
+      "text": "lim5_"
+    },
+    {
+      "name": "lim6_",
+      "text": "lim6_"
+    },
+    {
+      "name": "lp0_",
+      "text": "lp0_"
+    },
+    {
+      "name": "lp1_",
+      "text": "lp1_"
+    },
+    {
+      "name": "lp2_",
+      "text": "lp2_"
+    },
+    {
+      "name": "lp3_",
+      "text": "lp3_"
+    },
+    {
+      "name": "lp4_",
+      "text": "lp4_"
+    },
+    {
+      "name": "lp5_",
+      "text": "lp5_"
+    },
+    {
+      "name": "lp6_",
+      "text": "lp6_"
+    },
+    {
+      "name": "lpe0_",
+      "text": "lpe0_"
+    },
+    {
+      "name": "lpe1_",
+      "text": "lpe1_"
+    },
+    {
+      "name": "lpe2_",
+      "text": "lpe2_"
+    },
+    {
+      "name": "lpe3_",
+      "text": "lpe3_"
+    },
+    {
+      "name": "lpe4_",
+      "text": "lpe4_"
+    },
+    {
+      "name": "lpe5_",
+      "text": "lpe5_"
+    },
+    {
+      "name": "lpe6_",
+      "text": "lpe6_"
+    },
+    {
+      "name": "lpi0_",
+      "text": "lpi0_"
+    },
+    {
+      "name": "lpi1_",
+      "text": "lpi1_"
+    },
+    {
+      "name": "lpi2_",
+      "text": "lpi2_"
+    },
+    {
+      "name": "lpi3_",
+      "text": "lpi3_"
+    },
+    {
+      "name": "lpi4_",
+      "text": "lpi4_"
+    },
+    {
+      "name": "lpi5_",
+      "text": "lpi5_"
+    },
+    {
+      "name": "lpi6_",
+      "text": "lpi6_"
+    },
+    {
+      "name": "lx0_",
+      "text": "lx0_"
+    },
+    {
+      "name": "lx1_",
+      "text": "lx1_"
+    },
+    {
+      "name": "lx2_",
+      "text": "lx2_"
+    },
+    {
+      "name": "lx3_",
+      "text": "lx3_"
+    },
+    {
+      "name": "lx4_",
+      "text": "lx4_"
+    },
+    {
+      "name": "lx5_",
+      "text": "lx5_"
+    },
+    {
+      "name": "lx6_",
+      "text": "lx6_"
+    },
+    {
+      "name": "rl0_",
+      "text": "rl0_"
+    },
+    {
+      "name": "rl1_",
+      "text": "rl1_"
+    },
+    {
+      "name": "rl2_",
+      "text": "rl2_"
+    },
+    {
+      "name": "rl3_",
+      "text": "rl3_"
+    },
+    {
+      "name": "rl4_",
+      "text": "rl4_"
+    },
+    {
+      "name": "rl5_",
+      "text": "rl5_"
+    },
+    {
+      "name": "rl6_",
+      "text": "rl6_"
+    },
+    {
+      "name": "rs1_",
+      "text": "rs1_"
+    },
+    {
+      "name": "rs2_",
+      "text": "rs2_"
+    },
+    {
+      "name": "rs3_",
+      "text": "rs3_"
+    },
+    {
+      "name": "rs4_",
+      "text": "rs4_"
+    },
+    {
+      "name": "rs5_",
+      "text": "rs5_"
+    },
+    {
+      "name": "rs6_",
+      "text": "rs6_"
+    },
+    {
+      "name": "ule1_",
+      "text": "ule1_"
+    },
+    {
+      "name": "ule2_",
+      "text": "ule2_"
+    },
+    {
+      "name": "ule3_",
+      "text": "ule3_"
+    },
+    {
+      "name": "ule4_",
+      "text": "ule4_"
+    },
+    {
+      "name": "ule5_",
+      "text": "ule5_"
+    },
+    {
+      "name": "ule6_",
+      "text": "ule6_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c3",
+      "text": "c3"
+    },
+    {
+      "name": "c4",
+      "text": "c4"
+    },
+    {
+      "name": "cd0",
+      "text": "cd0"
+    },
+    {
+      "name": "cd1",
+      "text": "cd1"
+    },
+    {
+      "name": "cd2",
+      "text": "cd2"
+    },
+    {
+      "name": "cd5",
+      "text": "cd5"
+    },
+    {
+      "name": "cd6",
+      "text": "cd6"
+    },
+    {
+      "name": "cn0",
+      "text": "cn0"
+    },
+    {
+      "name": "cn1",
+      "text": "cn1"
+    },
+    {
+      "name": "cn2",
+      "text": "cn2"
+    },
+    {
+      "name": "cn5",
+      "text": "cn5"
+    },
+    {
+      "name": "cn6",
+      "text": "cn6"
+    },
+    {
+      "name": "cs0",
+      "text": "cs0"
+    },
+    {
+      "name": "cs1",
+      "text": "cs1"
+    },
+    {
+      "name": "cs2",
+      "text": "cs2"
+    },
+    {
+      "name": "cs5",
+      "text": "cs5"
+    },
+    {
+      "name": "cs6",
+      "text": "cs6"
+    },
+    {
+      "name": "dfrs0",
+      "text": "dfrs0"
+    },
+    {
+      "name": "dletw0",
+      "text": "dletw0"
+    },
+    {
+      "name": "dretw0",
+      "text": "dretw0"
+    },
+    {
+      "name": "drs0",
+      "text": "drs0"
+    },
+    {
+      "name": "dygap0",
+      "text": "dygap0"
+    },
+    {
+      "name": "fgdp0",
+      "text": "fgdp0"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "fpdot0",
+      "text": "fpdot0"
+    },
+    {
+      "name": "frs0",
+      "text": "frs0"
+    },
+    {
+      "name": "if1",
+      "text": "if1"
+    },
+    {
+      "name": "if3",
+      "text": "if3"
+    },
+    {
+      "name": "if4",
+      "text": "if4"
+    },
+    {
+      "name": "ii0",
+      "text": "ii0"
+    },
+    {
+      "name": "ii1",
+      "text": "ii1"
+    },
+    {
+      "name": "ii2",
+      "text": "ii2"
+    },
+    {
+      "name": "ii3",
+      "text": "ii3"
+    },
+    {
+      "name": "ii4",
+      "text": "ii4"
+    },
+    {
+      "name": "ii5",
+      "text": "ii5"
+    },
+    {
+      "name": "ii6",
+      "text": "ii6"
+    },
+    {
+      "name": "in2",
+      "text": "in2"
+    },
+    {
+      "name": "in5",
+      "text": "in5"
+    },
+    {
+      "name": "in6",
+      "text": "in6"
+    },
+    {
+      "name": "ine0",
+      "text": "ine0"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "ins0",
+      "text": "ins0"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "ir0",
+      "text": "ir0"
+    },
+    {
+      "name": "ir2",
+      "text": "ir2"
+    },
+    {
+      "name": "ir5",
+      "text": "ir5"
+    },
+    {
+      "name": "ir6",
+      "text": "ir6"
+    },
+    {
+      "name": "le1",
+      "text": "le1"
+    },
+    {
+      "name": "le11",
+      "text": "le11"
+    },
+    {
+      "name": "le12",
+      "text": "le12"
+    },
+    {
+      "name": "le13",
+      "text": "le13"
+    },
+    {
+      "name": "le14",
+      "text": "le14"
+    },
+    {
+      "name": "le15",
+      "text": "le15"
+    },
+    {
+      "name": "le16",
+      "text": "le16"
+    },
+    {
+      "name": "le2",
+      "text": "le2"
+    },
+    {
+      "name": "le3",
+      "text": "le3"
+    },
+    {
+      "name": "le4",
+      "text": "le4"
+    },
+    {
+      "name": "le5",
+      "text": "le5"
+    },
+    {
+      "name": "le6",
+      "text": "le6"
+    },
+    {
+      "name": "lex0",
+      "text": "lex0"
+    },
+    {
+      "name": "lex1",
+      "text": "lex1"
+    },
+    {
+      "name": "lex2",
+      "text": "lex2"
+    },
+    {
+      "name": "lex3",
+      "text": "lex3"
+    },
+    {
+      "name": "lex4",
+      "text": "lex4"
+    },
+    {
+      "name": "lex5",
+      "text": "lex5"
+    },
+    {
+      "name": "lex6",
+      "text": "lex6"
+    },
+    {
+      "name": "lg0",
+      "text": "lg0"
+    },
+    {
+      "name": "lg0_",
+      "text": "lg0_"
+    },
+    {
+      "name": "lg1",
+      "text": "lg1"
+    },
+    {
+      "name": "lg2",
+      "text": "lg2"
+    },
+    {
+      "name": "lg3",
+      "text": "lg3"
+    },
+    {
+      "name": "lg4",
+      "text": "lg4"
+    },
+    {
+      "name": "lg5",
+      "text": "lg5"
+    },
+    {
+      "name": "lg6",
+      "text": "lg6"
+    },
+    {
+      "name": "lim0",
+      "text": "lim0"
+    },
+    {
+      "name": "lim1",
+      "text": "lim1"
+    },
+    {
+      "name": "lim2",
+      "text": "lim2"
+    },
+    {
+      "name": "lim3",
+      "text": "lim3"
+    },
+    {
+      "name": "lim4",
+      "text": "lim4"
+    },
+    {
+      "name": "lim5",
+      "text": "lim5"
+    },
+    {
+      "name": "lim6",
+      "text": "lim6"
+    },
+    {
+      "name": "lp0",
+      "text": "lp0"
+    },
+    {
+      "name": "lp1",
+      "text": "lp1"
+    },
+    {
+      "name": "lp10",
+      "text": "lp10"
+    },
+    {
+      "name": "lp100",
+      "text": "lp100"
+    },
+    {
+      "name": "lp11",
+      "text": "lp11"
+    },
+    {
+      "name": "lp110",
+      "text": "lp110"
+    },
+    {
+      "name": "lp12",
+      "text": "lp12"
+    },
+    {
+      "name": "lp13",
+      "text": "lp13"
+    },
+    {
+      "name": "lp14",
+      "text": "lp14"
+    },
+    {
+      "name": "lp15",
+      "text": "lp15"
+    },
+    {
+      "name": "lp16",
+      "text": "lp16"
+    },
+    {
+      "name": "lp2",
+      "text": "lp2"
+    },
+    {
+      "name": "lp20",
+      "text": "lp20"
+    },
+    {
+      "name": "lp21",
+      "text": "lp21"
+    },
+    {
+      "name": "lp22",
+      "text": "lp22"
+    },
+    {
+      "name": "lp23",
+      "text": "lp23"
+    },
+    {
+      "name": "lp24",
+      "text": "lp24"
+    },
+    {
+      "name": "lp25",
+      "text": "lp25"
+    },
+    {
+      "name": "lp26",
+      "text": "lp26"
+    },
+    {
+      "name": "lp3",
+      "text": "lp3"
+    },
+    {
+      "name": "lp30",
+      "text": "lp30"
+    },
+    {
+      "name": "lp31",
+      "text": "lp31"
+    },
+    {
+      "name": "lp32",
+      "text": "lp32"
+    },
+    {
+      "name": "lp33",
+      "text": "lp33"
+    },
+    {
+      "name": "lp34",
+      "text": "lp34"
+    },
+    {
+      "name": "lp35",
+      "text": "lp35"
+    },
+    {
+      "name": "lp36",
+      "text": "lp36"
+    },
+    {
+      "name": "lp4",
+      "text": "lp4"
+    },
+    {
+      "name": "lp40",
+      "text": "lp40"
+    },
+    {
+      "name": "lp5",
+      "text": "lp5"
+    },
+    {
+      "name": "lp50",
+      "text": "lp50"
+    },
+    {
+      "name": "lp6",
+      "text": "lp6"
+    },
+    {
+      "name": "lp60",
+      "text": "lp60"
+    },
+    {
+      "name": "lp70",
+      "text": "lp70"
+    },
+    {
+      "name": "lp80",
+      "text": "lp80"
+    },
+    {
+      "name": "lp90",
+      "text": "lp90"
+    },
+    {
+      "name": "lpe0",
+      "text": "lpe0"
+    },
+    {
+      "name": "lpe1",
+      "text": "lpe1"
+    },
+    {
+      "name": "lpe10",
+      "text": "lpe10"
+    },
+    {
+      "name": "lpe11",
+      "text": "lpe11"
+    },
+    {
+      "name": "lpe12",
+      "text": "lpe12"
+    },
+    {
+      "name": "lpe13",
+      "text": "lpe13"
+    },
+    {
+      "name": "lpe14",
+      "text": "lpe14"
+    },
+    {
+      "name": "lpe15",
+      "text": "lpe15"
+    },
+    {
+      "name": "lpe16",
+      "text": "lpe16"
+    },
+    {
+      "name": "lpe2",
+      "text": "lpe2"
+    },
+    {
+      "name": "lpe3",
+      "text": "lpe3"
+    },
+    {
+      "name": "lpe4",
+      "text": "lpe4"
+    },
+    {
+      "name": "lpe5",
+      "text": "lpe5"
+    },
+    {
+      "name": "lpe6",
+      "text": "lpe6"
+    },
+    {
+      "name": "lpi0",
+      "text": "lpi0"
+    },
+    {
+      "name": "lpi1",
+      "text": "lpi1"
+    },
+    {
+      "name": "lpi10",
+      "text": "lpi10"
+    },
+    {
+      "name": "lpi11",
+      "text": "lpi11"
+    },
+    {
+      "name": "lpi12",
+      "text": "lpi12"
+    },
+    {
+      "name": "lpi13",
+      "text": "lpi13"
+    },
+    {
+      "name": "lpi14",
+      "text": "lpi14"
+    },
+    {
+      "name": "lpi15",
+      "text": "lpi15"
+    },
+    {
+      "name": "lpi16",
+      "text": "lpi16"
+    },
+    {
+      "name": "lpi2",
+      "text": "lpi2"
+    },
+    {
+      "name": "lpi3",
+      "text": "lpi3"
+    },
+    {
+      "name": "lpi4",
+      "text": "lpi4"
+    },
+    {
+      "name": "lpi5",
+      "text": "lpi5"
+    },
+    {
+      "name": "lpi6",
+      "text": "lpi6"
+    },
+    {
+      "name": "lpl10",
+      "text": "lpl10"
+    },
+    {
+      "name": "lpl100",
+      "text": "lpl100"
+    },
+    {
+      "name": "lpl11",
+      "text": "lpl11"
+    },
+    {
+      "name": "lpl110",
+      "text": "lpl110"
+    },
+    {
+      "name": "lpl12",
+      "text": "lpl12"
+    },
+    {
+      "name": "lpl120",
+      "text": "lpl120"
+    },
+    {
+      "name": "lpl13",
+      "text": "lpl13"
+    },
+    {
+      "name": "lpl130",
+      "text": "lpl130"
+    },
+    {
+      "name": "lpl14",
+      "text": "lpl14"
+    },
+    {
+      "name": "lpl140",
+      "text": "lpl140"
+    },
+    {
+      "name": "lpl15",
+      "text": "lpl15"
+    },
+    {
+      "name": "lpl150",
+      "text": "lpl150"
+    },
+    {
+      "name": "lpl16",
+      "text": "lpl16"
+    },
+    {
+      "name": "lpl160",
+      "text": "lpl160"
+    },
+    {
+      "name": "lpl170",
+      "text": "lpl170"
+    },
+    {
+      "name": "lpl180",
+      "text": "lpl180"
+    },
+    {
+      "name": "lpl190",
+      "text": "lpl190"
+    },
+    {
+      "name": "lpl20",
+      "text": "lpl20"
+    },
+    {
+      "name": "lpl21",
+      "text": "lpl21"
+    },
+    {
+      "name": "lpl22",
+      "text": "lpl22"
+    },
+    {
+      "name": "lpl23",
+      "text": "lpl23"
+    },
+    {
+      "name": "lpl24",
+      "text": "lpl24"
+    },
+    {
+      "name": "lpl25",
+      "text": "lpl25"
+    },
+    {
+      "name": "lpl26",
+      "text": "lpl26"
+    },
+    {
+      "name": "lpl30",
+      "text": "lpl30"
+    },
+    {
+      "name": "lpl31",
+      "text": "lpl31"
+    },
+    {
+      "name": "lpl32",
+      "text": "lpl32"
+    },
+    {
+      "name": "lpl33",
+      "text": "lpl33"
+    },
+    {
+      "name": "lpl34",
+      "text": "lpl34"
+    },
+    {
+      "name": "lpl35",
+      "text": "lpl35"
+    },
+    {
+      "name": "lpl36",
+      "text": "lpl36"
+    },
+    {
+      "name": "lpl40",
+      "text": "lpl40"
+    },
+    {
+      "name": "lpl50",
+      "text": "lpl50"
+    },
+    {
+      "name": "lpl60",
+      "text": "lpl60"
+    },
+    {
+      "name": "lpl70",
+      "text": "lpl70"
+    },
+    {
+      "name": "lpl80",
+      "text": "lpl80"
+    },
+    {
+      "name": "lpl90",
+      "text": "lpl90"
+    },
+    {
+      "name": "lretw0",
+      "text": "lretw0"
+    },
+    {
+      "name": "lw0",
+      "text": "lw0"
+    },
+    {
+      "name": "lw1",
+      "text": "lw1"
+    },
+    {
+      "name": "lw10",
+      "text": "lw10"
+    },
+    {
+      "name": "lw2",
+      "text": "lw2"
+    },
+    {
+      "name": "lw3",
+      "text": "lw3"
+    },
+    {
+      "name": "lw4",
+      "text": "lw4"
+    },
+    {
+      "name": "lw5",
+      "text": "lw5"
+    },
+    {
+      "name": "lw6",
+      "text": "lw6"
+    },
+    {
+      "name": "lwl10",
+      "text": "lwl10"
+    },
+    {
+      "name": "lwl11",
+      "text": "lwl11"
+    },
+    {
+      "name": "lwl12",
+      "text": "lwl12"
+    },
+    {
+      "name": "lwl13",
+      "text": "lwl13"
+    },
+    {
+      "name": "lwl14",
+      "text": "lwl14"
+    },
+    {
+      "name": "lwl15",
+      "text": "lwl15"
+    },
+    {
+      "name": "lwl16",
+      "text": "lwl16"
+    },
+    {
+      "name": "lwl20",
+      "text": "lwl20"
+    },
+    {
+      "name": "lwl21",
+      "text": "lwl21"
+    },
+    {
+      "name": "lwl22",
+      "text": "lwl22"
+    },
+    {
+      "name": "lwl23",
+      "text": "lwl23"
+    },
+    {
+      "name": "lwl24",
+      "text": "lwl24"
+    },
+    {
+      "name": "lwl25",
+      "text": "lwl25"
+    },
+    {
+      "name": "lwl26",
+      "text": "lwl26"
+    },
+    {
+      "name": "lx0",
+      "text": "lx0"
+    },
+    {
+      "name": "lx1",
+      "text": "lx1"
+    },
+    {
+      "name": "lx10",
+      "text": "lx10"
+    },
+    {
+      "name": "lx11",
+      "text": "lx11"
+    },
+    {
+      "name": "lx12",
+      "text": "lx12"
+    },
+    {
+      "name": "lx13",
+      "text": "lx13"
+    },
+    {
+      "name": "lx14",
+      "text": "lx14"
+    },
+    {
+      "name": "lx15",
+      "text": "lx15"
+    },
+    {
+      "name": "lx16",
+      "text": "lx16"
+    },
+    {
+      "name": "lx2",
+      "text": "lx2"
+    },
+    {
+      "name": "lx20",
+      "text": "lx20"
+    },
+    {
+      "name": "lx21",
+      "text": "lx21"
+    },
+    {
+      "name": "lx22",
+      "text": "lx22"
+    },
+    {
+      "name": "lx23",
+      "text": "lx23"
+    },
+    {
+      "name": "lx24",
+      "text": "lx24"
+    },
+    {
+      "name": "lx25",
+      "text": "lx25"
+    },
+    {
+      "name": "lx26",
+      "text": "lx26"
+    },
+    {
+      "name": "lx3",
+      "text": "lx3"
+    },
+    {
+      "name": "lx4",
+      "text": "lx4"
+    },
+    {
+      "name": "lx5",
+      "text": "lx5"
+    },
+    {
+      "name": "lx6",
+      "text": "lx6"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pdot0",
+      "text": "pdot0"
+    },
+    {
+      "name": "rl0",
+      "text": "rl0"
+    },
+    {
+      "name": "rl1",
+      "text": "rl1"
+    },
+    {
+      "name": "rl2",
+      "text": "rl2"
+    },
+    {
+      "name": "rl3",
+      "text": "rl3"
+    },
+    {
+      "name": "rl4",
+      "text": "rl4"
+    },
+    {
+      "name": "rl5",
+      "text": "rl5"
+    },
+    {
+      "name": "rl6",
+      "text": "rl6"
+    },
+    {
+      "name": "rr100",
+      "text": "rr100"
+    },
+    {
+      "name": "rr20",
+      "text": "rr20"
+    },
+    {
+      "name": "rr50",
+      "text": "rr50"
+    },
+    {
+      "name": "rs0",
+      "text": "rs0"
+    },
+    {
+      "name": "rs1",
+      "text": "rs1"
+    },
+    {
+      "name": "rs10",
+      "text": "rs10"
+    },
+    {
+      "name": "rs2",
+      "text": "rs2"
+    },
+    {
+      "name": "rs3",
+      "text": "rs3"
+    },
+    {
+      "name": "rs4",
+      "text": "rs4"
+    },
+    {
+      "name": "rs5",
+      "text": "rs5"
+    },
+    {
+      "name": "rs6",
+      "text": "rs6"
+    },
+    {
+      "name": "rsl10",
+      "text": "rsl10"
+    },
+    {
+      "name": "rsl11",
+      "text": "rsl11"
+    },
+    {
+      "name": "rsl12",
+      "text": "rsl12"
+    },
+    {
+      "name": "rsl13",
+      "text": "rsl13"
+    },
+    {
+      "name": "rsl15",
+      "text": "rsl15"
+    },
+    {
+      "name": "rsl16",
+      "text": "rsl16"
+    },
+    {
+      "name": "rsl20",
+      "text": "rsl20"
+    },
+    {
+      "name": "rsl21",
+      "text": "rsl21"
+    },
+    {
+      "name": "rsl22",
+      "text": "rsl22"
+    },
+    {
+      "name": "rsl23",
+      "text": "rsl23"
+    },
+    {
+      "name": "rsl25",
+      "text": "rsl25"
+    },
+    {
+      "name": "rsl26",
+      "text": "rsl26"
+    },
+    {
+      "name": "rsl30",
+      "text": "rsl30"
+    },
+    {
+      "name": "rsl31",
+      "text": "rsl31"
+    },
+    {
+      "name": "rsl32",
+      "text": "rsl32"
+    },
+    {
+      "name": "rsl33",
+      "text": "rsl33"
+    },
+    {
+      "name": "rsl35",
+      "text": "rsl35"
+    },
+    {
+      "name": "rsl36",
+      "text": "rsl36"
+    },
+    {
+      "name": "rsl40",
+      "text": "rsl40"
+    },
+    {
+      "name": "rsl41",
+      "text": "rsl41"
+    },
+    {
+      "name": "rsl42",
+      "text": "rsl42"
+    },
+    {
+      "name": "rsl43",
+      "text": "rsl43"
+    },
+    {
+      "name": "rsl45",
+      "text": "rsl45"
+    },
+    {
+      "name": "rsl46",
+      "text": "rsl46"
+    },
+    {
+      "name": "rsl50",
+      "text": "rsl50"
+    },
+    {
+      "name": "rsl51",
+      "text": "rsl51"
+    },
+    {
+      "name": "rsl52",
+      "text": "rsl52"
+    },
+    {
+      "name": "rsl53",
+      "text": "rsl53"
+    },
+    {
+      "name": "rsl55",
+      "text": "rsl55"
+    },
+    {
+      "name": "rsl56",
+      "text": "rsl56"
+    },
+    {
+      "name": "rsl60",
+      "text": "rsl60"
+    },
+    {
+      "name": "rsl61",
+      "text": "rsl61"
+    },
+    {
+      "name": "rsl62",
+      "text": "rsl62"
+    },
+    {
+      "name": "rsl63",
+      "text": "rsl63"
+    },
+    {
+      "name": "rsl65",
+      "text": "rsl65"
+    },
+    {
+      "name": "rsl66",
+      "text": "rsl66"
+    },
+    {
+      "name": "rsl70",
+      "text": "rsl70"
+    },
+    {
+      "name": "rsl71",
+      "text": "rsl71"
+    },
+    {
+      "name": "rsl72",
+      "text": "rsl72"
+    },
+    {
+      "name": "rsl73",
+      "text": "rsl73"
+    },
+    {
+      "name": "rsl75",
+      "text": "rsl75"
+    },
+    {
+      "name": "rsl76",
+      "text": "rsl76"
+    },
+    {
+      "name": "ule1",
+      "text": "ule1"
+    },
+    {
+      "name": "ule2",
+      "text": "ule2"
+    },
+    {
+      "name": "ule3",
+      "text": "ule3"
+    },
+    {
+      "name": "ule4",
+      "text": "ule4"
+    },
+    {
+      "name": "ule5",
+      "text": "ule5"
+    },
+    {
+      "name": "ule6",
+      "text": "ule6"
+    },
+    {
+      "name": "y0",
+      "text": "y0"
+    },
+    {
+      "name": "y1",
+      "text": "y1"
+    },
+    {
+      "name": "y2",
+      "text": "y2"
+    },
+    {
+      "name": "y3",
+      "text": "y3"
+    },
+    {
+      "name": "y4",
+      "text": "y4"
+    },
+    {
+      "name": "y5",
+      "text": "y5"
+    },
+    {
+      "name": "y6",
+      "text": "y6"
+    },
+    {
+      "name": "ygap0",
+      "text": "ygap0"
+    },
+    {
+      "name": "ygap10",
+      "text": "ygap10"
+    },
+    {
+      "name": "ygapl10",
+      "text": "ygapl10"
+    },
+    {
+      "name": "yl10",
+      "text": "yl10"
+    },
+    {
+      "name": "yl11",
+      "text": "yl11"
+    },
+    {
+      "name": "yl12",
+      "text": "yl12"
+    },
+    {
+      "name": "yl13",
+      "text": "yl13"
+    },
+    {
+      "name": "yl14",
+      "text": "yl14"
+    },
+    {
+      "name": "yl15",
+      "text": "yl15"
+    },
+    {
+      "name": "yl16",
+      "text": "yl16"
+    },
+    {
+      "name": "yl20",
+      "text": "yl20"
+    },
+    {
+      "name": "yl21",
+      "text": "yl21"
+    },
+    {
+      "name": "yl22",
+      "text": "yl22"
+    },
+    {
+      "name": "yl23",
+      "text": "yl23"
+    },
+    {
+      "name": "yl24",
+      "text": "yl24"
+    },
+    {
+      "name": "yl25",
+      "text": "yl25"
+    },
+    {
+      "name": "yl26",
+      "text": "yl26"
+    },
+    {
+      "name": "yl30",
+      "text": "yl30"
+    },
+    {
+      "name": "yl31",
+      "text": "yl31"
+    },
+    {
+      "name": "yl32",
+      "text": "yl32"
+    },
+    {
+      "name": "yl33",
+      "text": "yl33"
+    },
+    {
+      "name": "yl34",
+      "text": "yl34"
+    },
+    {
+      "name": "yl35",
+      "text": "yl35"
+    },
+    {
+      "name": "yl36",
+      "text": "yl36"
+    },
+    {
+      "name": "yl40",
+      "text": "yl40"
+    },
+    {
+      "name": "yl41",
+      "text": "yl41"
+    },
+    {
+      "name": "yl42",
+      "text": "yl42"
+    },
+    {
+      "name": "yl43",
+      "text": "yl43"
+    },
+    {
+      "name": "yl44",
+      "text": "yl44"
+    },
+    {
+      "name": "yl45",
+      "text": "yl45"
+    },
+    {
+      "name": "yl46",
+      "text": "yl46"
+    },
+    {
+      "name": "yl50",
+      "text": "yl50"
+    },
+    {
+      "name": "yl51",
+      "text": "yl51"
+    },
+    {
+      "name": "yl52",
+      "text": "yl52"
+    },
+    {
+      "name": "yl53",
+      "text": "yl53"
+    },
+    {
+      "name": "yl54",
+      "text": "yl54"
+    },
+    {
+      "name": "yl55",
+      "text": "yl55"
+    },
+    {
+      "name": "yl56",
+      "text": "yl56"
+    },
+    {
+      "name": "yl60",
+      "text": "yl60"
+    },
+    {
+      "name": "yl61",
+      "text": "yl61"
+    },
+    {
+      "name": "yl62",
+      "text": "yl62"
+    },
+    {
+      "name": "yl63",
+      "text": "yl63"
+    },
+    {
+      "name": "yl64",
+      "text": "yl64"
+    },
+    {
+      "name": "yl65",
+      "text": "yl65"
+    },
+    {
+      "name": "yl66",
+      "text": "yl66"
+    },
+    {
+      "name": "yl70",
+      "text": "yl70"
+    },
+    {
+      "name": "yl71",
+      "text": "yl71"
+    },
+    {
+      "name": "yl72",
+      "text": "yl72"
+    },
+    {
+      "name": "yl73",
+      "text": "yl73"
+    },
+    {
+      "name": "yl74",
+      "text": "yl74"
+    },
+    {
+      "name": "yl75",
+      "text": "yl75"
+    },
+    {
+      "name": "yl76",
+      "text": "yl76"
+    }
+  ]
+}

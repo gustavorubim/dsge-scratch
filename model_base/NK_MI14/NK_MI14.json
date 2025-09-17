@@ -1,0 +1,216 @@
+{
+  "$schema": "model",
+  "name": "NK_MI14",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Michaillat (2014)",
+    "paper_title": "A Theory of Countercyclical Government Multiplier",
+    "journal": "American Economic Journal: Macroeconomics, 6(1): 190-217",
+    "replicants_name": "Mariia Bondnar",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Michaillat, Pascal"
+    ]
+  },
+  "msr": [
+    "0.6",
+    "0",
+    "0",
+    "0",
+    "1.5*0.4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "Technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_flex",
+      "text": "c_flex"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "f_flex",
+      "text": "f_flex"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "gendo",
+      "text": "gendo"
+    },
+    {
+      "name": "h",
+      "text": "h"
+    },
+    {
+      "name": "h_flex",
+      "text": "h_flex"
+    },
+    {
+      "name": "hireg",
+      "text": "hireg"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "l_flex",
+      "text": "l_flex"
+    },
+    {
+      "name": "mpl",
+      "text": "mpl"
+    },
+    {
+      "name": "mpl_flex",
+      "text": "mpl_flex"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "n_flex",
+      "text": "n_flex"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pie",
+      "text": "pie"
+    },
+    {
+      "name": "pie_flex",
+      "text": "pie_flex"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_flex",
+      "text": "R_flex"
+    },
+    {
+      "name": "th",
+      "text": "th"
+    },
+    {
+      "name": "th_flex",
+      "text": "th_flex"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "u_flex",
+      "text": "u_flex"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_flex",
+      "text": "y_flex"
+    }
+  ]
+}

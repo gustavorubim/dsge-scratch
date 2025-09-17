@@ -1,0 +1,230 @@
+{
+  "$schema": "model",
+  "name": "EA_CW05fm",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Coenen & Wieland (2005) II",
+    "paper_title": "A small estimated euro area model with rational expectations and nominal rigidities",
+    "journal": "European Economic Review 49(5), pp. 1081-1104",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "Calibrated for Fuhrer-Moore-staggered contracts",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Coenen, Günther",
+      "Wieland, Volker"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_cw",
+      "text": "e_cw"
+    },
+    {
+      "name": "e_d",
+      "text": "e_d"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cwp",
+      "text": "cwp"
+    },
+    {
+      "name": "dis",
+      "text": "dis"
+    },
+    {
+      "name": "il",
+      "text": "il"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "is",
+      "text": "is"
+    },
+    {
+      "name": "lagcwp1",
+      "text": "lagcwp1"
+    },
+    {
+      "name": "lagcwp2",
+      "text": "lagcwp2"
+    },
+    {
+      "name": "lagpi1",
+      "text": "lagpi1"
+    },
+    {
+      "name": "lagpi2",
+      "text": "lagpi2"
+    },
+    {
+      "name": "lagq1",
+      "text": "lagq1"
+    },
+    {
+      "name": "ldis1",
+      "text": "ldis1"
+    },
+    {
+      "name": "ldis2",
+      "text": "ldis2"
+    },
+    {
+      "name": "ldis3",
+      "text": "ldis3"
+    },
+    {
+      "name": "ldis4",
+      "text": "ldis4"
+    },
+    {
+      "name": "ldis5",
+      "text": "ldis5"
+    },
+    {
+      "name": "ldis6",
+      "text": "ldis6"
+    },
+    {
+      "name": "ldpi1",
+      "text": "ldpi1"
+    },
+    {
+      "name": "ldpi2",
+      "text": "ldpi2"
+    },
+    {
+      "name": "ldpi3",
+      "text": "ldpi3"
+    },
+    {
+      "name": "ldpi4",
+      "text": "ldpi4"
+    },
+    {
+      "name": "ldpi5",
+      "text": "ldpi5"
+    },
+    {
+      "name": "ldpi6",
+      "text": "ldpi6"
+    },
+    {
+      "name": "ldpi7",
+      "text": "ldpi7"
+    },
+    {
+      "name": "ldq1",
+      "text": "ldq1"
+    },
+    {
+      "name": "ldq2",
+      "text": "ldq2"
+    },
+    {
+      "name": "ldvindex1",
+      "text": "ldvindex1"
+    },
+    {
+      "name": "ldvindex2",
+      "text": "ldvindex2"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi1",
+      "text": "pi1"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "rl",
+      "text": "rl"
+    },
+    {
+      "name": "vindex",
+      "text": "vindex"
+    }
+  ]
+}

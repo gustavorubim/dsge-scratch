@@ -1,0 +1,114 @@
+{
+  "$schema": "model",
+  "name": "NK_CGG99",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Clarida et al. (1999)",
+    "paper_title": "The Science of Monetary Policy: A New Keynesian Perspective",
+    "journal": "Journal of Economic Literature 37(4), pp. 1661-1707",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Clarida, Richard",
+      "Gali, Jordí",
+      "Gertler, Mark"
+    ]
+  },
+  "msr": [
+    "0.79",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*2.15",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*.93/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "demand_",
+      "text": "Demand shock"
+    },
+    {
+      "name": "inflation_",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    }
+  ]
+}

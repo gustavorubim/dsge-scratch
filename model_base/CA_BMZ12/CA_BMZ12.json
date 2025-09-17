@@ -1,0 +1,366 @@
+{
+  "$schema": "model",
+  "name": "CA_BMZ12",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Bailliu et al. (2012)",
+    "paper_title": "Macroprudential rules and monetary policy when financial frictions matter",
+    "journal": "Bank of Canada Working Paper 2012-6",
+    "replicants_name": "Original code provided (Leonhard Czerny and Sungtaek Kwon edited)",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Bailliu, Jeannine",
+      "Zhang, Yahong",
+      "Meh, Césaire A."
+    ]
+  },
+  "msr": [
+    "1.7145",
+    "0",
+    "0",
+    "0",
+    "(1-0.7145)*1.7062",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.7145)*0.0776*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsft",
+      "text": "epsft"
+    },
+    {
+      "name": "epspt",
+      "text": "Preference shock"
+    },
+    {
+      "name": "epsxt",
+      "text": "epsxt"
+    },
+    {
+      "name": "epszt",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "auxt",
+      "text": "auxt"
+    },
+    {
+      "name": "auxtfp",
+      "text": "auxtfp"
+    },
+    {
+      "name": "bigXt",
+      "text": "bigXt"
+    },
+    {
+      "name": "bigZt",
+      "text": "bigZt"
+    },
+    {
+      "name": "bt",
+      "text": "bt"
+    },
+    {
+      "name": "ce",
+      "text": "ce"
+    },
+    {
+      "name": "cg",
+      "text": "cg"
+    },
+    {
+      "name": "cgn",
+      "text": "cgn"
+    },
+    {
+      "name": "ct",
+      "text": "Consumption"
+    },
+    {
+      "name": "ctfp",
+      "text": "ctfp"
+    },
+    {
+      "name": "efc",
+      "text": "efc"
+    },
+    {
+      "name": "eqti",
+      "text": "eqti"
+    },
+    {
+      "name": "expi",
+      "text": "expi"
+    },
+    {
+      "name": "ft",
+      "text": "ft"
+    },
+    {
+      "name": "ht",
+      "text": "ht"
+    },
+    {
+      "name": "htb",
+      "text": "htb"
+    },
+    {
+      "name": "htfp",
+      "text": "htfp"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "it",
+      "text": "Investment"
+    },
+    {
+      "name": "itfp",
+      "text": "itfp"
+    },
+    {
+      "name": "kc",
+      "text": "kc"
+    },
+    {
+      "name": "kl",
+      "text": "kl"
+    },
+    {
+      "name": "kt",
+      "text": "Capital"
+    },
+    {
+      "name": "ktfp",
+      "text": "ktfp"
+    },
+    {
+      "name": "lambdat",
+      "text": "lambdat"
+    },
+    {
+      "name": "lambdatfp",
+      "text": "lambdatfp"
+    },
+    {
+      "name": "lev",
+      "text": "lev"
+    },
+    {
+      "name": "llt",
+      "text": "llt"
+    },
+    {
+      "name": "lltfp",
+      "text": "lltfp"
+    },
+    {
+      "name": "lnit",
+      "text": "lnit"
+    },
+    {
+      "name": "lnygap",
+      "text": "lnygap"
+    },
+    {
+      "name": "lnyt",
+      "text": "lnyt"
+    },
+    {
+      "name": "mcb",
+      "text": "mcb"
+    },
+    {
+      "name": "mcc",
+      "text": "mcc"
+    },
+    {
+      "name": "mcd",
+      "text": "mcd"
+    },
+    {
+      "name": "mce",
+      "text": "mce"
+    },
+    {
+      "name": "mck",
+      "text": "mck"
+    },
+    {
+      "name": "mcl",
+      "text": "mcl"
+    },
+    {
+      "name": "mct",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "mctfp",
+      "text": "mctfp"
+    },
+    {
+      "name": "mpk",
+      "text": "mpk"
+    },
+    {
+      "name": "mpl",
+      "text": "mpl"
+    },
+    {
+      "name": "nt",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pit",
+      "text": "pit"
+    },
+    {
+      "name": "pref",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "pstart",
+      "text": "pstart"
+    },
+    {
+      "name": "qgap",
+      "text": "qgap"
+    },
+    {
+      "name": "qt",
+      "text": "qt"
+    },
+    {
+      "name": "qtfp",
+      "text": "qtfp"
+    },
+    {
+      "name": "rkt",
+      "text": "rkt"
+    },
+    {
+      "name": "rktfp",
+      "text": "rktfp"
+    },
+    {
+      "name": "rnt",
+      "text": "rnt"
+    },
+    {
+      "name": "rntfp",
+      "text": "rntfp"
+    },
+    {
+      "name": "rw",
+      "text": "rw"
+    },
+    {
+      "name": "st",
+      "text": "st"
+    },
+    {
+      "name": "ste",
+      "text": "ste"
+    },
+    {
+      "name": "taut",
+      "text": "taut"
+    },
+    {
+      "name": "uu",
+      "text": "uu"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
+    },
+    {
+      "name": "xt",
+      "text": "xt"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    },
+    {
+      "name": "yt",
+      "text": "yt"
+    },
+    {
+      "name": "ytfp",
+      "text": "ytfp"
+    },
+    {
+      "name": "zt",
+      "text": "Technology shock process"
+    }
+  ]
+}

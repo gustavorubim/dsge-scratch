@@ -1,0 +1,182 @@
+{
+  "$schema": "model",
+  "name": "US_FM95AL",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Fuhrer & Moore (1995) AL",
+    "paper_title": "Inflation persistence",
+    "journal": "The Quarterly Journal of Economics 110(1), pp. 127-159",
+    "replicants_name": "V.Audzei and S. Schmidt\n",
+    "pub_date": "1995",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Fuhrer, Jeff",
+      "Moore, George "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "ypsilon",
+      "ytilde",
+      "rho",
+      "infl",
+      "inflationq",
+      "ytildef",
+      "ytildeff",
+      "ypsilonf",
+      "ypsilonff"
+    ],
+    "states_short": [
+      "interest",
+      "inflationql",
+      "ytildel",
+      "z",
+      "zl",
+      "zll",
+      "ytilde",
+      "inflationq"
+    ],
+    "states_long": [
+      "interest",
+      "inflationql",
+      "inflationql2",
+      "ytildel",
+      "z",
+      "zl",
+      "zll",
+      "ytilde",
+      "inflationq"
+    ]
+  },
+  "shocks": [
+    {
+      "name": "epsilon_p",
+      "text": "epsilon_p"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "Demand shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "variables": [
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "rho",
+      "text": "rho"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xl",
+      "text": "xl"
+    },
+    {
+      "name": "xll",
+      "text": "xll"
+    },
+    {
+      "name": "ypsilon",
+      "text": "ypsilon"
+    },
+    {
+      "name": "ypsilonf",
+      "text": "ypsilonf"
+    },
+    {
+      "name": "ypsilonff",
+      "text": "ypsilonff"
+    },
+    {
+      "name": "ytilde",
+      "text": "ytilde"
+    },
+    {
+      "name": "ytildef",
+      "text": "ytildef"
+    },
+    {
+      "name": "ytildeff",
+      "text": "ytildeff"
+    },
+    {
+      "name": "ytildel",
+      "text": "ytildel"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zl",
+      "text": "zl"
+    },
+    {
+      "name": "zll",
+      "text": "zll"
+    }
+  ]
+}

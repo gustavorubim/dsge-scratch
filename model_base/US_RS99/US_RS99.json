@@ -1,0 +1,91 @@
+{
+  "$schema": "model",
+  "name": "US_RS99",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rudebusch & Svensson (1999)",
+    "paper_title": "Policy rules for inflation targeting",
+    "journal": "Journal of Economic Dynamics & Control 32, pp. 2512-2535",
+    "replicants_name": null,
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Rudebusch, Glenn",
+      "Svennson, Lars E.O."
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eta",
+      "text": "Demand shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "ibar",
+      "text": "ibar"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pibar",
+      "text": "pibar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    }
+  ]
+}

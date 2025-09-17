@@ -1,0 +1,331 @@
+{
+  "$schema": "model",
+  "name": "NK_GK09lin",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gertler & Karadi (2009)",
+    "paper_title": "A Model of Unconvetional Monetary Policy",
+    "journal": "Journal of Monetary Economics 58(1), pp. 17-34",
+    "replicants_name": "Tong Wang, Xiaobei He",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "Working Paper Version of 2011",
+    "category": "Calibrated model",
+    "authors": [
+      "Gertler, Mark",
+      "Karadi, Peter "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_epsilon",
+      "text": "e_epsilon"
+    },
+    {
+      "name": "e_n",
+      "text": "Net worth shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "af",
+      "text": "af"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "delta",
+      "text": "delta"
+    },
+    {
+      "name": "deltaf",
+      "text": "deltaf"
+    },
+    {
+      "name": "efp",
+      "text": "efp"
+    },
+    {
+      "name": "efpf",
+      "text": "efpf"
+    },
+    {
+      "name": "epsilon",
+      "text": "epsilon"
+    },
+    {
+      "name": "epsilonf",
+      "text": "epsilonf"
+    },
+    {
+      "name": "erk",
+      "text": "erk"
+    },
+    {
+      "name": "erkf",
+      "text": "erkf"
+    },
+    {
+      "name": "eta",
+      "text": "eta"
+    },
+    {
+      "name": "etaf",
+      "text": "etaf"
+    },
+    {
+      "name": "f",
+      "text": "f"
+    },
+    {
+      "name": "f1",
+      "text": "f1"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "in",
+      "text": "in"
+    },
+    {
+      "name": "inf1",
+      "text": "inf1"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "n",
+      "text": "n"
+    },
+    {
+      "name": "ne",
+      "text": "ne"
+    },
+    {
+      "name": "nef",
+      "text": "nef"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "nn",
+      "text": "nn"
+    },
+    {
+      "name": "nnf",
+      "text": "nnf"
+    },
+    {
+      "name": "nu",
+      "text": "nu"
+    },
+    {
+      "name": "nuf",
+      "text": "nuf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "phic",
+      "text": "phic"
+    },
+    {
+      "name": "phicf",
+      "text": "phicf"
+    },
+    {
+      "name": "phif",
+      "text": "phif"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pistar",
+      "text": "pistar"
+    },
+    {
+      "name": "pm",
+      "text": "pm"
+    },
+    {
+      "name": "pmn",
+      "text": "pmn"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rn",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uc",
+      "text": "uc"
+    },
+    {
+      "name": "ucf",
+      "text": "ucf"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "ym",
+      "text": "ym"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    }
+  ]
+}

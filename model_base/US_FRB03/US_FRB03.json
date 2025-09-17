@@ -1,0 +1,1372 @@
+{
+  "$schema": "model",
+  "name": "US_FRB03",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Federal Reserve Board model I",
+    "paper_title": "The Performance of Forecast-Based Monetary Policy Rules under Model Uncertainty",
+    "journal": "American Economic Review 93 (3), pp. 622-645",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2003",
+    "keywords": [],
+    "description": "Linearized as in Levin et al. (2003)",
+    "category": "Estimated US model",
+    "authors": [
+      "Levin, Andrew",
+      "Wieland, Volker",
+      "Taylor, John B."
+    ]
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false,
+  "shocks": [
+    {
+      "name": "dlfgdp_",
+      "text": "dlfgdp_"
+    },
+    {
+      "name": "dlfpc_",
+      "text": "dlfpc_"
+    },
+    {
+      "name": "dlfpxr_",
+      "text": "dlfpxr_"
+    },
+    {
+      "name": "dlpl_",
+      "text": "dlpl_"
+    },
+    {
+      "name": "dlpxp_",
+      "text": "dlpxp_"
+    },
+    {
+      "name": "ec_",
+      "text": "ec_"
+    },
+    {
+      "name": "ecdo_",
+      "text": "ecdo_"
+    },
+    {
+      "name": "ecdv_",
+      "text": "ecdv_"
+    },
+    {
+      "name": "egsi_",
+      "text": "egsi_"
+    },
+    {
+      "name": "egsl_",
+      "text": "egsl_"
+    },
+    {
+      "name": "egso_",
+      "text": "egso_"
+    },
+    {
+      "name": "eh_",
+      "text": "eh_"
+    },
+    {
+      "name": "emo_",
+      "text": "emo_"
+    },
+    {
+      "name": "epd_",
+      "text": "epd_"
+    },
+    {
+      "name": "eps_",
+      "text": "eps_"
+    },
+    {
+      "name": "ex_",
+      "text": "ex_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "gftrd_",
+      "text": "gftrd_"
+    },
+    {
+      "name": "gstrd_",
+      "text": "gstrd_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "kimt_",
+      "text": "kimt_"
+    },
+    {
+      "name": "kio_",
+      "text": "kio_"
+    },
+    {
+      "name": "leor_",
+      "text": "leor_"
+    },
+    {
+      "name": "lep_",
+      "text": "lep_"
+    },
+    {
+      "name": "lf_",
+      "text": "lf_"
+    },
+    {
+      "name": "lhp_",
+      "text": "lhp_"
+    },
+    {
+      "name": "lwps_",
+      "text": "lwps_"
+    },
+    {
+      "name": "pcengr_",
+      "text": "pcengr_"
+    },
+    {
+      "name": "pcr_",
+      "text": "pcr_"
+    },
+    {
+      "name": "pgasr_",
+      "text": "pgasr_"
+    },
+    {
+      "name": "pmor_",
+      "text": "pmor_"
+    },
+    {
+      "name": "poilr_",
+      "text": "poilr_"
+    },
+    {
+      "name": "ptr_",
+      "text": "ptr_"
+    },
+    {
+      "name": "rcar_",
+      "text": "rcar_"
+    },
+    {
+      "name": "rcbe_",
+      "text": "rcbe_"
+    },
+    {
+      "name": "rdp_",
+      "text": "rdp_"
+    },
+    {
+      "name": "rffvar_",
+      "text": "rffvar_"
+    },
+    {
+      "name": "rg10e_",
+      "text": "rg10e_"
+    },
+    {
+      "name": "rg5e_",
+      "text": "rg5e_"
+    },
+    {
+      "name": "rgfint_",
+      "text": "rgfint_"
+    },
+    {
+      "name": "rme_",
+      "text": "rme_"
+    },
+    {
+      "name": "rtbe_",
+      "text": "rtbe_"
+    },
+    {
+      "name": "rtr_",
+      "text": "rtr_"
+    },
+    {
+      "name": "trfci_",
+      "text": "trfci_"
+    },
+    {
+      "name": "trfp_",
+      "text": "trfp_"
+    },
+    {
+      "name": "trsci_",
+      "text": "trsci_"
+    },
+    {
+      "name": "trsib_",
+      "text": "trsib_"
+    },
+    {
+      "name": "trsp_",
+      "text": "trsp_"
+    },
+    {
+      "name": "trssi_",
+      "text": "trssi_"
+    },
+    {
+      "name": "yhibnr_",
+      "text": "yhibnr_"
+    },
+    {
+      "name": "ynidnr_",
+      "text": "ynidnr_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cashfl",
+      "text": "cashfl"
+    },
+    {
+      "name": "dlepl1",
+      "text": "dlepl1"
+    },
+    {
+      "name": "dlepl3",
+      "text": "dlepl3"
+    },
+    {
+      "name": "dlepl5",
+      "text": "dlepl5"
+    },
+    {
+      "name": "dlfpc",
+      "text": "dlfpc"
+    },
+    {
+      "name": "dlfpcl2",
+      "text": "dlfpcl2"
+    },
+    {
+      "name": "dlfpx",
+      "text": "dlfpx"
+    },
+    {
+      "name": "dlfpxl2",
+      "text": "dlfpxl2"
+    },
+    {
+      "name": "dlfpxr",
+      "text": "dlfpxr"
+    },
+    {
+      "name": "dlpl",
+      "text": "dlpl"
+    },
+    {
+      "name": "dlpll2",
+      "text": "dlpll2"
+    },
+    {
+      "name": "dlpxp",
+      "text": "dlpxp"
+    },
+    {
+      "name": "dlpxpf2",
+      "text": "dlpxpf2"
+    },
+    {
+      "name": "dlpxpl2",
+      "text": "dlpxpl2"
+    },
+    {
+      "name": "drffe",
+      "text": "drffe"
+    },
+    {
+      "name": "dxbl1",
+      "text": "dxbl1"
+    },
+    {
+      "name": "dxbl3",
+      "text": "dxbl3"
+    },
+    {
+      "name": "dxbl5",
+      "text": "dxbl5"
+    },
+    {
+      "name": "ec",
+      "text": "ec"
+    },
+    {
+      "name": "ecd",
+      "text": "ecd"
+    },
+    {
+      "name": "ecdo",
+      "text": "ecdo"
+    },
+    {
+      "name": "ecdv",
+      "text": "ecdv"
+    },
+    {
+      "name": "ecnd",
+      "text": "ecnd"
+    },
+    {
+      "name": "ecnia",
+      "text": "ecnia"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "egf",
+      "text": "egf"
+    },
+    {
+      "name": "egfi",
+      "text": "egfi"
+    },
+    {
+      "name": "egfi_",
+      "text": "egfi_"
+    },
+    {
+      "name": "egfil2",
+      "text": "egfil2"
+    },
+    {
+      "name": "egfl",
+      "text": "egfl"
+    },
+    {
+      "name": "egfl_",
+      "text": "egfl_"
+    },
+    {
+      "name": "egfll2",
+      "text": "egfll2"
+    },
+    {
+      "name": "egfo",
+      "text": "egfo"
+    },
+    {
+      "name": "egfol2",
+      "text": "egfol2"
+    },
+    {
+      "name": "egfos",
+      "text": "egfos"
+    },
+    {
+      "name": "egs",
+      "text": "egs"
+    },
+    {
+      "name": "egsi",
+      "text": "egsi"
+    },
+    {
+      "name": "egsil2",
+      "text": "egsil2"
+    },
+    {
+      "name": "egsl",
+      "text": "egsl"
+    },
+    {
+      "name": "egsll2",
+      "text": "egsll2"
+    },
+    {
+      "name": "egso",
+      "text": "egso"
+    },
+    {
+      "name": "egsol2",
+      "text": "egsol2"
+    },
+    {
+      "name": "eh",
+      "text": "eh"
+    },
+    {
+      "name": "ei",
+      "text": "ei"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "emo",
+      "text": "emo"
+    },
+    {
+      "name": "epd",
+      "text": "epd"
+    },
+    {
+      "name": "epdl2",
+      "text": "epdl2"
+    },
+    {
+      "name": "eps",
+      "text": "eps"
+    },
+    {
+      "name": "epsl2",
+      "text": "epsl2"
+    },
+    {
+      "name": "ex",
+      "text": "ex"
+    },
+    {
+      "name": "fcbnr",
+      "text": "fcbnr"
+    },
+    {
+      "name": "fgdp",
+      "text": "fgdp"
+    },
+    {
+      "name": "fgdpl2",
+      "text": "fgdpl2"
+    },
+    {
+      "name": "fgdpl4",
+      "text": "fgdpl4"
+    },
+    {
+      "name": "fgdpl6",
+      "text": "fgdpl6"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "fninr",
+      "text": "fninr"
+    },
+    {
+      "name": "fpxr",
+      "text": "fpxr"
+    },
+    {
+      "name": "gfdbtnr",
+      "text": "gfdbtnr"
+    },
+    {
+      "name": "gfdbtyl2",
+      "text": "gfdbtyl2"
+    },
+    {
+      "name": "gfdbtyl4",
+      "text": "gfdbtyl4"
+    },
+    {
+      "name": "gfdefnr",
+      "text": "gfdefnr"
+    },
+    {
+      "name": "gfintnr",
+      "text": "gfintnr"
+    },
+    {
+      "name": "gftrd",
+      "text": "gftrd"
+    },
+    {
+      "name": "gsdbtnr",
+      "text": "gsdbtnr"
+    },
+    {
+      "name": "gsdbtyl2",
+      "text": "gsdbtyl2"
+    },
+    {
+      "name": "gsdbtyl4",
+      "text": "gsdbtyl4"
+    },
+    {
+      "name": "gsintnr",
+      "text": "gsintnr"
+    },
+    {
+      "name": "gssrpnr",
+      "text": "gssrpnr"
+    },
+    {
+      "name": "gstrd",
+      "text": "gstrd"
+    },
+    {
+      "name": "hgxemo",
+      "text": "hgxemo"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "jccanr",
+      "text": "jccanr"
+    },
+    {
+      "name": "kcd",
+      "text": "kcd"
+    },
+    {
+      "name": "kh",
+      "text": "kh"
+    },
+    {
+      "name": "kimt",
+      "text": "kimt"
+    },
+    {
+      "name": "kimtl2",
+      "text": "kimtl2"
+    },
+    {
+      "name": "kio",
+      "text": "kio"
+    },
+    {
+      "name": "kpd",
+      "text": "kpd"
+    },
+    {
+      "name": "kps",
+      "text": "kps"
+    },
+    {
+      "name": "leh",
+      "text": "leh"
+    },
+    {
+      "name": "leor",
+      "text": "leor"
+    },
+    {
+      "name": "lep",
+      "text": "lep"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "lhp",
+      "text": "lhp"
+    },
+    {
+      "name": "lprdgt",
+      "text": "lprdgt"
+    },
+    {
+      "name": "ltfpt",
+      "text": "ltfpt"
+    },
+    {
+      "name": "lur",
+      "text": "lur"
+    },
+    {
+      "name": "lurnat",
+      "text": "lurnat"
+    },
+    {
+      "name": "lwps",
+      "text": "lwps"
+    },
+    {
+      "name": "lwpss",
+      "text": "lwpss"
+    },
+    {
+      "name": "lzdxb",
+      "text": "lzdxb"
+    },
+    {
+      "name": "lzec1",
+      "text": "lzec1"
+    },
+    {
+      "name": "lzec2",
+      "text": "lzec2"
+    },
+    {
+      "name": "lzec3",
+      "text": "lzec3"
+    },
+    {
+      "name": "lzec4",
+      "text": "lzec4"
+    },
+    {
+      "name": "lzgapc1",
+      "text": "lzgapc1"
+    },
+    {
+      "name": "lzgapc2",
+      "text": "lzgapc2"
+    },
+    {
+      "name": "lzgapc3",
+      "text": "lzgapc3"
+    },
+    {
+      "name": "lzkimt",
+      "text": "lzkimt"
+    },
+    {
+      "name": "lzlhp",
+      "text": "lzlhp"
+    },
+    {
+      "name": "lzlur1",
+      "text": "lzlur1"
+    },
+    {
+      "name": "lzlur2",
+      "text": "lzlur2"
+    },
+    {
+      "name": "lzpib5",
+      "text": "lzpib5"
+    },
+    {
+      "name": "lzpl",
+      "text": "lzpl"
+    },
+    {
+      "name": "lzpxp",
+      "text": "lzpxp"
+    },
+    {
+      "name": "lzrccdo",
+      "text": "lzrccdo"
+    },
+    {
+      "name": "lzrccdv",
+      "text": "lzrccdv"
+    },
+    {
+      "name": "lzrcch",
+      "text": "lzrcch"
+    },
+    {
+      "name": "lzsdv",
+      "text": "lzsdv"
+    },
+    {
+      "name": "lzvpd",
+      "text": "lzvpd"
+    },
+    {
+      "name": "lzxb",
+      "text": "lzxb"
+    },
+    {
+      "name": "lzynid",
+      "text": "lzynid"
+    },
+    {
+      "name": "one",
+      "text": "one"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pcengr",
+      "text": "pcengr"
+    },
+    {
+      "name": "pcengr10",
+      "text": "pcengr10"
+    },
+    {
+      "name": "pcengrl2",
+      "text": "pcengrl2"
+    },
+    {
+      "name": "pcengrl4",
+      "text": "pcengrl4"
+    },
+    {
+      "name": "pcengrl6",
+      "text": "pcengrl6"
+    },
+    {
+      "name": "pcengrl8",
+      "text": "pcengrl8"
+    },
+    {
+      "name": "pcf2",
+      "text": "pcf2"
+    },
+    {
+      "name": "pcl2",
+      "text": "pcl2"
+    },
+    {
+      "name": "pcr",
+      "text": "pcr"
+    },
+    {
+      "name": "pcrl2",
+      "text": "pcrl2"
+    },
+    {
+      "name": "pgasr",
+      "text": "pgasr"
+    },
+    {
+      "name": "pgasrl2",
+      "text": "pgasrl2"
+    },
+    {
+      "name": "pgdpr",
+      "text": "pgdpr"
+    },
+    {
+      "name": "picnia",
+      "text": "picnia"
+    },
+    {
+      "name": "picnia10",
+      "text": "picnia10"
+    },
+    {
+      "name": "picniaf2",
+      "text": "picniaf2"
+    },
+    {
+      "name": "picniaf4",
+      "text": "picniaf4"
+    },
+    {
+      "name": "picniaf6",
+      "text": "picniaf6"
+    },
+    {
+      "name": "picnial2",
+      "text": "picnial2"
+    },
+    {
+      "name": "picnial4",
+      "text": "picnial4"
+    },
+    {
+      "name": "picnial6",
+      "text": "picnial6"
+    },
+    {
+      "name": "picnial8",
+      "text": "picnial8"
+    },
+    {
+      "name": "pitarg",
+      "text": "pitarg"
+    },
+    {
+      "name": "plminr",
+      "text": "plminr"
+    },
+    {
+      "name": "plr",
+      "text": "plr"
+    },
+    {
+      "name": "pmor",
+      "text": "pmor"
+    },
+    {
+      "name": "pmorl2",
+      "text": "pmorl2"
+    },
+    {
+      "name": "poilr",
+      "text": "poilr"
+    },
+    {
+      "name": "poilrs",
+      "text": "poilrs"
+    },
+    {
+      "name": "ptr",
+      "text": "ptr"
+    },
+    {
+      "name": "pxbr",
+      "text": "pxbr"
+    },
+    {
+      "name": "pxbrl2",
+      "text": "pxbrl2"
+    },
+    {
+      "name": "pxgr",
+      "text": "pxgr"
+    },
+    {
+      "name": "pxp",
+      "text": "pxp"
+    },
+    {
+      "name": "qec",
+      "text": "qec"
+    },
+    {
+      "name": "qecl2",
+      "text": "qecl2"
+    },
+    {
+      "name": "qecl4",
+      "text": "qecl4"
+    },
+    {
+      "name": "qlhp",
+      "text": "qlhp"
+    },
+    {
+      "name": "qplr",
+      "text": "qplr"
+    },
+    {
+      "name": "qplrf2",
+      "text": "qplrf2"
+    },
+    {
+      "name": "qpmor",
+      "text": "qpmor"
+    },
+    {
+      "name": "qpxgr",
+      "text": "qpxgr"
+    },
+    {
+      "name": "qpxpr",
+      "text": "qpxpr"
+    },
+    {
+      "name": "qsdv",
+      "text": "qsdv"
+    },
+    {
+      "name": "qyhibnr",
+      "text": "qyhibnr"
+    },
+    {
+      "name": "qynidnr",
+      "text": "qynidnr"
+    },
+    {
+      "name": "rcar",
+      "text": "rcar"
+    },
+    {
+      "name": "rcbe",
+      "text": "rcbe"
+    },
+    {
+      "name": "rcbes",
+      "text": "rcbes"
+    },
+    {
+      "name": "rdp",
+      "text": "rdp"
+    },
+    {
+      "name": "rffe",
+      "text": "rffe"
+    },
+    {
+      "name": "rffel2",
+      "text": "rffel2"
+    },
+    {
+      "name": "rfftay",
+      "text": "rfftay"
+    },
+    {
+      "name": "rffvar",
+      "text": "rffvar"
+    },
+    {
+      "name": "rg10e",
+      "text": "rg10e"
+    },
+    {
+      "name": "rg10es",
+      "text": "rg10es"
+    },
+    {
+      "name": "rg5e",
+      "text": "rg5e"
+    },
+    {
+      "name": "rg5es",
+      "text": "rg5es"
+    },
+    {
+      "name": "rgfint",
+      "text": "rgfint"
+    },
+    {
+      "name": "rgsint",
+      "text": "rgsint"
+    },
+    {
+      "name": "rme",
+      "text": "rme"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "rtbe",
+      "text": "rtbe"
+    },
+    {
+      "name": "rtr",
+      "text": "rtr"
+    },
+    {
+      "name": "tfpnr",
+      "text": "tfpnr"
+    },
+    {
+      "name": "trfci",
+      "text": "trfci"
+    },
+    {
+      "name": "trfp",
+      "text": "trfp"
+    },
+    {
+      "name": "trfpt",
+      "text": "trfpt"
+    },
+    {
+      "name": "trsci",
+      "text": "trsci"
+    },
+    {
+      "name": "trsib",
+      "text": "trsib"
+    },
+    {
+      "name": "trsp",
+      "text": "trsp"
+    },
+    {
+      "name": "trspt",
+      "text": "trspt"
+    },
+    {
+      "name": "trssi",
+      "text": "trssi"
+    },
+    {
+      "name": "tryh",
+      "text": "tryh"
+    },
+    {
+      "name": "tspnr",
+      "text": "tspnr"
+    },
+    {
+      "name": "veoa",
+      "text": "veoa"
+    },
+    {
+      "name": "vpd",
+      "text": "vpd"
+    },
+    {
+      "name": "vpda",
+      "text": "vpda"
+    },
+    {
+      "name": "vpdl10",
+      "text": "vpdl10"
+    },
+    {
+      "name": "vpdl2",
+      "text": "vpdl2"
+    },
+    {
+      "name": "vpdl4",
+      "text": "vpdl4"
+    },
+    {
+      "name": "vpdl6",
+      "text": "vpdl6"
+    },
+    {
+      "name": "vpdl8",
+      "text": "vpdl8"
+    },
+    {
+      "name": "wpo",
+      "text": "wpo"
+    },
+    {
+      "name": "xb",
+      "text": "xb"
+    },
+    {
+      "name": "xbf2",
+      "text": "xbf2"
+    },
+    {
+      "name": "xbnr",
+      "text": "xbnr"
+    },
+    {
+      "name": "xg",
+      "text": "xg"
+    },
+    {
+      "name": "xgap",
+      "text": "xgap"
+    },
+    {
+      "name": "xgap2",
+      "text": "xgap2"
+    },
+    {
+      "name": "xgap2f2",
+      "text": "xgap2f2"
+    },
+    {
+      "name": "xgap2f4",
+      "text": "xgap2f4"
+    },
+    {
+      "name": "xgap2f6",
+      "text": "xgap2f6"
+    },
+    {
+      "name": "xgap2l2",
+      "text": "xgap2l2"
+    },
+    {
+      "name": "xgapl2",
+      "text": "xgapl2"
+    },
+    {
+      "name": "xgdp",
+      "text": "xgdp"
+    },
+    {
+      "name": "xgdpnr",
+      "text": "xgdpnr"
+    },
+    {
+      "name": "xgdpt",
+      "text": "xgdpt"
+    },
+    {
+      "name": "xgnr",
+      "text": "xgnr"
+    },
+    {
+      "name": "xgpot",
+      "text": "xgpot"
+    },
+    {
+      "name": "xothtl10",
+      "text": "xothtl10"
+    },
+    {
+      "name": "xothtl2",
+      "text": "xothtl2"
+    },
+    {
+      "name": "xothtl4",
+      "text": "xothtl4"
+    },
+    {
+      "name": "xothtl6",
+      "text": "xothtl6"
+    },
+    {
+      "name": "xothtl8",
+      "text": "xothtl8"
+    },
+    {
+      "name": "xp",
+      "text": "xp"
+    },
+    {
+      "name": "yh",
+      "text": "yh"
+    },
+    {
+      "name": "yhibnr",
+      "text": "yhibnr"
+    },
+    {
+      "name": "yhinr",
+      "text": "yhinr"
+    },
+    {
+      "name": "yhl",
+      "text": "yhl"
+    },
+    {
+      "name": "yhp",
+      "text": "yhp"
+    },
+    {
+      "name": "yhpntnr",
+      "text": "yhpntnr"
+    },
+    {
+      "name": "yht",
+      "text": "yht"
+    },
+    {
+      "name": "ynicpnr",
+      "text": "ynicpnr"
+    },
+    {
+      "name": "ynidnr",
+      "text": "ynidnr"
+    },
+    {
+      "name": "yniinr",
+      "text": "yniinr"
+    },
+    {
+      "name": "yninr",
+      "text": "yninr"
+    },
+    {
+      "name": "ypnr",
+      "text": "ypnr"
+    },
+    {
+      "name": "zdivgr",
+      "text": "zdivgr"
+    },
+    {
+      "name": "zdxb",
+      "text": "zdxb"
+    },
+    {
+      "name": "zdxbl2",
+      "text": "zdxbl2"
+    },
+    {
+      "name": "zec1",
+      "text": "zec1"
+    },
+    {
+      "name": "zec2",
+      "text": "zec2"
+    },
+    {
+      "name": "zec3",
+      "text": "zec3"
+    },
+    {
+      "name": "zec4",
+      "text": "zec4"
+    },
+    {
+      "name": "zertay",
+      "text": "zertay"
+    },
+    {
+      "name": "zervar",
+      "text": "zervar"
+    },
+    {
+      "name": "zgap05",
+      "text": "zgap05"
+    },
+    {
+      "name": "zgap10",
+      "text": "zgap10"
+    },
+    {
+      "name": "zgap30",
+      "text": "zgap30"
+    },
+    {
+      "name": "zgapc1",
+      "text": "zgapc1"
+    },
+    {
+      "name": "zgapc2",
+      "text": "zgapc2"
+    },
+    {
+      "name": "zgapc3",
+      "text": "zgapc3"
+    },
+    {
+      "name": "zkimt",
+      "text": "zkimt"
+    },
+    {
+      "name": "zkimtl2",
+      "text": "zkimtl2"
+    },
+    {
+      "name": "zlhp",
+      "text": "zlhp"
+    },
+    {
+      "name": "zlur1",
+      "text": "zlur1"
+    },
+    {
+      "name": "zlur1l2",
+      "text": "zlur1l2"
+    },
+    {
+      "name": "zlur2",
+      "text": "zlur2"
+    },
+    {
+      "name": "zlur2l2",
+      "text": "zlur2l2"
+    },
+    {
+      "name": "zpi05",
+      "text": "zpi05"
+    },
+    {
+      "name": "zpi10",
+      "text": "zpi10"
+    },
+    {
+      "name": "zpi30",
+      "text": "zpi30"
+    },
+    {
+      "name": "zpib5",
+      "text": "zpib5"
+    },
+    {
+      "name": "zpl",
+      "text": "zpl"
+    },
+    {
+      "name": "zpll2",
+      "text": "zpll2"
+    },
+    {
+      "name": "zpxp",
+      "text": "zpxp"
+    },
+    {
+      "name": "zpxpl2",
+      "text": "zpxpl2"
+    },
+    {
+      "name": "zrccdo",
+      "text": "zrccdo"
+    },
+    {
+      "name": "zrccdv",
+      "text": "zrccdv"
+    },
+    {
+      "name": "zrcch",
+      "text": "zrcch"
+    },
+    {
+      "name": "zrff05",
+      "text": "zrff05"
+    },
+    {
+      "name": "zrff10",
+      "text": "zrff10"
+    },
+    {
+      "name": "zrff30",
+      "text": "zrff30"
+    },
+    {
+      "name": "zsdv",
+      "text": "zsdv"
+    },
+    {
+      "name": "zvpd",
+      "text": "zvpd"
+    },
+    {
+      "name": "zvpdl2",
+      "text": "zvpdl2"
+    },
+    {
+      "name": "zxb",
+      "text": "zxb"
+    },
+    {
+      "name": "zxbl2",
+      "text": "zxbl2"
+    },
+    {
+      "name": "zyh",
+      "text": "zyh"
+    },
+    {
+      "name": "zyhp",
+      "text": "zyhp"
+    },
+    {
+      "name": "zyht",
+      "text": "zyht"
+    },
+    {
+      "name": "zynid",
+      "text": "zynid"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "model",
+  "name": "NK_GM05",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gali & Monacelli (2005)",
+    "paper_title": "Monetary policy and exchange rate volatility in a small open economy",
+    "journal": "Review of Economic Studies 72, pp. 707-734",
+    "replicants_name": "Likun Wang",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gali, Jordí",
+      "Monacelli, Tommaso"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ystar_",
+      "text": "ystar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "ph",
+      "text": "ph"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pih",
+      "text": "pih"
+    },
+    {
+      "name": "pistar",
+      "text": "pistar"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rnat",
+      "text": "rnat"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ynat",
+      "text": "ynat "
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    }
+  ]
+}

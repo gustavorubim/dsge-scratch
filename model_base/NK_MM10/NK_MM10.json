@@ -1,0 +1,402 @@
+{
+  "$schema": "model",
+  "name": "NK_MM10",
+  "capabilities": {
+    "rules": [
+      "GR",
+      "SW",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Meh & Moran (2010)",
+    "paper_title": "The role of bank capital in the propagation of shocks",
+    "journal": "Journal of Economic Dynamics and Control 34 (3), pp. 555-576",
+    "replicants_name": "Original code provided (R. Beyer and N. Balz edited)",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Meh, Césaire A.",
+      "Moran, Kevin"
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "(1-0.8)*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.8)*0.1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "techShock",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "bigA",
+      "text": "bigA"
+    },
+    {
+      "name": "bigAf",
+      "text": "bigAf"
+    },
+    {
+      "name": "bigN",
+      "text": "Entrepreneurial net worth"
+    },
+    {
+      "name": "bigNf",
+      "text": "bigNf"
+    },
+    {
+      "name": "CA",
+      "text": "CA"
+    },
+    {
+      "name": "CAf",
+      "text": "CAf"
+    },
+    {
+      "name": "Cb",
+      "text": "Cb"
+    },
+    {
+      "name": "Cbf",
+      "text": "Cbf"
+    },
+    {
+      "name": "Ce",
+      "text": "Ce"
+    },
+    {
+      "name": "Cef",
+      "text": "Cef"
+    },
+    {
+      "name": "ch",
+      "text": "ch"
+    },
+    {
+      "name": "chf",
+      "text": "chf"
+    },
+    {
+      "name": "denp",
+      "text": "denp"
+    },
+    {
+      "name": "denw",
+      "text": "denw"
+    },
+    {
+      "name": "expinfl",
+      "text": "expinfl"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "Gf",
+      "text": "Gf"
+    },
+    {
+      "name": "gY",
+      "text": "gY"
+    },
+    {
+      "name": "gYf",
+      "text": "gYf"
+    },
+    {
+      "name": "H",
+      "text": "Labour"
+    },
+    {
+      "name": "Hf",
+      "text": "Hf"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflf",
+      "text": "inflf"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "K",
+      "text": "Capital"
+    },
+    {
+      "name": "Kb",
+      "text": "Kb"
+    },
+    {
+      "name": "Kbf",
+      "text": "Kbf"
+    },
+    {
+      "name": "Ke",
+      "text": "Ke"
+    },
+    {
+      "name": "Kef",
+      "text": "Kef"
+    },
+    {
+      "name": "keff",
+      "text": "keff"
+    },
+    {
+      "name": "kefff",
+      "text": "kefff"
+    },
+    {
+      "name": "Kf",
+      "text": "Kf"
+    },
+    {
+      "name": "lam",
+      "text": "lam"
+    },
+    {
+      "name": "lamf",
+      "text": "lamf"
+    },
+    {
+      "name": "lbk",
+      "text": "lbk"
+    },
+    {
+      "name": "lmp",
+      "text": "lmp"
+    },
+    {
+      "name": "log_I",
+      "text": "log_I"
+    },
+    {
+      "name": "log_If",
+      "text": "log_If"
+    },
+    {
+      "name": "log_y",
+      "text": "log_y"
+    },
+    {
+      "name": "log_yf",
+      "text": "log_yf"
+    },
+    {
+      "name": "lz",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "mgrowth",
+      "text": "mgrowth"
+    },
+    {
+      "name": "nump",
+      "text": "nump"
+    },
+    {
+      "name": "numw",
+      "text": "numw"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "ptilde",
+      "text": "ptilde"
+    },
+    {
+      "name": "q",
+      "text": "Tobin's q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "Ra",
+      "text": "Ra"
+    },
+    {
+      "name": "Raf",
+      "text": "Raf"
+    },
+    {
+      "name": "Rd",
+      "text": "Rd"
+    },
+    {
+      "name": "Rdf",
+      "text": "Rdf"
+    },
+    {
+      "name": "rk",
+      "text": "Capital returns"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "s",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "sf",
+      "text": "sf"
+    },
+    {
+      "name": "smalld",
+      "text": "smalld"
+    },
+    {
+      "name": "smalldf",
+      "text": "smalldf"
+    },
+    {
+      "name": "TL",
+      "text": "TL"
+    },
+    {
+      "name": "TLf",
+      "text": "TLf"
+    },
+    {
+      "name": "totC",
+      "text": "Consumption"
+    },
+    {
+      "name": "totCf",
+      "text": "totCf"
+    },
+    {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w_b",
+      "text": "w_b"
+    },
+    {
+      "name": "w_bf",
+      "text": "w_bf"
+    },
+    {
+      "name": "w_e",
+      "text": "w_e"
+    },
+    {
+      "name": "w_ef",
+      "text": "w_ef"
+    },
+    {
+      "name": "w_h",
+      "text": "w_h"
+    },
+    {
+      "name": "w_hf",
+      "text": "w_hf"
+    },
+    {
+      "name": "wtilde",
+      "text": "wtilde"
+    },
+    {
+      "name": "wtildef",
+      "text": "wtildef"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "Yf",
+      "text": "Yf"
+    }
+  ]
+}

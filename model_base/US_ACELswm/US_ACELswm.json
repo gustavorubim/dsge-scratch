@@ -1,0 +1,376 @@
+{
+  "$schema": "model",
+  "name": "US_ACELswm",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Altig et al. (2005) III",
+    "paper_title": "Firm-specific capital, nominal rigidities",
+    "journal": "CEPR Discussion Papers 4858",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "No cost channel as in Taylor & Wieland (2011) (mon. pol. shock)",
+    "category": "Estimated US model",
+    "authors": [
+      "Altig, David",
+      "Christiano, Lawrence J.",
+      "Eichenbaum, Martin",
+      "Linde, Jesper"
+    ]
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.8)*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.8)*0.1*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_muups_",
+      "text": "eps_muups_"
+    },
+    {
+      "name": "eps_muz_",
+      "text": "eps_muz_"
+    },
+    {
+      "name": "epsilon_M_",
+      "text": "epsilon_M_"
+    },
+    {
+      "name": "epsilon_t_",
+      "text": "epsilon_t_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c_t",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_tlead",
+      "text": "c_tlead"
+    },
+    {
+      "name": "c_tpred",
+      "text": "c_tpred"
+    },
+    {
+      "name": "cf_t",
+      "text": "cf_t"
+    },
+    {
+      "name": "cf_tlead",
+      "text": "cf_tlead"
+    },
+    {
+      "name": "cf_tpred",
+      "text": "cf_tpred"
+    },
+    {
+      "name": "eps_M_t",
+      "text": "eps_M_t"
+    },
+    {
+      "name": "eps_muups_t",
+      "text": "eps_muups_t"
+    },
+    {
+      "name": "eps_muz_t",
+      "text": "eps_muz_t"
+    },
+    {
+      "name": "epsilon_t",
+      "text": "epsilon_t"
+    },
+    {
+      "name": "h_t",
+      "text": "Labour"
+    },
+    {
+      "name": "hf_t",
+      "text": "hf_t"
+    },
+    {
+      "name": "i_t",
+      "text": "Investment"
+    },
+    {
+      "name": "i_tlead",
+      "text": "i_tlead"
+    },
+    {
+      "name": "i_tpred",
+      "text": "i_tpred"
+    },
+    {
+      "name": "if_t",
+      "text": "if_t"
+    },
+    {
+      "name": "if_tlead",
+      "text": "if_tlead"
+    },
+    {
+      "name": "if_tpred",
+      "text": "if_tpred"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "kbar_t1",
+      "text": "Capital"
+    },
+    {
+      "name": "kbarf_t1",
+      "text": "kbarf_t1"
+    },
+    {
+      "name": "lambda_zstar_t",
+      "text": "lambda_zstar_t"
+    },
+    {
+      "name": "lambda_zstarf_t",
+      "text": "lambda_zstarf_t"
+    },
+    {
+      "name": "m_t",
+      "text": "m_t"
+    },
+    {
+      "name": "mf_t",
+      "text": "mf_t"
+    },
+    {
+      "name": "mu_ups_t",
+      "text": "mu_ups_t"
+    },
+    {
+      "name": "mu_z_t",
+      "text": "mu_z_t"
+    },
+    {
+      "name": "mutilde_t",
+      "text": "mutilde_t"
+    },
+    {
+      "name": "mutilde_tlead",
+      "text": "mutilde_tlead"
+    },
+    {
+      "name": "mutilde_tpred",
+      "text": "mutilde_tpred"
+    },
+    {
+      "name": "mutildef_t",
+      "text": "mutildef_t"
+    },
+    {
+      "name": "mutildef_tlead",
+      "text": "mutildef_tlead"
+    },
+    {
+      "name": "mutildef_tpred",
+      "text": "mutildef_tpred"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "pi_t",
+      "text": "pi_t"
+    },
+    {
+      "name": "pi_tlead",
+      "text": "pi_tlead"
+    },
+    {
+      "name": "pi_tpred",
+      "text": "pi_tpred"
+    },
+    {
+      "name": "pif_t",
+      "text": "pif_t"
+    },
+    {
+      "name": "pif_tlead",
+      "text": "pif_tlead"
+    },
+    {
+      "name": "pif_tpred",
+      "text": "pif_tpred"
+    },
+    {
+      "name": "q_t",
+      "text": "q_t"
+    },
+    {
+      "name": "qf_t",
+      "text": "qf_t"
+    },
+    {
+      "name": "R_t",
+      "text": "R_t"
+    },
+    {
+      "name": "Rf_t",
+      "text": "Rf_t"
+    },
+    {
+      "name": "rhotilde_t",
+      "text": "rhotilde_t"
+    },
+    {
+      "name": "rhotildef_t",
+      "text": "rhotildef_t"
+    },
+    {
+      "name": "s_t",
+      "text": "s_t"
+    },
+    {
+      "name": "sf_t",
+      "text": "sf_t"
+    },
+    {
+      "name": "u_t",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "u_tlead",
+      "text": "u_tlead"
+    },
+    {
+      "name": "u_tpred",
+      "text": "u_tpred"
+    },
+    {
+      "name": "uf_t",
+      "text": "uf_t"
+    },
+    {
+      "name": "uf_tlead",
+      "text": "uf_tlead"
+    },
+    {
+      "name": "uf_tpred",
+      "text": "uf_tpred"
+    },
+    {
+      "name": "wtilde_t",
+      "text": "wtilde_t"
+    },
+    {
+      "name": "wtilde_tlead",
+      "text": "wtilde_tlead"
+    },
+    {
+      "name": "wtilde_tpred",
+      "text": "wtilde_tpred"
+    },
+    {
+      "name": "wtildef_t",
+      "text": "wtildef_t"
+    },
+    {
+      "name": "wtildef_tlead",
+      "text": "wtildef_tlead"
+    },
+    {
+      "name": "wtildef_tpred",
+      "text": "wtildef_tpred"
+    },
+    {
+      "name": "x_M_t",
+      "text": "x_M_t"
+    },
+    {
+      "name": "x_t",
+      "text": "x_t"
+    },
+    {
+      "name": "x_ups_t",
+      "text": "x_ups_t"
+    },
+    {
+      "name": "x_z_t",
+      "text": "x_z_t"
+    },
+    {
+      "name": "xf_t",
+      "text": "xf_t"
+    },
+    {
+      "name": "ytilde_t",
+      "text": "ytilde_t"
+    },
+    {
+      "name": "ytildef_t",
+      "text": "ytildef_t"
+    }
+  ]
+}

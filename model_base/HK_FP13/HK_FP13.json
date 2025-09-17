@@ -1,0 +1,399 @@
+{
+  "$schema": "model",
+  "name": "HK_FP13",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Funke & Paetz (2013)",
+    "paper_title": "Housing prices and the business cycle: An empirical application to Hong Kong",
+    "journal": "Journal of Housing Economics 22 (1), pp. 62-76",
+    "replicants_name": "Matthias Burgert and Jinhyuk Yoo",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "Open-economy model of the Hong Kong economy",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Funke, Michael",
+      "Paetz, Michael"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa_c",
+      "text": "epsa_c"
+    },
+    {
+      "name": "epsa_d",
+      "text": "epsa_d"
+    },
+    {
+      "name": "epsc_ast",
+      "text": "epsc_ast"
+    },
+    {
+      "name": "epsd_ast",
+      "text": "epsd_ast"
+    },
+    {
+      "name": "epsd_b",
+      "text": "epsd_b"
+    },
+    {
+      "name": "epsd_s",
+      "text": "epsd_s"
+    },
+    {
+      "name": "epsd_stern",
+      "text": "epsd_stern"
+    },
+    {
+      "name": "epsLTV",
+      "text": "epsLTV"
+    },
+    {
+      "name": "epsmu_c",
+      "text": "epsmu_c"
+    },
+    {
+      "name": "epsmu_d",
+      "text": "epsmu_d"
+    },
+    {
+      "name": "epsp_c_ast",
+      "text": "epsp_c_ast"
+    },
+    {
+      "name": "epsp_d_ast",
+      "text": "epsp_d_ast"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a_c",
+      "text": "a_c"
+    },
+    {
+      "name": "a_d",
+      "text": "a_d"
+    },
+    {
+      "name": "b_b",
+      "text": "b_b"
+    },
+    {
+      "name": "b_bf",
+      "text": "b_bf"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "c_ast",
+      "text": "c_ast"
+    },
+    {
+      "name": "c_b",
+      "text": "c_b"
+    },
+    {
+      "name": "c_bf",
+      "text": "c_bf"
+    },
+    {
+      "name": "c_s",
+      "text": "c_s"
+    },
+    {
+      "name": "c_sf",
+      "text": "c_sf"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "d_ast",
+      "text": "d_ast"
+    },
+    {
+      "name": "d_b",
+      "text": "d_b"
+    },
+    {
+      "name": "d_bf",
+      "text": "d_bf"
+    },
+    {
+      "name": "d_s",
+      "text": "d_s"
+    },
+    {
+      "name": "d_sf",
+      "text": "d_sf"
+    },
+    {
+      "name": "df",
+      "text": "df"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "epsg",
+      "text": "epsg"
+    },
+    {
+      "name": "epsmu_c_aux",
+      "text": "epsmu_c_aux"
+    },
+    {
+      "name": "epsmu_d_aux",
+      "text": "epsmu_d_aux"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "i_d_ast",
+      "text": "i_d_ast"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "LTV",
+      "text": "LTV"
+    },
+    {
+      "name": "mc_c",
+      "text": "mc_c"
+    },
+    {
+      "name": "mc_d",
+      "text": "mc_d"
+    },
+    {
+      "name": "n",
+      "text": "Labour"
+    },
+    {
+      "name": "n_c",
+      "text": "n_c"
+    },
+    {
+      "name": "n_c_b",
+      "text": "n_c_b"
+    },
+    {
+      "name": "n_c_bf",
+      "text": "n_c_bf"
+    },
+    {
+      "name": "n_c_s",
+      "text": "n_c_s"
+    },
+    {
+      "name": "n_c_sf",
+      "text": "n_c_sf"
+    },
+    {
+      "name": "n_cf",
+      "text": "n_cf"
+    },
+    {
+      "name": "n_d",
+      "text": "n_d"
+    },
+    {
+      "name": "n_d_b",
+      "text": "n_d_b"
+    },
+    {
+      "name": "n_d_bf",
+      "text": "n_d_bf"
+    },
+    {
+      "name": "n_d_s",
+      "text": "n_d_s"
+    },
+    {
+      "name": "n_d_sf",
+      "text": "n_d_sf"
+    },
+    {
+      "name": "n_df",
+      "text": "n_df"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p_c_ast",
+      "text": "p_c_ast"
+    },
+    {
+      "name": "p_d_ast",
+      "text": "p_d_ast"
+    },
+    {
+      "name": "p_dc",
+      "text": "p_dc"
+    },
+    {
+      "name": "p_dc_ast",
+      "text": "p_dc_ast"
+    },
+    {
+      "name": "pi_c",
+      "text": "pi_c"
+    },
+    {
+      "name": "pi_c_f",
+      "text": "pi_c_f"
+    },
+    {
+      "name": "pi_c_h",
+      "text": "pi_c_h"
+    },
+    {
+      "name": "pi_d_h",
+      "text": "pi_d_h"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "s_c",
+      "text": "s_c"
+    },
+    {
+      "name": "s_d",
+      "text": "s_d"
+    },
+    {
+      "name": "shock_d_b",
+      "text": "shock_d_b"
+    },
+    {
+      "name": "shock_d_s",
+      "text": "shock_d_s"
+    },
+    {
+      "name": "shock_d_stern",
+      "text": "shock_d_stern"
+    },
+    {
+      "name": "shock_mu_c",
+      "text": "shock_mu_c"
+    },
+    {
+      "name": "shock_mu_d",
+      "text": "shock_mu_d"
+    },
+    {
+      "name": "wp_c",
+      "text": "wp_c"
+    },
+    {
+      "name": "wp_cf",
+      "text": "wp_cf"
+    },
+    {
+      "name": "wp_d",
+      "text": "wp_d"
+    },
+    {
+      "name": "wp_df",
+      "text": "wp_df"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_c",
+      "text": "y_c"
+    },
+    {
+      "name": "y_cf",
+      "text": "y_cf"
+    },
+    {
+      "name": "y_d",
+      "text": "y_d"
+    },
+    {
+      "name": "y_df",
+      "text": "y_df"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

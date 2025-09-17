@@ -1,0 +1,167 @@
+{
+  "$schema": "model",
+  "name": "US_CPS10",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Cogley et al. (2010)",
+    "paper_title": "Inflation-gap persistence in the us",
+    "journal": "American Economic Journal: Macroeconomics 2, pp. 43-66",
+    "replicants_name": "Balint Tatar and Changnam Son",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Cogley, Timothy",
+      "Primiceri, Giorgio E.",
+      "Sargent, Thomas J."
+    ]
+  },
+  "msr": [
+    "0.6330",
+    "0",
+    "0",
+    "0",
+    "0.1637",
+    "0.1637",
+    "0.1637",
+    "0.1637",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.9689",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "bs",
+      "text": "bs"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "lambddaps",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "pits",
+      "text": "pits"
+    },
+    {
+      "name": "zs",
+      "text": "Technology shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "lambdda",
+      "text": "lambdda"
+    },
+    {
+      "name": "lambddap",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "lambddastar",
+      "text": "lambddastar"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "pit",
+      "text": "pit"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Rstar",
+      "text": "Rstar"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wstar",
+      "text": "wstar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    },
+    {
+      "name": "z",
+      "text": "Technology shock process"
+    }
+  ]
+}

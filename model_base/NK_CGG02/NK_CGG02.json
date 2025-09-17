@@ -1,0 +1,186 @@
+{
+  "$schema": "model",
+  "name": "NK_CGG02",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Clarida et al. (2002)",
+    "paper_title": "A simple framework for international monetary policy analysis",
+    "journal": "Journal of Monetary Economics 49(5), pp. 879-904",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2002",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Clarida, Richard",
+      "Gali, Jordí",
+      "Gertler, Mark"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "astar_",
+      "text": "astar_"
+    },
+    {
+      "name": "inf_",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "infstar_",
+      "text": "infstar_"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    },
+    {
+      "name": "ystar_",
+      "text": "ystar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "astar",
+      "text": "astar"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "infstar",
+      "text": "infstar"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rr",
+      "text": "rr"
+    },
+    {
+      "name": "rrstar",
+      "text": "rrstar"
+    },
+    {
+      "name": "rstar",
+      "text": "rstar"
+    },
+    {
+      "name": "u",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "ustar",
+      "text": "ustar"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "ybar",
+      "text": "ybar"
+    },
+    {
+      "name": "ybarstar",
+      "text": "ybarstar"
+    },
+    {
+      "name": "ystar",
+      "text": "ystar"
+    },
+    {
+      "name": "ytilde",
+      "text": "ytilde"
+    },
+    {
+      "name": "ytildestar",
+      "text": "ytildestar"
+    }
+  ]
+}

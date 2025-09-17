@@ -1,0 +1,213 @@
+{
+  "$schema": "model",
+  "name": "US_KS15",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kriwoluzky & Stoltenberg (2015)",
+    "paper_title": "Monetary Policy and the Transaction Role of Money in the US",
+    "journal": "Economic Journal, Vol 125, 1452-1473 ",
+    "replicants_name": "F. Strobel",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "A. Kriwoluzky",
+      "C. Stoltenberg"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "2.3829",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_z",
+      "text": "eps_z"
+    },
+    {
+      "name": "eps_nu",
+      "text": "Preference shock"
+    },
+    {
+      "name": "eps_mu",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "eps_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "m",
+      "text": "Money balances"
+    },
+    {
+      "name": "pit",
+      "text": "pit"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "nu",
+      "text": "Preference shock process"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "mu",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "psi",
+      "text": "Marginal costs"
+    },
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "RR",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "eps_g",
+      "text": "eps_g"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "mf",
+      "text": "mf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "RRf",
+      "text": "RRf"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    }
+  ]
+}
